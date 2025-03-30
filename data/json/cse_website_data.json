@@ -1,0 +1,1730 @@
+[
+  {
+    "course_code": "DIT227",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/avancerad-datorgrafik-dit227",
+      "international_website": "/en/study-gothenburg/advanced-computer-graphics-dit227",
+      "course_name": "Advanced Computer Graphics",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "24 Mar 2025",
+      "duration_end": "8 Jun 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86069",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT227",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The course aims to deepen and broaden the knowledge about three dimensional computer graphics.\nIt is a follow-up course to an introductory course in computer graphics, that gives the students a chance to dig deeper into particular subjects and also to perform a project.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for the course, students should have successfully completed courses corresponding to 120 hec within the subject of Computer Science, Mathematics, Software Engineering, or equivalent, including 7.5 hec course in Computer Graphics (DIT224 or equivalent).\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "30 October 2024"
+    }
+  },
+  {
+    "course_code": "DIT930",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/avancerade-databaser-dit930",
+      "international_website": "/en/study-gothenburg/advanced-databases-dit930",
+      "course_name": "Advanced databases",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "24 Mar 2025",
+      "duration_end": "8 Jun 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86052",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT930",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The following topics will be discussed during the course:\ndatabase management system architecture and implementation\nconcurrency and recovery\nindexes\nquery processing and optimization\nSemantic Web; RDF; RDF Schema; SPARQL\nontologies - NoSQL systems; aggregation-orientation; CAP theorem\nquerying graph databases\ndatabase applications",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible to the course, the student should have a Bachelor's degree in any subject, or have successfully completed 90 credits of studies in computer science, software engineering, or equivalent. Specifically, at least 15 credits of successfully completed courses in programming or equivalent are required. The student also needs to have attended a course in databases of at least 7.5 credits (e.g. DIT621 Databases or DIT032 Data management).\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "26 August 2024"
+    }
+  },
+  {
+    "course_code": "DIT260",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/avancerad-funktionell-programmering-dit260",
+      "international_website": "/en/study-gothenburg/advanced-functional-programming-dit260",
+      "course_name": "Advanced Functional Programming",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "20 Jan 2025",
+      "duration_end": "23 Mar 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86014",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT260",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The aim of the course is to explore the powerful mechanisms that functional programming languages offer to solve real problems and structure larger programs. The focus lies on library design and the concept of embedded languages.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for the course, students should have successfully completed two years of an education aimed at a Bachelor's degree within Computer Science or equivalent. The courses DIT142 Functional programming, MMGD10 Introductory Discrete Mathematics and at least one of the courses DIT230 Programming language technology or DIT331 programming paradigms or equivalent are required. Applicants must prove their knowledge of English: English 6/English B from Swedish Upper Secondary School or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "10 October 2024"
+    }
+  },
+  {
+    "course_code": "DIT285",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/avancerad-kravhantering-dit285",
+      "international_website": "/en/study-gothenburg/advanced-requirements-engineering-dit285",
+      "course_name": "Advanced Requirements Engineering",
+      "period": "Autumn 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "1 Sep 2025",
+      "duration_end": "2 Nov 2025",
+      "application_period_start": "17 Mar 2025",
+      "application_period_end": "15 Apr 2025",
+      "application_code": "GU-86060",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT285",
+      "tuition": {
+        "full_education_cost": "17 753 SEK",
+        "first_payment": "17 753 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "Understanding requirements is key to successful software engineering: Building software that is fit for its purpose relies on understanding the exact problem that must be solved.\nThe purpose of this course is to learn challenges, principles, and practices to identify, analyse and manage requirements from relevant sources, both at the start and during a software development project. The course regards these issues in specific development contexts, i.e. specific constellations of customers and suppliers as well as constraints related to the domain and development lifecycle that characterise developing a piece of software.\nThis course is on advanced level and takes a holistic view on the state of the art of\nrequirements engineering as part of successful software engineering, technology, and management. Students are expected to familiarize themselves with recent, relevant research in the field, to critically reflect on the implications of new findings, and to develop their abilities and expertise as software professionals.\nThe course teaches challenges, principles, and concrete practices related to the following subfields of requirements engineering (RE):\n- Requirements analysis\n- Elicitation\n- Analysis\n- Documentation\n- Negotiation\n- Verification and validation\n- Requirements management\n- Change management\n- Traceability\nBeyond a brief introduction into concrete notations of requirements, the course focuses on holistically managing requirements-related knowledge on relevant scopes, including:\n- Team level: knowledge within a software development team and accross several teams working in the same area.\n- Program level: knowledge within a particular product team or across a set of related product teams (e.g. agile release trains)\n- Enterprise level: knowledge related to managing a portfolio of products.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for this course the student should have:\n- a bachelor degree in Software Engineering, Computer Science, Information Technology, Information Systems, or equivalent;- a successfully completed course in programming (e.g., DIT044 Object-oriented Programming, DIT013 Imperative Programming with Basic Object-orientation, DIT143 Functional Programming, or equivalent);- a successfully completed project course (or bachelor thesis) in applied software development or software engineering (e.g., DIT212 Object-oriented programming project, or DIT543 Software Engineering Project).\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "16 December 2024"
+    }
+  },
+  {
+    "course_code": "DIT093",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/algoritmer-dit093",
+      "international_website": "/en/study-gothenburg/algorithms-dit093",
+      "course_name": "Algorithms",
+      "period": "Autumn 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "1 Sep 2025",
+      "duration_end": "2 Nov 2025",
+      "application_period_start": "17 Mar 2025",
+      "application_period_end": "15 Apr 2025",
+      "application_code": "GU-86028",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT093",
+      "tuition": {
+        "full_education_cost": "17 753 SEK",
+        "first_payment": "17 753 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The course topics are as follows:\nIntroduction. What is an efficient algorithm?\nTools for analysis of algorithms. O-notation. Analyzing loops and recursive calls. Solving recurrences;\nData structures and algorithms. Review of basic data structures;\nCombining data structures. Merge-and-find;\nGraph algorithms;\nGreedy algorithms;\nDivide-and-conquer;\nDynamic programming;\nBacktracking and Implicit search trees. Branch-and-bound;\nShort introduction to local search and approximation algorithms;\nBasic complexity theory. Complexity classes P, NP, and NPC, reductions. Examples of NP-complete problems. Coping with hard problems;\nShort introduction to other design techniques: local search, approximation algorithms, randomized algorithms, preprocessing, network flow.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "The requirement for the course is to have successfully completed coursers corresponding to 120 hp in the subject Computer Science or Mathematics including:\n- 7\\.5 credits in discrete mathematics (DIT980 Discrete Mathematics for Computer Scientists, or the sub-course Introductory Algebra of MMG200 Mathematics I, orequivalent),- additionally 10 creditsin mathematics,- 7\\.5 creditsin imperative or object oriented programming (DIT012 ImperativeProgramming with Basic Object-orientation, or equivalent),- additionally 7.5 creditsin programming,- 7\\.5 creditsin data structures (DIT960 Data Structures, DIT375 Python for DataScientists or equivalent).\nApplicants must prove knowledge of English: English 6/English B or the equivalent levelof an internationally recognized test, for example TOEFL, IELTS",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "18 November 2024"
+    }
+  },
+  {
+    "course_code": "DIT251",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/algoritmer-fortsattningskurs-dit251",
+      "international_website": "/en/study-gothenburg/algorithms-advanced-course-dit251",
+      "course_name": "Algorithms, advanced course",
+      "period": "Autumn 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "3 Nov 2025",
+      "duration_end": "18 Jan 2026",
+      "application_period_start": "17 Mar 2025",
+      "application_period_end": "15 Apr 2025",
+      "application_code": "GU-86065",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT251",
+      "tuition": {
+        "full_education_cost": "17 753 SEK",
+        "first_payment": "17 753 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "This course will be covering the following topics:\n- approximation algorithms and approximation schemes for NP-complete problems, and their analysis,- use of linear programming, in particular for approximation,\n- network flow with some complex applications,\n- randomized algorithms and their analysis by appropriate random variables,\n- helpful input structures like tree structures and input parameters.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "The requirement for the course is to have successfully completed courses corresponding to 120 creditswithin the subject Computer Science or equivalent, including successful completion of DIT093 Algorithms, 7.5 credits(or equivalent).\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "17 December 2024"
+    }
+  },
+  {
+    "course_code": "DIT382",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/algoritmer-for-maskininlarning-och-slutledning-dit382",
+      "international_website": "/en/study-gothenburg/algorithms-for-machine-learning-and-inference-dit382",
+      "course_name": "Algorithms for Machine Learning and Inference",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "20 Jan 2025",
+      "duration_end": "23 Mar 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86011",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT382",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "This course will discuss the theory and application of algorithms for machine learning and inference, from an AI perspective. In this context, we consider as learning to draw conclusions from given data or experience which results in some model that generalises these data. Inference is to compute the desired answers or actions based on the model.\nAlgorithms of this kind are commonly used in for example classification tasks (e.g., character recognition, or to predict if a new customer is creditworthy) and in expert systems (e.g., for medical diagnosis). A new and commercially important area of application is data mining, where the algorithms are used to automatically detect interesting information and relations in large commercial or scientific databases.\nThe course intends to give a good understanding of this crossdisciplinary area, with a sufficient depth to use and evaluate the available methods, and to understand the scientific literature. During the course we may discuss potential problems with machine learning methods, for example, bias in training data and safety of autonomous agents.\nThe following concepts are covered:\nBayesian learning: likelihood, prior, posterior.\nSupervised learning: Bayes classifier, Logistic Regression, Deep Learning (Standard and CNN), Support Vector Machines, regression models, K-nn models.\nUnsupervised learning: Clustering algorithms, EM algorithm, Mixture models,\nKernel methods,\nTemporal machine learning models (for example RNN)",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible to the course, the student should have a bachelor degree.\nIn particular, the student must have acquired the following knowledge:\n- 7\\.5 credits of programming (e.g., DIT440 Introduction to Functional Programming, DIT042 Object-Oriented Programming, DIT012 Imperative Programming with Basic Object-Orientation, or equivalent)- 7\\.5 credits of data structures (e.g., DIT961 Data Structures, DIT181 Data Structures and Algorithms, or equivalent)- 7\\.5 credits of basic probability and statistics (e.g., MSG810 Mathematical Statistics and Discrete Mathematics, DIT861 Statistical Methods for Data Science, or equivalent) - 7.5 credits of linear algebra (e.g., MMGD20 Linear Algebra, or equivalent)- 7\\.5 credits of multivariate calculus.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "20 September 2024"
+    }
+  },
+  {
+    "course_code": "DIT248",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/introduktion-till-spelvetenskap-dit248",
+      "international_website": "/en/study-gothenburg/an-introduction-to-game-research-dit248",
+      "course_name": "An introduction to Game Research",
+      "period": "Autumn 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "1 Sep 2025",
+      "duration_end": "2 Nov 2025",
+      "application_period_start": "17 Mar 2025",
+      "application_period_end": "15 Apr 2025",
+      "application_code": "GU-86044",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT248",
+      "tuition": {
+        "full_education_cost": "17 753 SEK",
+        "first_payment": "17 753 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "Games have been a big part of human culture since ancient times. During the years they have evolved in to many different forms and serve many different target groups, not least since the introduction of computer games. This course provides an overview of games in all their forms as well as theoretical concepts and frameworks to analyze games. The course is divided into four successive parts that consider different forms of games and different perspectives of gaming.\nThe first part looks at games as systems and focus on board games and card games as well as introduces general concepts to describe games and gaming. The second part transitions over to how players perceive and immerse themselves into games, using role-playing and larps to highlight the play experience as a perceptual stance. The third part highlights how different media forms impacts on games and gaming by focusing on computer games and online games. The final part examines how the boundaries between games and other activities can be obscured by the game design and how games can be used for other purposes than to entertain, for example to criticize, influence, or teach.\nEach part introduces theoretical concepts and frameworks through academic texts and builds on the previous part.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "Bachelor degree of 180 higher educational credits or 60 higher educational credits in the main field of study of Computer Science.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "9 December 2024"
+    }
+  },
+  {
+    "course_code": "DIT867",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/tillampad-maskininlarning-dit867",
+      "international_website": "/en/study-gothenburg/applied-machine-learning-dit867",
+      "course_name": "Applied Machine Learning",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "20 Jan 2025",
+      "duration_end": "23 Mar 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86002",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT867",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The course gives an introduction to machine learning techniques and theory, with a focus on its use in practical applications.\nDuring the course, a selection of topics will be covered in supervised learning, such as linear models for regression and classification, or nonlinear models such as neural networks, and in unsupervised learning such as clustering.\nThe use cases and limitations of these algorithms will be discussed, and their implementation will be investigated in programming assignments. Methodological questions pertaining to the evaluation of machine learning systems will also be discussed, as well as some of the ethical questions that can arise when applying machine learning technologies.\nThere will be a strong emphasis on the real-world context in which machine learning systems are used. The use of machine learning components in practical applications will be exemplified, and realistic scenarios will be studied in application areas such as ecommerce, business intelligence, natural language processing, image processing, and bioinformatics. The importance of the design and selection of features, and their reliability, will be discussed.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible to the course, the student should have a Bachelor's degree in any subject, or have successfully completed 90 credits of studies in computer science, software engineering, or equivalent. Specifically, the course requires:\n- 7\\.5 credits programming,- 7\\.5 credits introduction to data science or AI, such as DIT852 or DIT405,- 7\\.5 credits calculus or mathematical modeling (such as DIT856),- 7\\.5 credits probability theory, statistics, or mathematical statistics, such as DIT862. Alternatively have taken both of the following two courses: DIT847 and DIT278 (or equivalent)\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "23 September 2024"
+    }
+  },
+  {
+    "course_code": "DIT849",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/manskliga-aspekter-pa-programvaruteknik-dit849",
+      "international_website": "/en/study-gothenburg/behavioral-software-engineering-dit849",
+      "course_name": "Behavioral Software Engineering",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "24 Mar 2025",
+      "duration_end": "8 Jun 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86086",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT849",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "This course will comprise a number of modules/themes:\nIntroduction to BSE - Individuals: Personality and Cognitive Biases\nIndividuals: Motivation and Attitudes\nIndividuals: Experience and Emotion\nIndividuals: Personal sustainability\nGroups: Norms and Creativity\nGroups: Social factors on SW teams, Group dynamics\nOrganisations: Politics, happiness & freedom\nOrganisations: Gender, ethics and sustainability\nResearch methods: Ethnography, Interview studies, Reflexivity\nCourse summary: BSE implications and effects, Future of BSE in research & practice",
+      "prerequisites_and_selection": {
+        "entry_requirements": "- Bachelor of science degree in Software Engineering, Computer Science, or corresponding/equivalent,- Successfully completed project course in software development/engineering (7.5hp)\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "13 December 2024"
+    }
+  },
+  {
+    "course_code": "DIT301",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/compiler-construction-dit301",
+      "international_website": "/en/study-gothenburg/compiler-construction-dit301",
+      "course_name": "Compiler Construction",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "24 Mar 2025",
+      "duration_end": "8 Jun 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86058",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT301",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The aim of the course is to develop an understanding of the whole process of compiler construction, starting from lexical analysis and finishing with machine code generation. As the course laboration, the students build a complete compiler for a simple imperative language.\nTheory and implementation of compilers, with an emphasis on the backend phases of code generation runtime environments.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible to the course, the student should have successfully completed 120 credits of studies in Computer Science or equivalent. Specifically, the following course: DIT231 Programming Language Technology or equivalent.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "20 September 2024"
+    }
+  },
+  {
+    "course_code": "DIT313",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/berakningsbarhet-dit313",
+      "international_website": "/en/study-gothenburg/computability-dit313",
+      "course_name": "Computability",
+      "period": "Autumn 2024",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "4 Nov 2024",
+      "duration_end": "19 Jan 2025",
+      "application_period_start": "15 Mar 2024",
+      "application_period_end": "15 Apr 2024",
+      "application_code": "GU-18666",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT313",
+      "tuition": {
+        "full_education_cost": "19 250 SEK",
+        "first_payment": "19 250 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "This course is about the concept of \"computation\": how it can be modelled, and what its limits are. To avoid unnecessary complexity one often chooses to study computation via simplified, but powerful, models. These models can for instance be simple programming languages (like the -calculus), or idealised computers (like Turing machines). In thecourse several such models will be studied, both \"imperative\" and \"functional\". One or more models will be used to explore the limits of computation: problems that cannot be solved (within the confines of a given model), and programs that can run arbitrary programs (modelled in a certain way).The course also includes a discussion of the Church-Turing thesis, a hypothesis which states, roughly, that a function is computable in a certain intuitive sense only if it can be defined within one of several models of computation.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible to the course, the student should have successfully completed 120 credits of studies in Computer Science or equivalent.\nSpecifically, the following courses are required, or equivalent:\n7\\.5 credits in discrete mathematics (e.g., DIT980 Discrete Mathematics for Computer Scientists)7\\.5 credits in functional programming (e.g., DIT143 Functional Programming or DIT440 Introduction to Functional Programming)\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits."
+      },
+      "last_modified": "12 August 2024"
+    }
+  },
+  {
+    "course_code": "DIT743",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/berakningsmetoder-i-bioinformatik-dit743",
+      "international_website": "/en/study-gothenburg/computational-methods-in-bioinformatics-dit743",
+      "course_name": "Computational Methods in Bioinformatics",
+      "period": "Autumn 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "3 Nov 2025",
+      "duration_end": "18 Jan 2026",
+      "application_period_start": "17 Mar 2025",
+      "application_period_end": "15 Apr 2025",
+      "application_code": "GU-86067",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT743",
+      "tuition": {
+        "full_education_cost": "17 753 SEK",
+        "first_payment": "17 753 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "This course demonstrates how computational methods that have been presented in other computing courses can be applied to solve problems in an application area. We look at problems related to the analysis of biological sequence data (sequence bioinformatics) and macromolecular structures (structural bioinformatics).\nComputing scientists need to be able to understand problems that originate in areas that may be unfamiliar to them, and to identify computational methods and approaches that can be used to solve them. Biological concepts needed to understand the problems will be introduced.\nReading research articles is valuable training for scientists and researchers. Developing skill in reading research articles is useful preparation for future scientific studies, and at the same time their own scientific writing can be improved. Therefore, in this course, research articles are used as the main reference material, in particular to show how to present ideas and methods, and how to critically evaluate them.\nComputational methods and concepts featured in this course include: dynamic programming; heuristic algorithms; graph partitioning; image skeletonisation, smoothing and edge detection; clustering; sub-matrix matching; geometric hashing; constraint logic programming; Monte Carlo optimisation; simulated annealing; selfavoiding walks.\nBiological problems featured in this course include: sequence alignment; domain assignment; structure comparison; comparative modelling; protein folding; fold recognition; finding channels; molecular docking; protein design.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for the course, the student should have successfully completed 60 credits of studies in Computer Science, Software Engineering, Data Science, Mathematics, Mathematical Statistics, or equivalent. Furthermore, the student should have successfully completed a course in Programming (DIT012 Imperative Programming with Basic Object-orientation, DIT042 Object-oriented Programming, DIT143 Functional programming, or equivalent) and a basic course in discrete mathematic (DIT980, DIT856 or equivalent).Applicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "16 December 2024"
+    }
+  },
+  {
+    "course_code": "DIT066",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/berakningsmetoder-for-storskaliga-data-dit066",
+      "international_website": "/en/study-gothenburg/computational-techniques-for-large-scale-data-dit066",
+      "course_name": "Computational techniques for large-scale data",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "24 Mar 2025",
+      "duration_end": "8 Jun 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86107",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT066",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "",
+      "prerequisites_and_selection": {
+        "entry_requirements": "",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "26 August 2024"
+    }
+  },
+  {
+    "course_code": "DIT051",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/computer-architecture-dit051",
+      "international_website": "/en/study-gothenburg/computer-architecture-dit051",
+      "course_name": "Computer Architecture",
+      "period": "Autumn 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "1 Sep 2025",
+      "duration_end": "2 Nov 2025",
+      "application_period_start": "17 Mar 2025",
+      "application_period_end": "15 Apr 2025",
+      "application_code": "GU-86035",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT051",
+      "tuition": {
+        "full_education_cost": "17 753 SEK",
+        "first_payment": "17 753 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The course covers architectural techniques necessary to achieve high performance for user programs. It also covers simulation-based analysis methods for quantitative assessment of the impact of a particular architectural technique on performance.\nThe content is divided into the following parts:\n1. The first part covers aspects affecting the development of computer technology including Moore's Law, performance measures (execution time vs. throughput), benchmarking, and fundamentals of computer performance such as Amdahl's Law and memory access locality.\n2. The second part covers various techniques for exploiting instruction level parallelism (ILP) by defining key concepts of what ILP is and what limits it. The techniques covered fall into two categories: dynamic and static techniques. The main dynamic techniques covered are Tomasulo's algorithm, branch prediction and speculation. The most important static techniques are loop unrolling, software pipelining, trace scheduling and predicated instructions.\n3. The third part covers principles of modern memory hierarchies such as inclusive and non-inclusive memory hierarchies, lockup free caching techniques, prefetching, classification of cache misses.\n4. The fourth part deals with multi-core microprocessors and techniques such as multi-threading and cache coherence.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "Successfully completed two year of studies within the subject Computer Science or equivalent. The course DIT122 Datorsystemteknik or equivalent is required. Applicants must prove their knowledge of English: English 6/English B from Swedish Upper Secondary School or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "20 November 2024"
+    }
+  },
+  {
+    "course_code": "DIT671",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/datornatverk-dit671",
+      "international_website": "/en/study-gothenburg/computer-networks-dit671",
+      "course_name": "Computer Networks",
+      "period": "Autumn 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "1 Sep 2025",
+      "duration_end": "2 Nov 2025",
+      "application_period_start": "17 Mar 2025",
+      "application_period_end": "15 Apr 2025",
+      "application_code": "GU-86037",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT671",
+      "tuition": {
+        "full_education_cost": "17 753 SEK",
+        "first_payment": "17 753 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "This course focuses on the algorithmic design of network protocols and covers a range of sub-specialties including: computer communication network concepts, programming using BSD socket API, and distributed fault-tolerance algorithms with a very strong emphasis on self-stabilization. The aim of this course is to learn to design and analyze algorithms for network protocols and to gain knowledge in existing communication networks, including supporting systems and protocols, fundamental tasks and methods in data communication networks. Mastery of computer networks involves both theory and practice in the design, implementation and use of network protocols and services.\nThis course offers learning experiences that involve hands-on experimentation and analysis as they reinforce student understanding of concepts and their application to real-world problems. Several laboratory experiments are given and involve API programming for fault-tolerance network systems, and Internet interconnections and services from a practical perspective, and design and analysis of protocols with a strong emphasis on self-stabilizing algorithms.\nThis course provides the students with the analytical background needed for understanding fundamental issues in the design of distributed fault tolerance algorithms for computer network protocols. The course has a very strong emphasis on transient faults and how self-stabilizing algorithms can allow automatic recovery after their occurrence.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "The requirement for the course is to have a Bachelor's degree within the subject Computer Science or equivalent. The student should also have successfully completed the courses listed below, either as part of the Bachelor's degree or as single subject courses.\n7\\.5 hec in discrete mathematics (DIT980 or equivalent)7\\.5 hec in finite automata theory and formal language (DIT322 or equivalent)7\\.5 hec in imperative or object oriented programming (DIT012, DIT952, or equivalent)7\\.5 hec in data structures (DIT961 or equivalent)7\\.5 hec in algorithms (DIT602 or equivalent)7\\.5 hec in computer communication (DIT423 or equivalent) or operating systems (DIT401 or equivalent)\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "20 November 2024"
+    }
+  },
+  {
+    "course_code": "DIT642",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/datasakerhet-dit642",
+      "international_website": "/en/study-gothenburg/computer-security-dit642",
+      "course_name": "Computer Security",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "20 Jan 2025",
+      "duration_end": "23 Mar 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86035",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT642",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The course gives basic knowledge in the security area, i.e. how to protect your system against intrusions and attacks. The purpose of intrusions can be to change or delete resources (data, programs, hardware, etc), to get unauthorized access to confidential information or unauthorized use of the system's services. The course covers threats and vulnerabilities in the computer systems and networks, as well as rules, methods and mechanisms for protection. Modeling and assessment of security and dependability as well as metrication methods are covered. A holistic security approach is taken and organizational, business-related, social, human, legal and ethical aspects are treated. The following topics will be covered, among others.\nIntroduction to computer security\nOverview of security threats\nIntroduction to cryptography.\nSecurity in operating systems\nSecurity mechanisms including authentication, authorization, and access control\nIntroduction to Network Security and Intrusion detection systems\nSecurity Models: Bell-LaPadula, Biba, Chinese wall etc.\nSecurity management, organization and ethics",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for the course students should have successfully completed courses corresponding to 60 hec within the subject Computer Science or equivalent. A 7.5 hec course in Programming is required.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "20 September 2024"
+    }
+  },
+  {
+    "course_code": "DIT666",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/koncept-driven-interaktionsdesign-dit666",
+      "international_website": "/en/study-gothenburg/concept-driven-interaction-design-dit666",
+      "course_name": "Concept-Driven Interaction Design",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "24 Mar 2025",
+      "duration_end": "8 Jun 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86101",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT666",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "",
+      "prerequisites_and_selection": {
+        "entry_requirements": "Bachelor degree 180 hec and the courses DIT095 Human computer interaction, 7.5 hec and DIT104 Interaction design methodology, 7.5 hec or equivalent. Applicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "17 September 2024"
+    }
+  },
+  {
+    "course_code": "DIT352",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/kryptografi-dit352",
+      "international_website": "/en/study-gothenburg/cryptography-dit352",
+      "course_name": "Cryptography",
+      "period": "Autumn 2024",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "4 Nov 2024",
+      "duration_end": "19 Jan 2025",
+      "application_period_start": "15 Mar 2024",
+      "application_period_end": "15 Apr 2024",
+      "application_code": "GU-18679",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT352",
+      "tuition": {
+        "full_education_cost": "19 250 SEK",
+        "first_payment": "19 250 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "Basic and advanced goals of cryptography (confidentiality, authentication, anonymity, zero-knowledge)\nSymmetric key cryptography: block ciphers, design principles and examples, modes of operation, message authentication codes.\nPublic key cryptography: key exchange, asymmetric ciphers, signatures. Attack models and security notions.\nCryptographic Protocols: secret sharing, zero-knowledge proofs.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for the course the student should have successfully completed courses corresponding to 90 credits in the subject of Computer Science or Mathematics, including: 7.5 credits in algebra or discrete mathematics (covering topics: modular arithmetic, and elementary probability theory) 7.5 credits in programming Applicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits."
+      },
+      "last_modified": "19 June 2024"
+    }
+  },
+  {
+    "course_code": "DIT468",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/aktuella-trender-inom-spel-dit468",
+      "international_website": "/en/study-gothenburg/current-trends-in-gaming-dit468",
+      "course_name": "Current Trends in Gaming",
+      "period": "Autumn 2024",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "4 Nov 2024",
+      "duration_end": "19 Jan 2025",
+      "application_period_start": "15 Mar 2024",
+      "application_period_end": "15 Apr 2024",
+      "application_code": "GU-18669",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT468",
+      "tuition": {
+        "full_education_cost": "19 250 SEK",
+        "first_payment": "19 250 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "This course focuses on exploring the implications associated with a selection of current trends in gaming. It blends together methods for ideation with implementation. It addresses the socioeconomic implications associated with new technology; business models; And with changing audience expectations.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for this course, students must have successfully completed 7.5 credits of object-oriented programming.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits."
+      },
+      "last_modified": "12 August 2024"
+    }
+  },
+  {
+    "course_code": "TIA125",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/data-och-samhalle-tia125",
+      "international_website": "/en/study-gothenburg/data-and-society-tia125",
+      "course_name": "Data and Society",
+      "period": "Autumn 2024",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "5 Nov 2024",
+      "duration_end": "19 Jan 2025",
+      "application_period_start": "15 Mar 2024",
+      "application_period_end": "15 Apr 2024",
+      "application_code": "GU-18751",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/TIA125",
+      "tuition": {
+        "full_education_cost": "19 250 SEK",
+        "first_payment": "19 250 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "Data is drastically changing how we function, both as individuals and as societies. An abundance of data is produced in every sector of society. Data is a product of every human activity, from counting steps or calories on an individual level, to measuring societal aspects such as level of education and employment. The fundamental impact of this development gives rise to the need to ask question like: How do we use this data? For what purpose, and who benefits from it? This course will teach you how to begin answering such questions.\nDrawing from Science and Technology Studies and Critical Data Studies, you will be introduced to the concepts to understand the constructed nature of data. You will engage in exploring data through their collection, analysis, visualisation, and interpretation. You will develop the skills needed to connect the construction of data as a highly technological practice to broad social questions of structural inequalities, evidence, and knowledge. You will examine how datafication produced by digital technologies creates and structures society, and maintains certain asymmetries and power relations.\nThis course addresses master's students from the social sciences and the humanities who wish to develop skills in relation to data processing and visualisation while maintaining and furthering a critical mode of inquiry into practices that affect our life as individuals and society. It also speaks to students with technical backgrounds who wish to develop a more critical understanding of the social and political consequences of data-driven societies today.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for the course the student must have a Bachelor's degree (180 credits).\nApplicants must prove their knowledge of English: English 6/English B from Swedish Upper Secondary School or the equivalent level of an internationally recognized test, for example TOEFL, IELTS, or alternatively a bachelor's degree from an education held in English.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits."
+      },
+      "last_modified": "19 June 2024"
+    }
+  },
+  {
+    "course_code": "DIT616",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/data-drivet-stod-for-cyberfysiska-system-dit616",
+      "international_website": "/en/study-gothenburg/data-driven-support-for-cyber-physical-systems-dit616",
+      "course_name": "Data-driven support for cyber-physical systems",
+      "period": "Autumn 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "1 Sep 2025",
+      "duration_end": "2 Nov 2025",
+      "application_period_start": "17 Mar 2025",
+      "application_period_end": "15 Apr 2025",
+      "application_code": "GU-86039",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT616",
+      "tuition": {
+        "full_education_cost": "17 753 SEK",
+        "first_payment": "17 753 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The course gives an introduction to new cyber-physical systems, such as the smart grid, where data has become very important for adaptive operations and with an increased dependence on information and communication technologies (ICT). Topics in the course are focused on new methods in the intersection of computer science and other domains, to support distributed operations, cyber security, and processing of data that are generated due to digitalization of these systems (considering that the data can be massive).\nThe content is focused on distributed computing and systems, data processing, information and systems security, networking and computer communication in the context of new cyber-physical systems. There are lectures from the faculty to give an overview of the areas of the course, and invited presentations from industry to talk about actual systems, as well as in-depth presentations by the student themselves on specific research topics relating to their projects.\nTypically, the lectures include an introduction to the new types of cyber-physical systems, e.g., the smart grid. Open research problems in relation to distributed operations, data-processing and cyber security are discussed, e.g., through lectures on streaming, security and privacy, and communication suitable in this domain. Examples of cyber-physical systems important for society are presented, e.g., the smart grid from both on the transmission and distribution perspective. The course starts with an introduction to power systems, to give students enough knowledge of terminology to understand papers connected to the smart grid.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "Bachelor's degree in Computer Science, or equivalent is required. The student should have successfully completed the following courses (or equivalent):\nDIT791 Introduction to ComputerEngineering, 7.5 hecDIT602 Algorithms, 7.5 hecDIT960 Data Structures, 7.5 hecand at least 7.5 hec in programming.\nFurthermore, the student should have completed 7.5 hec or equivalent in one of the four areas:\nComputer Communication (such as DIT423 or equivalent), orOperating Systems (such as DIT401 or equivalent), orComputer Security (such as DIT641 or equivalent), orDistributed Systems (such as DIT240 or equivalent).\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "20 November 2024"
+    }
+  },
+  {
+    "course_code": "DIT173",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/palitliga-realtidssystem-dit173",
+      "international_website": "/en/study-gothenburg/dependable-real-time-systems-dit173",
+      "course_name": "Dependable Real-Time Systems",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "24 Mar 2025",
+      "duration_end": "8 Jun 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86075",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT173",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "This course is intended to give a deeper understanding of the problems involved in designing dependable real-time systems based on multiprocessor architectures. Specifically, the course covers the following topics:\nBackground: motivation for; and definition of; real-time computing systems.\nCharacteristics of real-time systems: application constraints; design methods; task models; run-time mechanisms; architectures.\nEvaluation of real-time systems: performance measures; evaluation methodologies.\nSingle and multiprocessor scheduling: problem definition; terminology; and algorithms.\nComplexity theory and NP-completeness in the context of real-time scheduling.\nReal-time communications: protocols and end-to-end delay guarantees.\nFault-tolerance techniques for real-time systems: models; algorithms and architectures.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for the course students should have successfully completed courses corresponding to 120 higher education credits within the subject Computer Science or equivalent. In addition, a pass grade in the preparatory course DIT162 Real-Time systems, 7.5 credits, is required. Applicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "30 October 2024"
+    }
+  },
+  {
+    "course_code": "DIT728",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/design-av-ai-system-dit728",
+      "international_website": "/en/study-gothenburg/design-of-ai-systems-dit728",
+      "course_name": "Design of AI systems",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "20 Jan 2025",
+      "duration_end": "23 Mar 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86005",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT728",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "This course is for students who are interested in the empirical methods applied to the field of software engineering. The course introduces quantitative and qualitative methods in software engineering with accompanying statistical methods used for analysis.\nThe course contains:\nDescriptive and inferential statistical methods applied to software engineering.\nConducting qualitative and quantitative methods in software engineering.\nMethods for analyzing quantitative and qualitative data in software engineering.\nUsage of statistical tools.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "The student must have successfully completed courses in:\n- 7,5 hec mathematical thinking (DIT025 or DIT856 or equivalent) or a course in basic mathematics (containing e.g. calculus, linear algebra, discrete mathematics)- 7,5 hec mathematical statistics (e.g. MSG810 or DIT862 or similar)- 7,5 hec programming in a general-purpose language (e.g. Python/Java/C or similar),- An introductory course in Data Science and/or AI, for examPle DIT852 or DIT405 or equivalent.\nWe strongly recommend to also take a course in Machine learning, for example DIT866or similar, or that such a course is taken in parallel alongside this course.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "20 September 2024"
+    }
+  },
+  {
+    "course_code": "TIA161",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/digital-innovation-i-sport-tia161",
+      "international_website": "/en/study-gothenburg/digital-innovation-in-sports-tia161",
+      "course_name": "Digital Innovation in Sports",
+      "period": "Autumn 2025",
+      "study_pace": "50%",
+      "time": "Mixed time",
+      "location": "Göteborg",
+      "study_form": "Distance",
+      "language": "English",
+      "duration_start": "5 Nov 2025",
+      "duration_end": "18 Jan 2026",
+      "application_period_start": "17 Mar 2025",
+      "application_period_end": "15 Apr 2025",
+      "application_code": "GU-87017",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/TIA161",
+      "tuition": {
+        "full_education_cost": "17 753 SEK",
+        "first_payment": "17 753 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "Recent years have seen drastic developments in terms of digitalisation in sports. The use of digital technology in sports affects how sports teams are organized and managed, how we gain access to sports information and design new sports equipment. Digitization has also created new sports, such as e-Sports, which have major consequences for the perception of what sports are and how sports are practiced. The development of analytical technology to support performance improvement has also been intensified with the help of digitalisation.\nThis course gives you the opportunity to acquire and apply knowledge about digitalisation in sports as a general societal phenomenon as well as professionalized specialized activities. After the course, you will have the ability to analyze, evaluate and explain how digitalisation affects and develops different sports.\nOnline education\nThe course is given entirely online. You will have the possibility to participate in the course in a way that suits you. You can either follow the course synchronously, with lectures and seminars online, or take part in the content asynchronously, when you have time. It is also possible to adapt the course pace to your own circumstances. In this way, it is possible to complete the course alongside other activities, such as work or other studies.\nMultiple perspectives\nYou will gain insights into how digital technologies have influenced endurance sports such as running, cycling and cross-country skiing, as well as team sports such as football and ice hockey. We will also focus on emerging technologies and platforms.\nThe perspectives that will be treated, the literature as well as guest lecturers in the course are chosen based on an effort to offer a breadth of approaches that are inclusive and equal.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "Bachelor's degree (180 credits). Applicants must prove their knowledge of English: English 6/English B from Swedish Upper Secondary School or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits."
+      },
+      "last_modified": "20 November 2024"
+    }
+  },
+  {
+    "course_code": "DIT206",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/diskret-optimering-dit206",
+      "international_website": "/en/study-gothenburg/discrete-optimization-dit206",
+      "course_name": "Discrete optimization",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "20 Jan 2025",
+      "duration_end": "23 Mar 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86007",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT206",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The course gives an introduction to modelling various optimization problems using linear programming (LP) and integer linear programming (ILP). The Simplex algorithm to solve LPs is described and analysed. The LP relaxations of ILPs are studied and analysed to design approximation algorithms. The duality theory of linear programs is studied and used to design approximation algorithms. Vector programs to model discrete optimization problems are described and relaxed to semi-definite programs (SDPs).",
+      "prerequisites_and_selection": {
+        "entry_requirements": "- 7,5 credits programming in high level language like Java, Python etc- 7,5 credits basic course in calculus/analysis- 7,5 credits basic course in linear algebra\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "20 September 2024"
+    }
+  },
+  {
+    "course_code": "DIT240",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/distribuerade-system-dit240",
+      "international_website": "/en/study-gothenburg/distributed-systems-dit240",
+      "course_name": "Distributed Systems",
+      "period": "Autumn 2024",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "4 Nov 2024",
+      "duration_end": "19 Jan 2025",
+      "application_period_start": "15 Mar 2024",
+      "application_period_end": "15 Apr 2024",
+      "application_code": "GU-18661",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT240",
+      "tuition": {
+        "full_education_cost": "19 250 SEK",
+        "first_payment": "19 250 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "Distributed systems are built by components/processes that cooperate using computer communication.\nThe overall aim of the course is to provide an understanding of the challenges you are confronted with when developing such systems as well as the benefits gained from such systems.\nThus this course serves as the basic for further study within the area.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "Successfully completed courses corresponding to 120 credits within the subject Computer Science or equivalent. Within the 120 credits the following courses are required;\n- DIT663 Computer Networks, 7.5 credits or DIT420 Computer Communication, 7.5 credits (or equivalent)- DIT400 Operating systems, 7.5 credits or DIT390 Concurrent programming, 7.5 credits (or equivalent)\nApplicants must prove their knowledge of English: English 6/English B from Swedish Upper Secondary School or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "19 November 2024"
+    }
+  },
+  {
+    "course_code": "DIT290",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/distributed-systems-advanced-course-dit290",
+      "international_website": "/en/study-gothenburg/distributed-systems-advanced-course-dit290",
+      "course_name": "Distributed Systems, Advanced Course",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "20 Jan 2025",
+      "duration_end": "23 Mar 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86037",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT290",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "In this course the students first will get to know the points of inherent difference and strength of distributed systems compared with sequential or strongly-coupled systems; consequently.\nThe aim of the course is to teach the students to study the issues and problems that have to be addressed and solved efficiently for these differences to be taken advantage of, so that the system retains its strength and high potential.\nMore specifically the goal is to teach the students able to understand and solve all the problems that distributed systems like P2P, collaborative environment systems or even parts of the core internet techno have to solve in order to be able to function efficiently and correctly. The goal is to combine theoretical studies with their respective application oriented consequences.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "Successfully completed a first year studies within the subject Computer Science or equivalent. Specifically, the course DIT240 Distributed systems is required. Applicants must prove their knowledge of English: English 6/English B from Swedish Upper Secondary School or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "30 October 2024"
+    }
+  },
+  {
+    "course_code": "DIT272",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/formella-metoder-i-mjukvaruutveckling-dit272",
+      "international_website": "/en/study-gothenburg/formal-methods-in-software-development-dit272",
+      "course_name": "Formal Methods in Software Development",
+      "period": "Autumn 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "1 Sep 2025",
+      "duration_end": "2 Nov 2025",
+      "application_period_start": "17 Mar 2025",
+      "application_period_end": "15 Apr 2025",
+      "application_code": "GU-86029",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT272",
+      "tuition": {
+        "full_education_cost": "17 753 SEK",
+        "first_payment": "17 753 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The aim of this course is to teach knowledge and skills in, and judgement about, two important styles of formal methods for reasoning about software: model checking and deductive verification.\nEach style will be introduced in three ways: conceptual, theoretical, and practical, using a particular tool. The course builds on skills in firstorder logic and temporal logic, and shows how these formalisms can be applied, and extended, for the verification of software.\nOn the model checking side, we cover the following topics:\n- a specification language for concurrent processes,\n- verifying assertions,\n- synchronization,\n- verifying safety and liveness properties in temporal logic.\nOn the deductive verification side, we cover the following topics:\n- a unit level specification language for Java programs,\n- a logic for verification of Java programs,\n- verification of Java programs, in the sense that the implementation of a unit fulfils the specification.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "Successfully completed courses corresponding to 120 credits within the subject Computer Science or equivalent, specifically DIT201 Logic in Computer Science, 7.5 credits, and a 7.5 credits course in object-oriented programming (or equivalent) are required. Applicants must prove their knowledge of English: English 6/English B from Swedish Upper Secondary School or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "20 November 2024"
+    }
+  },
+  {
+    "course_code": "DIT572",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/spelmotorarkitektur-dit572",
+      "international_website": "/en/study-gothenburg/game-engine-architecture-dit572",
+      "course_name": "Game Engine Architecture",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "20 Jan 2025",
+      "duration_end": "23 Mar 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86045",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT572",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The design and implementation of the fundamental components of a game engine is the core of the Game Engine Architecture course. The course focuses mainly upon 2-dimensional games although  other types of game engines are discussed, and students wishing to explore 3D game engines can do so as part of the assignment. During the course we will develop an example game engine which  includes several of the key aspects of professional game engine systems.\nThe course will cover timing regulation, game object architecture, collision action, collision responses, and some simple  physics. It will also discuss relevant design decisions and design patterns. It is not expected during this course that you will develop a feasible competitor for what is on the market. Rather, the process of  building a game engine is intended to be illuminating when developing games in more robust engines.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for this course, students must have either:\n- successfully completed the course Computer Graphics, 7.5 credits, or equivalent, or- have 15 credits of programming experience, of which 7.5 of those credits should be in an object-oriented context.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "23 September 2024"
+    }
+  },
+  {
+    "course_code": "DIT098",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/gameplay-design-dit098",
+      "international_website": "/en/study-gothenburg/gameplay-design-dit098",
+      "course_name": "Gameplay Design",
+      "period": "Autumn 2024",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "4 Nov 2024",
+      "duration_end": "19 Jan 2025",
+      "application_period_start": "15 Mar 2024",
+      "application_period_end": "15 Apr 2024",
+      "application_code": "GU-18654",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT098",
+      "tuition": {
+        "full_education_cost": "19 250 SEK",
+        "first_payment": "19 250 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The Gameplay design course will focus on how the rules and game components can be used to create game environments that encourage and advocate specific interaction, either between people or between people and the game system. The goal of these environments can vary from experimental environments in the automotive or aerospace industry, learning environments in simulations for pure entertainment environments on home computers or game consoles. The course covers general design methods that can be applied in all these areas.\nThe course aims to provide an understanding of how all the components in a game environment interact with each other as well as the relations gameplay design have to other areas necessary for contemporary interactive simulations, such as programming and graphical design. Key issues addressed in the course is how to motivate users to some specific interaction, the relationship between interaction and narrative, how to balance the interaction in multi-user environments, how to support and encourage the creativity of the user, how to modify the design solutions to suit both new and experienced users as well as how to change design solutions to suit the interaction sessions with time constraints.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for the course the student must have a Bachelor's degree, 180credits or have passed 60 credits in the subject Computer Science.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits."
+      },
+      "last_modified": "12 August 2024"
+    }
+  },
+  {
+    "course_code": "DIT493",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/grafiska-granssnitt-dit493",
+      "international_website": "/en/study-gothenburg/graphical-interfaces-dit493",
+      "course_name": "Graphical Interfaces",
+      "period": "Autumn 2024",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "4 Nov 2024",
+      "duration_end": "19 Jan 2025",
+      "application_period_start": "15 Mar 2024",
+      "application_period_end": "15 Apr 2024",
+      "application_code": "GU-18670",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT493",
+      "tuition": {
+        "full_education_cost": "19 250 SEK",
+        "first_payment": "19 250 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "Content includes, but is not limited to:\nCommonly used interaction design solutions in graphical interfaces\nDesigning for users on different levels (e.g. beginners vs. experts)\nDesigning interaction sequences\nLayout of graphical user interfaces;\nDesigning look and feel; using color, text and graphics\nCorrect use of graphical user interface elements such as controls, toolbars, menus, dialogues etc.\nThe difference between regular user interfaces and touch-based interfaces.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for the course the student must have a Bachelor degree of 180 credits. Additionally, the course DAT420 Human - computer interaction, 7.5 credits, or the equivalent is required.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits."
+      },
+      "last_modified": "19 June 2024"
+    }
+  },
+  {
+    "course_code": "DIT431",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/parallell-programmering-for-hog-prestanda-dit431",
+      "international_website": "/en/study-gothenburg/high-performance-parallel-programming-dit431",
+      "course_name": "High Performance Parallel Programming",
+      "period": "Autumn 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "1 Sep 2025",
+      "duration_end": "2 Nov 2025",
+      "application_period_start": "17 Mar 2025",
+      "application_period_end": "15 Apr 2025",
+      "application_code": "GU-86036",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT431",
+      "tuition": {
+        "full_education_cost": "17 753 SEK",
+        "first_payment": "17 753 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "This course looks at parallel programming models, efficient programming methodologies and performance tools with the objective of developing highly efficient parallel programs.\nThe course consists of a set of lectures and laboratory sessions.\nThe lectures start with an overview of parallel computer architectures and parallel programming models and paradigms. An important part of the discussion are mechanisms for synchronization and data exchange. Next, performance analysis of parallel programs is covered.\nThe course proceeds with a discussion of tools and techniques for developing parallel programs in shared address spaces. This section covers popular programming environments such as pthreads and OpenMP.\nNext the course discusses the development of parallel programs for distributed address space. The focus in this part is on the Message Passing Interface (MPI). Finally, we discuss programming approaches for executing applications on accelerators such as GPUs. This part introduces the CUDA (Compute Unified Device Architecture) programming environment.\nThe lectures are complemented with a set of laboratory sessions in which participants explore the topics introduced in the lectures. During the lab sessions, participants parallelize sample programs over a variety of parallel architectures, and use performance analysis tools to detect and remove bottlenecks in the parallel implementations of the programs.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for the course, students should have successfully completed courses corresponding to 105 credits within the subject of Computer Science, Mathematics, Software Engineering, or equivalent.Including a 7.5 credits course in machine-oriented programming (e.g., DIT151 Machine Oriented Programming, or equivalent).\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "20 November 2024"
+    }
+  },
+  {
+    "course_code": "DIT007",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/manniska-robot-interaktion-design-dit007",
+      "international_website": "/en/study-gothenburg/human-robot-interaction-design-dit007",
+      "course_name": "Human-Robot Interaction Design",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "24 Mar 2025",
+      "duration_end": "8 Jun 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86092",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT007",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The research and development of robots range from domestic robots, autonomous robotic agents, virtual agents, and industrial robots. Human-Robot Interaction (HRI) is a discipline that is concerned with how we design, develop, and evaluate robotic agents with the user in the loop. This course introduces the HRI design practices, evaluation methods and approaches. In particular, the course will apply human-centered approaches to design for the (1) abilities to consider in a robot, the (2) interaction modalities a robot should have, and (3) the form and appearance of a robot. The course will also give an understanding of the impact robots can have on our society, and the importance of the ethical and critical considerations when designing them.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for the course the student must have a Bachelor degree of 180 credits. Additionally, a course in Human - computer interaction, 7.5 credits, is required.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "22 November 2024"
+    }
+  },
+  {
+    "course_code": "DIT104",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/interaktionsdesignmetodologi-dit104",
+      "international_website": "/en/study-gothenburg/interaction-design-methodology-dit104",
+      "course_name": "Interaction design methodology",
+      "period": "Autumn 2024",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "2 Sep 2024",
+      "duration_end": "3 Nov 2024",
+      "application_period_start": "15 Mar 2024",
+      "application_period_end": "15 Apr 2024",
+      "application_code": "GU-18655",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT104",
+      "tuition": {
+        "full_education_cost": "19 250 SEK",
+        "first_payment": "19 250 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "This course introduces the basic design methodology in interaction design. The course consists of several smaller exercises, a group project, and an individual examination.\nTheory is combined with practical training to give students practice in working systematically with the design of computational things and systems. Training in specific design methods is provided through exercises and the group project while meta methods such as iterative design and user centered design are aspects of the home exam.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for the course the student must have succesfully completed a bachelor thesis course, e.g. DIT561. In addition, the student must have succesfully completed a 7,5 credit course in Human-computer interaction, e.g. DIT095 or TIG091.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits."
+      },
+      "last_modified": "12 August 2024"
+    }
+  },
+  {
+    "course_code": "DIT998",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/interaktivt-och-linjart-berattande-med-digital-media-dit998",
+      "international_website": "/en/study-gothenburg/interactive-and-linear-storytelling-with-digital-media-dit998",
+      "course_name": "Interactive and linear storytelling with digital media",
+      "period": "Autumn 2024",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "4 Nov 2024",
+      "duration_end": "19 Jan 2025",
+      "application_period_start": "15 Mar 2024",
+      "application_period_end": "15 Apr 2024",
+      "application_code": "GU-18680",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT998",
+      "tuition": {
+        "full_education_cost": "19 250 SEK",
+        "first_payment": "19 250 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "Interactive storytelling and digital movie making.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "The course is accessible for students who have either\n1. completed 120 hp at a bachelor level in subjects related to IT, art, design, media, communication or equivalent\" or2. equivalent professional experience, defined as being employed or running a private company for at least two years, with a position and/or work tasks related to art, design, media, communication or equivalent.\nAlso, it is required to have succesfully completed a course of 7,5 hp in programming.\nApplicants must prove knowledge of English: English 6/English B or the equivalent levelof an internationally recognized test, for example TOEFL, IELTS",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits."
+      },
+      "last_modified": "19 June 2024"
+    }
+  },
+  {
+    "course_code": "LT2001",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/introduktion-till-programmering-lt2001",
+      "international_website": "/en/study-gothenburg/introduction-to-programming-lt2001",
+      "course_name": "Introduction to programming",
+      "period": "Autumn 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "1 Sep 2025",
+      "duration_end": "4 Nov 2025",
+      "application_period_start": "17 Mar 2025",
+      "application_period_end": "15 Apr 2025",
+      "application_code": "GU-24012",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/LT2001",
+      "tuition": {
+        "full_education_cost": "18 878 SEK",
+        "first_payment": "18 878 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "This course will give an introduction to programming suitable for students who have not programmed before. It offers an introduction to computer science aspects like algorithms, data structures and programming paradigms.\nThe course also introduces the programming environment and basic concepts, theories and technologies used in the master's programme in language technology.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "Students with an undergraduate degree (at least three year full-time study) in:\n- language technology, computational linguistics or computer science,- linguistics (with at least 30 credits, corresponding to half a year full-time study, in formal linguistics or programming),- adjacent subjects, e.g. cognitive science, languages, philosophy or mathematics (provided that the student can show a background in either programming or formal linguistics corresponding to 30 credits, that is half a year full-time study), or- certificate from their department assessing that they fulfill equivalent qualifications.\nTo provide the requirement in English by an internationally recognized test, for example TOEFL, IELTS, the English proficiency should be equivalent to the level of English 5/English Course A from Swedish Upper Secondary School.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits."
+      },
+      "last_modified": "16 December 2024"
+    }
+  },
+  {
+    "course_code": "DIT101",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/language-based-security-dit101",
+      "international_website": "/en/study-gothenburg/language-based-security-dit101",
+      "course_name": "Language-Based Security",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "24 Mar 2025",
+      "duration_end": "8 Jun 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86056",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT101",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The course covers the principles of programming language-based techniques for computer security.\nThe goal is;\n1) Understanding such applicaiton-level attacks as race conditions, buffer overruns, covert channels, and code injection.\n2)\nMastering the principles behind such language-based protection\ntechniques as static analysis, program transformation, and reference\nmonitoring.\nThe dual perspective of attack vs. protection is threaded through the lectures, laboratory assignments, and projects.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "Successfully completed two year studies within the subject Computer Science or equivalent. Applicants must prove their knowledge of English: English 6/English B from Swedish Upper Secondary School or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "30 October 2024"
+    }
+  },
+  {
+    "course_code": "DIT075",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/mobila-datorer-design-och-implementering-dit075",
+      "international_website": "/en/study-gothenburg/mobile-computing-design-and-implementation-dit075",
+      "course_name": "Mobile Computing: Design and Implementation",
+      "period": "Autumn 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "1 Sep 2025",
+      "duration_end": "2 Nov 2025",
+      "application_period_start": "17 Mar 2025",
+      "application_period_end": "15 Apr 2025",
+      "application_code": "GU-86045",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT075",
+      "tuition": {
+        "full_education_cost": "17 753 SEK",
+        "first_payment": "17 753 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "During this course the definition of \"mobile computing\" will be discussed. \"Mobile computing\" can be defined in two ways:\n- Portable digital devices. Examples: smartphones, tablets, smartwatches and other wearables, RFID cards, and IoT applications...\n- Applications where the user is mobile. Examples: commuting, tourism, driving, biking, sports, walking, exploring, navigating...\nThe course introduces concepts, methods, and technologies relevant to design and implementation of mobile computing applications. A broad range of topics is covered,from conventional smartphones and tablets, to emerging technologies.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for the course the student must have:\nA bachelor's degree of 180 creditsObject-oriented programming (7,5 credits) or equivalent - At least one of the following or equivalent (7,5 credits):TIA100 Human-Centred DesignTIA104 Interaction Design MethodologyTIA106 Graphical InterfacesTIA243 Designing User ExperiencesTIG095 Human-Computer Interaction\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "20 November 2024"
+    }
+  },
+  {
+    "course_code": "DIT071",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/network-security-dit071",
+      "international_website": "/en/study-gothenburg/network-security-dit071",
+      "course_name": "Network Security",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "24 Mar 2025",
+      "duration_end": "8 Jun 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86079",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT071",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "Why is it possible to break into networked computer systems? What weaknesses are used? And what makes one protocol more secure than another? This course answers these questions and more. We begin the course by looking at weaknesses that have plagued networked systems for years. We then continue with countermeasures like firewalls and security protocols such as SSL, SSH and IPsec and investigate in detail what makes them secure. The course also gives a survey of cryptographic tools and explains how they can be utilized in protocols and applications, for example how to provide secure user authentication over a public network.\nKnowledge about possible threats and countermeasures is important not only for the network security specialist but also for application programmers and everyone else who wants to understand what level of security a system and an application can offer. By knowing the problems, future systems can be designed to be much more secure and reliable than today.\nThe course covers many topics related to communications and network security:\nNetwork attacks, encryption and random number generation\nAnalysis of weaknesses and attacks against common protocols such as TCP, UDP, IP, and ICMP. Denial of service (DOS) attacks. Scanning and operating system fingerprinting.\nAccess control, authentication mechanisms, passwords, Radius, AAA, PKI, key distribution, Kerberos\nIdentity management, certificates, X.509, revocation, smart cards, LDAP, OCSP\nSecurity protocols such as IPSec , SSL and SSH\nSecurity in wireless networks, WEP, WPA, IEEE 802.1x, EAP, TKIP\nNetwork design, firewalls, packet filters, proxies, NAT, tunnelling, ingress and egress filtering\nVirtual private networks (VPN), tunnelling protocols, segmentation and remote access\nLogs, alarms, syslog, SNMP\nLink level security, VLAN technology, security in ARP, DHCP and DNS.\nThe course consists of a series of lectures and laborative exercises. The laborative exercises focus on network scanning, building firewalls and study of common security protocols such as SSL",
+      "prerequisites_and_selection": {
+        "entry_requirements": "Successfully completed two years of studies within the subject Computer Science or equivalent. Specifically, the course DIT420 Computer Communication or equivalent is required. A course in Computer security such as DIT641 is recommended but not required. Applicants must prove their knowledge of English: English 6/English B from Swedish Upper Secondary School or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "30 October 2024"
+    }
+  },
+  {
+    "course_code": "DIT401",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/operativsystem-dit401",
+      "international_website": "/en/study-gothenburg/operating-systems-dit401",
+      "course_name": "Operating Systems",
+      "period": "Autumn 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "1 Sep 2025",
+      "duration_end": "2 Nov 2025",
+      "application_period_start": "17 Mar 2025",
+      "application_period_end": "15 Apr 2025",
+      "application_code": "GU-86038",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT401",
+      "tuition": {
+        "full_education_cost": "17 753 SEK",
+        "first_payment": "17 753 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The course focuses on the design and implementation of operating systems.\nTopics covered include:\nconcurrent processes\nresource management\ndeadlocks\nmemory management techniques\nvirtual memory\nprocessor scheduling\ndisk scheduling\nfile systems\ndistributed file systems\nmicro kernels\nmultiprocessor operating system issues and virtual machines\nExamples or case-studies are provided for all the subjects covered during the course.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "Successfully completed courses corresponding to 60 credits of studies within the subject Computer Science, or equivalent, including the following courses:\na 7.5credits course in machine oriented programming (e.g., DIT151 or equivalent),a 7.5credits course in data structures (e.g., DIT960 or equivalent),a 7.5credits course in programming (e.g., DIT440, DIT012 or equivalent).\nApplicants must prove their knowledge of English: English 6/English B from Swedish Upper Secondary School or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "20 November 2024"
+    }
+  },
+  {
+    "course_code": "DIT362",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/parallell-datorarkitektur-dit362",
+      "international_website": "/en/study-gothenburg/parallel-computer-architecture-dit362",
+      "course_name": "Parallel Computer Architecture",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "20 Jan 2025",
+      "duration_end": "23 Mar 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86029",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT362",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "Power and temperature have joined performance as first-class design goals. High- performance computing platforms now strive for the highest performance/watt. This course looks at the design of current multicore systems with an eye towards how those designs are likely to evolve over the next decade.\nA common thread running through all content parts is a discussion of cost tradeoffs with respect to performance, power, energy, verifiability, programmability, and maintainability. A second unifying theme is the memory bottleneck, and the importance of efficient resource management.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "The course DIT051 Computer Architecture, 7.5 credits, or equivalent, is required.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "23 September 2024"
+    }
+  },
+  {
+    "course_code": "DIT261",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/parallell-funktionell-programmering-dit261",
+      "international_website": "/en/study-gothenburg/parallel-functional-programming-dit261",
+      "course_name": "Parallel Functional Programming",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "24 Mar 2025",
+      "duration_end": "8 Jun 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86062",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT261",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The course introduces the principles and practice of parallel programming in a functional programming language.\nIn this course, the term parallel programming means using multiple hardware cores or processors in order to gain speed. Functional programming is one of the most promising approaches to the problem of how to program in parallel, as the computers around us inevitably become more and more parallel.\nThe course covers approaches to parallel functional programming in both Haskell and Erlang. It covers current research on these topics, and relies heavily on scientific papers as its source materials. However, we stress that the emphasis in the course is practical, rather than theoretical. Several of the lectures are given by leading external experts from both academia and industry.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "Successfully completed two years within the subject Computer Science or equivalent. The course participants must have completed an introductory course in Funtional Programming, preferably using Haskell or Erlang (examples at GU are DIT440 Introduction to Functional Programming and DIT142 Functional Programming). Applicants must prove their knowledge of English: English 6/English B from Swedish Upper Secondary School or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "30 October 2024"
+    }
+  },
+  {
+    "course_code": "PDA679",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/professionellt-larande-i-digitala-miljoer-pda679",
+      "international_website": "/en/study-gothenburg/professional-learning-in-a-digital-world-pda679",
+      "course_name": "Professional learning in a digital world",
+      "period": "Autumn 2024",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "2 Sep 2024",
+      "duration_end": "19 Jan 2025",
+      "application_period_start": "15 Mar 2024",
+      "application_period_end": "15 Apr 2024",
+      "application_code": "GU-19355",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/PDA679",
+      "tuition": {
+        "full_education_cost": "23 000 SEK",
+        "first_payment": "23 000 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "This course focuses on the digital transformation of professional and workplace learning. Aspects like formal and informal forms of learning and work are examined in relation to institutional public and private sectors as well as other emerging professional communities. By focusing on the changing practices of professionals in different areas like engineering, nursing and teaching, the course addresses the various ways that digital technologies reconfigure activities such as training, coaching and professional learning community participation. In addition to theories of digital professional learning in Education and Adult Learning, the course connects to theories in related areas such as Work and Organization Studies and Human Resource Development.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for the course the student must possess a Bachelor's degree with a minimum of 180 higher education credits or an equivalent degree.\nFurthermore, the student must demonstrate proficiency in English equivalent to English B (Swedish upper secondary level) or English 6 (equivalent) with at least a pass, or a valid test of English as a foreign language TOEFL (232 computer based), 575 (paper based) or IELTS with a minimum score of 6.0 in all scores, alternatively a Bachelor's degree from an education offered in English.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits."
+      },
+      "last_modified": "19 December 2024"
+    }
+  },
+  {
+    "course_code": "DIT231",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/programspraksteknik-dit231",
+      "international_website": "/en/study-gothenburg/programming-language-technology-dit231",
+      "course_name": "Programming Language Technology",
+      "period": "Autumn 2024",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "4 Nov 2024",
+      "duration_end": "19 Jan 2025",
+      "application_period_start": "15 Mar 2024",
+      "application_period_end": "15 Apr 2024",
+      "application_code": "GU-18659",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT231",
+      "tuition": {
+        "full_education_cost": "19 250 SEK",
+        "first_payment": "19 250 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The aim of the course is to give understanding of how programming languages are designed, documented, and implemented.\nThe course covers the basic techniques and tools needed to write interpreters, and gives a summary introduction to compilation as well.\nThose who have passed the course should be able to: Define the lexical structure of programming languages by using regular expressions, explain the functioning of finite automata, and implement lexical analysers by using standard tools. Define the syntax of programming languages by using context-free grammars, explain the principles of LL and LR parsing, and implement parsers by using standard tools. Define and implement abstract syntax. Master the technique of syntax-directed translation and its efficient implementation in their chosen programming language. Formulate typing rules and implement type checkers. Formulate operational semantic rules and implement interpreters. Write simple code generators.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "The requirements for the course is to have successfully completed courses corresponding to 60 credits in the subject of Computer Science, including\n7.5 credits in programming (for example DIT142 Functional programming, DIT952 Objektorienterad programmering and design, or equivalent);\n7.5 credits in data structures (for example DIT960 Data structures, DIT725 Logic, algorithms and data structures or equivalent).\nEnglish: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits."
+      },
+      "last_modified": "19 November 2024"
+    }
+  },
+  {
+    "course_code": "DIT176",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/prototyping-for-interaktionsdesign-dit176",
+      "international_website": "/en/study-gothenburg/prototyping-in-interaction-design-dit176",
+      "course_name": "Prototyping in interaction design",
+      "period": "Autumn 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "1 Sep 2025",
+      "duration_end": "2 Nov 2025",
+      "application_period_start": "17 Mar 2025",
+      "application_period_end": "15 Apr 2025",
+      "application_code": "GU-86046",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT176",
+      "tuition": {
+        "full_education_cost": "17 753 SEK",
+        "first_payment": "17 753 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The course gives an introduction to, and practice in, creation of different types of prototypes in Interaction Design. The contents cover both physical prototypes (e.g. paper prototypes, prototyping through controllers and micro-controllers, and prototyping through tinkering and physical modelling) and digital, screen-based prototypes (sketching and video prototypes). The course also gives an understanding of what to test with different prototypes, and when.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for the course the student must have a Bachelor degree of 180 credits. Additionally, a course in Human - computer interaction, 7.5 credits, is required. Applicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "20 November 2024"
+    }
+  },
+  {
+    "course_code": "DIT843",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/mjukvarukvalitetsakring-och-testning-dit843",
+      "international_website": "/en/study-gothenburg/quality-assurance-and-testing-dit843",
+      "course_name": "Quality Assurance and Testing",
+      "period": "Autumn 2024",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "4 Nov 2024",
+      "duration_end": "19 Jan 2025",
+      "application_period_start": "15 Mar 2024",
+      "application_period_end": "15 Apr 2024",
+      "application_code": "GU-18674",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT843",
+      "tuition": {
+        "full_education_cost": "19 250 SEK",
+        "first_payment": "19 250 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "During this course the students will address the following content:\n- Definitions of software quality assurance, quality attributes, software metrics and models in quality management, internal quality and external quality;\n- Definitions and differences between software verification and validation approaches;\n- Definitions and practical application of software testing techniques and approaches related to test planning, design, execution and analysis.\nThe course will prepare the students to work as quality or test engineers (or managers) in software development organizations.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for the course, the student should have a bachelor´s degree in Software Engineering, Computer Science, Computer Engineering, Information Technology, Information Systems, or equivalent. In addition, the student should have completed courses in:\n- Programming (e.g. DIT042 Object-oriented Programming, DIT012 Imperative Programming with Basic Object-orientation, DIT143 Functional Programming or equivalent) and- Practical software development or software engineering project (e.g. DIT212 Objectoriented programming project, or DIT543 Software Engineering Project).\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits."
+      },
+      "last_modified": "29 August 2024"
+    }
+  },
+  {
+    "course_code": "DIT162",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/realtidssystem-dit162",
+      "international_website": "/en/study-gothenburg/real-time-systems-dit162",
+      "course_name": "Real-Time Systems",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "20 Jan 2025",
+      "duration_end": "23 Mar 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86031",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT162",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "This course is intended to give basic knowledge about methods for the design and analysis of real-time systems. Examples of real-time systems are control systems for cars, aircraft and space vehicles as well as computer games and multimedia applications.\nAn embedded system is a computer system designed to perform one or a few dedicated functions. It is embedded in the sense that it is part of a complete device, often including electrical hardware and mechanical parts. For reasons of safety and usability, some embedded systems have strict constraints on non-functional behavior such as computational delay and periodicity. Such systems are referred to as real-time systems. Examples of real-time systems are control systems for cars, aircraft and space vehicles as well as computer games and multimedia applications. This course is intended to give basic knowledge about methods for the design and analysis of real-time systems",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible to the course, the student should have completed the following courses, or equivalent:\n- DIT391 Principles of Concurrent Programming, 7.5 credits- DIT401 Operating Systems, 7.5 credits- DIT151 Machine Oriented Programming, 7.5 credits",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "30 October 2024"
+    }
+  },
+  {
+    "course_code": "DIT265",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/mjukvaruevolutionsprojekt-dit265",
+      "international_website": "/en/study-gothenburg/software-evolution-project-dit265",
+      "course_name": "Software Evolution Project",
+      "period": "Autumn 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "1 Sep 2025",
+      "duration_end": "18 Jan 2026",
+      "application_period_start": "17 Mar 2025",
+      "application_period_end": "15 Apr 2025",
+      "application_code": "GU-86041",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT265",
+      "tuition": {
+        "full_education_cost": "35 505 SEK",
+        "first_payment": "35 505 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The purpose of this course is to familiarise the student with situations, activities, and techniques typical for software evolution, such as adding a new feature, refactoring, and so on. Furthermore, students learn to plan, implement, and reflect on software evolution scenarios and improvements.\nThe course consist of a series of group milestones, individual assignments, and supervision meetings during the semester. Groups and teachers agree on a software evolution scenario to be performed as a project during the course. In additon, lectures and workshops are used to provide the student with methods and knowledge about software evolution",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligable for this course, the student needs to have successfully completed the following requirements, or equivalent: A bachelor degree in Software Engineering, Computer Science, Information Technology, Information Systems, or equivalent Advanced Requirements Engineering (7.5 credits) Quality Assurance and Testing (7.5 credits) Applicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "20 November 2024"
+    }
+  },
+  {
+    "course_code": "DIT863",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/statistiska-metoder-for-data-science-dit863",
+      "international_website": "/en/study-gothenburg/statistical-methods-for-data-science-dit863",
+      "course_name": "Statistical Methods for Data Science",
+      "period": "Autumn 2024",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "4 Nov 2024",
+      "duration_end": "19 Jan 2025",
+      "application_period_start": "15 Mar 2024",
+      "application_period_end": "15 Apr 2024",
+      "application_code": "GU-18675",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT863",
+      "tuition": {
+        "full_education_cost": "19 250 SEK",
+        "first_payment": "19 250 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The course gives an introduction to the theory of probability and statistics, data analysis using descriptive statistics and data visualization, and applications of probabilistic modeling in data science.\nIn the course, the following broad areas will be covered: data analysis including descriptive statistics and data visualization probability theory including basic probability calculations, random variables, distributions statistical methods including point and interval estimates, hypothesis testing, regression probabilistic models in data science applications, for instance, Naive Bayes classifiers and topic models for text or Hidden Markov Models for sequences",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible to the course, the student should have a Bachelor?s degree in any subject, or have successfully completed 90 credits of studies in computer science, software engineering, or equivalent. Specifically, the course requires the following: at least 15 credits of successfully completed courses in programming, one of the courses DIT852 Introduction to Data Science or equivalent, or DIT856 Applied Mathematical Thinking or equivalent. Alternatively at least 15 credits of mathematics or mathematical statistics. Applicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits."
+      },
+      "last_modified": "12 August 2024"
+    }
+  },
+  {
+    "course_code": "DIT056",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/hallbar-databehandling-dit056",
+      "international_website": "/en/study-gothenburg/sustainable-computing-dit056",
+      "course_name": "Sustainable computing",
+      "period": "Autumn 2024",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "4 Nov 2024",
+      "duration_end": "19 Jan 2025",
+      "application_period_start": "15 Mar 2024",
+      "application_period_end": "15 Apr 2024",
+      "application_code": "GU-18651",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT056",
+      "tuition": {
+        "full_education_cost": "19 250 SEK",
+        "first_payment": "19 250 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The aim of the course is to make students aware of the importance of sustainability in computing and to show techniques to achieve it at the different levels of a computer system. The course is intended to give an overview of the energy efficiency aspects of computer systems and computing, ranging from the electronic circuits up to the applications for systems ranging from small IoT devices to large data centers. For instance, students will learn about approaches to measuring and estimating the energy consumption of different architectural components as well as architecture and software techniques to save energy in the system.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "Students must have completed 7.5 credits in computer architecture (e.g., DIT051 Computer Architecture, or equivalent). Applicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits."
+      },
+      "last_modified": "6 September 2024"
+    }
+  },
+  {
+    "course_code": "DIT107",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/tangible-interaction-dit107",
+      "international_website": "/en/study-gothenburg/tangible-interaction-dit107",
+      "course_name": "Tangible interaction",
+      "period": "Spring 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "20 Jan 2025",
+      "duration_end": "23 Mar 2025",
+      "application_period_start": "16 Sep 2024",
+      "application_period_end": "15 Oct 2024",
+      "application_code": "GU-86049",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT107",
+      "tuition": {
+        "full_education_cost": "19 253 SEK",
+        "first_payment": "19 253 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "Tangible interaction is based on physical interfaces that are either specifically developed for one system or for those that in new ways, allows interaction with computer systems.\nThe course puts the skills and knowledge acquired in the prototyping course into an applied context. Tangible interaction deals with computational technology and services and offers both theoretical and practical educational modalities. Lectures will present theory and development of tangible interaction and draws from research and commercial practice. Technologies such as sensors, actuators and smart materials are presented from a perspective of human interaction and use.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for the course the student must have a Bachelor degree of 180 hec. Special requirements are the course TIA108 Prototyping in Interaction Design 7.5 credits and a course in Human-Computer Interaction (TIG095) 7.5 credits or the equivalent.\nTo be eligible for this course as a programme student in the Computer Science Bachelor és Programme, N1COS, the student must have passed at least 90 credits in programme courses and the addditional courses TIG095 Human Computer Interaction 7.5 credits and TIA108 Prototyping in Interaction Design 7.5 credits or the equivalent.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "23 September 2024"
+    }
+  },
+  {
+    "course_code": "DIT147",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/teknisk-rapportskrivning-inom-datorer-natverk-och-system-dit147",
+      "international_website": "/en/study-gothenburg/technical-writing-in-computer-systems-and-networks-dit147",
+      "course_name": "Technical writing in computer systems and networks",
+      "period": "Autumn 2024",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "2 Sep 2024",
+      "duration_end": "3 Nov 2024",
+      "application_period_start": "15 Mar 2024",
+      "application_period_end": "15 Apr 2024",
+      "application_code": "GU-18656",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT147",
+      "tuition": {
+        "full_education_cost": "19 250 SEK",
+        "first_payment": "19 250 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "During the course the students will get the chance to examine the current state of the art in a specific research area and write a report about it. The report should be based on published works within a research area connected to the field of computer systems and networks. Each research area and a number of related topics are presented to the student in introductory lectures.\nThe students will be working in groups, each group will be allocated a topic for the report that is to be written. The report shall be presented orally at a seminar. The students are also required to review publications and the reports of other groups. There will be lectures, seminars and workshops in the areas of scientific writing, reviewing and presentation as well as in ethics.",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible for the course the student must successfully have completed 120 credits of studies within computer science or equivalent, including the following courses (or other equivalent courses):\n- DIT423 Computer communication,- DIT401 Operating Systems- DIT240 Distributed Systems.\nThe studentmust also prove the following knowledge of English:\nEnglish 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits."
+      },
+      "last_modified": "2 September 2024"
+    }
+  },
+  {
+    "course_code": "DIT235",
+    "website": {
+      "svenska": "/studera/hitta-utbildning/typer-for-program-och-bevis-dit235",
+      "international_website": "/en/study-gothenburg/types-for-programs-and-proofs-dit235",
+      "course_name": "Types for Programs and Proofs",
+      "period": "Autumn 2025",
+      "study_pace": "50%",
+      "time": "Day",
+      "location": "Göteborg",
+      "study_form": "Campus",
+      "language": "English",
+      "duration_start": "1 Sep 2025",
+      "duration_end": "2 Nov 2025",
+      "application_period_start": "17 Mar 2025",
+      "application_period_end": "15 Apr 2025",
+      "application_code": "GU-86034",
+      "syllabus": "https://kursplaner.gu.se/pdf/kurs/en/DIT235",
+      "tuition": {
+        "full_education_cost": "17 753 SEK",
+        "first_payment": "17 753 SEK",
+        "fee_info": "No fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.",
+        "tuition_link": "https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees"
+      },
+      "about": "The development of powerful type systems is an important aspect of modern programming language design. This course provides an introduction to this area. In particular it introduces the notion of dependent type, a type which can depend on (is indexed by) values of another type, for example, the type of vectors indexed by its length. Dependent types are versatile. Through the Curry-Howard identification of proposition and types virtually any property of a program can be expressed using dependent types. The aim of the course is to give a solid and broad foundation in type systems for programming languages, and also give examples of type-based technologies in computer science.\nintroduction to lambda calculus and simple type theory\nintroduction to operational semantics and type systems\ndependent type theory\nthe Curry-Howard identification of propositions as types\nprogramming in Agda, a proof assistant\npresentation of advanced topics in type systems",
+      "prerequisites_and_selection": {
+        "entry_requirements": "To be eligible to the course, the student should have successfully completed 120 credits of studies in computer science or mathematics, or equivalent. Specifically, a successfully completed 7.5 credit course in discrete mathematics (e.g., DIT980 Discrete Mathematics for Computer Scientists, or equivalent) and a successfully completed 7,5 credit course in functional programming (e.g. DIT143 Functional Programming, or equivalent is required.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+        "selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits"
+      },
+      "last_modified": "20 November 2024"
+    }
+  }
+]
