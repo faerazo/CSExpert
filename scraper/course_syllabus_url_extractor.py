@@ -17,25 +17,23 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-# List of search URLs for different course prefixes
+# # List of search URLs for different course prefixes
 SEARCH_URLS = [
-    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=360&q=dit0",
-    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=360&q=dit1",
-    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=360&q=dit2",
-    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=360&q=dit3",
-    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=360&q=dit4",
-    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=360&q=dit5",
-    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=360&q=dit6",
-    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=360&q=dit7",
-    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=360&q=dit8",
-    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=360&q=dit9",
-    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=100&q=msg",
-    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=100&q=msa",
-    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=100&q=mma",
+    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=200&q=dit0",
+    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=200&q=dit1",
+    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=200&q=dit2",
+    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=200&q=dit3",
+    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=200&q=dit4",
+    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=200&q=dit5",
+    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=200&q=dit6",
+    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=200&q=dit7",
+    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=200&q=dit8",
+    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=200&q=dit9",
+    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=200&q=msg",
+    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=200&q=msa",
+    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=200&q=mma",
     "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=200&q=tia",
-    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=2000&q=lt"
-    
-
+    "https://www.gu.se/en/study-gothenburg/study-options/find-syllabus-and-reading-list?hits=200&q=lt"
 ]
 
 # Base URL for the university website
@@ -92,16 +90,21 @@ def fetch_webpage_content(url: str) -> Optional[str]:
 def extract_course_urls(html_content: str) -> List[str]:
     """
     Extract course URLs from the HTML content using BeautifulSoup.
+    Filter out URLs containing "reading-list".
     
     Args:
         html_content: HTML content of the page
         
     Returns:
-        List[str]: List of extracted URLs
+        List[str]: List of extracted URLs (excluding reading list URLs)
     """
     soup = BeautifulSoup(html_content, 'html.parser')
     course_links = soup.find_all('a', class_='link link--large u-font-weight-700')
-    return [link.get('href') for link in course_links]
+    urls = [link.get('href') for link in course_links]
+    
+    # Filter out reading list URLs
+    filtered_urls = [url for url in urls if "reading-list" not in url]
+    return filtered_urls
 
 
 def format_url(url: str, base_url: str = BASE_URL) -> str:
@@ -120,7 +123,7 @@ def format_url(url: str, base_url: str = BASE_URL) -> str:
     return f"{base_url}{url}"
 
 
-def save_urls_to_file(urls: List[str], filename: str = 'course_syllabus_urls_formatted.txt') -> None:
+def save_urls_to_file(urls: List[str], filename: str = 'data/urls/course_syllabus_urls.txt') -> None:
     """
     Save the formatted URLs to a text file.
     
