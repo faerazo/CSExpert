@@ -1,0 +1,69 @@
+[
+  {
+    "program_code": "N1SOF",
+    "course_codes": [
+      "DIT008",
+      "DIT009",
+      "DIT034",
+      "DIT038",
+      "DIT044",
+      "DIT047",
+      "DIT096",
+      "DIT099",
+      "DIT114",
+      "DIT183",
+      "DIT343",
+      "DIT349",
+      "DIT357",
+      "DIT837"
+    ]
+  },
+  {
+    "program_code": "N2ADS",
+    "course_codes": [
+      "DIT052",
+      "DIT096",
+      "DIT117",
+      "DIT183",
+      "DIT285",
+      "DIT634",
+      "DIT969",
+      "MSG501"
+    ]
+  },
+  {
+    "program_code": "N2COS",
+    "course_codes": [
+      "DIT052",
+      "DIT117",
+      "DIT285",
+      "DIT408",
+      "DIT487",
+      "DIT592",
+      "DIT969"
+    ]
+  },
+  {
+    "program_code": "N2GDT",
+    "course_codes": [
+      "DIT052",
+      "DIT285",
+      "DIT531"
+    ]
+  },
+  {
+    "program_code": "N2SOF",
+    "course_codes": [
+      "DIT005",
+      "DIT052",
+      "DIT096",
+      "DIT117",
+      "DIT285",
+      "DIT408",
+      "DIT487",
+      "DIT531",
+      "DIT592",
+      "DIT841"
+    ]
+  }
+]
