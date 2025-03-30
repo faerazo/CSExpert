@@ -1,3 +1,4 @@
 /data/syllabi_pdfs
 /data/syllabi_pdfs_backup
-*.DS_Store
+.DS_Store
+/data/.DS_Store
