@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "source_document": "DIT865.pdf",
+    "course_code": "DIT865",
+    "course_title": "Applied Machine Learning",
+    "swedish_title": "Tillämpad maskininlärning",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": [
+      "Software Engineering",
+      "Data Science",
+      "Computer Science"
+    ],
+    "specialization": "A1F",
+    "language_of_instruction": "English",
+    "confirmation_date": "2017-01-05",
+    "valid_from_date": "2018-01-15",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Software Engineering and Management Master's Programme (N2SOF)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2017-01-05 to be valid from 2018-01-15, spring semester of 2018.",
+    "Position in the educational system": "The course is offered within the Applied Data Science Master's Programme, where it is compulsory. The course is also a single subject course at the University of Gothenburg.\n\nThe course can be part of the following programmes: 1) Computer Science, Master's Programme (N2COS), 2) Applied Data Science Master's Programme (N2ADS) and 3) Software Engineering and Management Master's Programme (N2SOF)",
+    "Entry requirements": "To be eligible to the course, the student should have a Bachelor's degree in a subject relevant to Data Science. In addition, the course requires\n\n• at least 15 credits of programming,\n• one of the courses DIT851 Introduction to Data Science, 7.5 hec or DIT855 Applied Mathematical Thinking, 7.5 hec, alternatively at least 7.5 hec of mathematics,\n• the course DIT861 Statistical Methods for Data Science, 7.5 hec, or at least 7.5 credits of probability theory, statistics, or mathematical statistics.\n\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\n\nKnowledge and understanding\n• describe the most common types of machine learning problems,\n• explain what types of problems can be addressed by machine learning, and the limitations of machine learning\n• account for why it is important to have informative data and features for the success of machine learning systems,\n• explain on a high level how different machine learning models generalize from training examples.\n\nSkills and abilities\n• apply a machine learning toolkit in an application relevant to the data science area,\n• write the code to implement some machine learning algorithms,\n• apply evaluation methods to assess the quality of a machine learning system, and compare different machine learning systems.\n\nJudgement and approach\n• discuss the advantages and limitations of different machine learning models with respect to a given task,\n• reason about what type of information or features could be useful in a machine learning task,\n• select the appropriate evaluation methodology for a machine learning system and motivate this choice,\n• reason about ethical questions pertaining to machine learning systems.",
+    "Course content": "The course gives an introduction to machine learning techniques and theory, with a focus on its use in practical applications. During the course, a selection of topics will be covered in supervised learning, such as linear models for regression and classification, or nonlinear models such as neural networks, and in unsupervised learning such as clustering. The use cases and limitations of these algorithms will be discussed, and their implementation will be investigated in programming assignments. Methodological questions pertaining to the evaluation of machine learning systems will also be discussed, as well as some of the ethical questions that can arise when applying machine learning technologies.\n\nThere will be a strong emphasis on the real-world context in which machine learning systems are used. The use of machine learning components in practical applications will be exemplified, and realistic scenarios will be studied in application areas such as e-commerce, business intelligence, natural language processing, image processing, and bioinformatics. The importance of the design and selection of features, and their reliability, will be discussed.",
+    "Sub-courses": "1. Written examination (Skriftlig tentamen), 4 higher education credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n\n2. Written assignments (Skriftliga inlämningsuppgifter), 3.5 higher education credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)",
+    "Form of teaching": "Lectures, exercise sessions, computer lab sessions.",
+    "Assessment": "The course is examined by an individual written exam carried out in an examination hall, as well as mandatory written assignments submitted as written reports, some of which will be carried out individually and others in groups of normally 2-4 students.\n\nIf a student, who has failed the same examined component twice, wishes to change examiner before the next examination, a written application shall be sent to the department responsible for the course and shall be granted unless there are special reasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\n\nIn cases where a course has been discontinued or has undergone major changes, the student shall normally be guaranteed at least three examination occasions (including the ordinary examination) during a period of at least one year from the last time the course was given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nIn order to be awarded a Pass (G) for a full course, the grade Pass must be obtained on both the sub-courses.To be awarded Pass with Distinction (VG) for the full course, the grade VG must be obtained on both the sub-courses.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between teachers and student representatives. Further, an anonymous questionnaire is used to ensure written information. The outcome of the evaluations serves to improve the course by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "Course literature to be announced the latest 8 weeks prior to the start of the course."
+  }
+}

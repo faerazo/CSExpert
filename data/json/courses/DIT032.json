@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source_document": "DIT032.pdf",
+    "course_code": "DIT032",
+    "course_title": "Data Management",
+    "swedish_title": "Systematisk Datahantering",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "First Cycle",
+    "main_field_of_study": "Software Engineering",
+    "specialization": "G1N, First cycle, has only upper-secondary level entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2017-01-05",
+    "valid_from_date": "2020-01-20",
+    "programmes": [
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Software Engineering and Management Bachelor's Programme (N1SOF)",
+      "Software Engineering and Management, Bachelor's Programme (N1SEM)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2017-01-05 and was last revised on 2019-02-07 to be valid from 2020-01-\n20, spring semester of 2020.",
+    "Position in the educational system": "The course is a compulsory course in the N1SOF Software Engineering and\nManagement Bachelor's Programme. The course is also a single subject course at the\nUniversity of Gothenburg.\nThe course can be part of the following programmes: 1) Applied Data Science Master's\nProgramme (N2ADS), 2) Software Engineering and Management Bachelor's\nProgramme (N1SOF) and 3) Software Engineering and Management, Bachelor's\nProgramme (N1SEM)",
+    "Entry requirements": "General entrance requirements for university studies and the Swedish upper secondary\ncourses English B, Mathematics C or English 6, Mathematics 3b/3c or equivalent.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• explain the differences between data, information and knowledge\n• explain basic concepts: relational data model, non-relational data model, entity-\nrelationship model, relational database design, relational algebra and the database\nlanguage SQL\n• explain the ideas of distributed and NoSQL databases, and contrast them to the\nrelational model\nCompetence and skills\n• construct an algorithm for querying and filtering data based on predefined criteria\n• manage the process of collecting and representing data in a database\n• build a data model (entity-relationship model)\n• create database tables, and formulate database queries in SQL\n• experiment with data technologies such as big data and open data\n• manage and query NoSQL database systems\nJudgement and approach\n• assess the quality of data and correctness of data models\n• evaluate the applicability of data management techniques for a given purpose,\nespecially with respect to comparing monolithic and distributed, and relational and\nNoSQL database management systems",
+    "Course content": "The course introduces the student to the role of data, information, and knowledge in\nsoftware engineering. The course has two general themes: (1) fundamental concepts\nrelated to data in software engineering; (2) basic principles of database systems as seen\nby users, application programmers and database administrators.\nThe course introduces concepts and techniques related to working with data,\ninformation and knowledge, although the focus is mostly on data and information.\nTechniques related to extraction, representation, modeling, and access, and\nvisualization of data are discussed.\nThe course then introduces the role of databases and database management systems,\ncovering topics such as algebra and the relational database, logical and physical design\nof databases, and the use of SQL. This includes programming in SQL, from the\nperspective of a user querying or modifying an existing database, by a database\ndesigner, and by an application programmer invoking SQL from a host language.\nFurther, the student learns to query NoSQL databases, and contrast them to the\nrelational model. The course also covers different data models such as XML, RDF, and\nJSON.",
+    "Sub-courses": "1. Written exam (Tentamen), 4.5 credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n2. Assignments (Inlämningsuppgifter), 3 credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "The teaching consists of lectures, group work, exercises, as well as supervision in\nconnection to the exercises.\nLanguage of instruction: English",
+    "Assessment": "The course is examined by an individual written exam carried out in an examination hall\nat the end of course and written assignments normally carried out in groups of 2-3\nstudents.\nThe sub-course assignments is examined on the basis of solutions to compulsory\nproblems handed in during the course and on the basis of individual contribution to the\ngroup work.\nThe student is required to complete written self- and peer-assessment forms during the\ncourse which will be part of the assessment of the student's individual contribution to\nthe project.\nThe sub-course Assignments is reexamined by individual assignments and an individual\noral examination.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nA Pass grade (G) for the entire course requires a Pass grade for all sub-courses.To be\nawarded Pass with Distinction (VG) for a full course, the student must, in addition,\nreceive a VG on the sub-course written exam.",
+    "Course evaluation": "The course is evaluated through a meeting after the course between teachers and student\nrepresentatives. Further, an anonymous questionnaire is used to ensure written\ninformation. The outcome of the evaluations serves to improve the course by indicating\nwhich parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course."
+  }
+}

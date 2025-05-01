@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "source_document": "DIT542.pdf",
+    "course_code": "DIT542",
+    "course_title": "Advanced Software Architecting",
+    "swedish_title": "Advanced Software Architecting",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "-",
+    "specialization": "A1F, Second cycle, has second-cycle\ncourse/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2010-03-09",
+    "valid_from_date": "2010-01-18",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Software Engineering and Management, Master's Programme (N2SEM)",
+      "Software Engineering Master's Programme (N2SOM)",
+      "No translation available (NDATM)",
+      "Software Engineering and Management (ISOFK)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2010-03-09 and was\nlast revised on 2010-03-19 to be valid from 2010-01-18.",
+    "Position in the educational system": "The course is a part of Computer Science Master's programme and an elective course at\nthe University of Gothenburg.\nThe level for the course in relation to degree requirements is Master's degree, code A1F.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Software Engineering and Management, Master's Programme\n(N2SEM), 3) Software Engineering Master's Programme (N2SOM), 4) No translation\navailable (NDATM) and 5) Software Engineering and Management (ISOFK)",
+    "Entry requirements": "To be eligible for the course\nstudents should have completed two years of studies within the subject Computer\nScience or equivalent. The course DIT540 Software Architecture is required.",
+    "Learning outcomes": "Knowledge and understanding\nAfter completing the course the student is expected to be able to:\n• Understand the importance of predictive architecting early in the system life-cycle\n• Understand the applicability of model-based approaches\n• Understand the intentionality of models throughout the system life-cycle\n• Understand the Characteristics and challenges of architecting system-of-systems and\nultra-large-scale systems\n• Distinguish between software architecture; system architecture; and run-time\narchitectures.\nSkills and abilities\nAfter completing the course the student is expected to be able to:\n• Describe inter-dependencies among quality-attributes\n• Assess an architecture quantitatively and qualitatively\n• Develop architectural models using ADLs,\n• Conduct incremental and multi-fidelity architecture-centric modeling; verification;\nand validation\nJudgement and approach\nAfter completing the course the student is expected to be able to:\n• Identify critical aspects of an architecture that requires; or benefits; to be modeled;\nverified and validated\n• Trade-off architectural decisions and quality attributes\n• Assess strengths and weaknesses of model-based approaches and methods",
+    "Course content": "The course focuses on principles and methods that aid the designer/developer/architect\nto gain increased confidence in the architectural design. This includes quantitative\nmodeling using architecture description languages such as AADL and MARTE, and\nqualitative architecture evaluation methods, e.g., ATAM. Finally, the course will also\naddress the specific challenges related to scale, dynamics, and heterogeneity as found in\nsystem of systems, and ultra-large scale systems.",
+    "Sub-courses": "",
+    "Form of teaching": "Language of instruction: English",
+    "Assessment": "The course is examined by an individual written exam at the end of course. A written\nindividual essay must be approved and presented at a seminar. Participate in other\nstudents' presentation. To pass the course, the projects must also be approved. A\nstudent who has failed a test twice has the right to change examiners, if it is possible. A\nwritten application should be sent to the Department. In cases where a course has been\ndiscontinued or major changes have been made a student should be guaranteed at least\nthree examination occasions (including the ordinary examination occasion) during a\ntime of at least one year from the last time the course was given.",
+    "Grades": "The grading scale comprises: Fail, Pass, Pass with distinction.\nIn order to be awarded the grade Pass for a full course, the exam has to be approved. In\norder to get Pass with Distinction as final grade, the exam has to be awarded with Pass\nwith Distinction. In both cases the assignments and project have to be approved.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire can be used\nto ensure written information. The outcome of the evaluations serves to improve the\ncourse by indication which parts could be added, improved, changed or removed.",
+    "Additional information": ""
+  }
+}

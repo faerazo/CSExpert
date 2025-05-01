@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source_document": "DIT045.pdf",
+    "course_code": "DIT045",
+    "course_title": "Requirements and User Experience",
+    "swedish_title": "Kravhantering och användarupplevelse",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "First Cycle",
+    "main_field_of_study": "Software Engineering",
+    "specialization": "G1F, First Cycle, has less than 60 credits in first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2017-02-13",
+    "valid_from_date": "2018-08-19",
+    "programmes": [
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Software Engineering and Management Bachelor's Programme (N1SOF)",
+      "Software Engineering and Management, Bachelor's Programme (N1SEM)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2017-02-13 and was last revised on 2017-12-19 to be valid from 2018-08-\n19, autumn semester of 2018.",
+    "Position in the educational system": "The course is a compulsory course in the Software Engineering and Management\nBachelor's Programme. The course is also a single subject course at the University of\nGothenburg.\nThe course can be part of the following programmes: 1) Applied Data Science Master's\nProgramme (N2ADS), 2) Software Engineering and Management Bachelor's\nProgramme (N1SOF) and 3) Software Engineering and Management, Bachelor's\nProgramme (N1SEM)",
+    "Entry requirements": "To be eligible for this course, students must have completed a 7.5 credits course in\nprogramming (e.g., DIT042 Object-oriented programming, or equivalent).\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\n\nKnowledge and understanding\n• describe the process of requirements elicitation, evaluation and prioritization,\ndocumentation, validation and development of software requirements,\n• state techniques to acquire and model user demands,\n• explain key techniques to account for usability in software products,\n\nCompetence and skills\n• identify and specify requirements by means of, for instance, scenario-based\ntechniques or goal-oriented techniques,\n• apply techniques to identify personas, scenarios and user stories,\n• design and implement graphical user interfaces according to usability principles,\n\nJudgement and approach\n• choose an appropriate technique to evaluate the usability of a software product,\n• choose and motivate appropriate methods for involving users in the design process.",
+    "Course content": "The course provides students with an introduction to the field of requirements\nengineering and user experience. It starts by providing a solid foundation by defining\nkey concepts like goals, requirements and specifications. It also presents the process of\nidentifying and documenting the requirements of a software product. Emphasis is also\ngiven to quality requirements.\nThe second part of the course focuses on usability aspects. The course will focus on\nintegrating the requirements gathered in the first part with more design-oriented\nrequirements gathered as part of a user-centric design process (for example, via\ninterviews and the use of personas). The course also presents elements of visual design\nand information design, for instance, how to include aspects of user experience in the\ndesign of a software product. Further, the course touches upon methods of prototyping\n(for example, digital mockups) and presents some techniques to evaluate the usability of\na software product (for instance, via user studies). Finally, the course will provide\nstudents with hands-on experience in designing graphical user interfaces (GUI).",
+    "Sub-courses": "1. Written examination (Skriftlig tentamen), 4.5 higher education credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n2. Assignments (Inlämningsuppgifter), 3 higher education credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "The teaching consists of lectures, group work, exercises, as well as supervision in\nconnection to the exercises.",
+    "Assessment": "The course is examined by an individual written exam carried out in an examination hall\nat the end of course and written assignments normally carried out in groups of 2–3\nstudents. The assignments part is examined on the basis of solutions to compulsory\nproblems handed in during the course and on the basis of individual contribution to the\ngroup work.\nStudents are required to complete written self- and peer-assessment forms during the\ncourse which will be part of the assessment of the student's individual contribution to\nthe project.\nRetake examinations of the assignments part consist of written individual assignments.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nA Pass grade (G) for the entire course requires at least a Pass grade for all sub-courses.\nTo be awarded Pass with Distinction (VG) for a full course, the student must, in\naddition, receive a VG on the sub-course Written examination.",
+    "Course evaluation": "The course is evaluated through a meeting after the course between teachers and student\nrepresentatives. Further, an anonymous questionnaire is used to ensure written\ninformation. The outcome of the evaluations serves to improve the course by indicating\nwhich parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course."
+  }
+}

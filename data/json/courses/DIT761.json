@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "source_document": "DIT761.pdf",
+    "course_code": "DIT761",
+    "course_title": "Frontiers of Programming Language Technology",
+    "swedish_title": "Frontiers of Programming Language Technology, 7,5 högskolepoäng",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science-Algorithms and Logic",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2012-12-10",
+    "valid_from_date": "2013-09-02",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2012-12-10 to be valid from 2013-09-02.",
+    "Position in the educational system": "The course is a part of the Computer Science Master's Programme and a single-subject\ncourse at the University of Gothenburg.\nThe course can be part of the following programme: 1) Computer Science, Master's\nProgramme (N2COS)",
+    "Entry requirements": "The requirement for the course is to have successfully completed two years within the\nsubject Computer Science or equivalent. One of the courses: DIT331 Programming\nParadigms, DIT230 Programming Languages or DIT300 Compiler Construction or an\nequivalent course is required.\nEnglish B level or English proficiency equivalent to IELTS 6.5 no part under 5.5 or\nTOEFL 575 p, TWE score 4.5 is also required.",
+    "Learning outcomes": "After completion of the course the student is expected to be able to:\nKnowledge and understanding\n• make informed choices about the design and use of advanced programming\nlanguage technology\nSkill and abilities\n• critically evaluate new programming languages and tools\n• effectively assimilate and summarise advanced research material.\nJudgement and approach\n• identify the frontiers of research in the area of programming languages",
+    "Course content": "This course aims to give insight into past, present and future programming language\ntechnology, including introduction to the latest cutting edge research, including research\nbeing conducted at Chalmers/University of Gothenburg (GU) in the area.The seminar\npresents an overview of a wide selection of mainstream and experimental programming\nlanguages and programming language technologies, and samples research articles from\nthe most influential programming language conferences, and current research at\nGU/Chalmers.",
+    "Sub-courses": "",
+    "Form of teaching": "Language of instruction: English",
+    "Assessment": "The course includes obligatory seminars and discussions.\nThe course is examined on the basis of individual oral presentations about programming\nlanguages and about recent research papers in the area. The course is also examined by\na project work carried out in a group (normally in pairs) or individually and presented\nat the end of the course.\nA student who has failed the same examination twice has the right to request of the\ndepartment a change of examiner. The request is to be in writing and submitted as soon\nas possible. The department is to grant such a request without delay.\nIn cases where a course has been discontinued or major changes have been made a\nstudent should be guaranteed at least three examination occasions (including the\nordinary examination occasion) during a time of at least one year from the last time the\ncourse was given.",
+    "Grades": "The grading scale comprises: Fail (U), Pass (G), Pass with Distinction (VG).\nTo be awarded the grade Pass (G) for a full course the student must achieve a\nsatisfactory performance in the presentations and the project must be approved. In\naddition the student must attend the obligatory meetings.\nTo be awarded the grade Pass with Distinction (VG) for a full course the student must\nadditionallty fulfil the following requirements.\nFor the presentations: demostrate technical insight ino material presented and\ndemonstrate very good communication and presentation skills. For the project:\ndemonstrate significant contribution to project results which show technical depth or\nnovelty with respect to overall aims of the course. In addition the student must attend\nthe obligatory meetings.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The course runs throughout the whole academic year, with regular seminars and\ndiscussions, occasional exercises, and a finishing with presentations of project work.\nParticipants usually deliver several short presentations during the course, including\npresentations about programming languages, research papers from recent top\nconferences in programming language technology, and their own project work.\nThe course replaces the DIT760 course. The course cannot be included in a degree\nwhich contains DIT760. Neither can the course be included in a degree which is based\non another degree in which the course DIT760 is included.\nThe syllabus corresponds to the syllabus of the Frontiers of Programming Language\nTechnology course at Chalmers."
+  }
+}

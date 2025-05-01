@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "source_document": "DIT500.pdf",
+    "course_code": "DIT500",
+    "course_title": "Magister Thesis in Computer Science",
+    "swedish_title": "Magister Thesis in Computer Science",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "30",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science",
+    "specialization": null,
+    "language_of_instruction": "English",
+    "confirmation_date": "2008-01-31",
+    "valid_from_date": "2008-01-19",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "No translation available (NDATM)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2008-01-31 to be valid\nfrom 2008-01-19.",
+    "Position in the educational system": "The course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS) and 2) No translation available (NDATM)",
+    "Entry requirements": "To be eligible for the course:\n(In the following, higher education credits is abbreviated by hec.)To be eligible for this\ncourse, the equivalent of 210 hec is required (including credits from Bachelor level\ncourses, where applicable), out of which 90 hec (or more) must come from courses\nwithin the Computer Science area, out of which 15 hec (or more) must come from\ncourses on the advanced (Master) level. The topic of the thesis must be preapproved by\nthe thesis examiner, who also decides whether the student has the required prerequisites\nto start the particular thesis project.",
+    "Learning outcomes": "After completing the course the student is expected to be able to:\n• acquire new scientific knowledge through research, i.e., to develop new insights, of a\nmore complex nature, in a purposeful and methodical way, while choosing the right\nlevel of abstraction.\n• design solutions to problems in the area of computer science and computer systems,\naimed at the realisation of new or modified systems of a more complex nature, with\nthe intention of creating value in accordance with predefined requirements.\n• deal with the changeability of requirements through external circumstances or\nadvancing insight.\n• systematically develop and use theories and models, with a critical attitude, and\nconsciously choosing between alternative approaches.\n• document well and present well a substantial project, both in terms of the new\ncontribution, the design choices taken, the basis of the work, and related work.",
+    "Course content": "The course consists in a thesis work, performed individually or in pairs, under\nsupervision of a teacher. The subject of thesis must lie within the area of Computer\nScience. For a specialisation to appear in the degree, the subject of the thesis must lie\nwithin the area of that specialisation, understood in a broad sense. Students will perform\nresearch, theoretical or applied, in parts in collaboration with supervision, and in parts\nindependently. The degree of independence increases during the course. The main\noutcome, and main basis for the grading, is a report, written in English, describing the\nproblem, assumptions, methods, choices, results, evaluation of the work, including the\ncomparison to relevant work external to the thesis. The thesis is also presented in a talk.",
+    "Sub-courses": null,
+    "Form of teaching": "Language of instruction: English",
+    "Assessment": null,
+    "Grades": "The grading scale comprises: Fail, Pass.\nGranting a High Pass requires approval of a second teacher (entitled to be thesis\nexaminer).",
+    "Course evaluation": "null",
+    "Additional information": "More information can be found at the Master thesis homepage of the department, at\nhttp://www.chalmers.se/cse/SV/utbildning/grundutbildning/examensarbeten"
+  }
+}

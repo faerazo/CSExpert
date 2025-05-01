@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "source_document": "DIT341.pdf",
+    "course_code": "DIT341",
+    "course_title": "Web and Mobile Development",
+    "swedish_title": "Webb- och mobilutveckling",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": 7.5,
+    "cycle": "First Cycle",
+    "main_field_of_study": "Software Engineering",
+    "specialization": "G1F, First cycle, has less than 60 credits in first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2019-10-28",
+    "valid_from_date": "2020-08-31",
+    "programmes": [
+      "Computer Science, Bachelor's Programme (N1COS)",
+      "Software Engineering and Management Bachelor's Programme (N1SOF)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2017-12-19 and was last revised on 2019-10-28 to be valid from 2020-08-\n31, autumn semester of 2020.",
+    "Position in the educational system": "The course is compulsory within the Software Engineering and Management Bachelor's\nProgramme.\nThe course can be part of the following programmes: 1) Computer Science, Bachelor's\nProgramme (N1COS), 2) Software Engineering and Management Bachelor's\nProgramme (N1SOF)\nThe course can be part of the following programmes: 1) Computer Science, Bachelor's\nProgramme (N1COS) and 2) Software Engineering and Management Bachelor's\nProgramme (N1SOF)",
+    "Entry requirements": "To be eligible for this course, students must have successfully completed the courses\nDIT042 Object-Oriented Programming, 7.5 credits, and DIT032 Data Management, 7.5\ncredits, or equivalent.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• define and contrast client-side and server-side web and mobile development\n• explain the concept of full-stack development\n• describe the key concepts and methods for web and mobile application\ndevelopment, including session management, database connectivity, asynchronous\nprocessing (AJAX), responsive design\n• explain different programming techniques for developing web and mobile\napplications with dynamic and interactive contents\n• elaborate on basic concepts of distributed systems programming, such as processes\nand concurrency\nCompetence and skills\n• develop Web and mobile applications with dynamic and interactive contents\n• design web layouts with technologies such as HTML, CSS, and JavaScript\n• develop full-stack applications using modern web libraries and frameworks\n• develop mobile cross-platform applications using responsive design\n• handle database connectivity and asynchronous processing\nJudgement and approach\n• reflect on how web and mobile programs are written, and how different components\nintegrate, thus designing software efficiently",
+    "Course content": "This course aims to cover key concepts, technologies and skills for server-side and client-\nside Web and mobile programming, including basic and advanced technologies and\nframeworks for interactive fullstack Web programming (HTML, CSS, JavaScript). The\nconcept of responsive design will be used to show commonalities and differences of Web\nand mobile applications. Through this course, students will learn how to develop Web\nand mobile applications with dynamic and interactive contents. Through the example of\nweb and mobile applications, the course also discusses principles of how to write\ndistributed applications in general.",
+    "Sub-courses": "1. Written hall examination (Skriftlig salstentamen), 4.5 credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n2. Assignments (Inlämningsuppgifter), 3 credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "The teaching consists of lectures, exercises and examination parts, as well as supervision\nin connection to the exercises.\nLanguage of instruction: English",
+    "Assessment": "The course is examined by an individual written exam carried out in an examination hall\nand written assignments normally carried out in groups. The assignments part is\nexamined on the basis of individual contribution.\nStudents are required to complete written self- and peer-assessment forms during the\ncourse which will be part of the assessment of the student's individual contribution to\nthe assignments.\nStudents who have not contributed sufficiently to the assignments will be asked to\ncomplete an individual task in order to receive a passing grade.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nThe grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nA Pass grade (G) for the entire course requires at least a Pass grade for all sub-courses.\nTo be awarded Pass with Distinction (VG) for a full course, the student must, in\naddition, receive the grade VG on the sub-course Written examination.",
+    "Course evaluation": "The course is evaluated through a meeting after the course between teachers and student\nrepresentatives. Further, an anonymous questionnaire is used to ensure written\ninformation. The outcome of the evaluations serves to improve the course by indicating\nwhich parts could be added, improved, changed or removed.",
+    "Additional information": "Course literature to be announced the latest 8 weeks prior to the start of the course."
+  }
+}

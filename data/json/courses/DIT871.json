@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source_document": "DIT871.pdf",
+    "course_code": "DIT871",
+    "course_title": "Techniques for Large-scale Data",
+    "swedish_title": "Tekniker för storskalig datahantering",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Software Engineering, Data Science, Computer Science",
+    "specialization": "A1N, Second cycle, has only first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2017-01-05",
+    "valid_from_date": "2018-01-15",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Software Engineering and Management Master's Programme (N2SOF)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2017-01-05 to be valid from 2018-01-15, spring semester of 2018.",
+    "Position in the educational system": "The course is offered within the Applied Data Science Master's Programme, where it is\ncompulsory. The course is also a single subject course at the University of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS) and 3)\nSoftware Engineering and Management Master's Programme (N2SOF)\nMain field of studies Specialization\nSoftware Engineering A1N, Second cycle, has only first-cycle\ncourse/s as entry requirements\nData Science A1N, Second cycle, has only first-cycle\ncourse/s as entry requirements\nComputer Science AIN, Second cycle, has only first-cycle\ncourse/s as entry requirements",
+    "Entry requirements": "To be eligible to the course, the student should have a Bachelor's degree in a subject\nrelevant to Data Science.\nIn addition, at least 15 credits of programming are required, as well as a database course\nof at least 7.5 credits, e.g. DIT620 (Databases) or DIT032 (Data Management).\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• discuss important technological aspects when designing and implementing analysis\nsolutions for large-scale data,\n• describe data models and software standards for sharing data on the web.\nSkills and abilities\n• use Python to implement applications for transforming and analyzing large-scale\ndata with appropriate software frameworks,\n• provide access and utilize structured data over the web with appropriate data\nmodels and software tools.\nJudgement and approach\n• suggest appropriate computational infrastructures for analysis tasks and discuss\ntheir advantages and drawbacks,\n• discuss advantages and drawbacks of different strategies for dissemination of data,\n• discuss large-scale data processing from an ethical point of view.",
+    "Course content": "The aim of this course is to deepen the students' knowledge and skills and familiarize\nthem with the technical and technological side of data science, including relevant data\nmodels, and software respectively hardware environments. The course will introduce\naspects of designing and implementing large-scale data science solutions.\nIn particular the course will include\n• a overview of computer architectures and high-performance computing\ninfrastructures with a focus on limitations for processing large-scale data,\n• an introduction to relevant frameworks for cluster computing with large-scale data,\n• implementation of data analysis tools on a cluster using Python and appropriate\nsoftware frameworks,\n• an overview of non-relational database technologies,\n• semantic web and related technologies,\n• an overview of ethical questions regarding large-scale data, e.g. with respect to\nlicenses, accessibility, and anonymisation.",
+    "Sub-courses": "1. Written examination (Skriftlig tentamen), 4 higher education credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n2. Written assignments (Skriftliga inlämningsuppgifter), 3.5 higher education credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)",
+    "Form of teaching": "Lectures, computer lab sessions, and exercise sessions.\nLanguage of instruction: English",
+    "Assessment": "The course is examined by an individual written exam carried out in an examination\nhall, as well as mandatory written assignments, some of which will be carried out\nindividually and others will be carried out in groups of normally 2-4 students.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nIn order to be awarded a Pass (G) for a full course, the grade G must be obtained on\nboth the sub-courses. To be awarded Pass with Distinction (VG) for the full course, the\ngrade VG must be obtained on both the sub-courses.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "Course literature to be announced the latest 8 weeks prior to the start of the course."
+  }
+}

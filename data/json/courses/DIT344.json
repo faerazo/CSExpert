@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "source_document": "DIT344.pdf",
+    "course_code": "DIT344",
+    "course_title": "Fundamentals of Software Architecture",
+    "swedish_title": "Grundläggande mjukvaruarkitektur",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "First Cycle",
+    "main_field_of_study": "Software Engineering",
+    "specialization": "G1F, First Cycle, has less than 60 credits in first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2018-01-22",
+    "valid_from_date": "2018-08-19",
+    "programmes": [
+      "Software Engineering and Management Bachelor's Programme (N1SOF)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2018-01-22 to be valid from 2018-08-19, autumn semester of 2018.",
+    "Position in the educational system": "The course is compulsory within the Software Engineering and Management Bachelor's Programme. It is also a single subject course at the University of Gothenburg.\nThe course can be part of the following programme: 1) Software Engineering and Management Bachelor's Programme (N1SOF)",
+    "Entry requirements": "To be eligible for this course, students must have successfully completed the course DIT045 Requirements and User Experience, 7.5 credits, or equivalent.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• describe the role of an architect in a software development project, and what may be expected from such a person\n• explain common quality requirements, such as performance, security, and modifiability\n• describe different architectural styles and how they relate to specific quality properties of the architecture\nCompetence and skills\n• document architectures using established methods\n• solicit requirements from stakeholders and describe these as quality requirements\n• express quality requirements using quality scenarios\n• create an architectural design of a system based on a case description in natural language\nJudgement and approach\n• reason about how different architectural styles, tactics or design alternatives meet the quality goals of a system",
+    "Course content": "The aim of this course is to equip students with basic knowledge and skills about software architecture design and its role in the development and maintenance of software systems.\nThis course covers various definitions of software architecture. We discuss the role and relevance of software architecture at different stages of development projects; we discuss the relation of architecture to requirements and system implementation; we discuss software architecture quality properties; we discuss various architectural styles and tactics; we discuss general software design principles; we discuss how to document and how to evaluate software architectures.",
+    "Sub-courses": "1. Written examination (Skriftlig tentamen), 4.5 higher education credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n2. Assignments (Inlämningsuppgifter), 3 higher education credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "The teaching consists of lectures, exercises and examination parts, as well as supervision in connection to the exercises.",
+    "Assessment": "The course is examined by an individual written exam carried out in an examination hall and written assignments normally carried out in groups of 2–3 students. The assignments part is examined on the basis of solutions to compulsory problems handed in during the course and on the basis of individual contribution to the group work.\nStudents are required to complete written self- and peer-assessment forms during the course which will be part of the assessment of the student's individual contribution to the project.\nRetake examinations of the assignments part consist of additional individual assignments.\nIf a student, who has failed the same examined component twice, wishes to change examiner before the next examination, a written application shall be sent to the department responsible for the course and shall be granted unless there are special reasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the student shall normally be guaranteed at least three examination occasions (including the ordinary examination) during a period of at least one year from the last time the course was given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nA Pass grade (G) for the entire course requires at least a Pass grade for all sub-courses.\nTo be awarded Pass with Distinction (VG) for a full course, the student must, in addition, receive the grade VG on the sub-course Written examination.",
+    "Course evaluation": "The course is evaluated through meeting after the course between teachers and student representatives. Further, an anonymous questionnaire is used to ensure written information. The outcome of the evaluations serves to improve the course by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\nThe course replaces the course DIT541, 7.5 credits. The course cannot be included in a degree which contains DIT541. Neither can the course be included in a degree which is based on another degree in which the course DIT541 is included."
+  }
+}

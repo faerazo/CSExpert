@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "source_document": "DIT351.pdf",
+    "course_code": "DIT351",
+    "course_title": "Project in computer science",
+    "swedish_title": "Datavetenskapligt projekt",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Technology 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2021-11-18",
+    "valid_from_date": "2022-08-29",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2021-11-18 to be valid from 2022-08-29, autumn semester of 2022.",
+    "Position in the educational system": "The course is a part of the Computer Science Master's programme and an elective course at the University at Gothenburg.\nThe level for the course in relation to degree requirements is a master degree, code A1F.\nThe course has a bachelor degree as entry requirement.\nThe course can be part of the following programme: 1) Computer Science, Master's Programme (N2COS)",
+    "Entry requirements": "To be eligible for the course the student must have successfully completed a bachelor degree within the subject Computer Science or equivalent. The student must additionally have found a teacher who is willing to supervise the project, and the student must have taken those courses that the supervisor finds appropriate for the project. A written project proposal must be approved by one of the course's examiners before the student is registered on the course.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completion of the course the student should be able to:\nKnowledge and understanding\n• integrate knowledge from different fields where appropriate,\nCompetence and skills\n• work on complex tasks which have clear goals but in general no predefined results, apply and strengthen various skills, such as:\n•\nproblem recognition and problem solving,\n• modelling of problems,\n• application and adaptation of known methods,\n•\nindependent literature investigation,\n• implementation of software and use of existing software packages,\n• testing of software, and o drawing conclusions from experimental results,\n• communicate and present the results efficiently, both in writing and orally,\n• document the work in such a way that others can build on it later on, and\nJudgement and approach\n• plan the steps of a complex piece of work, set up intermediate goals and keep the project running, come to realistic estimates of resources and achievable results, revise goals and develop workarounds if necessary.",
+    "Course content": "In this course the students do a project in limited time. The subject can be freely chosen within computer science and engineering, and suggested by the students themselves or by potential supervisors. The project shall be on a nontrivial level. A final report must be delivered and also presented orally.",
+    "Sub-courses": "1. Project (Projekt), 7.5 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)",
+    "Form of teaching": "The project can be undertaken in groups of 2-3 students, with the understanding that everyone contributes substantially, or individually. The project shall be finished within one study period. The students have to find a supervisor on their own. There are no scheduled activities, but the students decide on a working plan together with the supervisor.",
+    "Assessment": "Written report and oral presentation.\nIf a student, who has failed the same examined element on two occasions, wishes to change examiner before the next examination session, such a request is to be submitted to the department in writing and granted unless there are special reasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn the event that a course has ceased or undergone major changes, students are to be guaranteed at least three examination sessions (including the ordinary examination session) over a period of at least one year, though at most two years after the course has ceased/been changed. The same applies to work experience and VFU, although this is restricted to just one additional examination session.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U).\nThe grade is based on the written report and the oral presentation, in particular on scientific depth, technical skill, correctness and clarity.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between teachers and student representatives. Further, an anonymous questionnaire is used to ensure written information. The outcome of the evaluations serves to improve the course by indication which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint Chalmers-GU course.\nThe course literature depends on the project.\nThe course replaces the course DIT350, 7.5 credits. The course cannot be included in a degree which contains DIT350. Neither can the course be included in a degree which is based on another degree in which the course DIT350 is included."
+  }
+}

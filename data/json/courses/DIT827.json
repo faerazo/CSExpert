@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "source_document": "DIT827.pdf",
+    "course_code": "DIT827",
+    "course_title": "Software Innovation",
+    "swedish_title": "Mjukvaruinnovation",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "15",
+    "cycle": "First Cycle",
+    "main_field_of_study": "Software Engineering",
+    "specialization": "G1F, First Cycle, has less than 60 credits in first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2017-01-05",
+    "valid_from_date": "2018-08-19",
+    "programmes": [
+      "Software Engineering and Management Bachelor's Programme (N1SOF)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2017-01-05 and was last revised on 2017-12-19 to be valid from 2018-08-\n19, autumn semester of 2018.",
+    "Position in the educational system": "The course is offered within the Software Engineering and Management Bachelor's\nProgramme.\nThe course can be part of the following programme: 1) Software Engineering and\nManagement Bachelor's Programme (N1SOF)\nMain field of studies\nSoftware Engineering\nSpecialization\nG1F, First Cycle, has less than 60 credits in\nfirst-cycle course/s as entry requirements",
+    "Entry requirements": "To be eligible for this course, students must have successfully completed at least a 7.5\ncredits project course (for example, DIT092 Mini Project: Team Programming).\nIn addition, the examiner should agree that the student has the necessary knowledge in\nthe specific area of the project.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completion of the course the student is expected to:\nKnowledge and understanding\n• explain a project's working practices and scheduling, and reporting of the\ninnovation challenge\n• describe the context of research or industrial innovation problems\nCompetence and skills\n• apply and use software development knowledge and skills to develop a solution for\na research or industrial problem\n• collaborate with external stakeholders on an innovation challenge\n• create a demo or a prototype of a product, service, or other innovation, using agile\ndevelopment practices, design, and product research methods\n• present project outcomes orally and in writing\nJudgement and approach\n• reflect on the challenges and opportunities of working in a context of research or\nindustrial innovation",
+    "Course content": "In this project course, the students are given the opportunity to work on innovation\nideas provided by industrial companies or research projects.\nStudents normally work together in groups of 5-7 students to design and implement a\nproduct (or service) prototype. The project is challenging, and requires the students to\ncollaborate and organize their work efficiently. There is little external steering in this\nproject, the students are responsible for the overall planning and setting their own\ninternal deadlines in order to finish the project on time.",
+    "Sub-courses": "",
+    "Form of teaching": "The teaching consists of introductory lectures, weekly meetings, seminars, as well as\nsupervision in connection to the meetings.\nLanguage of instruction: English",
+    "Assessment": "The course is examined by a written group report, an oral group presentation of a\ndemonstrable system during a seminar at the end of the course, and an individual\nwritten report demonstrating the student's own contribution to the project. The work is\nnormally carried out in groups of 5-7 students.\nEach student needs to submit an individual written report where the student shows their:\n• artifact contributions to the project and subgroup he/she was a member of,\n• role in the project group,\n• fulfillment of responsibilities for this role in terms of artifacts and activities,\n• interaction and knowledge transfer activities with others, and\n• how this contributed to the project as a whole.\nIn order to pass the course the student is required to complete self- and peer- assessment\nforms during and at the end of the course which will be part of the assessment of the\nstudent's individual contribution to the project.\nIn case a student fails the project, one individual re-examination is provided. In case of\nfailing that re-examination, the student has to join a new project group.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nTo pass the course the student need to pass all the examinations and fulfill the\nadditionally compulsory parts.\nTo receive the grade Pass with Distinction (VG), the emphasis is on constructive\nownership on a group and/or project level throughout the entire project course.\nOwnership implies documented expertise or integration contribution that is vital for\ngroup and/or project success.",
+    "Course evaluation": "The course is evaluated through meeting after the course between teachers and student\nrepresentatives. Further, an anonymous questionnaire is used to ensure written\ninformation. The outcome of the evaluations serves to improve the course by indicating\nwhich parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course. It is\nalso up to the students to identify and address such needs based on their particular\nproject focus."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "source_document": "TIA248.pdf",
+    "course_code": "TIA248",
+    "course_title": "An introduction to Game Research",
+    "swedish_title": "Introduktion till spelvetenskap",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Design 50% and Arts 50%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Interaction Design",
+    "specialization": "AIN, Second cycle, has only first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2017-02-17",
+    "valid_from_date": "2019-09-02",
+    "programmes": [
+      "Digital Humanities, Master Programme (H2DHU)",
+      "Game Design & Technology Master's Programme (N2GDT)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Applied Information Technology\non 2017-02-17 and was last revised on 2019-02-08 by Department of Computer Science\nand Engineering to be valid from 2019-09-02, autumn semester of 2019.",
+    "Position in the educational system": "The course is compulsory within the N2GDT. It is also a single subject course at the\nUniversity of Gothenburg.\nThe course can be part of the following programmes: 1) Digital Humanities, Master\nProgramme (H2DHU) and 2) Game Design & Technology Master's Programme\n(N2GDT)",
+    "Entry requirements": "Bachelor degree of 180 higher educational credits or 60 higher educational credits in the\nmain field of study of Computer Science. An additional requirement is English\nproficiency equal to English step 6/English B.",
+    "Learning outcomes": "On successful completion of the course the student should be able to:\nKnowledge and understanding\n• know the academic game terms,\n• list different ways to classify games\n• explain what characterizes games within the most common classifications.\nCompetence and skills\n•\nanalyze games given a specific research question, research stance, and academic\nvocabulary,\n• describe games given a specific focus and showing an adequate use of academic\ngame terms,\n• make comparisons between games or parts of games through the use of academic\ngame terms,\n• analyze games in relation to various intended uses.\nJudgement and approach\n• analyze games from several different gaming preferences,\n• be able to choose and combine different academic approaches in order to analyze\nand interpret games given a specific context,\n• identify ethical aspects of a game.",
+    "Course content": "Games have been a part of human culture since ancient times. They have evolved in to\nmany different forms and serve many different target groups, not least since the\nintroduction of computer games. The course provides an overview of games in all their\nforms as well as theoretical concepts and frameworks to analyze games.\nThe course is divided into five successive modules that consider different forms of games\nand different perspectives of gaming. The first module looks at games as systems and\nfocus on board games and card games as well as introduces general concepts to describe\ngames and gaming. The second module transitions over to how players perceive and\nimmerse themselves into games, using role-playing and larps to highlight the play\nexperience as a perceptual stance. The third module highlights how different media\nforms impacts on games and gaming by focusing on computer games and online games.\nThe final module examines how the boundaries between games and other activities can\nbe obscured by the game design and how games can be used for other purposes than to\nentertain, for example to criticize, influence, or teach.\nEach module introduces theoretical concepts and frameworks through academic texts\nand builds on the previous modules.",
+    "Sub-courses": "",
+    "Form of teaching": "The course is based on lectures, the reading of academic texts, and analyzing games.\nPractical experience of game analyzed is obtained by playing these games being part of\nthe course work.\nLanguage of instruction: English",
+    "Assessment": "The course is examined through four written individual assignments corresponding to\nthe modules.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nIn order to receive Pass on the entire course, a student needs to receive at least Pass on\nall assignments. In order to receive Pass with Distinction (VG) the student must receive\nPass with Distinction on at least three of the assignments and Pass on the other one.",
+    "Course evaluation": "The course is evaluated through meeting after the course between teachers and student\nrepresentatives. Further, an anonymous questionnaire is used to ensure written\ninformation. The outcome of the evaluations serves to improve the course by indicating\nwhich parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course."
+  }
+}

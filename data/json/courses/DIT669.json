@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source_document": "DIT669.pdf",
+    "course_code": "DIT669",
+    "course_title": "Autonomous and Cooperative Vehicular Systems",
+    "swedish_title": "Självständiga och kooperativa fordonsystem",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science, Software Engineering",
+    "specialization": "AXX, Second cycle, in-depth level of the course cannot be classified",
+    "language_of_instruction": "English",
+    "confirmation_date": "2016-07-01",
+    "valid_from_date": "2020-08-31",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Software Engineering and Management Master's Programme (N2SOF)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2016-07-01 and was last revised on 2019-12-17 to be valid from 2020-08-\n31, autumn semester of 2020.",
+    "Position in the educational system": "The course is offered within the framework of several degree programmes. The course is\nalso a single subject course at the University of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS) and 3)\nSoftware Engineering and Management Master's Programme (N2SOF)",
+    "Entry requirements": "Successfully completed courses corresponding to 120 hec within the subject Computer\nScience, Software Engineering or equivalent. A course (7.5 hec or equivalent) in one of\nthe following areas is required: Computer Communication (DIT420 or equivalent),\nComputer Networks (DIT663 or equivalent), Operating Systems (DIT400 or\nequivalent), Algorithms (DIT600 or equivalent) or Project: Industrial IT and Embedded\nSystems (DIT168 or equivalent).\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completion of the course the student is expected to be able to:\n1. Knowledge and Understanding\nDemonstrate knowledge of the basics in robotics.\nDemonstrate knowlede of robotics control and/or communication systems with\nemphasis on their contruction, their programming, and insights of current research and\ndevelopment in the area.\n2. Skills and abilities\nDevelop and design distributed control algorithms, programs, network protocols,\nwhich are adapted to the needs and capacities of road users and which meet the societal\nrequirements of sustainable development in social and ecological terms.\nDemonstrate hands-on experience with programming of robots.\nCollaborate in groups with different constitutions and backgrounds.\nPlan an engineering task, set up milestones, keep the project running, perform realistic\nassessments about resources requirements and possible results.\nPresent the results in a clear way, both orally and in writing.\n3. Judgment and approach\nReferee engineering projects of peer students and provide feedback in a professional\nmanner.\n- Judge the applicability of different algorithmic and technical solutions, with\nconstraints such as cost and performance.",
+    "Course content": "This project studies systems of low cost miniature vehicles that use wireless\ncommunication on a large scale open source test-bed. The test-bed may be geared with\nonboard sensors, such as cameras, laser, radar, speed sensors, etc. In this course the\nstudent will learn how to design vehicle systems that can move autonomously and/or\ncommunicate with other vehicles for coordionating their actions. The student will\nsimulate vehicular systems or construct such systems that are based on miniature vehicle\nmodels (robots).\nThis course setup includes a short sequence of cross-disciplinary lectures that will\nprepare the students and allow their project groups to share a wider common\nbackground. Moreover, the course setup includes weekly presentations of project\nprogress reports in the class room that is followed by a discussion. These discussions, led\nby an expert in the area, would discuss solutions to problems that students encounter.",
+    "Sub-courses": "",
+    "Form of teaching": "Lectures, project meetings, reports and project deliverables.",
+    "Assessment": "The course is examined by a project plan, written reports (after halv the course and at\nthe end) which are also presented orally and require demonstration of the developed\nsystems. In order to pass the course the student is expected to participate actively in the\nseminar lectures, including presentations and discussion of studied topics. The student is\nalso expected to provide feedback for other groups' project plans and reports. All the\nwork is commonly carried out in groups of 2-3 students.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nTo be awarded grade Pass (G), the student shall demonstrate multi structural knowledge\nby carrying out presentations and producing a report that is well structured and easy to\nread, that analyses a related problem using concepts defined by the course literature,\nthat properly cites the course literature, and whose content covers all learning outcomes\nand is innovative.\nTo be awarded grade Pass with Honor (VG), the student shall demonstrate the ability to\ncompare the state-of-the-art technologies with the results produced in this course.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers."
+  }
+}

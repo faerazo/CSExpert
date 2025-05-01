@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source_document": "DIT493.pdf",
+    "course_code": "DIT493",
+    "course_title": "Graphical Interfaces",
+    "swedish_title": "Grafiska gränssnitt",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science\nInteraction Design",
+    "specialization": "A1N, Second cycle, has only first-cycle course/s as entry requirements\nA1N, Second cycle, has only first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2022-12-09",
+    "valid_from_date": "2023-08-28",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Computer Science, Bachelor's Programme (N1COS)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2022-12-09 to be valid from 2023-08-28, autumn semester of 2023.",
+    "Position in the educational system": "The course is offered within several programmes. It is also a single subject course at the\nUniversity of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS) and 3)\nComputer Science, Bachelor's Programme (N1COS)",
+    "Entry requirements": "To be eligible for the course the student must have a Bachelor degree of 180 credits.\nAdditionally, the course DAT420 Human - computer interaction, 7.5 credits, or the\nequivalent is required.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completion of the course the student should be able to:\nKnowledge and understanding\n• decide on how and when to use different graphical interface elements\n• decide on how to use keypaths and scenarios to create an interaction sequence\n• utilize commonly used interaction design solutions for graphical interfaces\n• re-design an existing user interface, and decide on which part of the existing design\nsolution needs to be changed and in what way\nCompetence and skills\n• Design a graphical user interface adapted to a specific use and user in terms of:\nlayout, interaction sequence, correct use of controls and look and feel.\n• Design a graphical user interface which is manipulated via mouse and keyboard\n• Design a graphical user interface for a touch-based interaction\n• Verbally and in short written form present their design and motivate design\ndecisions\n• Evaluate usability and user experience in a graphical user interface\nJudgement and approach\n• Solve interaction design problems related to graphical interfaces and motivate your\nsolutions\n• Design a relatively complex graphical interface, and be able to provide a valid\ndesign rationale for it.\n• Being able to select and apply previouly existing design solutions to new graphical\ninterfaces.\n• Being able to, from a scenario, extract a users needs.",
+    "Course content": "Content includes, but is not limited to:\n• Commonly used interaction design solutions in graphical interfaces\n• Designing for users on different levels (e.g. beginners vs. experts)\n• Designing interaction sequences\n• Layout of graphical user interfaces;\n• Designing look and feel; using color, text and graphics\n• Correct use of graphical user interface elements such as controls, toolbars, menus,\ndialogues etc.\n• The difference between regular user interfaces and touch-based interfaces.",
+    "Sub-courses": "1. Project (Projekt), 4 credits\nGrading scale: Pass (G) and Fail (U)\n2. Laboratory work (Laboration), 1.5 credits\nGrading scale: Pass (G) and Fail (U)\n3. Take home examination (Hemtentamen), 2 credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "The course is highly practical. Lectures and literature give a theoretical foundation, but\nthis theory is immediately put into practice. When practicing, focus is upon motivating,\nmaking and analyzing the design decisions made. Most of the work is done in groups of\nvarious sizes but there is also a significant amount of individual work. The group project\nis done as a role-play with internal or external client as stakeholder.\nLanguage of instruction: English",
+    "Assessment": "The course is examined through three modules, namely:\n• Group-based lab exercise (Fail, Pass)\n• Home exam, (Fail, Pass)\n• Individual design project (Fail, Pass)\nTo pass the course, one has to pass all parts of it.",
+    "Grades": "The grading scale comprises: Pass (G) and Fail (U).\nTo pass the course, all mandatory components must be passed.",
+    "Course evaluation": "After completion of the course the students are to be given the possibility of\nparticipating in course anonymously. As far as possible, evaluations are to be completed\nelectronically. Continuous evaluation will be used, including three meetings between\nteacher(s) and student representatives. Additionally, the course will be evaluated with a\ncourse questionnaire, and discussed with the student representatives.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\nThe course replaces the course TIA106, 7.5 credits. The course cannot be included in a\ndegree which contains TIA106. Neither can the course be included in a degree which is\nbased on another degree in which the course TIA106 is included.\nIt is recommended that students completed the course TIA108 Prototyping in\nInteraction Design."
+  }
+}

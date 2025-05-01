@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "source_document": "DIT113.pdf",
+    "course_code": "DIT113",
+    "course_title": "Mini Project: Systems Development",
+    "swedish_title": "Miniprojekt: Systemutveckling",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "First Cycle",
+    "main_field_of_study": "Software Engineering",
+    "specialization": "G1F, First cycle, has less than 60 credits in first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2021-09-30",
+    "valid_from_date": "2022-01-17",
+    "programmes": [
+      "Software Engineering and Management Bachelor's Programme (N1SOF)",
+      "Software Engineering and Management, Bachelor's Programme (N1SEM)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2021-09-30 to be valid from 2022-01-17, spring semester of 2022.",
+    "Position in the educational system": "The course is compulsory within the N1SOF Software Engineering and Management Bachelor programme.\nThe course can be part of the following programmes: 1) Software Engineering and Management Bachelor's Programme (N1SOF) and 2) Software Engineering and Management, Bachelor's Programme (N1SEM)",
+    "Entry requirements": "To be eligible for this course, students must have taken the course DIT032 Data\nManagment, 7,5 hec, or equivalent, and must have successfully completed the course\nDIT092 Mini Project: Team Programming, 7,5 hec, or equivalent.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• define software in a system context\n• describe system requirements, system and software design, and relations between the\nrequirements and software design\nCompetence and skills\n• organize software development teams and conduct software development projects,\nusing modern software engineering methodologies such as agile development\n• elicit, analyze, and document requirements in the form of a requirements\nspecification\n• design software and document outcome of design work\n• implement software according to a documented software design\nJudgement and approach\n• reflect on integration between software and non-software components\n• evaluate traceability between requirements, design, and implementation artefacts",
+    "Course content": "The course introduces a project, in a problem-based learning approach, guided by\nrealistic and challenging customer requirements. The project course is organized as\ngroup work.\nThe student shall deliver a design specification of the system under construction. The\ndesign shall be implemented, and result in a working and tested software prototype. In\nthis course the student learn to analyze the demands of a customer, capture these in a\nsoftware requirements specification and to design and develop software from this\nanalysis and to verify and validate that the software developed satisfies the given\nrequirements.\nFurther, the student will learn to plan a project, work in a project team and use the\nsoftware project development methods.\nThe studies will use systems that consists of non-software parts such as hardware\nplatform, sensor and actuators, and software parts that include software platform and\nsoftware components. The student will design and implement the software components,\ntest and analyze the system in respect to the defined requirements.",
+    "Sub-courses": "1. Project (Projekt), 7.5 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)",
+    "Form of teaching": "The teaching consists of introductory lectures, weekly group meetings, seminars, as well\nas supervision in connection to the meetings.",
+    "Assessment": "The course is examined through written artifact review and oral examination based on\nthe course learning outcomes. The course is examined by a demonstrable system which\nis presented orally at a seminar at the end of the course. The course is also examined by\na final written report. The work is carried out in groups of 5-7 students.\nFurthermore, the student needs to submit a written report where the student shows his\nor her:\n• artifact contributions to the project and subgroup he/she was a member of\n• role in the project group,\n• fulfillment of responsibilities for this role in terms of artifacts and activities,\n• interaction and knowledge transfer activities with others, and\n• how this contributed to the project as a whole.\nStudents are required to complete written self- and peer-assessment forms during the\ncourse which will be part of the assessment of the student's individual contribution to\nthe project.\nIn case a student fully participated in the project work, but failed the project in a few\nelements, one individual re-examination is provided. In case the student did not\ncontribute to the project work, or failed the re-examination, the student has to join a\nnew project group.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and\nFail (U).\nThe grading scale comprises Fail (U), 3, 4 or 5. To pass the course, all mandatory\ncomponents must be passed. To earn a higher grade than Pass, a higher weighted\naverage from the grades of the components is required.",
+    "Course evaluation": "The course is evaluated through a meeting after the course between teachers and student\nrepresentatives. Further, an anonymous questionnaire is used to ensure written\ninformation. The outcome of the evaluations serves to improve the course by indicating\nwhich parts could be added, improved, changed or removed.",
+    "Additional information": "Course literature to be announced 8 weeks prior to the start of the course.\nThe course replaces the course DIT112, 7.5 credits. The course cannot be included in a\ndegree which contains DIT112. Neither can the course be included in a degree which is\nbased on another degree in which the course DIT112 is included."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source_document": "DIT096.pdf",
+    "course_code": "DIT096",
+    "course_title": "Human-Computer Interaction",
+    "swedish_title": "Människa-datorinteraktion",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "First Cycle",
+    "main_field_of_study": "Computer Science-Interaction Design, Interaction Design",
+    "specialization": "G1F, First cycle, has less than 60 credits in first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2022-11-17",
+    "valid_from_date": "2024-01-15",
+    "programmes": [
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Computer Science, Bachelor's Programme (N1COS)",
+      "Software Engineering and Management Master's Programme (N2SOF)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2022-11-17 to be valid from 2024-01-15, spring semester of 2024.",
+    "Position in the educational system": "The course is provided as a part of the Computer Science and Engineering Bachelor's\nProgramme. It is also a single subject course at the University of Gothenburg.\nThe course can be part of the following programmes: 1) Applied Data Science Master's\nProgramme (N2ADS), 2) Computer Science, Bachelor's Programme (N1COS) and 3)\nSoftware Engineering and Management Master's Programme (N2SOF)",
+    "Entry requirements": "The requirement for the course is to have successfully completed a course in\nprogramming.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• Describe phases in the design process\n• Describe methods for development and evaluation of human-computer interaction\n• Describe similarities and differences in design for different user groups\n• Describe considerations for involving users in the design process\n• Understand the role of human computer interaction (HCI) in the software\ndevelopment process and information technology\nCompetence and skills\n• Design interfaces for certain user groups\n• Adapt design methods to suit users' context and needs\n• Investigate and describe user needs and requirements\n• Include ethical issues in the design process and adapt the process for ethical needs\nJudgement and approach\n• Analyze designs based on user needs\n• Make a well-founded evaluation of the ethical and societal consequences of a design\n• Critique design and design processes with respect to user needs",
+    "Course content": "Human Computer Interaction (HCI) is a field which deals with the design, evaluation\nand implementation of interactive systems and studying phenomena around them. The\naim of the course is to allow students to experience the most important phases of user-\ncentered design:\n• understanding context of use,\n• charting requirements,\n• generating multiple design solutions and\n• evaluating prototypes with users.\nThe course consists of both theoretical and practical parts, and students learn about the\ndifferent steps in the design process and relevant methods for designing for users. The\ncourse covers a broad area of designing interactive systems, which includes different\ntypes of interfaces and interaction modalities. The course prepares students to\ncollaborate in an interdisciplinary environment with specialists in design and cognitive\nscience.",
+    "Sub-courses": "1. Written hall examination ( Skriftlig salstentamen), 4.5 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)\n2. Project (Projekt), 3 credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "The course consists of lectures, exercises, a project and a written hall examination. The\nexercises and the project are carried out in groups.",
+    "Assessment": "The course is examined through two modules, namely:\n• Written hall examination, 4.5 credits (U, 3,4,5)\n• Project, 3 credits (Pass, Fail)\nTo be approved for the course, both modules must be approved. The grade for the\nentire course is determined by the exam.\n\nIf a student, who has failed the same examined element on two occasions, wishes to\nchange examiner before the next examination session, such a request is to be submitted\nto the department in writing and granted unless there are special reasons to the contrary\n(Chapter 6, Section 22 of Higher Education Ordinance).\n\nIn the event that a course has ceased or undergone major changes, students are to be\nguaranteed at least three examination sessions (including the ordinary examination\nsession) over a period of at least one year, though at most two years after the course has\nceased/been changed. The same applies to work experience and VFU, although this is\nrestricted to just one additional examination session.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and\nFail (U).\nTo pass the course, students must receive a passing grade in both modules. The grade\nfor the entire course will be determined by the written hall examination.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indication which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\nThe course replaces the course DIT095, 7.5 credits. The course cannot be included in a\ndegree which contains DIT095. Neither can the course be included in a degree which is\nbased on another degree in which the course DIT095 is included."
+  }
+}

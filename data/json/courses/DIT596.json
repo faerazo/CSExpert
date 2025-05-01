@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "source_document": "DIT596.pdf",
+    "course_code": "DIT596",
+    "course_title": "Model Driven Engineering",
+    "swedish_title": "Model Driven Engineering",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Software Engineering; Applied IT, Software Engineering and Management",
+    "specialization": "A1N, Second cycle, has only first-cycle course/s as entry requirements; AIN, Second cycle, has only first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2010-09-28",
+    "valid_from_date": "2017-08-20",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Software Engineering Master's Programme (N2SOM)",
+      "Software Engineering and Management Master's Programme (N2SOF)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2010-09-28 and was\nlast revised on 2017-06-16 by Department of Computer Science and Engineering to be\nvalid from 2017-08-20, autumn semester of 2017.",
+    "Position in the educational system": "The course is an elective course in the Software Engineering and Management Master's\nProgramme. The course is also a single subject course at the University of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS), 3)\nSoftware Engineering Master's Programme (N2SOM) and 4) Software Engineering and\nManagement Master's Programme (N2SOF)",
+    "Entry requirements": "To be eligible for this course, the student must have;\n1) a Bachelor degree in Software Engineering, Computer Science or equivalent,\n2) successfully completed a 7.5 hec course in Object oriented Programming (such as\nDIT948 programming, DIT952 Object oriented Programming and Design or equivalent)\n3) in addition successfully completed a course in Software modeling (e.g. DIT135\nTechnical Analyses and Design, 4.5 hec, DIT945 Model driven software development,\n7.5 hec or equivalent)\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completing the course the student should be able to:\nKnowledge and understanding\n• explain the following concepts: models, metamodel, constraints, transformation,\nsemantics, abstract and concrete syntax\n• explain the architecture of contemporary modeling frameworks\n• explain how domain specific modeling languages can be realized within a\ncontemporary modeling framework\nCompetence and skills\n• construct domain specific languages, e.g. specify meta models including syntax and\nsemantics\n• define syntactic constraints using a constraint language\n• realize meta models within a modeling framework\n• construct model editors within a modeling framework\n• create model validators within a modeling framework\n• specify model transformations, and realize them within a modeling framework\n• apply the domain specific modeling approach to an authentic case\nJudgement and approach\n• identify emerging technologies for model-driven engineering using relevant\ninformation sources\n• select appropriate domain specific modeling technology for a given tool",
+    "Course content": "Standard visual modelling languages, such as UML, do not often fit an organization's\nneeds out of the box. Extending modelling languages with necessary constructs and\nfeatures, or creating complementary languages, requires specialist knowledge beyond\nthat of software modelling. The purpose of this course is to familiarize the student with\ncontemporary technologies and notations for creation, adaptation, and transformation\nof modeling languages.",
+    "Sub-courses": "1. Written exam (Skriftlig tentamen), 4.5 higher education credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n2. Project (Projekt), 3 higher education credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "The teaching of this course will consist of different forms: lectures, literature studies,\ngroup work, group supervision, and practical assignments.\nLanguage of instruction: English",
+    "Assessment": "The examination consists of two parts: a final individual written exam carried out in an\nexamination hall (4.5 hec) and a project (3 hec). The project is carried out in groups of\nnormally 4-6 students.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance)\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nFor Pass (G) as a complete course grade, both the written exam and the project part\nmust have been awarded Pass. For Pass with Distinction (VG), the Project part must\nhave been awarded Pass and the written exam must have been awarded Pass with\nDistinction.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nIn the Software Engineering Master's Programme, the course is part of a set of four\ncourses, out of which the student need to take at least two."
+  }
+}

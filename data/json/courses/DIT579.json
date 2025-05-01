@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source_document": "DIT579.pdf",
+    "course_code": "DIT579",
+    "course_title": "Research oriented course in data science and Al",
+    "swedish_title": "Forskningsinriktad kurs i data science och Al",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science\nData Science",
+    "specialization": "A1F, Second cycle, has second-cycle\ncourse/s as entry requirements\nA1F, Second cycle, has second-cycle\ncourse/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2020-12-04",
+    "valid_from_date": "2022-08-29",
+    "programmes": [
+      "Mathematical Sciences, Master's Programme (N2MAT)",
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2020-12-04 and was last revised on 2021-11-01 to be valid from 2022-08-\n29, autumn semester of 2022.",
+    "Position in the educational system": "The course can be part of the following programmes: 1) Mathematical Sciences,\nMaster's Programme (N2MAT), 2) Computer Science, Master's Programme (N2COS)\nand 3) Applied Data Science Master's Programme (N2ADS)\nMain field of studies\nComputer Science\nData Science\nSpecialization\nA1F, Second cycle, has second-cycle\ncourse/s as entry requirements\nA1F, Second cycle, has second-cycle\ncourse/s as entry requirements",
+    "Entry requirements": "The student shall have a Bachelor's degree. In addition, a mandatory pre-requisite to\ntake this course is that the student has the necessary knowledge to take the specific\ninstance of this course.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• Explain the terminology, concepts and theories associated with the research area of\nthe course.\n• Describe and explain the research area of the course, and show insight into current\nresearch and development.\n• Describe and explain research methods within the research area of the course.\nCompetence and skills\n• Critically and systematically integrate knowledge and to analyse and discuss\ncomplex issues in the research area of the course.\n• Clearly communicate the key ideas, concepts and results in the area of the course\nboth orally and in writing.\nJudgement and approach\n• Search for, and extract, necessary information from scientific publications in the\nresearch area of the course, with the purpose of identifying strengths and weakness\nof solutions, approaches and methodologies.",
+    "Course content": "This course will deal with an area of current interest within the general area of data\nscience and AI. The course gives students the chance to follow a graduate course or\nanother research centered course.",
+    "Sub-courses": "1. Project (Projekt), 7.5 credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)",
+    "Form of teaching": "The organisation of the course may include lectures, tutorials, seminars, and/or labs and\nsupervision in conjunction with these.\nLanguage of instruction: English",
+    "Assessment": "Examination may consist of a written or take-home exam, assignments, presentation of\nwork in a seminar, or a combination of these. Further information will be given on the\nhome page for each instance of the course.\nA student who has taken two exams in a course or part of a course without obtaining a\npass grade is entitled to the nomination of another examiner. The student needs to\ncontact the department for a new examiner, preferably in writing, and this should be\napproved by the department unless there are special reasons to the contrary (Chapter 6\nSection 22 of the Higher Education Ordinance).\nIf a student has received a recommendation from the University of Gothenburg for\nspecial educational support, where it is compatible with the learning outcomes of the\ncourse and provided that no unreasonable resources are required, the examiner may\ndecide to allow the student to sit an adjusted exam or alternative form of assessment.\nIn the event that a course has ceased or undergone major changes, students are to be\nguaranteed at least three examination sessions (including the ordinary examination\nsession) over a period of at least one year, but no more than two years, after the course\nhas ceased/been changed. The same applies to placements and professional placements\n(VFU), although this is restricted to just one additional examination session.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nTo pass the course, all mandatory components must be passed. To earn a higher grade\nthan Pass, a higher weighted average from the grades of the components is required.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indication which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nIt is the responsibility of the student to establish contact before the course starts with the\nexaminer of the course, and to show that they have the necessary knowledge to start the\ncourse.\nCourse literature will be announced at the latest 8 weeks prior to the start of the course."
+  }
+}

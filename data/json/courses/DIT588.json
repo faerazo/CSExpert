@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "source_document": "DIT588.pdf",
+    "course_code": "DIT588",
+    "course_title": "Software Evolution Project",
+    "swedish_title": "Mjukvaruevolutionsprojekt",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "15",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Software Engineering",
+    "specialization": "A1F, Second cycle, has second-cycle\ncourse/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2020-10-27",
+    "valid_from_date": "2021-08-30",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Software Engineering and Management Master's Programme (N2SOF)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2020-10-27 to be valid from 2021-08-30, autumn semester of 2021.",
+    "Position in the educational system": "The course is a compulsory course in the Software Engineering and Management\nMaster's Programme and an single subject course at the University of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS) and 2) Software Engineering and Management Master's\nProgramme (N2SOF)",
+    "Entry requirements": "To be eligible for the course the student needs to have successfully completed the\nfollowing courses, or equivalent:\n• a 7.5 hec course in programing (e.g., DIT948 Programming),\n• a 7,5 hec software project course (e.g., DIT191 Agile development processes),\n• a 7.5 hec course in software quality (e.g., DIT847 Software Quality),\nand at least one of the following courses, or equivalent:\n• 7,5 hec DIT284 Requirements Engineering,\n• 7,5 hec DIT544 Advanced software architecture,\n• 7,5 hec DIT596 Software Language Engineering for Domain Specific Languages, or\n• 7,5 hec DIT848 Model based testing.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• explain the notion of software evolution scenarios as defined by the Architecture\nDriven Modernization (ADM) task force of the Object Management Group\n(OMG),\n• summarize state of the art in methods and tools for software evolution tasks, such as\nprogram comprehension and software refactoring,\n• discuss the challenges associated with software evolution,\n• explain current research trends in program comprehension, clone detection, and\nrefactoring.\nCompetence and skills\n• extract a software product's architecture from a given code base and evaluate the\nquality of the software product,\n• implement one software evolution scenario as defined by the OMG, such as\nplatform or language migration,\n• implement changes to a software product that lead to an improvement of the\nproduct's quality (quality improvement task),\n• make use of synergies between different improvements goals for the same product,\nJudgement and approach\n• detect and judge needs for quality improvement or evolution in an authentic\nsoftware product,\n• plan the use of appropriate methods and techniques for performing a software\nevolution scenario and a quality improvement task,\n• judge needs for improvement of methods and tools to support software evolution,\n• plan and evaluate ideas for new or improved tools.",
+    "Course content": "The course consist of a series of group and individual milestones, and supervision\nmeetings during the semester. Groups and teachers agree on a software evolution\nscenario to be performed as a project during the course. In additon, lectures and\nworkshops are used to provide the student with methods and knowledge about software\nevolution.\nThe purpose of this course is to familiarise the student with situations, activities, and\ntechniques typical for software evolution, such as adding a new feature, refactoring, and\nso on. Furthermore, students learn to plan, implement, and reflect on software evolution\nscenarios and improvements.",
+    "Sub-courses": "1. Project (Projekt), 15 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)",
+    "Form of teaching": "The course contains project- and problembased teaching.",
+    "Assessment": "The course consists of one module which consists of four components.\nThe course is examined by the following four mandatory components:\n• weekly group milestones that are submitted during the course,\n• a written group report to be submitted at the end of the course,\n• a documentation of the individual contribution to the final outcome of the group\nwork,\n• an individual written final report.\nThe group work is carried out in groups of normally 4-5 students. The student collects\npoints for all four components. Furthermore individual optional milestones can be used\nto collect bonus points during the course.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and\nFail (U).\nThe grading scale comprises Fail (U), 3, 4 or 5.\nTo pass the course, all mandatory components must be passed. To earn a higher grade\nthan Pass, a higher weighted average from the grades of the components is required.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\nThe course replaces the DIT598 Software Evolution Project 15 hec course. The course\ncannot be included in a degree which contains DIT598. Neither can the course be\nincluded in a degree which is based on another degree in which the course DIT598 is\nincluded."
+  }
+}

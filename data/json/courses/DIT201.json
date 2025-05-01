@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "source_document": "DIT201.pdf",
+    "course_code": "DIT201",
+    "course_title": "Logic in Computer Science",
+    "swedish_title": "Logic in Computer Science",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science-Algorithms and Logic, Computer Science-Secure and Depend Compr Systems",
+    "specialization": "AIN, Second cycle, has only first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2006-11-17",
+    "valid_from_date": "2018-08-20",
+    "programmes": [
+      "Mathematical Sciences, Master's Programme (N2MAT)",
+      "Computer Science, Master's Programme (N2COS)",
+      "Computer Science, Bachelor's Programme (N1COS)",
+      "Bachelor's Programme in Mathematics (N1MAT)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2006-11-17 and was\nlast revised on 2018-03-26 by Department of Computer Science and Engineering to be\nvalid from 2018-08-20, autumn semester of 2018.",
+    "Position in the educational system": "The course is a part of the Computer Science Master's programme and an elective\ncourse at the University of Gothenburg.\n\nThe course can be part of the following programmes: 1) Mathematical Sciences,\nMaster's Programme (N2MAT), 2) Computer Science, Master's Programme (N2COS),\n3) Computer Science, Bachelor's Programme (N1COS) and 4) Bachelor's Programme in\nMathematics (N1MAT)",
+    "Entry requirements": "To be eligible for the course, students should have successfully completed courses\ncorresponding to 60 hec within the subject Computer Science or Mathematics, including\n7.5 hec in discrete mathematics (for example DIT980 Discrete Mathematics for\nComputer Scientists or the sub-course Introductory Algebra of MMG200 Mathematics\n1).\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completing the course the student is expected to be able to:\n\nKnowledge and understanding\n• explain when a given formula is a tautology\n• explain the notion of model of a first-order language and the meaning of the\ncompleteness and soundness theorems\n• explain the notion of model for temporal logic, when a temporal formula is\nsemantically valid and how to check if a branching-time temporal logic formula is valid\nin a given model\n• describe the content of the soundness and completeness theorems for propositional\nand predicate calculus\n\nCompetence and skills\n• write and check proofs in natural deduction for propositional and predicate calculus\n• specify properties of a reactive system using linear-time temporal logic and branching-\ntime temporal logic\n\nJudgement and approach\n• judge the relevance of logical reasoning in computer science, i.e. for modelling\ncomputer systems\n• analyse the applicability of logical tools to solve problems in computer science, i.e.\nfinding bugs with the use of model checking",
+    "Course content": "In recent years, powerful tools for verifying software and hardware systems have been\ndeveloped. These tools rely in a crucial way in logical techniques. Propositional and\npredicate logic are presented in detail, as well as some specialized logics (temporal\nlogics) used for reasoning about the correctness of computer systems. A sound basic\nknowledge in logic is a welcome prerequisite for courses in program verification, formal\nmethods and artificial intelligence.\nThe course presents: propositional logic, predicate logic and model-chaching.\nIn other words, a thorough introduction to fundamental notions of logic: natural\ndeduction, semantics of both propositional and predicate logic, soundness and\ncompleteness, conjunctive normal forms, Horn clauses, undecidability of predicate logic,\nexpressiveness of predicate logic, existential and universal second-order logic plus an\nintroduction to model checking: Linear-time temporal logic (LTL) and Branching-time\ntemporal logic (CTL).",
+    "Sub-courses": null,
+    "Form of teaching": "The course consists of a series of lectures and exercise sessions.\n\nLanguage of instruction: English",
+    "Assessment": "The course is examined by an individual written exam at the end of the course. The\nexam is given in an examination hall.\nThere will be non-obligatory individual assignments which grant bonus points for the\nwritten exam. These bonus points are valid for the whole academic year.\n\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\n\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. As far as possible, evaluations are to be completed\nelectronically. The outcome of the evaluations serves to improve the course by\nindicating which parts could be added, improved, changed or removed. The results of\nand possible changes to the course will be shared with students who participated in the\nevaluation and students who are starting the course.",
+    "Additional information": "The course is a joint course together with Chalmers."
+  }
+}

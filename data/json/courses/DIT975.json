@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source_document": "DIT975.pdf",
+    "course_code": "DIT975",
+    "course_title": "Software Language Engineering for Domain-Specific Languages",
+    "swedish_title": "Programvaruspråksteknik för domänspecifika språk",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Software Engineering, Applied Information Technology with Specialization in Software Engineering and Management",
+    "specialization": "AIN, Second cycle, has only first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2019-12-09",
+    "valid_from_date": "2021-01-18",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Software Engineering and Management Master's Programme (N2SOF)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2019-12-09 to be valid from 2021-01-18, spring semester of 2021.",
+    "Position in the educational system": "The course is an elective course in the Software Engineering and Management Master's\nProgramme. The course is also a single subject course at the University of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS) and 3)\nSoftware Engineering and Management Master's Programme (N2SOF)",
+    "Entry requirements": "To be eligible for this course, the student must have;\n1. a Bachelor degree in Software Engineering, Computer Science or equivalent,\n2. successfully completed a 7.5 hec course in Object oriented Programming (such as\nDIT948 programming, DIT952 Object oriented Programming and Design or\nequivalent)\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completing the course the student should be able to:\n\nKnowledge and understanding\n• explain the following concepts: models, metamodel, constraints, transformation,\nsemantics, abstract and concrete syntax\n• explain the architecture of contemporary modeling frameworks\n• explain how domain specific modeling languages can be realized within a\ncontemporary modeling framework\n• explain current research trends in domain-specific language (DSL) engineering\n\nCompetence and skills\n• construct domain specific languages, e.g. specify meta models including syntax and\nsemantics\n• define syntactic constraints using a constraint language\n• implement meta models within a modeling framework\n• construct model editors within a modeling framework\n• create model validators within a modeling framework\n• specify model transformations, and realize them within a modeling framework\n• apply the domain specific modeling approach to an authentic case\n\nJudgement and approach\n• identify emerging technologies for model-driven engineering using relevant\ninformation sources\n• select appropriate domain specific modeling technology for a given tool\n• propose effective strategies and concrete technologies for realizing parts of a DSL\nbased on a concrete problem",
+    "Course content": "Standard visual modelling languages, such as UML, do not often fit an organization's\nneeds out of the box. Extending modelling languages with necessary constructs and\nfeatures, or creating complementary languages, requires specialist knowledge beyond\nthat of software modelling. The purpose of this course is to familiarize the student with\ncontemporary technologies and notations for creation, adaptation, and transformation\nof modeling languages.",
+    "Sub-courses": "1. Written hall examination (Skriftlig salstentamen), 4.5 credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n2. Project (Projekt), 3 credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "The teaching of this course will consist of different forms: lectures, literature studies,\ngroup work, group supervision, and practical assignments.\n\nLanguage of instruction: English",
+    "Assessment": "The examination consists of two parts: a final individual written hall examination\ncarried out in an examination hall (4.5 hec) and a project (3 hec). The project is carried\nout in groups of normally 4-6 students.\nThe project part is graded individually, taking into account the group work as well as\nthe student's individual contribution to the group work.\n\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance)\n\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nFor Pass (G) as a complete course grade, both the written exam and the project part\nmust have been awarded Pass. For Pass with Distinction (VG), the Project part must\nhave been awarded Pass and the written exam must have been awarded Pass with\nDistinction.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nIn the Software Engineering Master's Programme, the course is part of a set of four\ncourses, out of which the student need to take at least two.\n\nThe course replaces the course DIT596, 7.5 credits. The course cannot be included in a\ndegree which contains DIT596. Neither can the course be included in a degree which is\nbased on another degree in which the course DIT596 is included."
+  }
+}

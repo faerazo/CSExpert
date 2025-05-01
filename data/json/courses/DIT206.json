@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "source_document": "DIT206.pdf",
+    "course_code": "DIT206",
+    "course_title": "Discrete optimization",
+    "swedish_title": "Diskret optimering",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": [
+      "Computer Science",
+      "Data Science"
+    ],
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2020-11-04",
+    "valid_from_date": "2022-01-17",
+    "programmes": [
+      "Mathematical Sciences, Master's Programme (N2MAT)",
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Computer Science, Bachelor's Programme (N1COS)",
+      "Software Engineering and Management Master's Programme (N2SOF)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2020-11-04 to be valid from 2022-01-17, spring semester of 2022.",
+    "Position in the educational system": "The course is a part of the Computer Science Master's programme and an elective\ncourse at the University of Gothenburg.\nThe level for the course in relation to degree requirements is Master's degree, code A1F.\nThe course has course/courses at second cycle level as entry requirements.\nThe course can be part of the following programmes: 1) Mathematical Sciences,\nMaster's Programme (N2MAT), 2) Computer Science, Master's Programme (N2COS),\n3) Applied Data Science Master's Programme (N2ADS), 4) Computer Science,\nBachelor's Programme (N1COS) and 5) Software Engineering and Management\nMaster's Programme (N2SOF)",
+    "Entry requirements": "• 7,5 credits programming in high level language like Java, Python etc\n• 7,5 credits basic course in calculus/analysis\n• 7,5 credits basic course in linear algebra\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completion of the course the student should be able to:\nKnowledge and understanding\n• Describe what is a linear program (LP) and an integer linear program (ILP).\n• Describe the geometry of a LP by visualizing it graphically.\n• Describe the relationship between an ILP and its LP relaxation.\nCompetence and skills\n• Formulate a continuous optimization problem as an LP.\n• Formulate a discrete optimization problem as an ILP and relax it to an LP, and\nrecover approximate discrete solution to the original problem from the optimal LP.\n• Solve an LP using the Simplex algorithm.\n• Formulate the dual of an LP and relate it to the original LP.\n• Use LP duality to design optimization algorithms.\n• Formulate discrete optimization problems as a vector program, relax it to an SDP\nand recover a discrete solution to the original problem\nJudgement and approach\n•\n• Recognize which optimization formulation is appropriate to a given problem.\nJudge which algorithm works efficiently for a given optimization problem.",
+    "Course content": "The course gives an introduction to modelling various optimization problems using\nlinear programming (LP) and integer linear programming (ILP). The Simplex algorithm\nto solve LPs is described and analysed. The LP relaxations of ILPs are studied and\nanalysed to design approximation algorithms. The duality theory of linear programs is\nstudied and used to design approximation algorithms. Vector programs to model\ndiscrete optimization problems are described and relaxed to semi-definite programs\n(SDPs)",
+    "Sub-courses": "1. Written hall examination (Skriftlig salstentamen), 7.5 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)",
+    "Form of teaching": "Lectures twice weekly and exercise sessions.\nLanguage of instruction: English\nThe course is held in English.",
+    "Assessment": "The course is examined by a written exam (assignments could be used for bonus points).\nIf a student, who has failed the same examined element on two occasions, wishes to\nchange examiner before the next examination session, such a request is to be submitted\nto the department in writing and granted unless there are special reasons to the contrary\n(Chapter 6, Section 22 of Higher Education Ordinance).\nIn the event that a course has ceased or undergone major changes, students are to be\nguaranteed at least three examination sessions (including the ordinary examination\nsession) over a period of at least one year, though at most two years after the course has\nceased/been changed. The same applies to work experience and VFU, although this is\nrestricted to just one additional examination session.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and\nFail (U).\nTo pass the course, all mandatory components must be passed. To earn a higher grade\nthan Pass, a higher weighted average from the grades of the components is required.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire isused to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indication which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\nThe course replaces the course DIT370, 7.5 credits. The course cannot be included in a\ndegree which contains DIT370. Neither can the course be included in a degree which is\nbased on another degree in which the course DIT370 is included."
+  }
+}

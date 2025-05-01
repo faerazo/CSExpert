@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source_document": "DIT455.pdf",
+    "course_code": "DIT455",
+    "course_title": "Game Engine Architecture",
+    "swedish_title": "Spelmotorarkitektur",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2017-12-19",
+    "valid_from_date": "2018-08-19",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Game Design & Technology Master's Programme (N2GDT)",
+      "Computer Science, Bachelor's Programme (N1COS)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2017-12-19 and was last revised on 2018-02-09 to be valid from 2018-08-19, autumn semester of 2018.",
+    "Position in the educational system": "The course is compulsory within the Game Design & Technology Master's\nProgramme. It is also a single subject course at the University of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Game Design & Technology Master's Programme (N2GDT)\nand 3) Computer Science, Bachelor's Programme (N1COS)",
+    "Entry requirements": "To be eligible for this course, students must have successfully completed the course\nDIT223 Computer Graphics, 7.5 credits, or equivalent.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completion of the course the student should be able to:\nKnowledge and understanding\n• Describe the typical structure of game engines and interactive simulations, and the\nrequirements of specific parts of such engines\n• Describe what public libraries and programs can be combined with existing game\nengines to provide the required functionality of a game engine\nCompetence and skills\n• Extend existing game engines to augment functionality while maintaining stability\nand having predictable consequences on resource use\n• Present extensions of a game engine through a demonstrator at a public presentation\nJudgement and approach\n• Analyze existing game engines to determine functionality and extendibility\n• Plan several parallel extensions of a game engine while minimizing dependencies",
+    "Course content": "The course aims to give an understanding of components in modern interactive\nsimulation engines.\nThe modeling and implementation of the fundamental components of game engines and\ninteractive simulations is the core of the Game Architecture Engine course. The course\nfocuses mainly upon 3 dimensional systems although other types of game engines and\nsimulation are mentioned. The visual components of these systems are central for the\ncourse but other important areas such as networking, artificial intelligence and physics\nsimulations are covered by the course.",
+    "Sub-courses": "",
+    "Form of teaching": "The course is based around a series of exercises and a project within the subject area\nwhich is complemented with lectures and workshops. Work in the project is supervised\nwith the aim of giving practical training in the development of frameworks for game\nenginges and interactive simulations.\nLanguage of instruction: English",
+    "Assessment": "The course is examined through an individual project, an oral presentation, and\nattendance during other students' presentations.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nThe course is graded by an individual report and an oral presentation. Presence at the\npublic final presentation is also required to pass.",
+    "Course evaluation": "The course is evaluated through meeting after the course between teachers and student\nrepresentatives. Further, an anonymous questionnaire is used to ensure written\ninformation. The outcome of the evaluations serves to improve the course by indicating\nwhich parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\nThe course replaces the course TIA103, 7.5 credits. The course cannot be included in a\ndegree which contains TIA103. Neither can the course be included in a degree which is\nbased on another degree in which the course TIA103 is included."
+  }
+}

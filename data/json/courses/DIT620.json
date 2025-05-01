@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "source_document": "DIT620.pdf",
+    "course_code": "DIT620",
+    "course_title": "Databases",
+    "swedish_title": "Databases",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "First Cycle",
+    "main_field_of_study": "Software Engineering, Computer Science",
+    "specialization": "G1F, First Cycle, has less than 60 credits in first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2006-11-17",
+    "valid_from_date": "2017-08-20",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Bachelor's Programme in Mathematics (N1MAT)",
+      "Systems Biology, Master's Programme (N2SYB)",
+      "Computer Science, Bachelor's Programme (N1COS)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2006-11-17 and was last revised on 2017-06-16 by Department of Computer Science and Engineering to be valid from 2017-08-20, autumn semester of 2017.",
+    "Position in the educational system": "The course is a part of the Computer Science Bachelor's programme and an elective course at the University of Gothenburg. The course is also offered as an elective course in the Computer Science Master's programme and in the Software Engineering Master's programme.\n\nThe course can be part of the following programmes: 1) Computer Science, Master's Programme (N2COS), 2) Applied Data Science Master's Programme (N2ADS), 3) Bachelor's Programme in Mathematics (N1MAT), 4) Systems Biology, Master's Programme (N2SYB) and 5) Computer Science, Bachelor's Programme (N1COS)\n\nMain field of studies\nSoftware Engineering\nComputer Science\n\nSpecialization\nG1F, First Cycle, has less than 60 credits in first-cycle course/s as entry requirements\nG1F, First Cycle, has less than 60 credits in first-cycle course/s as entry requirements",
+    "Entry requirements": "The entry requirements for the course is:\n\n- basic knowledge in programming i.e. at least one of the courses DIT440, DIT011, DIT950, DIT948 or equivalent.\n- basic knowledge in discrete mathematics such as MMGD10 or equivalent.\n\nEnglish A level or English proficiency equivalent to IELTS 5.5 no part under 5.0 or TOEFL 530 p, TWE score 4.0 is also required.",
+    "Learning outcomes": "After completion of the course the student is expected to be able to:\n\nKnowledge and understanding\n•\nargue about different data models, in particular the relational and semi-structured models, regarding their strengths and weaknesses for modelling purposes;\n• read and write relational algebra expressions;\n• discuss the effects of transactions, user authorisation and indexes.\n\nSkills and abilities\n•\nquery a database for relevant data using SQL;\n• change the contents of a database using SQL;\n• connect to and use a database from external applications.\n\nJudgement and approach\n•\ndesign a database that correctly models a domain and its constraints as a relational schema;\n• give a database schema with related constraints, implement the database in a relational database management system (DBMS).",
+    "Course content": "The course covers the basic principles of database systems as seen by users, application programmers and database administrators. A laboratory assignment develops these topics as a running example throughout the course. These include programming in SQL, as seen by a user querying or modifying an existing database, by a database designer, and by an application programmer invoking SQL from a host language.\nCourse contents include:\n• Entity-Relationship modeling\n• Functional Dependencies and Normalisation\n• Database querying and manipulation through SQL\n• Interfacing to a database from a host language (Java/JDBC)\n• The semi-structured model, XML\nThe course is thus a typical first course in database systems, and occupies a traditional place in the curriculum.",
+    "Sub-courses": "",
+    "Form of teaching": "Language of instruction: English",
+    "Assessment": "Written individual exam (fail/pass/pass with distinction) given in an examination hall and a programming assignment divided into 4 subtasks (pass/fail). The programming assignment is normally carried out in pairs.\n\nA student who failed a same examination twice has the right to request of the department a change of examiner. The request is to be in writing and submitted as soon as possible. The department is to grant such a request without undue delay.\n\nIn cases where a course has been discontinued or major changes have been made a student should be guaranteed at least three examination occasions (including the ordinary examination occasion) during a time of at least one year from the last time the course was given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nIn order to be awarded a Pass (G) for a full course, a passing mark must be obtained in the written exam and the laboratory assignment must be approved. To be awarded Pass with Distinction (VG) for the full course, a VG grade must be obtained in the written exam and the laboratory assignment must be approved.\n\nRegarding the application of ECTS scales, please see Vice-Chancellors decision 2007-05- 28,\ndnr G 81976/07.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between teachers and student representatives. Further, an anonymous questionnaire can be used to ensure written information. The outcome of the evaluations serves to improve the course by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "It is recommended, however not required, to read DIT960 Datastrukturer or equivalent before hand.\n\nThe syllabus correspond to the syllabus of the Database course at Chalmers."
+  }
+}

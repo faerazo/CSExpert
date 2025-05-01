@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source_document": "DIT840.pdf",
+    "course_code": "DIT840",
+    "course_title": "Methods of Interaction Analysis",
+    "swedish_title": "Methods of Interaction Analysis",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science-Interaction Design",
+    "specialization": "AXX, Second cycle, in-depth level of the course cannot be classified",
+    "language_of_instruction": "English",
+    "confirmation_date": "2006-11-17",
+    "valid_from_date": "2007-09-01",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Computer Science, Bachelor's Programme (N1COS)",
+      "No translation available (NDATM)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2006-11-17 to be valid\nfrom 2007-09-01.",
+    "Position in the educational system": "The course is a part of the Computer Science Master's programme and a single subject\ncourse at the University of Gothenburg.\nThe course is labeled as an AXX course.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Computer Science, Bachelor's Programme (N1COS) and 3)\nNo translation available (NDATM)",
+    "Entry requirements": "To be eligible for the course students should have successfully completed a first year of\nstudies within the subject Computer Science or equivalent. Spefically, a course in\nHuman-Compter-Interaction is required.",
+    "Learning outcomes": "The course focuses on data collection and analysis methods to use within interaction\ndesign. After completing this course the student is expected to be able to:\n• Understand what aspect affects the information gathered in methods for interaction\nanalysis\n• Identify user requirements through user studies\n• Evaluate design solutions regarding user requirements\n• Plan and execute interaction analysis studies.",
+    "Course content": "The course consists of lectures, seminars and exercises based on a couple of central\nthemes. Each theme is presented in a lecture and students are then given practical\nexperience through assignments or exercises. The theme is then concluded by a\ndiscussion to reflect upon the practical experiences. The themes studied include:\n• Core concepts and main theoretical frameworks\n• Methods to identify user requirements\n• Selection criteria for studies and what consequences these have\n• Consequences of the context of studies\n• Mediation artifacts\n• Theoretical and empirical perspectives",
+    "Sub-courses": "",
+    "Form of teaching": "Language of instruction: English",
+    "Assessment": "The course is graded by group exercises and individual exams.",
+    "Grades": "The grading scale comprises: Fail, Pass, Pass with distinction.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire can be used\nto ensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": ""
+  }
+}

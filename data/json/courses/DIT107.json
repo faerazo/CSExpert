@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "source_document": "DIT107.pdf",
+    "course_code": "DIT107",
+    "course_title": "Tangible interaction",
+    "swedish_title": "Tangible interaction",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": [
+      "Interaction Design",
+      "Computer Science-Interaction Design"
+    ],
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2021-11-15",
+    "valid_from_date": "2023-01-16",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Computer Science, Bachelor's Programme (N1COS)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2021-11-15 to be valid from 2023-01-16, spring semester of 2023.",
+    "Position in the educational system": "The course can be offered as a single subject course.\n\nThe course can be part of the following programmes: 1) Computer Science, Master's Programme (N2COS) and 2) Computer Science, Bachelor's Programme (N1COS)\n\nMain field of studies\nInteraction Design\nComputer Science-Interaction Design\n\nSpecialization\nA1F, Second cycle, has second-cycle course/s as entry requirements\nA1F, Second cycle, has second-cycle course/s as entry requirements",
+    "Entry requirements": "To be eligible for the course the student must have a Bachelor degree of 180 hec. Special requirements are the course TIA108 Prototyping in Interaction Design 7.5 credits and a course in Human-Computer Interaction (TIG095) 7.5 credits or the equivalent.\n\nTo be eligible for this course as a programme student in the Computer Science Bachelor's Programme, N1COS, the student must have passed at least 90 credits in programme courses and the addditional courses TIG095 Human Computer Interaction 7.5 credits and TIA108 Prototyping in Interaction Design 7.5 credits or the equivalent.",
+    "Learning outcomes": "After completion of this course, the student should be able to:\n\nKnowledge and understanding\n• Explain how computational technology can be used for design of interactive\nsystems,\n• Explain human cognition and motor skills,\n• Explain how human cognition and motor skills can guide the design and evaluation\nof tangible user interfaces,\n• Explain theories of tangible interaction.\n\nCompetence and skills\n• Design and realize interactive prototypes using tangible interface components,\n• Choose appropriate and economic use of advanced components and corresponding\ntechniques,\n• Reflect on the relation between spatiality, form, and temporality in tangible\ninteraction design.\n\nJudgement and approach\n• Criticize and discuss computer-based tangible artifacts,\n• Question in which way computational technology is shaping our present and future\nsociety and way of life,\n• Reflect on sustainability issues such as energy consumption and material waste\ncaused by novel computational systems and devices.",
+    "Course content": "Tangible interaction is based on physical interfaces that are either specifically developed for one system or for those that in new ways, allows interaction with computer systems.\n\nThe course puts the skills and knowledge acquired in the prototyping course into an applied context. Tangible interaction deals with computational technology and services and offers both theoretical and practical educational modalities. Lectures will present theory and development of tangible interaction and draws from research and commercial practice. Technologies such as sensors, actuators and smart materials are presented from a perspective of human interaction and use.",
+    "Sub-courses": "1. Take home examination (Hemtentamen), 3.5 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)\n2. Project (Projekt), 4 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)",
+    "Form of teaching": "Education is performed through lectures, workshops and a group project.\n\nLanguage of instruction: English",
+    "Assessment": "The course is examined through two modules:\n1. Project 4 credits (U-VG) and\n2. Individual Written Home Essay 3.5 credits (U-VG)\n\nAssessment is based on a group project performed in the studios, as well as an individual home essay.\n\nA student who has failed the examination twice has the right to change examiners, if it is possible. A written application should be sent to the Department.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U).\nA pass grade requires passing grades on both sub-courses. The grade is a weighted combintion of the sub-course grades.",
+    "Course evaluation": "After completion of the course the students are to be given the possibility of participating in course anonymously. Continuous evaluation will be used, including three meetings between teacher(s) and student representatives. Additionally, the course will be evaluated with a course questionnaire, and discussed with the student representatives.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature will be announced no later than 8 weeks prior to the start of the course.\nThe course replaces the course TIA107, 7.5 credits. The course cannot be included in a degree which contains TIA107. Neither can the course be included in a degree which is based on another degree in which the course TIA107 is included."
+  }
+}

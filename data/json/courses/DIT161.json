@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "source_document": "DIT161.pdf",
+    "course_code": "DIT161",
+    "course_title": "Real-Time Systems",
+    "swedish_title": "Real-Time Systems",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science-Secure and Depend Compr Systems",
+    "specialization": "AXX, Second cycle, in-depth level of the course cannot be classified",
+    "language_of_instruction": "English",
+    "confirmation_date": "2017-06-30",
+    "valid_from_date": "2017-08-20",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Game Design & Technology Master's Programme (N2GDT)",
+      "Software Engineering Master's Programme (N2SOM)",
+      "Computer Science, Bachelor's Programme (N1COS)",
+      "No translation available (NDATM)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2006-11-17 and was last revised on 2017-06-30 by Department of Computer Science and Engineering to be valid from 2017-08-20, autumn semester of 2017.",
+    "Position in the educational system": "The course is a part of the Computer Science Masters programme and an elective course\nat Göteborg University.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS), 3)\nGame Design & Technology Master's Programme (N2GDT), 4) Software Engineering\nMaster's Programme (N2SOM), 5) Computer Science, Bachelor's Programme (N1COS)\nand 6) No translation available (NDATM)",
+    "Entry requirements": "To be eligible for the course\nstudents should have successfully completed two years of an education aimed at a\nbachelor degree within Computer Science or equivalent.",
+    "Learning outcomes": "A real-time system is a computer system in which the correctness of the system depends\non the time when results are generated. Real-time systems interact with a more or less\ntime-critical environment. Examples of real-time systems are control systems for cars,\naircraft and space vehicles, manufacturing system, financial transaction systems,\ncomputer games and multimedia applications. This course is intended to give basic\nknowledge about methods for the design and analysis of real-time systems.\nAfter completing the course the student is expected to be able to:\n• Construct concurrently executing software for real-time applications that interface\nto input/output units such as sensors and actuators.\n• Describe the principles and mechanisms used for designing real-time kernels and\nrun-time systems.\n• Describe the mechanisms used for time-critical scheduling of tasks.\n• Apply the basic analysis methods used for verifying the temporal correctness of a set\nof executing tasks.",
+    "Course content": "In the design of real-time systems it is practical to implement the application software as\nmultiple concurrently executing processes, there each process is responsible for a given\ntask in the system. The concept of multiple processes provides for an intuitive way of\ndecomposing a complex system into smaller parts that are simple to comprehend and\nimplement. This course uses Ada as the main programming language because of its\npowerful support for programming of concurrent processes. In particular, the course\ndemonstrates how language constructs such as rendezvous and protected objects are\nused for implementing communication/synchronization between processes, resource\nmanagement and mutual exclusion. Since other programming languages uses monitors\nor semaphores to implement these functions, the course also contains a presentation of\nsuch techniques. In addition, the course demonstrates how to use low-level\nprogramming in Ada to handle interrupt-driven communication with input and output\ndevices. To demonstrate the general principles in real-time programming, the course\nalso gives examples of how these techniques are implemented in other programming\nlanguages, such as C and Java. In order to execute a program containing multiple\nconcurrent processes there is a real-time kernel (run-time system) that distributes the\navailable capacity of the microprocessor among the processes. The course shows how a\nsimple real-time kernel is organized. The real-time kernel determines the order of\nexecution for the processes by means of a scheduling algorithm. To that end, the course\npresents techniques based on cyclic time-table based scheduling as well as scheduling\ntechniques using static or dynamic process priorities. In addition, protocols for the\nmanagement of shared hardware and software resources are presented. In real-time\nsystems with strict timing constraints it is necessary to make a pre-run-time analysis of\nthe system schedulability. The course presents three different analysis methods for\nsystems that schedule processes using static or dynamic priorities: utilization-based\nanalyse, response-time analysis, and processor-demand analysis. In conjunction with\nthis, the course also gives an account on how to derive the maximum resource\nrequirement (worst-case execution time) of a process. The course is organized as a series\nof lectures and a set of exercise sessions where the programming techniques and theories\npresented at the lectures are put into practice. The course material is examined by means\nof a final written exam. In addition, there is a compulsory laboratory exercise in which\nthe students should implement the software for a realistic real-time application. Apart\nfrom the programming of cooperating concurrent processes, the exercise also\nencompasses advanced resource management and low-level programming of input and\noutput devices.",
+    "Sub-courses": "",
+    "Form of teaching": "Language of instruction: English\nThe course is held in English.",
+    "Assessment": "Written exam.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).",
+    "Course evaluation": "null",
+    "Additional information": ""
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "source_document": "DIT460.pdf",
+    "course_code": "DIT460",
+    "course_title": "Game Development Project",
+    "swedish_title": "Spelutvecklingsprojekt",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Interaction Design",
+    "specialization": "A1F, Second cycle, has second-cycle\ncourse/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2017-12-19",
+    "valid_from_date": "2018-08-19",
+    "programmes": [
+      "Game Design & Technology Master's Programme (N2GDT)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2017-12-19 to be valid from 2018-08-19, autumn semester of 2018.",
+    "Position in the educational system": "The course is compulsory within the Game Design & Technology Master's Programme.\nThe course can be part of the following programme: 1) Game Design & Technology\nMaster's Programme (N2GDT)",
+    "Entry requirements": "To be eligible for this course, students must have successfully completed the following\ncourses, or equivalent:\n• TIA248 Introduction to Game Research, 7.5 credits\n• TIA098 Gameplay Design, 7.5 credits\n• TIA265 Game Engine Architecture, 7.5 credits\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completion of the course the student should be able to:\nKnowledge and understanding\n• List best practice methodologies for development of computer games and game\nengines\n• Name standard concepts and terms for describing games, game engines, and game\ndevelopment projects\nCompetence and skills\n• Apply user evaluation methods in practical projects\n• Apply design & development methods systematically to create and critically\ncompare different possibilities in game development projects\n• Identify needs and requirements of specific intended user groups and stakeholders\nJudgement and approach\n• Motivate design choices in an game development process\n• Conduct an informed analysis of what ethical and societal effects technical solutions\ncan create in a game develop process",
+    "Course content": "The course aims at a deepened understanding of the central issues in game development\nby means of practical training and reflection in a game project.\nCentral issues that is addressed in the course is the interaction between different\ntechnical parts of a game, how the different parts of a game engine can work together to\ncreate a specific game experience, and how methods and tools can in the best way\nsupport a development process. A combination of new and previously introduced\nmethods and tools will be used in the course. Play testing and reflection regarding\nethical and social consequences of the developed game are parts of the course besides\nthe development of the game and its game engine.",
+    "Sub-courses": null,
+    "Form of teaching": "The course consists of lectures, seminars, project work in groups, and exercises\nsupported by supervision related to these. The project work is carried out in groups of\nnormally 5-6 people, with access to supervision. Creating several reports and running\nseveral tests are part of the development process and the result of the project work is\npresented both orally and in writing.",
+    "Assessment": "The course is examined by means of exercises, a project report and an individual written\nessay.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nTo pass the course, approved results on all exercises are required.\nThe final grade of the course is based on the project report and the individual report.",
+    "Course evaluation": "The course is evaluated through meeting after the course between teachers and student\nrepresentatives. Further, an anonymous questionnaire is used to ensure written\ninformation. The outcome of the evaluations serves to improve the course by indicating\nwhich parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\nThe courses TIA108 Prototyping in interaction design, TIA106 Graphical interfaces,\nand TIA104 Interaction design methodology or equivalent are recommended."
+  }
+}

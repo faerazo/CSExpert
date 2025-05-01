@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source_document": "TIA243.pdf",
+    "course_code": "TIA243",
+    "course_title": "Designing User Experiences",
+    "swedish_title": "Design av användarupplevelser",
+    "department": "Dep of Applied Information Technology",
+    "field_of_education": "Science 50% and Design 50%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Interaction Design, Computer Science-Interaction Design",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2016-02-24",
+    "valid_from_date": "2017-08-20",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Game Design & Technology Master's Programme (N2GDT)",
+      "Software Engineering and Management Master's Programme (N2SOF)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Applied Information Technology\non 2016-02-24 and was last revised on 2017-06-30 by Department of Computer Science\nand Engineering to be valid from 2017-08-20, autumn semester of 2017.",
+    "Position in the educational system": "The course is offered as a single subject course.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Game Design & Technology Master's Programme (N2GDT)\nand 3) Software Engineering and Management Master's Programme (N2SOF)",
+    "Entry requirements": "Bachelor degree 180 hec and the courses TIG095 Human computer interaction, 7.5 hec\nand TIA104 Interaction design methodology, 7.5 hec or the equivalent.",
+    "Learning outcomes": "After completion of the course the student should be able to:\nKnowledge and understanding\n• Explain what \"User Experience\" means, and give an account of the most common\nthoeries and approaches within the area.\n• Describe UX-oriented design methods as well as their underlying theories.\n• Know how to analyze and discuss a certain design in terms of user experience and\ndesign goals.\nSkills and abilities\n• Analyze possible user experiences provided by an interactive system or object.\n• Choose and apply suitable design methods.\n• Design towards a certain user experience, making it permeate all aspects of the\nartifact.\n• Be able to motivate ones design decisions in relation to the user experience one is\ndesigning for.\n• Give and receive constructive feedback regarding design for user experiences.\nJudgement and approach\n• Be able to apply related approaches and theories in order to discuss, or design a\ncertain user experience.\n• Be able to conclude and discuss the ethical and societal consequences of designing a\ncertain user experience.",
+    "Course content": "After the course you should have a clear idea of some aesthetic ideals and how to design\naccording to them, giving a valid design rationale. Designing interactive systems it often,\nbut not always about designing for efficiency. However, it is just as important to design\nthe experience of use, as the functionality of the artifact in itself, although they are\nclosely intertwined. Apart from designing for efficiency, we can also aim for playfulness,\ncriticism, embodiment or various emotions (e.g. fear, joy, comfort), all of which create\ndifferent user experiences. In this course we will look closer at different kinds of user\nexperiences and discuss and practice how to design for them.\nContent includes, but is not limited to:\n• What it means to design for a user experience.\n• Common views and approaches towards designing user experiences.\n• Analysis of possible user experiences provided by an interactive system or object.\n• The connection between design objectives, design rationale and design decisions.",
+    "Sub-courses": "",
+    "Form of teaching": "The course features both practical and theoretical parts, as well as work in groups and\nindividual work. Lectures and literature seminars give a theoretical foundation, which\nare immediately put into practice. Focus is upon turning analysis and reflection into\npractical action. Focus is also on exchange of thoughts, feedback, designs and ideas.\nHence, the course requires active participation.\nLanguage of instruction: English",
+    "Assessment": "The course is examined through three modules:\n1. Four literature seminars, where literature is presented along with an issue and is\ndiscussed (2 hec).\n2. Four exercises where various design methods that focus on the user experience in a\ndesign process is practiced.The exercises also give training in giving and taking\nconstructive criticism (2 hec).\n3. Individual written project/home exam (3,5 hec).\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nThe Exercises and the Literature seminars will be given the grades Pass or Fail. The\nwritten examination will be given the grades Pass with Distinction, Pass or Fail.\nIn order to pass the entire course, the student needs to receive Pass on all three modules.\nIn order to receive Pass with Distinction the student must receive Pass with Distinction\non the written examination and Pass on the other two modules.",
+    "Course evaluation": "After completion of the course the students are to be given the possibility of\nparticipating in course anonymously. The processed results of the course evaluations are\nto be made accessible to students and also made available to new students at the\nbeginning of the next course. The results of and possible changes to the course will be\nshared with students who participated in the evaluation and students who are starting\nthe course.",
+    "Additional information": ""
+  }
+}

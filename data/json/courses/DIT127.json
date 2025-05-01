@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "source_document": "DIT127.pdf",
+    "course_code": "DIT127",
+    "course_title": "Web applications",
+    "swedish_title": "Webapplikationer",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "First Cycle",
+    "main_field_of_study": "Computer Science",
+    "specialization": "G2F, First cycle, has at least 60 credits in\nfirst-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2021-11-15",
+    "valid_from_date": "2024-01-15",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Computer Science, Bachelor's Programme (N1COS)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2021-11-15 and was last revised on 2022-11-17 to be valid from 2024-01-\n15, spring semester of 2024.",
+    "Position in the educational system": "The course is a part of the Computer Science Bachelor's programme and an elective\ncourse at the University of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS) and 2) Computer Science, Bachelor's Programme (N1COS)",
+    "Entry requirements": "The requirement for the course is to have successfully completed 100 hec in the\nComputer Science Bachelor's\nProgramme or equivalent. The following courses, or equivalent, must be completed:\nDIT012 Imperative Programming with Basic Object-orientation, 7.5 hec, DIT952\nObject-oriented Programming and Design 7.5 hec, DIT960 Data structures, 7.5 hec,\nDIT420 Computer communication 7.5 hec and DIT620 Databases 7.5 hec.",
+    "Learning outcomes": "After completion of the course the student is expected to be able to:\nKnowledge and understanding\n- Design, implement, deploy, test and debug a basic web application.\n- Solve the special problems of web application in particular the use of multiple\nparadigms and technologies within the same application.\n- Explain and discuss the importance of open standards\nCompetence and skills\n- Search for relevant information based on specifications.\nJudgement and approach\n- Assess different potential solutions for the development of web applications.",
+    "Course content": "The course presents a number of technologies, how they are related and used for\ndeveloping web applications. The course provides a good insight to modern complex\nweb based applications. Design problems related to web- applications are presented\nsuch as session handling, navigation, persistens, etc.\nInformation retrieval from manuals and specifications is an integral and important\naspect of the course.\nThe course is applied and the work is carried out in modern advanced development\nenvironments. As an important part the course presents advanced debugging,\nconfiguration, deployment and execution of web applications.",
+    "Sub-courses": "1. Project (Projekt), 6 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)\n2. Assignments (Inlämningsuppgifter), 1.5 credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "Lectures, computer exercises (assignments) and project work.\nLanguage of instruction: English",
+    "Assessment": "The course is examined by written assignments and a written project. The assignments\nand project are carried out in groups of normally 4 students.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and\nFail (U).\nThe laboratory assignments must be passed for the course to be completed. The grade\nfor the course will be determined by the project grade.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nThe Literature and other written documentation are in English.\nThe course replaces the course DIT126, 7.5 credits. The course cannot be included in a\ndegree which contains DIT126. Neither can the course be included in a degree which is\nbased on another degree in which the course DIT126 is included."
+  }
+}
