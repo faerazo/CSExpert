@@ -58,8 +58,7 @@ class GeminiPDFParser:
                - swedish_title
                - department
                - field_of_education
-               - credits
-               - swedish_credits
+               - credits (only the number, not the text)
                - cycle
                - main_field_of_study
                - specialization 
@@ -91,7 +90,6 @@ class GeminiPDFParser:
                 "department": "[department]",
                 "field_of_education": "[field]",
                 "credits": "[credits]",
-                "swedish_credits": "[swedish credits]",
                 "cycle": "[cycle]",
                 "main_field_of_study": "[main field]",
                 "specialization": "[specialization]",
