@@ -7,7 +7,7 @@ export const ChatInterface: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      content: 'Hello! I am your RAG-powered assistant. I can answer questions based on the documents that have been uploaded to the system.',
+      content: 'Hello! I am CSExpert. I can help you with your questions about courses and programs in the Department of Computer Science and Engineering at the University of Gothenburg.',
       sender: 'ai',
       timestamp: new Date(),
     }

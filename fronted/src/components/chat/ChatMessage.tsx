@@ -34,7 +34,7 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({
     )}>
       <div className="flex flex-col">
         <div className="text-sm font-medium mb-1">
-          {isUser ? 'You' : 'AI Assistant'}
+          {isUser ? 'You' : 'CSExpert'}
         </div>
         <div className="text-base">{message.content}</div>
         

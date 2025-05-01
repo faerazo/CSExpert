@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -35,7 +34,7 @@ export const ChatInput: React.FC<ChatInputProps> = ({
   
   return (
     <form onSubmit={handleSubmit} className="p-4 border-t border-brand-medium">
-      <div className="flex items-end gap-2">
+      <div className="flex items-start gap-2">
         <div className="flex-1">
           <Textarea
             value={message}
