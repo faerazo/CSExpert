@@ -5,7 +5,6 @@ from pathlib import Path
 import pandas as pd
 from pypdf import PdfReader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-import matplotlib.pyplot as plt
 from tqdm import tqdm
 
 class CourseDocumentProcessor:
@@ -14,31 +13,37 @@ class CourseDocumentProcessor:
     def __init__(self, pdf_dir="data/courses/pdf/"):
         self.pdf_dir = pdf_dir
         self.section_patterns = [
-            # Common section headers in course documents
-            (r'Title|Course name|Course code', "Course Information"),
-            (r'Confirmation', "Confirmation"),
-            (r'Position in the educational system|Position in educational system', "Position in Educational System"),
-            (r'Entry [Rr]equirements?', "Entry Requirements"),
-            (r'Learning [Oo]utcomes?|On completion of the course', "Learning Outcomes"),
-            (r'Course [Cc]ontent', "Course Content"),
-            (r'Form[s]? of [Tt]eaching|Teaching [Ff]orms?', "Teaching Forms"),
-            (r'Assessment|Examination|Forms of examination', "Assessment"),
-            (r'Grades', "Grades"),
-            (r'Course [Ee]valuation', "Course Evaluation"),
-            (r'Additional [Ii]nformation', "Additional Information"),
-            (r'About|Course description', "About"),
-            (r'Prerequisites and selection', "Prerequisites and Selection"),
-            (r'Literature', "Literature"),
-            (r'Contact information', "Contact Information")
+            # Precise section headers in course documents
+            (r'^Confirmation$', "Confirmation"),
+            (r'^Field\s+of\s+education', "Field of education"),
+            (r'^Department', "Department"),
+            (r'^Position\s+in\s+the\s+educational\s+system', "Position in the educational system"),
+            (r'^Entry\s+[Rr]equirements', "Entry requirements"),
+            (r'^Learning\s+[Oo]utcomes', "Learning outcomes"),
+            (r'^Course\s+[Cc]ontent', "Course content"),
+            (r'^Sub-courses', "Sub-courses"),
+            (r'^Form\s+of\s+[Tt]eaching|^Teaching\s+[Ff]orms', "Form of teaching"),
+            (r'^Assessment|^Examination', "Assessment"),
+            (r'^Grades', "Grades"),
+            (r'^Course\s+[Ee]valuation', "Course evaluation"),
+            (r'^Additional\s+[Ii]nformation', "Additional information")
+        ]
+        
+        # Learning outcomes subsection patterns (now handled differently)
+        self.learning_outcome_subsections = [
+            "Knowledge and understanding",
+            "Competence and skills",
+            "Judgement and approach"
         ]
         
         # Regex patterns for metadata extraction
         self.metadata_patterns = {
             "course_code": r'([A-Z]{2,3}\d{3,4})',
-            "credits": r'(\d+(?:\.\d+)?)\s*credits|hp|högskolepoäng',
+            "credits": r'(\d+(?:\.\d+)?)\s*(?:credits|hp|högskolepoäng)',
             "level": r'([Ff]irst|[Ss]econd|[Tt]hird)\s*[Cc]ycle|([Bb]asic|[Aa]dvanced)\s*[Ll]evel|[Bb]achelor\'s\s*[Ll]evel|[Mm]aster\'s\s*[Ll]evel',
-            "department": r'Department of ([^,\n]+)',
-            "faculty": r'Faculty of ([^,\n]+)'
+            "department": r'Department\s+of\s+([^,\n]+)',
+            "faculty": r'Faculty\s+of\s+([^,\n]+)',
+            "field_of_education": r'Field\s+of\s+education:\s*([^,\n]+)',
         }
         
         self.chunks = []
@@ -52,6 +57,10 @@ class CourseDocumentProcessor:
                 page_text = page.extract_text()
                 if page_text:
                     text += page_text + "\n"
+            
+            # Remove bullet points
+            text = text.replace('•', '')
+            
             return text
         except Exception as e:
             print(f"Error extracting text from {pdf_path}: {e}")
@@ -77,13 +86,10 @@ class CourseDocumentProcessor:
             print(f"{'='*80}")
             
             # Display identified sections
-            sections = self.find_section_boundaries(text)
-            for i, section in enumerate(sections):
-                print(f"\n--- Section {i+1}: {section['section_name']} ---")
-                print(f"Start line: {section['start_line']}, End line: {section['end_line']}")
-                header_text = section['text'].split('\n')[0]
-                print(f"Header: {header_text}")
-                print(f"Preview: {section['text'][:200]}...")
+            sections = self.extract_structured_sections(text)
+            for section_name, section_text in sections.items():
+                print(f"\n--- Section: {section_name} ---")
+                print(f"Content: {section_text[:150]}...")
             
             # Display identified metadata
             print(f"\n{'='*80}")
@@ -100,106 +106,110 @@ class CourseDocumentProcessor:
             "source_document": filename,
             "course_code": "Unknown",
             "course_title": "Unknown",
-            "credits": "Unknown",
-            "level": "Unknown",
             "department": "Unknown",
-            "faculty": "Unknown"
+            "field_of_education": "Unknown",
+            "credits": "Unknown",
+            "programmes": None
         }
         
-        # Extract course code
-        course_code_match = re.search(self.metadata_patterns["course_code"], text)
-        if course_code_match:
-            metadata["course_code"] = course_code_match.group(0)
+        # Extract course information from the footer line that contains both English and Swedish information
+        # Look for a line like: "DIT930    Advanced databases, 7.5 credits / Avancerade databaser, 7,5 högskolepoäng"
+        course_info_pattern = r'([A-Z]{2,3}\d{3,4})\s+([^,]+),\s*(\d+(?:\.\d+)?)\s*credits\s*/\s*([^,]+),\s*(\d+(?:,\d+)?)\s*högskolepoäng'
+        course_info_match = re.search(course_info_pattern, text)
         
-        # Extract course title - Look for heading or title patterns
-        title_patterns = [
-            r'# (.*?)(?:\n|$)',                           # Markdown heading
-            rf'{metadata["course_code"]}\s+(.*?)(?:\n|$)', # Title following code
-            r'Course:\s+(.*?)(?:\n|$)',                   # Explicit course label
-            r'^(.*?)(?:\n|$)'                             # First line as fallback
-        ]
+        if course_info_match:
+            metadata["course_code"] = course_info_match.group(1).strip()
+            metadata["course_title"] = course_info_match.group(2).strip()
+            metadata["credits"] = course_info_match.group(3).strip()
+            print(f"Extracted course info: {metadata['course_code']} - {metadata['course_title']} ({metadata['credits']} credits)")
+        else:
+            # Fallback to looking for just the English version
+            simple_pattern = r'([A-Z]{2,3}\d{3,4})\s+([^,]+),\s*(\d+(?:\.\d+)?)\s*credits'
+            simple_match = re.search(simple_pattern, text)
+            if simple_match:
+                metadata["course_code"] = simple_match.group(1).strip()
+                metadata["course_title"] = simple_match.group(2).strip()
+                metadata["credits"] = simple_match.group(3).strip()
+                print(f"Extracted course info (simple): {metadata['course_code']} - {metadata['course_title']} ({metadata['credits']} credits)")
         
-        for pattern in title_patterns:
-            title_match = re.search(pattern, text, re.MULTILINE)
-            if title_match:
-                potential_title = title_match.group(1).strip()
-                if len(potential_title) > 3 and len(potential_title) < 100 and metadata["course_code"] not in potential_title:
-                    metadata["course_title"] = potential_title
-                    break
-        
-        # Extract credits
-        credits_match = re.search(self.metadata_patterns["credits"], text, re.IGNORECASE)
-        if credits_match:
-            metadata["credits"] = credits_match.group(1)
-        
-        # Extract level
-        level_match = re.search(self.metadata_patterns["level"], text, re.IGNORECASE)
-        if level_match:
-            for group in level_match.groups():
-                if group:
-                    metadata["level"] = group.strip()
-                    break
+        # Extract field of education
+        field_match = re.search(r'Field\s+of\s+education:\s*([^\n]+)', text, re.IGNORECASE)
+        if field_match:
+            metadata["field_of_education"] = field_match.group(1).strip()
         
         # Extract department
-        dept_match = re.search(self.metadata_patterns["department"], text, re.IGNORECASE)
+        dept_match = re.search(r'Department:\s*Department\s+of\s+([^,\n]+)', text, re.IGNORECASE)
         if dept_match:
             metadata["department"] = dept_match.group(1).strip()
+        else:
+            # Try alternative pattern
+            alt_dept_match = re.search(r'Department\s+of\s+([^,\n]+)', text, re.IGNORECASE)
+            if alt_dept_match:
+                metadata["department"] = alt_dept_match.group(1).strip()
         
-        # Extract faculty
-        faculty_match = re.search(self.metadata_patterns["faculty"], text, re.IGNORECASE)
-        if faculty_match:
-            metadata["faculty"] = faculty_match.group(1).strip()
+        # Extract programme information as a single text string - only the numbered list
+        position_section = re.search(r'Position in the educational system.*?(?=\n\n|\Z)', text, re.DOTALL | re.IGNORECASE)
+        if position_section:
+            position_text = position_section.group(0)
+            
+            # Then extract just the programme list
+            programme_list_match = re.search(r'following\s+programmes:\s*((?:\d\).*?)+)(?=\n\n|\Z)', position_text, re.DOTALL)
+            if programme_list_match:
+                programmes = programme_list_match.group(1).strip()
+                programmes = re.sub(r'\n\s*\n', '\n', programmes)
+                metadata["programmes"] = programmes
+                print(f"Extracted programmes: {metadata['programmes']}")
         
         return metadata
     
-    def find_section_boundaries(self, text):
-        """Identify section boundaries in the text."""
-        # Find potential section headers
-        section_markers = []
-        
-        # Check each line for section-like patterns
+    def extract_structured_sections(self, text):
+        """Extract sections following the user's desired structure."""
+        # Split text into lines for processing
         lines = text.split('\n')
         
-        # First pass - identify clear section headers
+        # Initialize sections dictionary with empty values for all desired sections
+        sections = {
+            "Confirmation": "",
+            "Position in the educational system": "",
+            "Entry requirements": "",
+            "Learning outcomes": "",
+            "Course content": "",
+            "Sub-courses": "",
+            "Form of teaching": "",
+            "Assessment": "",
+            "Grades": "",
+            "Course evaluation": "",
+            "Additional information": ""
+        }
+        
+        # Find section boundaries for other sections
+        section_boundaries = []
         for i, line in enumerate(lines):
-            line = line.strip()
-            if not line:
-                continue
-                
-            # Check if the line looks like a section header
             for pattern, section_name in self.section_patterns:
                 if re.search(pattern, line, re.IGNORECASE):
-                    section_markers.append({
-                        "line_num": i,
-                        "section_name": section_name,
-                        "header_text": line
-                    })
+                    section_boundaries.append((i, section_name))
                     break
         
-        # Sort sections by their position in the document
-        section_markers.sort(key=lambda x: x["line_num"])
+        # Sort boundaries by line number
+        section_boundaries.sort(key=lambda x: x[0])
         
-        # Now determine section content ranges
-        sections = []
-        for i, marker in enumerate(section_markers):
-            start_line = marker["line_num"]
-            
-            # Set end_line to the start of the next section or end of document
-            if i < len(section_markers) - 1:
-                end_line = section_markers[i+1]["line_num"]
+        # Extract content for each section
+        for i, (start_line, section_name) in enumerate(section_boundaries):
+            # Skip if not in our target sections
+            if section_name not in sections:
+                continue
+                
+            # Determine end line (next section or end of document)
+            if i < len(section_boundaries) - 1:
+                end_line = section_boundaries[i+1][0]
             else:
                 end_line = len(lines)
             
-            # Extract section text
-            section_text = '\n'.join(lines[start_line:end_line]).strip()
+            # Extract and clean section content
+            content = '\n'.join(lines[start_line:end_line]).strip()
             
-            sections.append({
-                "section_name": marker["section_name"],
-                "section_id": marker["section_name"].lower().replace(' ', '_'),
-                "text": section_text,
-                "start_line": start_line,
-                "end_line": end_line
-            })
+            # Store in sections dictionary
+            sections[section_name] = content
         
         return sections
     
@@ -216,23 +226,26 @@ class CourseDocumentProcessor:
             # Extract metadata
             metadata = self.extract_metadata(text, filename)
             
-            # Find section boundaries
-            sections = self.find_section_boundaries(text)
+            # Extract structured sections
+            sections_dict = self.extract_structured_sections(text)
             
             # Create section chunks with metadata
             chunks = []
-            for i, section in enumerate(sections):
+            for i, (section_name, section_text) in enumerate(sections_dict.items()):
+                if not section_text:  # Skip empty sections
+                    continue
+                
                 section_metadata = metadata.copy()
                 section_metadata.update({
-                    "section": section["section_name"],
-                    "section_id": section["section_id"],
+                    "section": section_name,
+                    "section_id": section_name.lower().replace(' ', '_'),
                     "chunk_type": "section_content",
                     "position": i
                 })
                 
                 chunks.append({
                     "metadata": section_metadata,
-                    "text": section["text"]
+                    "text": section_text
                 })
             
             return chunks
@@ -289,29 +302,6 @@ class CourseDocumentProcessor:
         
         return self.chunks
     
-    def visualize_sections(self):
-        """Visualize the distribution of identified sections."""
-        if not self.chunks:
-            print("No chunks available. Process PDFs first.")
-            return
-        
-        # Count sections
-        section_counts = {}
-        for chunk in self.chunks:
-            section = chunk["metadata"].get("section", "Unknown")
-            section_counts[section] = section_counts.get(section, 0) + 1
-        
-        # Plot
-        plt.figure(figsize=(12, 6))
-        plt.bar(section_counts.keys(), section_counts.values())
-        plt.xticks(rotation=45, ha='right')
-        plt.tight_layout()
-        plt.title("Section Distribution in Course Documents")
-        plt.savefig("section_distribution.png")
-        plt.close()
-        
-        print(f"Generated section distribution visualization (section_distribution.png)")
-    
     def export_to_csv(self, filename="course_chunks.csv"):
         """Export chunks to CSV for review."""
         if not self.chunks:
@@ -347,7 +337,7 @@ def main():
     parser = argparse.ArgumentParser(description="Process course PDFs to extract structured content")
     parser.add_argument("--pdf_dir", default="data/courses/pdf/", help="Directory containing PDF files")
     parser.add_argument("--max_files", type=int, default=None, help="Maximum number of files to process")
-    parser.add_argument("--max_tokens", type=int, default=500, help="Maximum tokens per chunk")
+    parser.add_argument("--max_tokens", type=int, default=1000, help="Maximum tokens per chunk")
     parser.add_argument("--output_format", choices=["csv", "json", "both"], default="both", 
                         help="Output format for results")
     parser.add_argument("--debug", action="store_true", help="Enable debug mode to print raw PDF extraction")
@@ -373,9 +363,6 @@ def main():
     if args.output_format in ["json", "both"]:
         processor.export_to_json()
     
-    # Visualize section distribution
-    processor.visualize_sections()
-    
     # Display sample chunks
     if chunks:
         print("\nSample chunks:")
@@ -383,7 +370,7 @@ def main():
             print(f"\n--- Chunk {i+1} ---")
             print(f"Section: {chunk['metadata']['section']}")
             print(f"Course: {chunk['metadata']['course_code']} - {chunk['metadata']['course_title']}")
-            print(f"Text preview: {chunk['text'][:100]}...")
+            print(f"Text preview: {chunk['text']}")
 
 if __name__ == "__main__":
     main()
