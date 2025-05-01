@@ -6,3 +6,4 @@
 
 # Other files to ignore
 data/.DS_Store
+/fronted/node_modules
