@@ -6,5 +6,28 @@
 
 # Other files to ignore
 data/.DS_Store
-/fronted/node_modules
+/frontend/node_modules
+
+# Frontend build output
+/frontend/dist
+/frontend/build
+
+# Frontend dependency files
+/frontend/package-lock.json
+/frontend/yarn.lock
+/frontend/bun.lockb
+
+# Frontend logs and caches
+/frontend/.cache
+/frontend/coverage
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# Frontend environment files
 .env
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
