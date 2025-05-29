@@ -10,9 +10,10 @@ from dotenv import load_dotenv
 class GeminiParser:
     """Process course documents (PDF or Markdown) using Gemini API to extract structured content."""
     
-    def __init__(self, pdf_dir=None, md_dir=None, output_dir="data/courses/json/", api_key=None):
+    def __init__(self, pdf_dir=None, syllabus_md_dir=None, webpage_md_dir=None, output_dir="data/courses/json/", api_key=None):
         self.pdf_dir = pdf_dir
-        self.md_dir = md_dir
+        self.syllabus_md_dir = syllabus_md_dir
+        self.webpage_md_dir = webpage_md_dir
         self.output_dir = output_dir
         self.model_name = "gemini-2.5-pro-preview-03-25"
         
@@ -174,6 +175,64 @@ class GeminiParser:
         Only return valid JSON, no explanations or other text. Be sure to map the section names correctly even if they have different names in the original markdown.
         """
     
+    def get_webpage_markdown_prompt(self):
+        """Get the prompt for webpage Markdown extraction."""
+        return """
+        You are an expert at extracting structured information from course webpage markdown files.
+        
+        Extract the following information from the markdown:
+        1. Metadata: 
+           - course_code (from the filename which is always course_code.md)
+           - course_title
+           - department (from "Offered by the" section)
+           - credits (only the number, not the text, stored as a string)
+           - iteration (like "Spring 2025")
+           - study_pace (like "50%")
+           - time (like "Day")
+           - location (like "Göteborg")
+           - study_form (like "Campus")
+           - language_of_instruction (from "Language")
+           - duration (the date range like "24 Mar 2025 - 8 Jun 2025")
+           - application_period (the date range for applications)
+           - application_code (like "GU-86092")
+        
+        2. Sections: 
+           - About (from the main course description)
+           - Entry requirements (from "Entry requirements" section)
+           - Selection (from "Selection" section)
+           - Tuition (from "Tuition" section including costs and fees information)
+           - Additional information (from "Last modified" or other relevant info)
+        
+        Return the information in the following JSON format:
+        {
+          "metadata": {
+            "source_document": "[filename]",
+            "course_code": "[code]",
+            "course_title": "[title]",
+            "department": "[department]",
+            "credits": "[credits]",
+            "iteration": "[iteration]",
+            "study_pace": "[study_pace]",
+            "time": "[time]",
+            "location": "[location]",
+            "study_form": "[study_form]",
+            "language_of_instruction": "[language]",
+            "duration": "[duration]",
+            "application_period": "[application_period]",
+            "application_code": "[application_code]"
+          },
+          "sections": {
+            "About": "[text]",
+            "Entry requirements": "[text]",
+            "Selection": "[text]",
+            "Tuition": "[text]",
+            "Additional information": "[text]"
+          }
+        }
+        
+        Only return valid JSON, no explanations or other text.
+        """
+    
     def process_pdf(self, pdf_path):
         """Process a single PDF file with Gemini API."""
         filename = os.path.basename(pdf_path)
@@ -282,14 +341,68 @@ class GeminiParser:
             print(f"Error processing {filename}: {e}")
             return None
     
+    def process_webpage_markdown(self, md_path):
+        """Process a single webpage Markdown file with Gemini API."""
+        filename = os.path.basename(md_path)
+        print(f"Processing Webpage Markdown: {filename}...")
+        
+        # Check if output file already exists
+        output_path = os.path.join(self.output_dir, f"{os.path.splitext(filename)[0]}.json")
+        if os.path.exists(output_path):
+            print(f"Output file already exists for {filename}, skipping.")
+            return
+            
+        try:
+            # Read markdown file
+            md_content = self.read_markdown(md_path)
+            
+            # Create prompt for Gemini
+            prompt = self.get_webpage_markdown_prompt()
+            
+            # Create the content parts for generation
+            content_parts = [
+                {"text": prompt + "\n\nHere is the markdown content:\n\n" + md_content}
+            ]
+            
+            # Generate response from Gemini
+            response = self.model.generate_content(content_parts)
+            
+            # Extract JSON from response
+            json_str = response.text
+            
+            # Clean up the response to ensure it's valid JSON
+            # Remove markdown code block markers if present
+            json_str = json_str.replace("```json", "").replace("```", "").strip()
+            
+            # Parse JSON to validate
+            parsed_json = json.loads(json_str)
+            
+            # Add source document to metadata if not present
+            if "metadata" in parsed_json and "source_document" not in parsed_json["metadata"]:
+                parsed_json["metadata"]["source_document"] = filename
+                
+            # Write to output file
+            with open(output_path, "w", encoding="utf-8") as f:
+                json.dump(parsed_json, f, indent=2, ensure_ascii=False)
+                
+            print(f"Successfully extracted and saved data for {filename}")
+            return parsed_json
+                
+        except Exception as e:
+            print(f"Error processing {filename}: {e}")
+            return None
+    
     def process_directory(self, file_type="pdf"):
         """Process all files of specified type in the directory."""
         if file_type == "pdf" and self.pdf_dir:
             files = list(Path(self.pdf_dir).glob("*.pdf"))
             process_func = self.process_pdf
-        elif file_type == "md" and self.md_dir:
-            files = list(Path(self.md_dir).glob("*.md"))
+        elif file_type == "md" and self.syllabus_md_dir:
+            files = list(Path(self.syllabus_md_dir).glob("*.md"))
             process_func = self.process_markdown
+        elif file_type == "webpage_md" and self.webpage_md_dir:
+            files = list(Path(self.webpage_md_dir).glob("*.md"))
+            process_func = self.process_webpage_markdown
         else:
             raise ValueError(f"Invalid file type: {file_type} or directory not specified")
         
@@ -311,21 +424,24 @@ def main():
     parser = argparse.ArgumentParser(description="Process course documents using Gemini API")
     parser.add_argument("--api_key", help="Google API key for Gemini (optional if set in .env file)")
     parser.add_argument("--pdf", action="store_true", help="Process PDF files")
-    parser.add_argument("--md", action="store_true", help="Process Markdown files")
+    parser.add_argument("--syllabus_md", action="store_true", help="Process syllabus Markdown files")
+    parser.add_argument("--webpage_md", action="store_true", help="Process webpage Markdown files")
     parser.add_argument("--pdf_dir", default="data/courses/pdf/", help="Directory containing PDF files")
-    parser.add_argument("--md_dir", default="data/firecrawl_courses_syllabus/", help="Directory containing Markdown files")
+    parser.add_argument("--syllabus_md_dir", default="data/firecrawl_courses_syllabus/", help="Directory containing syllabus markdown files")
+    parser.add_argument("--webpage_md_dir", default="data/firecrawl_courses_pages/", help="Directory containing webpage markdown files")
     parser.add_argument("--output_dir", default="data/courses/json/", help="Directory for JSON output")
     
     args = parser.parse_args()
     
     # Ensure at least one file type is selected
-    if not (args.pdf or args.md):
-        parser.error("You must specify at least one file type to process (--pdf or --md)")
+    if not (args.pdf or args.syllabus_md or args.webpage_md):
+        parser.error("You must specify at least one file type to process (--pdf, --syllabus_md, or --webpage_md)")
     
     processor = GeminiParser(
         api_key=args.api_key,
         pdf_dir=args.pdf_dir if args.pdf else None,
-        md_dir=args.md_dir if args.md else None,
+        syllabus_md_dir=args.syllabus_md_dir if args.syllabus_md else None,
+        webpage_md_dir=args.webpage_md_dir if args.webpage_md else None,
         output_dir=args.output_dir
     )
     
@@ -336,10 +452,15 @@ def main():
         pdf_results = processor.process_directory(file_type="pdf")
         results.extend(pdf_results)
     
-    # Process Markdown files if requested
-    if args.md:
-        md_results = processor.process_directory(file_type="md")
-        results.extend(md_results)
+    # Process syllabus Markdown files if requested
+    if args.syllabus_md:
+        syllabus_md_results = processor.process_directory(file_type="md")
+        results.extend(syllabus_md_results)
+    
+    # Process webpage Markdown files if requested
+    if args.webpage_md:
+        webpage_md_results = processor.process_directory(file_type="webpage_md")
+        results.extend(webpage_md_results)
     
     # Display sample of first result if available
     if results:
