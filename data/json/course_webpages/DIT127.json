@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source_document": "DIT127.md",
+    "course_code": "DIT127",
+    "course_title": "Web applications",
+    "department": "Department of Computer Science and Engineering",
+    "credits": "7.5",
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "20 Jan 2025 - 23 Mar 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-86018"
+  },
+  "sections": {
+    "About": "The course presents a number of technologies, how they are related and used for developing web applications. The course provides a good insight to modern complex web based applications. Design problems related to web- applications are presented such as session handling, navigation, persistens, etc.\n\nInformation retrieval from manuals and specifications is an integral and important aspect of the course.\n\nThe course is applied and the work is carried out in modern advanced development environments. As an important part the course presents advanced debugging, configuration, deployment and execution of web applications.",
+    "Entry requirements": "The requirement for the course is to have successfully completed 100 hec in the Computer Science Bachelor's Programme or equivalent. The following courses, or equivalent, must be completed:\n\nDIT012 Imperative Programming with Basic Object-orientation, 7.5 hec, DIT952 Object-oriented Programming and Design 7.5 hec, DIT960 Data structures, 7.5 hec, DIT420 Computer communication 7.5 hec and DIT620 Databases 7.5 hec.",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits.",
+    "Tuition": "Full education cost: 19 253 SEK\nFirst payment: 19 253 SEK\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)",
+    "Additional information": "Last modified 23 September 2024"
+  }
+}

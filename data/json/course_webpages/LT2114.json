@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source_document": "LT2114.md",
+    "course_code": "LT2114",
+    "course_title": "Practical natural language processing",
+    "department": "Department of Philosophy, Linguistics, Theory of Science",
+    "credits": "7.5",
+    "iteration": "Autumn 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "5 Nov 2025 - 18 Jan 2026",
+    "application_period": "17 Mar 2025 - 15 Apr 2025",
+    "application_code": "GU-24026"
+  },
+  "sections": {
+    "About": "This course gives a practical introduction to different problems encountered within natural language processing, and some solutions.\n\nStudents will gain practical experience in programming while solving these problems. The course is divided into four main topics: one covering basic concepts and three covering subfields of NLP ? words, syntax or morphology and semantics/pragmatics.\n\n1. Basic concepts:\n- Basic concepts in NLP.\n- Automata theory and mathematical linguistics.\n- Probability theory and machine learning.\n- Evaluation measurement, correctness, precision, and recall.\n\n2. Words:\n- Corpora and corpus annotation.\n- Finite-state methods for segmentation and morphological analysis.\n- Statistical language modeling with n-gram markov models.\n\n4. Syntax:\n- Part-of-speech tagging and chunking/partial parsing, making use of methods within machine learning or/and finite-state technology.\n- Common formal grammars, such as feature based and probabilistic context-free grammars.\n- Syntactic parsing.\n\n5. Semantics and Pragmatics:\n- Lexical semantics, lexica, Wordnet and FrameNet.\n- Word sense disambiguation with machine learning.\n- Text classification with machine learning.",
+    "Entry requirements": "Successful completion of at least 7.5 credits in programming courses such as: Programming, DIT948; Imperative Programming with Basic Object-orientation, DIT012; Functional programming, DIT142; Introduction to programming, LT2111; or equivalent.",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits.",
+    "Tuition": "Full education cost: 18 878 SEK\n\nFirst payment: 18 878 SEK\n\n**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)",
+    "Additional information": "Application closed, late application opens 15 July 2025.\nLast modified 28 February 2025"
+  }
+}

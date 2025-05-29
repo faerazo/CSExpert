@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source_document": "DIT206.md",
+    "course_code": "DIT206",
+    "course_title": "Discrete optimization",
+    "department": "Department of Computer Science and Engineering",
+    "credits": "7.5",
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "20 Jan 2025 - 23 Mar 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-86007"
+  },
+  "sections": {
+    "About": "The course gives an introduction to modelling various optimization problems using linear programming (LP) and integer linear programming (ILP). The Simplex algorithm to solve LPs is described and analysed. The LP relaxations of ILPs are studied and analysed to design approximation algorithms. The duality theory of linear programs is studied and used to design approximation algorithms. Vector programs to model discrete optimization problems are described and relaxed to semi-definite programs (SDPs).",
+    "Entry requirements": "- 7,5 credits programming in high level language like Java, Python etc\n\n- 7,5 credits basic course in calculus/analysis\n\n- 7,5 credits basic course in linear algebra\n\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 19 253 SEK\n\nFirst payment: 19 253 SEK\n\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)",
+    "Additional information": "Last modified: 20 September 2024"
+  }
+}

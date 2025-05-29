@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source_document": "DIT290.md",
+    "course_code": "DIT290",
+    "course_title": "Distributed Systems, Advanced Course",
+    "department": "Department of Computer Science and Engineering",
+    "credits": "7.5",
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "20 Jan 2025 - 23 Mar 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-86037"
+  },
+  "sections": {
+    "About": "In this course the students first will get to know the points of inherent difference and strength of distributed systems compared with sequential or strongly-coupled systems; consequently.\n\nThe aim of the course is to teach the students to study the issues and problems that have to be addressed and solved efficiently for these differences to be taken advantage of, so that the system retains its strength and high potential.\n\nMore specifically the goal is to teach the students able to understand and solve all the problems that distributed systems like P2P, collaborative environment systems or even parts of the core internet techno have to solve in order to be able to function efficiently and correctly. The goal is to combine theoretical studies with their respective application oriented consequences.",
+    "Entry requirements": "Successfully completed a first year studies within the subject Computer Science or equivalent. Specifically, the course DIT240 Distributed systems is required. Applicants must prove their knowledge of English: English 6/English B from Swedish Upper Secondary School or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 19 253 SEK\n\nFirst payment: 19 253 SEK\n\n**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)",
+    "Additional information": "Last modified: 15 January 2025"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source_document": "DIT051.md",
+    "course_code": "DIT051",
+    "course_title": "Computer Architecture",
+    "department": "Department of Computer Science and Engineering",
+    "credits": "7.5",
+    "iteration": "Autumn 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "1 Sep 2025 - 2 Nov 2025",
+    "application_period": "17 Mar 2025 - 15 Apr 2025",
+    "application_code": "GU-86035"
+  },
+  "sections": {
+    "About": "The course covers architectural techniques necessary to achieve high performance for user programs. It also covers simulation-based analysis methods for quantitative assessment of the impact of a particular architectural technique on performance.\n\nThe content is divided into the following parts:\n\n1\\. The first part covers aspects affecting the development of computer technology including Moore's Law, performance measures (execution time vs. throughput), benchmarking, and fundamentals of computer performance such as Amdahl's Law and memory access locality.\n\n2\\. The second part covers various techniques for exploiting instruction level parallelism (ILP) by defining key concepts of what ILP is and what limits it. The techniques covered fall into two categories: dynamic and static techniques. The main dynamic techniques covered are Tomasulo's algorithm, branch prediction and speculation. The most important static techniques are loop unrolling, software pipelining, trace scheduling and predicated instructions.\n\n3\\. The third part covers principles of modern memory hierarchies such as inclusive and non-inclusive memory hierarchies, lockup free caching techniques, prefetching, classification of cache misses.\n\n4\\. The fourth part deals with multi-core microprocessors and techniques such as multi-threading and cache coherence.",
+    "Entry requirements": "Successfully completed two year of studies within the subject Computer Science or equivalent. The course DIT122 Datorsystemteknik or equivalent is required. Applicants must prove their knowledge of English: English 6/English B from Swedish Upper Secondary School or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 17 753 SEK\n\nFirst payment: 17 753 SEK\n\n**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)",
+    "Additional information": "Last modified\n15 January 2025"
+  }
+}

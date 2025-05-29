@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source_document": "DIT272.md",
+    "course_code": "DIT272",
+    "course_title": "Formal Methods in Software Development",
+    "department": "Department of Computer Science and Engineering",
+    "credits": "7.5",
+    "iteration": "Autumn 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "1 Sep 2025 - 2 Nov 2025",
+    "application_period": "17 Mar 2025 - 15 Apr 2025",
+    "application_code": "GU-86029"
+  },
+  "sections": {
+    "About": "The aim of this course is to teach knowledge and skills in, and judgement about, two important styles of formal methods for reasoning about software: model checking and deductive verification.\n\nEach style will be introduced in three ways: conceptual, theoretical, and practical, using a particular tool. The course builds on skills in firstorder logic and temporal logic, and shows how these formalisms can be applied, and extended, for the verification of software.\n\nOn the model checking side, we cover the following topics:\n\n- a specification language for concurrent processes,\n\n- verifying assertions,\n\n- synchronization,\n\n- verifying safety and liveness properties in temporal logic.\n\nOn the deductive verification side, we cover the following topics:\n\n- a unit level specification language for Java programs,\n\n- a logic for verification of Java programs,\n\n- verification of Java programs, in the sense that the implementation of a unit fulfils the specification.",
+    "Entry requirements": "Successfully completed courses corresponding to 120 credits within the subject Computer Science or equivalent, specifically DIT201 Logic in Computer Science, 7.5 credits, and a 7.5 credits course in object-oriented programming (or equivalent) are required. Applicants must prove their knowledge of English: English 6/English B from Swedish Upper Secondary School or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Tuition\nFull education cost: 17 753 SEK\nFirst payment: 17 753 SEK\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)\nApplication closed, late application opens 15 July 2025.",
+    "Additional information": "Last modified 20 February 2025"
+  }
+}

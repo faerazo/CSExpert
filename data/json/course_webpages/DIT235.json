@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source_document": "DIT235.md",
+    "course_code": "DIT235",
+    "course_title": "Types for Programs and Proofs",
+    "department": "Department of Computer Science and Engineering",
+    "credits": "7.5",
+    "iteration": "Autumn 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "1 Sep 2025 - 2 Nov 2025",
+    "application_period": "17 Mar 2025 - 15 Apr 2025",
+    "application_code": "GU-86034"
+  },
+  "sections": {
+    "About": "The development of powerful type systems is an important aspect of modern programming language design. This course provides an introduction to this area. In particular it introduces the notion of dependent type, a type which can depend on (is indexed by) values of another type, for example, the type of vectors indexed by its length. Dependent types are versatile. Through the Curry-Howard identification of proposition and types virtually any property of a program can be expressed using dependent types. The aim of the course is to give a solid and broad foundation in type systems for programming languages, and also give examples of type-based technologies in computer science.\n\n- introduction to lambda calculus and simple type theory\n\n- introduction to operational semantics and type systems\n\n- dependent type theory\n\n- the Curry-Howard identification of propositions as types\n\n- programming in Agda, a proof assistant\n\n- presentation of advanced topics in type systems",
+    "Entry requirements": "To be eligible to the course, the student should have successfully completed 120 credits of studies in computer science or mathematics, or equivalent. Specifically, a successfully completed 7.5 credit course in discrete mathematics (e.g., DIT980 Discrete Mathematics for Computer Scientists, or equivalent) and a successfully completed 7,5 credit course in functional programming (e.g. DIT143 Functional Programming, or equivalent is required.\n\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 17 753 SEK\n\nFirst payment: 17 753 SEK\n\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)",
+    "Additional information": "Last modified 20 February 2025"
+  }
+}

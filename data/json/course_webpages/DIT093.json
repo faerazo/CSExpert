@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source_document": "DIT093.md",
+    "course_code": "DIT093",
+    "course_title": "Algorithms",
+    "department": "Department of Computer Science and Engineering",
+    "credits": "7.5",
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "20 Jan 2025 - 23 Mar 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-86000"
+  },
+  "sections": {
+    "About": "The course topics are as follows:\n\n- Introduction. What is an efficient algorithm?\n\n- Tools for analysis of algorithms. O-notation. Analyzing loops and recursive calls. Solving recurrences;\n- Data structures and algorithms. Review of basic data structures;\n\n- Combining data structures. Merge-and-find;\n\n- Graph algorithms;\n\n- Greedy algorithms;\n\n- Divide-and-conquer;\n\n- Dynamic programming;\n\n- Backtracking and Implicit search trees. Branch-and-bound;\n\n- Short introduction to local search and approximation algorithms;\n\n- Basic complexity theory. Complexity classes P, NP, and NPC, reductions. Examples of NP-complete problems. Coping with hard problems;\n- Short introduction to other design techniques: local search, approximation algorithms, randomized algorithms, preprocessing, network flow.",
+    "Entry requirements": "The requirement for the course is to have successfully completed coursers corresponding to 120 hp in the subject Computer Science or Mathematics including:\n\n- 7.5 credits in discrete mathematics (DIT980 Discrete Mathematics for Computer Scientists, or the sub-course Introductory Algebra of MMG200 Mathematics I, orequivalent),\n\n- additionally 10 creditsin mathematics,\n\n- 7.5 creditsin imperative or object oriented programming (DIT012 ImperativeProgramming with Basic Object-orientation, or equivalent),\n\n- additionally 7.5 creditsin programming,\n\n- 7.5 creditsin data structures (DIT960 Data Structures, DIT375 Python for DataScientists or equivalent).\n\nApplicants must prove knowledge of English: English 6/English B or the equivalent levelof an internationally recognized test, for example TOEFL, IELTS",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 19 253 SEK\n\nFirst payment: 19 253 SEK\n\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)",
+    "Additional information": "Last modified\n\n20 February 2025"
+  }
+}

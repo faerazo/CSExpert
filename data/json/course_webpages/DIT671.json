@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source_document": "DIT671.md",
+    "course_code": "DIT671",
+    "course_title": "Computer Networks",
+    "department": "Department of Computer Science and Engineering",
+    "credits": "7.5",
+    "iteration": "Autumn 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "1 Sep 2025 - 2 Nov 2025",
+    "application_period": "17 Mar 2025 - 15 Apr 2025",
+    "application_code": "GU-86037"
+  },
+  "sections": {
+    "About": "This course focuses on the algorithmic design of network protocols and covers a range of sub-specialties including: computer communication network concepts, programming using BSD socket API, and distributed fault-tolerance algorithms with a very strong emphasis on self-stabilization. The aim of this course is to learn to design and analyze algorithms for network protocols and to gain knowledge in existing communication networks, including supporting systems and protocols, fundamental tasks and methods in data communication networks. Mastery of computer networks involves both theory and practice in the design, implementation and use of network protocols and services.\n\nThis course offers learning experiences that involve hands-on experimentation and analysis as they reinforce student understanding of concepts and their application to real-world problems. Several laboratory experiments are given and involve API programming for fault-tolerance network systems, and Internet interconnections and services from a practical perspective, and design and analysis of protocols with a strong emphasis on self-stabilizing algorithms.\n\nThis course provides the students with the analytical background needed for understanding fundamental issues in the design of distributed fault tolerance algorithms for computer network protocols. The course has a very strong emphasis on transient faults and how self-stabilizing algorithms can allow automatic recovery after their occurrence.",
+    "Entry requirements": "The requirement for the course is to have a Bachelor's degree within the subject Computer Science or equivalent. The student should also have successfully completed the courses listed below, either as part of the Bachelor's degree or as single subject courses.\n\n7.5 hec in discrete mathematics (DIT980 or equivalent)\n\n7.5 hec in finite automata theory and formal language (DIT322 or equivalent)\n\n7.5 hec in imperative or object oriented programming (DIT012, DIT952, or equivalent)\n\n7.5 hec in data structures (DIT961 or equivalent)\n\n7.5 hec in algorithms (DIT602 or equivalent)\n\n7.5 hec in computer communication (DIT423 or equivalent) or operating systems (DIT401 or equivalent)\n\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 17 753 SEK\n\nFirst payment: 17 753 SEK\n\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)",
+    "Additional information": "Last modified 20 February 2025\n\nApplication closed, late application opens 15 July 2025."
+  }
+}

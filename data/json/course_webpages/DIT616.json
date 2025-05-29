@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source_document": "DIT616.md",
+    "course_code": "DIT616",
+    "course_title": "Data-driven support for cyber-physical systems",
+    "department": "Department of Computer Science and Engineering",
+    "credits": "7.5",
+    "iteration": "Autumn 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "1 Sep 2025 - 2 Nov 2025",
+    "application_period": "17 Mar 2025 - 15 Apr 2025",
+    "application_code": "GU-86039"
+  },
+  "sections": {
+    "About": "The course gives an introduction to new cyber-physical systems, such as the smart grid, where data has become very important for adaptive operations and with an increased dependence on information and communication technologies (ICT). Topics in the course are focused on new methods in the intersection of computer science and other domains, to support distributed operations, cyber security, and processing of data that are generated due to digitalization of these systems (considering that the data can be massive).\n\nThe content is focused on distributed computing and systems, data processing, information and systems security, networking and computer communication in the context of new cyber-physical systems. There are lectures from the faculty to give an overview of the areas of the course, and invited presentations from industry to talk about actual systems, as well as in-depth presentations by the student themselves on specific research topics relating to their projects.\n\nTypically, the lectures include an introduction to the new types of cyber-physical systems, e.g., the smart grid. Open research problems in relation to distributed operations, data-processing and cyber security are discussed, e.g., through lectures on streaming, security and privacy, and communication suitable in this domain. Examples of cyber-physical systems important for society are presented, e.g., the smart grid from both on the transmission and distribution perspective. The course starts with an introduction to power systems, to give students enough knowledge of terminology to understand papers connected to the smart grid.",
+    "Entry requirements": "Bachelor's degree in Computer Science, or equivalent is required. The student should have successfully completed the following courses (or equivalent):\n\nDIT791 Introduction to ComputerEngineering, 7.5 hec\n\nDIT602 Algorithms, 7.5 hec\n\nDIT960 Data Structures, 7.5 hec\n\nand at least 7.5 hec in programming.\n\nFurthermore, the student should have completed 7.5 hec or equivalent in one of the four areas:\n\nComputer Communication (such as DIT423 or equivalent), or\n\nOperating Systems (such as DIT401 or equivalent), or\n\nComputer Security (such as DIT641 or equivalent), or\n\nDistributed Systems (such as DIT240 or equivalent).\n\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 17 753 SEK\n\nFirst payment: 17 753 SEK\n\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)\n\nApplication closed, late application opens 15 July 2025.",
+    "Additional information": "Last modified\n\n20 February 2025"
+  }
+}

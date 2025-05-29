@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "source_document": "MMA440.md",
+    "course_code": "MMA440",
+    "course_title": "Mathematical Structures of Deep Neural Networks",
+    "department": "Department of Mathematical Sciences",
+    "credits": "7.5",
+    "iteration": null,
+    "study_pace": null,
+    "time": null,
+    "location": null,
+    "study_form": null,
+    "language_of_instruction": null,
+    "duration": null,
+    "application_period": null,
+    "application_code": null
+  },
+  "sections": {
+    "About": "The course introduces the basic concepts of machine learning and deep learning. You will learn to use the most important deep learning architectures and training schemes. You will also learn to train a neural network using common deep learning frameworks in Python.\n\nThe course content covers a wide range of topics in machine learning, including types of learning problems, bias-variance tradeoff, overfitting, regularization, feed-forward neural networks, backpropagation, gradient-based optimizer, Glorot- and He initialization and regularizing neural networks.",
+    "Entry requirements": "General entry requirements and the equivalent of the courses MSG110 Probability Theory, MVG301 Programming with Python, and MMG500 Algebraic Structures. In addition to these requirements, it is also desirable with knowledge corresponding to the courses DIT013 Imperative Programming with Basic Object Orientation, MMA211 Higher Differential Calculus, and MMA201 Representation Theory.",
+    "Facilities": "Mathematical Sciences is a joint department of Chalmers/University of Gothenburg. Your education takes place in the spacious and bright premises of Mathematical Sciences at the Chalmers campus Johanneberg, where there are lecture halls, computer rooms and group rooms. Here you can also find student lunch room and reading room, as well as student counsellors and student office.",
+    "Selection": null,
+    "Tuition": null,
+    "Additional information": "Last modified 17 February 2025"
+  }
+}

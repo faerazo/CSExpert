@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source_document": "DIT101.md",
+    "course_code": "DIT101",
+    "course_title": "Language-Based Security",
+    "department": "Department of Computer Science and Engineering",
+    "credits": "7.5",
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "24 Mar 2025 - 8 Jun 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-86056"
+  },
+  "sections": {
+    "About": "The course covers the principles of programming language-based techniques for computer security.\n\nThe goal is;\n\n1) Understanding such applicaiton-level attacks as race conditions, buffer overruns, covert channels, and code injection.\n\n2)\n\nMastering the principles behind such language-based protection\n\ntechniques as static analysis, program transformation, and reference\n\nmonitoring.\n\nThe dual perspective of attack vs. protection is threaded through the lectures, laboratory assignments, and projects.",
+    "Entry requirements": "Successfully completed two year studies within the subject Computer Science or equivalent. Applicants must prove their knowledge of English: English 6/English B from Swedish Upper Secondary School or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 19 253 SEK\n\nFirst payment: 19 253 SEK\n\n**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)",
+    "Additional information": "Last modified: 15 January 2025"
+  }
+}

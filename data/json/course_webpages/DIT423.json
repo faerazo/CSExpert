@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source_document": "DIT423.md",
+    "course_code": "DIT423",
+    "course_title": "Computer communication",
+    "department": "Department of Computer Science and Engineering",
+    "credits": "7.5",
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "24 Mar 2025 - 8 Jun 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-86077"
+  },
+  "sections": {
+    "About": "In the study of protocols, we start with application level protocols enabling the student to start with more familiar paradigms in the context of applications that we use regularly. Moving to lower layers later in the course, we have the possibility to gradually uncover network services, their functionality and the ease/difficulty for achieving them.\n\nTopics covered include:\n\n- Networking applications and protocol; HTTP, SMTP and DNS.\n- Transport protocols TCP, UDP.\n- Content distribution systems.\n- Performance and congestion control.\n- Internet Protocol ITv4 and addressing.\n- Internet routing, mobile IPTv4.\n- Local area networks LANs, medium access protocols; MAC protocols (IEEE 802.X and others),\n- Ethernet, switches and VLANs. Wireless LAN especially Wifi, Access Points, bridges and physical media.\n- Detection and correction of bit errors.\n- Multimedia applications and network security.",
+    "Entry requirements": "Succesfully completed 45 credits within the area of Computer Science or equivalent, including the following;\n\n- a 7.5 credits course on fundamentals of digital systems and computer organisation (DIT791 Introduction to computer engineering, or equivalent),\n\n- a 7.5 credits course in imperative/object oriented programming (DIT012, DIT952, or equivalent),\n\n- a 7.5 creditscourse in discrete mathematics (DIT980 or equivalent).",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits.",
+    "Tuition": "Full education cost: 19 253 SEK\n\nFirst payment: 19 253 SEK\n\n**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)",
+    "Additional information": "Last modified\n\n\n15 January 2025"
+  }
+}

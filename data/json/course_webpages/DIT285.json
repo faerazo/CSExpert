@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source_document": "DIT285.md",
+    "course_code": "DIT285",
+    "course_title": "Advanced Requirements Engineering",
+    "department": "Department of Computer Science and Engineering",
+    "credits": "7.5",
+    "iteration": "Autumn 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "1 Sep 2025 - 2 Nov 2025",
+    "application_period": "17 Mar 2025 - 15 Apr 2025",
+    "application_code": "GU-86060"
+  },
+  "sections": {
+    "About": "Understanding requirements is key to successful software engineering: Building software that is fit for its purpose relies on understanding the exact problem that must be solved.\n\nThe purpose of this course is to learn challenges, principles, and practices to identify, analyse and manage requirements from relevant sources, both at the start and during a software development project. The course regards these issues in specific development contexts, i.e. specific constellations of customers and suppliers as well as constraints related to the domain and development lifecycle that characterise developing a piece of software.\n\nThis course is on advanced level and takes a holistic view on the state of the art of\n\nrequirements engineering as part of successful software engineering, technology, and management. Students are expected to familiarize themselves with recent, relevant research in the field, to critically reflect on the implications of new findings, and to develop their abilities and expertise as software professionals.\n\nThe course teaches challenges, principles, and concrete practices related to the following subfields of requirements engineering (RE):\n\n- Requirements analysis\n\n- Elicitation\n\n- Analysis\n\n- Documentation\n\n- Negotiation\n\n- Verification and validation\n\n- Requirements management\n\n- Change management\n\n- Traceability\n\nBeyond a brief introduction into concrete notations of requirements, the course focuses on holistically managing requirements-related knowledge on relevant scopes, including:\n\n- Team level: knowledge within a software development team and accross several teams working in the same area.\n\n- Program level: knowledge within a particular product team or across a set of related product teams (e.g. agile release trains)\n\n- Enterprise level: knowledge related to managing a portfolio of products.",
+    "Entry requirements": "To be eligible for this course the student should have:\n\n- a bachelor degree in Software Engineering, Computer Science, Information Technology, Information Systems, or equivalent;\n\n- a successfully completed course in programming (e.g., DIT044 Object-oriented Programming, DIT013 Imperative Programming with Basic Object-orientation, DIT143 Functional Programming, or equivalent);\n\n- a successfully completed project course (or bachelor thesis) in applied software development or software engineering (e.g., DIT212 Object-oriented programming project, or DIT543 Software Engineering Project).\n\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 17 753 SEK\n\nFirst payment: 17 753 SEK\n\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)\n\nApplication closed, late application opens 15 July 2025.",
+    "Additional information": "Last modified\n\n\n20 February 2025"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source_document": "DIT323.md",
+    "course_code": "DIT323",
+    "course_title": "Finite automata and formal languages",
+    "department": "Department of Computer Science and Engineering",
+    "credits": "7.5",
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "20 Jan 2025 - 23 Mar 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-86022"
+  },
+  "sections": {
+    "About": "The course's main topics are finite automata, regular expressions and context-free grammars. It also contains a short introduction to Turing machines.\n\nFinite automata and regular expressions are simple models of computation. They are for instance used to control traffic lights, to search for patterns, and for lexical analysis. Furthermore their theory can illustrate basic concepts in set theory and the theory of discrete structures.\n\nContext-free grammars are used to parse and analyse both artificial languages (for instance programming languages) and natural languages. Turing machines provide a more expressive model of computation. They help computer scientists understand the limits of mechanical computation by providing a precise definition of the concept of \"algorithm\". More detailed contents: Proofs. Finite automata, regular expressions, and related algorithms. Context-free grammars. Properties of regular and context-free languages. A short introduction to Turing machines.",
+    "Entry requirements": "To be eligible for this course, students must have successfully completed 45 credits in computer science or mathematics, including the following courses:\n\n- 7.5 credits in discrete mathematics (for example DIT980, MMG200 or equivalent)\n\n- 7.5 credits in programming (for example DIT440, DIT143, DIT012, DIT948, DIT953, MVG200 or equivalent)",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits.",
+    "Tuition": "Full education cost: 19 253 SEK\n\nFirst payment: 19 253 SEK\n\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)",
+    "Additional information": "Last modified 23 September 2024"
+  }
+}

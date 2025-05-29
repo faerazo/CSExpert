@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source_document": "DIT260.md",
+    "course_code": "DIT260",
+    "course_title": "Advanced Functional Programming",
+    "department": "Department of Computer Science and Engineering",
+    "credits": "7.5",
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "20 Jan 2025 - 23 Mar 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-86014"
+  },
+  "sections": {
+    "About": "The aim of the course is to explore the powerful mechanisms that functional programming languages offer to solve real problems and structure larger programs. The focus lies on library design and the concept of embedded languages.",
+    "Entry requirements": "To be eligible for the course, students should have successfully completed two years of an education aimed at a Bachelor's degree within Computer Science or equivalent. The courses DIT142 Functional programming, MMGD10 Introductory Discrete Mathematics and at least one of the courses DIT230 Programming language technology or DIT331 programming paradigms or equivalent are required. Applicants must prove their knowledge of English: English 6/English B from Swedish Upper Secondary School or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 19 253 SEK\n\nFirst payment: 19 253 SEK\n\n**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)",
+    "Additional information": "Last modified\n\n15 January 2025"
+  }
+}

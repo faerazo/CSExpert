@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source_document": "DIT843.md",
+    "course_code": "DIT843",
+    "course_title": "Quality Assurance and Testing",
+    "department": "Department of Computer Science and Engineering",
+    "credits": "7.5",
+    "iteration": "Autumn 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "3 Nov 2025 - 18 Jan 2026",
+    "application_period": "17 Mar 2025 - 15 Apr 2025",
+    "application_code": "GU-86105"
+  },
+  "sections": {
+    "About": "During this course the students will address the following content:\n\n- Definitions of software quality assurance, quality attributes, software metrics and models in quality management, internal quality and external quality;\n\n- Definitions and differences between software verification and validation approaches;\n\n- Definitions and practical application of software testing techniques and approaches related to test planning, design, execution and analysis.\n\nThe course will prepare the students to work as quality or test engineers (or managers) in software development organizations.",
+    "Entry requirements": "To be eligible for the course, the student should have a bachelor´s degree in Software Engineering, Computer Science, Computer Engineering, Information Technology, Information Systems, or equivalent. In addition, the student should have completed courses in:\n\n- Programming (e.g. DIT042 Object-oriented Programming, DIT012 Imperative Programming with Basic Object-orientation, DIT143 Functional Programming or equivalent) and\n\n- Practical software development or software engineering project (e.g. DIT212 Objectoriented programming project, or DIT543 Software Engineering Project).\n\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 17 753 SEK\n\nFirst payment: 17 753 SEK\n\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)\n\nApplication closed, late application opens 15 July 2025.",
+    "Additional information": "Last modified 20 February 2025"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source_document": "DIT261.md",
+    "course_code": "DIT261",
+    "course_title": "Parallel Functional Programming",
+    "department": "Department of Computer Science and Engineering",
+    "credits": "7.5",
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "24 Mar 2025 - 8 Jun 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-86062"
+  },
+  "sections": {
+    "About": "The course introduces the principles and practice of parallel programming in a functional programming language.\n\nIn this course, the term parallel programming means using multiple hardware cores or processors in order to gain speed. Functional programming is one of the most promising approaches to the problem of how to program in parallel, as the computers around us inevitably become more and more parallel.\n\nThe course covers approaches to parallel functional programming in both Haskell and Erlang. It covers current research on these topics, and relies heavily on scientific papers as its source materials. However, we stress that the emphasis in the course is practical, rather than theoretical. Several of the lectures are given by leading external experts from both academia and industry.",
+    "Entry requirements": "Successfully completed two years within the subject Computer Science or equivalent. The course participants must have completed an introductory course in Funtional Programming, preferably using Haskell or Erlang (examples at GU are DIT440 Introduction to Functional Programming and DIT142 Functional Programming). Applicants must prove their knowledge of English: English 6/English B from Swedish Upper Secondary School or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 19 253 SEK\n\nFirst payment: 19 253 SEK\n\n**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)",
+    "Additional information": "Last modified: 15 January 2025"
+  }
+}

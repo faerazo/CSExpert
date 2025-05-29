@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source_document": "MMA150.md",
+    "course_code": "MMA150",
+    "course_title": "Complex Analysis in Several Variables",
+    "department": "Department of Mathematical Sciences",
+    "credits": "7.5",
+    "iteration": "Spring 2026",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "23 Mar 2026 - 7 Jun 2026",
+    "application_period": "15 Sep 2025 - 15 Oct 2025",
+    "application_code": "GU-17006"
+  },
+  "sections": {
+    "About": "In this course you will study functions of several complex variables that are complex differentiable in a suitable sense. Similar to the situation of one complex variable, complex differentiability is a much stronger notion than real differentiability. This makes it possible to develop tools and obtain results that would not extend to the real setting.\n\nComplex analysis in several variables is a field that has seen great development during the last century and there are connections to several parts of modern mathematics, like analysis, algebra, geometry, and topology. In the course you will study various central concepts and methods within the field.\n\nAlthough much of the basic theory of several complex variables can easily be derived from the one-dimensional setting, there are phenomena, like the famous Hartogs’s phenomenon about extensions of complex differentiable functions, that occur only in higher dimensions. During the course you will learn about this and other examples that illustrate that the theory of complex variables in many ways essentially differs from the theory of one complex variable.",
+    "Entry requirements": "General entry requirements and the equivalent of 90 credits in mathematics, including the equivalent of the course MMG700 Analytic Function Theory.",
+    "Selection": "All eligible applicants who have applied before the deadline will be granted a place.",
+    "Tuition": "Full education cost: 17 753 SEK\n\nFirst payment: 17 753 SEK\n\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)",
+    "Additional information": "Last modified 15 January 2025"
+  }
+}
