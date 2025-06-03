@@ -22,11 +22,11 @@ with open('data/urls/course_pages_urls.txt', 'r') as file:
         # Format 2: .../course-name-dit123
         
         # Try to match pattern 1 (syllabus URLs)
-        course_code_match = re.search(r'-(dit\d+|msg\d+|mma\d+|tia\d+|lt\d+)/syllabus/', url, re.IGNORECASE)
+        course_code_match = re.search(r'-(dit\d+|msg\d+|mma\d+|msa\d+|tia\d+|lt\d+)/syllabus/', url, re.IGNORECASE)
         
         # If no match, try pattern 2 (course page URLs ending with course code)
         if not course_code_match:
-            course_code_match = re.search(r'-(dit\d+|msg\d+|mma\d+|tia\d+|lt\d+)$', url, re.IGNORECASE)
+            course_code_match = re.search(r'-(dit\d+|msg\d+|mma\d+|msa\d+|tia\d+|lt\d+)$', url, re.IGNORECASE)
         
         if course_code_match:
             course_code = course_code_match.group(1).upper()

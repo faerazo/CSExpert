@@ -38,7 +38,7 @@ DEFAULT_PDF_DIR = 'data/syllabi_pdfs'
 DEFAULT_BACKUP_DIR = 'data/syllabi_pdfs_backup'
 DEFAULT_URLS_INPUT_FILE = 'data/urls/course_syllabi_urls.txt'
 DEFAULT_URLS_OUTPUT_FILE = 'data/urls/filtered_syllabi_urls.txt'
-DEFAULT_KEYWORDS = ['N2COS', 'N2ADS', 'N2SOF', 'N1SOF', 'N2GDT']
+DEFAULT_KEYWORDS = ['N2COS', 'N2ADS', 'N2SOF', 'N1SOF', 'N2GDT', 'Computer Science and Engineering']
 
 # --- Argument Parsing ---
 def setup_arguments() -> argparse.Namespace:
@@ -119,10 +119,18 @@ def check_keywords_in_text(text: str, keywords: List[str]) -> Tuple[bool, Set[st
     text_upper = text.upper()
     for keyword in keywords:
         keyword_upper = keyword.upper()
-        # Use word boundaries to avoid partial matches within other words
-        pattern = r'\b' + re.escape(keyword_upper) + r'\b'
-        if re.search(pattern, text_upper):
-            found_keywords.add(keyword) # Store original case keyword
+        
+        if ' ' in keyword_upper:
+            # For multi-word phrases, use a simpler approach
+            # Replace spaces with flexible whitespace pattern
+            pattern = re.escape(keyword_upper).replace(r'\ ', r'\s+')
+            if re.search(pattern, text_upper):
+                found_keywords.add(keyword)
+        else:
+            # For single words, use word boundaries to avoid partial matches
+            pattern = r'\b' + re.escape(keyword_upper) + r'\b'
+            if re.search(pattern, text_upper):
+                found_keywords.add(keyword) # Store original case keyword
 
     return bool(found_keywords), found_keywords
 
