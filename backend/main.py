@@ -2,9 +2,12 @@ import os
 import logging
 from typing import Dict, List, Optional
 from contextlib import asynccontextmanager
+from pathlib import Path
 
-from fastapi import FastAPI, HTTPException, BackgroundTasks
+from fastapi import FastAPI, HTTPException, BackgroundTasks, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from pydantic import BaseModel
 import uvicorn
 from dotenv import load_dotenv
@@ -99,15 +102,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/", tags=["Health"])
-async def root():
-    """Root endpoint."""
-    return {
-        "message": "CSExpert - Gothenburg University Assistant API",
-        "status": "running",
-        "docs": "/docs"
-    }
-
+# API Routes (defined first to take precedence)
 @app.get("/health", tags=["Health"])
 async def health_check():
     """Health check endpoint."""
@@ -339,6 +334,52 @@ async def search_documents(q: str, doc_type: Optional[str] = None, limit: int = 
     except Exception as e:
         logger.error(f"Error searching documents: {e}")
         raise HTTPException(status_code=500, detail=f"Search failed: {str(e)}")
+
+# Frontend serving (defined last to avoid conflicts)
+frontend_dist_path = Path("../frontend/dist")
+if frontend_dist_path.exists():
+    # Mount static assets
+    app.mount("/assets", StaticFiles(directory=str(frontend_dist_path / "assets")), name="static")
+    
+    @app.get("/", response_class=FileResponse)
+    async def serve_frontend():
+        """Serve the React frontend."""
+        index_file = frontend_dist_path / "index.html"
+        if index_file.exists():
+            return FileResponse(str(index_file))
+        else:
+            # Fallback to API info if frontend not built
+            return {
+                "message": "CSExpert - Gothenburg University Assistant API",
+                "status": "running",
+                "docs": "/docs",
+                "note": "Frontend not built. Visit /docs for API documentation."
+            }
+    
+    @app.get("/{full_path:path}", response_class=FileResponse)
+    async def serve_frontend_routes(full_path: str):
+        """Catch-all route to serve React app for client-side routing."""
+        # First, try to serve static files from dist directory
+        file_path = frontend_dist_path / full_path
+        if file_path.exists() and file_path.is_file():
+            return FileResponse(str(file_path))
+        
+        # For all other routes, serve the React app (client-side routing)
+        index_file = frontend_dist_path / "index.html"
+        if index_file.exists():
+            return FileResponse(str(index_file))
+        else:
+            raise HTTPException(status_code=404, detail="Frontend not available")
+else:
+    @app.get("/", tags=["Health"])
+    async def root():
+        """Root endpoint when frontend is not built."""
+        return {
+            "message": "CSExpert - Gothenburg University Assistant API",
+            "status": "running",
+            "docs": "/docs",
+            "note": "Frontend not built. Visit /docs for API documentation."
+        }
 
 if __name__ == "__main__":
     # Get configuration from environment
