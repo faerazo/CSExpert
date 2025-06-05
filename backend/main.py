@@ -91,6 +91,8 @@ app.add_middleware(
         "http://127.0.0.1:3000",
         "http://127.0.0.1:5173",
         "http://127.0.0.1:8080",
+        "https://csexpert-1247159b5377.herokuapp.com",  # Your Heroku app
+        "*"  # Allow all origins for API testing (remove in production if needed)
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -341,7 +343,8 @@ async def search_documents(q: str, doc_type: Optional[str] = None, limit: int = 
 if __name__ == "__main__":
     # Get configuration from environment
     host = os.getenv("APP_HOST", "0.0.0.0")
-    port = int(os.getenv("APP_PORT", "8000"))
+    # Use Heroku's PORT environment variable if available, otherwise default to 8000
+    port = int(os.getenv("PORT", os.getenv("APP_PORT", "8000")))
     debug = os.getenv("DEBUG", "False").lower() == "true"
     
     uvicorn.run(
