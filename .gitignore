@@ -31,3 +31,4 @@ data/.DS_Store
 /frontend/.env.development.local
 /frontend/.env.test.local
 /frontend/.env.production.local
+/chroma_db_store
