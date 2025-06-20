@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "source_document": "DIT431.pdf",
+    "course_code": "DIT431",
+    "course_title": "High Performance Parallel Programming",
+    "swedish_title": "Parallell programmering för hög prestanda",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science",
+    "specialization": "AXX, Second cycle, in-depth level of the course cannot be classified",
+    "language_of_instruction": "English",
+    "confirmation_date": "2019-12-17",
+    "valid_from_date": "2020-08-31",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Software Engineering and Management Master's Programme (N2SOF)"
+    ],
+    "iteration": "Autumn 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "1 Sep 2025 - 2 Nov 2025",
+    "application_period": "17 Mar 2025 - 15 Apr 2025",
+    "application_code": "GU-86036"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2019-12-17 to be valid from 2020-08-31, autumn semester of 2020.",
+    "Position in the educational system": "The course is offered within several programmes. It is also a single subject course at the\nUniversity of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS) and 3)\nSoftware Engineering and Management Master's Programme (N2SOF)",
+    "Entry requirements": "To be eligible for the course, students should have successfully completed courses\ncorresponding to 105 credits within the subject of Computer Science, Mathematics,\nSoftware Engineering, or equivalent, including a 7.5 credits course in machine-oriented\nprogramming (e.g., DIT151 Machine Oriented Programming, or equivalent).\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• List the different types of parallel computer architectures, programming models and\nparadigms, as well as different schemes for synchronization and communication.\n• List the typical steps to parallelize a sequential algorithm\n• List different methods for analyses methodologies of parallel program systems\nCompetence and skills\n• Apply performance analysis methodologies to determine the bottlenecks in the\nexecution of a parallel program\n• Predict the upper limit to the performance of a parallel program\nJudgement and approach\n• Given a particular software, specify what performance bottlenecks are limiting the\nefficiency of parallel code and select appropriate strategies to overcome these\nbottlenecks given a certain software.\n• Design energy-aware parallelization strategies based on a specific algorithm\nstructure and computing system organization\n• Argue for which performance analysis methods that are important given a specific\ncontext.",
+    "Course content": "This course looks at parallel programming models, efficient programming\nmethodologies and performance tools with the objective of developing highly efficient\nparallel programs.\nThe course consists of a set of lectures and laboratory sessions. The lectures start with\nan overview of parallel computer architectures and parallel programming models and\nparadigms. An important part of the discussion are mechanisms for synchronization\nand data exchange. Next, performance analysis of parallel programs is covered. The\ncourse proceeds with a discussion of tools and techniques for developing parallel\nprograms in shared address spaces. This section covers popular programming\nenvironments such as pthreads and OpenMP. Next the course discusses the development\nof parallel programs for distributed address space. The focus in this part is on the\nMessage Passing Interface (MPI). Finally, we discuss programming approaches for\nexecuting applications on accelerators such as GPUs. This part introduces the CUDA\n(Compute Unified Device Architecture) programming environment.",
+    "Sub-courses": "1. Written hall examination (Skriftlig salstentamen), 4.5 credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n2. Laboratory (Laborationer), 3 credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "The teaching consists of theory-oriented lectures and lab sessions in which the\nparticipants develop code for different types of parallel computer systems.\nLanguage of instruction: English",
+    "Assessment": "The course is examined by an individual written exam that is carried out in an exam hall\nand a laboratory report written in groups of two.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nA Pass grade (G) for the entire course requires at least a Pass grade for all sub-courses.\nA Pass with Distinction grade (VG) for the entire course requires a Pass with Distinction\n(VG) on the Written hall examination.",
+    "Course evaluation": "The course is evaluated through a meeting after the course between teachers and student\nrepresentatives. Further, an anonymous questionnaire is used to ensure written\ninformation. The outcome of the evaluations serves to improve the course by indicating\nwhich parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\nKnowledge of concurrent programming is recommended, e.g., from the course DIT391\nPrinciples of Concurrent Programming, or equivalent.\nThe course replaces DIT430 Parallel programming for high performance, 7.5 credits.\nThis course cannot be included in a degree containing DIT430. Nor can it be part of a\ndegree based on another degree that includes DIT430.\n\nApplication closed, late application opens 15 July 2025.\nLast modified 18 February 2025",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 17 753 SEK\n\nFirst payment: 17 753 SEK\n\n**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)"
+  }
+}

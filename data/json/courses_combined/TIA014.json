@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "source_document": "TIA014.pdf",
+    "course_code": "TIA014",
+    "course_title": "Governance and Control for Digital Capabilities",
+    "swedish_title": "Styrning för digital förmåga",
+    "department": "Department of Applied Information Technology",
+    "field_of_education": "Science 100%",
+    "credits": "15",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Informatics",
+    "specialization": "AIN, Second cycle, has only first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2016-04-29",
+    "valid_from_date": "2021-01-18",
+    "programmes": [
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Digital Leadership Master's Programme (N2DIG)",
+      "IT Management, Master's Programme (N2ITM)",
+      "Software Engineering and Management Master's Programme (N2SOF)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Applied Information Technology on 2016-04-29 and was last revised on 2020-11-02 to be valid from 2021-01-18, spring semester of 2021.",
+    "Position in the educational system": "The course is offered as a single subject course.\n\nThe course can be part of the following programmes: 1) Applied Data Science Master's\nProgramme (N2ADS), 2) Digital Leadership Master's Programme (N2DIG), 3) IT\nManagement, Master's Programme (N2ITM) and 4) Software Engineering and\nManagement Master's Programme (N2SOF)",
+    "Entry requirements": "Bachelor Degree 180 hec or at least seven years documented work experience from IT\ndevelopment and/or business development.\nAdditionally English proficiency should be equivalent to the level of English 6/English\nCourse B from Swedish Upper Secondary School.",
+    "Learning outcomes": "On successful completion of the course the student should be able to:\n\nKnowledge and understanding\n• describe the underlying theories associated with digital capabilities;\n• describe the underlying theories associated with governance and control;\n• describe the terminology and contemporary issues within governance and control;\n\nCompetence and skills\n• based on the course literature, independently argue for and against different types of\ngovernance and control configurations for enhanced digital capabilities;\n• present and demonstrate the effects of specific governance and control\nconfigurations and misdirected governance and control for the business;\n\nJudgement and approach\n• evaluate and assess the effects of specific governance and control configurations and\nmisdirected governance and control for the business.",
+    "Course content": "Digitalization brings changes in pre-requisites for governance and control of both the\nbusiness as such and the underlying digital infrastructure. In line with businesses\nbecoming increasingly dependent upon digital technology not only to automate\nadministrative support functions but also to transform business models, an integrated\ngovernance and control of said technology becomes a necessity for success. Earlier\ndominating perspectives on governance and control as stabile, bureaucratic, formalized\nand not subject to changes over time are contrasted with radically different demands\nthrough fast-moving technology and dynamic business logics. To secure success there is\na need for governance and control for enhanced digital capabilities.\n\nThe course offers an introduction to the areas of digital capabilities, digital governance,\nIT governance and management control and highlights issues on how governance and\ncontrol is to be designed and configured to enhance digital capabilities. In the course,\nthe students work both individually and in groups with a larger case assignment where\nconcrete issues related to governance and control are evaluated.",
+    "Sub-courses": "",
+    "Form of teaching": "The course will involve a combination of lectures, seminars, workshops and exercises.\nThe students will work in assigned project groups with group based assignments.\n\nLanguage of instruction: English",
+    "Assessment": "The course will be assessed through a written individual take-home exam (70%), an\nindividual podcast (20%) and a group-based written reflection (10%) (7,5 hec) and with\na group assignment presented in a written report (7,5 hec).\n\nA student who has taken two exams in a course or part of a course without obtaining a\npass grade is entitled to the nomination of another examiner. The student needs to\ncontact the department for a new examiner, preferably in writing, and this should be\napproved by the department unless there are special reasons to the contrary (Chapter 6\nSection 22 of the Higher Education Ordinance).\n\nIf a student has received a recommendation from the University of Gothenburg for\nspecial educational support, where it is compatible with the learning outcomes of the\ncourse and provided that no unreasonable resources are required, the examiner may\ndecide to allow the student to sit an adjusted exam or alternative form of assessment.\n\nIn the event that a course has ceased or undergone major changes, students are to be\nguaranteed at least three examination sessions (including the ordinary examination\nsession) over a period of at least one year, but no more than two years, after the course\nhas ceased/been changed. The same applies to placements and professional placements\n(VFU), although this is restricted to just one additional examination session.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nIn the first module of the course, an overall assessment is made based on the scoring of\neach assignment. In order to receive Pass (G) on the whole course, Pass is required for\nboth modules. In order to receive Pass with Distinction (VG) on the whole course, Pass\nwith Distinction is required for the first module (7,5 hec) and at least Pass for the second\nmodule (7,5 hec).",
+    "Course evaluation": "Students are to be given the opportunity to communicate their experiences and views\nregarding the course in an anonymous course evaluation. As far as possible, the\nevaluation are to completed electronically. The results of and possible changes to the\ncourse will be shared with students who participated in the evaluation and students who\nare starting the course.",
+    "Additional information": ""
+  }
+}

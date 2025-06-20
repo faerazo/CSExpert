@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "source_document": "DIT176.pdf",
+    "course_code": "DIT176",
+    "course_title": "Prototyping in interaction design",
+    "swedish_title": "Prototyping för interaktionsdesign",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Interaction Design",
+    "specialization": "A1N, Second cycle, has only first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2023-11-23",
+    "valid_from_date": "2024-09-02",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Game Design & Technology Master's Programme (N2GDT)",
+      "Computer Science, Bachelor's Programme (N1COS)"
+    ],
+    "iteration": "Autumn 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "1 Sep 2025 - 2 Nov 2025",
+    "application_period": "17 Mar 2025 - 15 Apr 2025",
+    "application_code": "GU-86046"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2023-11-23 to be valid from 2024-09-02, autumn semester of 2024.",
+    "Position in the educational system": "The course is offered as a free standing course.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Game Design & Technology Master's Programme (N2GDT)\nand 3) Computer Science, Bachelor's Programme (N1COS)",
+    "Entry requirements": "To be eligible for the course the student must have a Bachelor degree of 180 credits.\nAdditionally, a course in Human - computer interaction, 7.5 credits, is required.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completion of the course the student should be able to:\nKnowledge and understanding\n• Describe how prototypes are used in interaction design.\n• List the pros and cons with different types of prototypes.\n• Explain what can be learned from a certain prototype and why.\n• Explain what can not be learned from a certain prototype and why.\nCompetence and skills\n• create physical prototypes in various materials, with various techniques\n• create video prototypes to present a concept or proposal\n• create simple sketch prototypes\n• create digital/physical prototypes\n• perform basic programming of micro-controllers connected to sensors and\nactuators\n• program simple interactive prototypes\nJudgement and approach\n• decide which type of prototype to use in order to find out what needs to be learned\nor tested, taking possible constraints into account, e.g. time and budget\n• apply early stage evaluations\n• incorporate suitable prototypes at the right stages in a design process",
+    "Course content": "The course gives an introduction to, and practice in, creation of different types of\nprototypes in Interaction Design. The contents cover both physical prototypes (e.g.\npaper prototypes, prototyping through controllers and micro-controllers, and\nprototyping through tinkering and physical modelling) and digital, screen-based\nprototypes (sketching and video prototypes). The course also gives an understanding of\nwhat to test with different prototypes, and when.",
+    "Sub-courses": "1. Participation in workshops and oral and written presentation of these ( Deltagande vid workshops samt genom muntliga och skriftliga presentationer ), 4 credits\nGrading scale: Pass (G) and Fail (U)\n2. Group project report (Grupp-projekt med rapport ), 3.5 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)",
+    "Form of teaching": "Education is performed through lectures, workshops, and hands-on lab tasks.\nLanguage of instruction: English",
+    "Assessment": "The course is examined through two modules:\n1. Participation in workshops and oral and written presentation of these (4 credits)\nand\n2. Group project report (3.5 credits)\nIf a student, who has failed the same examined element on two occasions, wishes to\nchange examiner before the next examination session, such a request is to be submitted\nto the department in writing and granted unless there are special reasons to the contrary\n(Chapter 6, Section 22 of Higher Education Ordinance).\nIn the event that a course has ceased or undergone major changes, students are to be\nguaranteed at least three examination sessions (including the ordinary examination\nsession) over a period of at least one year, though at most two years after the course has\nceased/been changed. The same applies to work experience and VFU, although this is\nrestricted to just one additional examination session.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and\nFail (U).\nIn order to pass the course students need to pass both modules. Generally a 3 means\nthat the student shows basic skill and understanding of physical as well as screen-based\nprototyping. A 5 means that the student presents a deepened knowledge and besides\ntechnical skills also presents critical and reflective capabilities.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indication which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\nThe course replaces the course TIA108, 7.5 credits. The course cannot be included in a\ndegree which contains TIA108. Neither can the course be included in a degree which is\nbased on another degree in which the course TIA108 is included.\n\nLast modified 18 February 2025",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 17 753 SEK\n\nFirst payment: 17 753 SEK\n\n**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)\n\nApplication closed, late application opens 15 July 2025."
+  }
+}

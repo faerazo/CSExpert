@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source_document": "DIT850.pdf",
+    "course_code": "DIT850",
+    "course_title": "Human-Centered Design",
+    "swedish_title": "Human-Centered Design",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science-Interaction Design",
+    "specialization": "AXX, Second cycle, in-depth level of the\ncourse cannot be classified",
+    "language_of_instruction": "English",
+    "confirmation_date": "2009-10-15",
+    "valid_from_date": "2010-01-19",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Computer Science, Bachelor's Programme (N1COS)",
+      "No translation available (NDATM)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2009-10-15 to be valid\nfrom 2010-01-19.",
+    "Position in the educational system": "The course is a part of the Computer Science Master's programme and a single subject\ncourse at the University of Gothenburg.\n\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Computer Science, Bachelor's Programme (N1COS) and 3)\nNo translation available (NDATM)",
+    "Entry requirements": "To be eligible for the course students should have successfully completed a first year\nstudies within the subject Computer Science or equivalent. Specifically, a course in\nHuman-Computer-Interaction is required.",
+    "Learning outcomes": "After completing the course the student is expected to be able to:\n• Know and be familiar with user-centered design process and different usability test\nmethods at a deep level\n• Give a good overview of the field of Human-Centered Design theories and practices\n• Modify user centered design methods to fit the specific resources available\n• Apply, in new context, the practical experience gained by performing the user-\ncentered design process in a real world setting\n• Motivate the feasibility of usability to improve development processes",
+    "Course content": "The course consists of both theoretical and practical parts. The theoretical part presents\nthe history and development of Human-Centered Design (HCD) from research to\nindustrial applications. Relevant design theories and processes, such as user-centered\ndesign, rational unified process, ecological interface design and design of products for\nleisure and entertainment are covered in the course. Literature seminars provide\nadditional theoretical grounding and reflection, s well as different industrial practical\nexperience/problems where speakers representing different types of companies are\ninvited. The practical parts consist of laboratory work with usability evaluation\nmethods and carrying out an investigation project at industry. The industrial project will\nemphasize on 1) how to investigate existing design process and usability problems in\nproducts, 2) how to implement a HCD process in a specific company, and 3) how to\nmotivate potential benefits of the usability concept and human-centered design process\nin industry. The project will be carried out in small groups.",
+    "Sub-courses": "",
+    "Form of teaching": "Language of instruction: English",
+    "Assessment": "The course is examined by a project.",
+    "Grades": "The grading scale comprises: Fail, Pass, Pass with distinction.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire can be used\nto ensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": ""
+  }
+}

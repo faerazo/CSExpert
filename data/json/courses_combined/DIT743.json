@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "source_document": "DIT743.pdf",
+    "course_code": "DIT743",
+    "course_title": "Computational Methods in Bioinformatics",
+    "swedish_title": "Beräkningsmetoder i bioinformatik",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science, Data Science",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2020-12-18",
+    "valid_from_date": "2023-08-28",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Mathematical Sciences, Master's Programme (N2MAT)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Computer Science, Bachelor's Programme (N1COS)"
+    ],
+    "iteration": "Autumn 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "3 Nov 2025 - 18 Jan 2026",
+    "application_period": "17 Mar 2025 - 15 Apr 2025",
+    "application_code": "GU-86067"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2020-12-18 and was last revised on 2022-11-15 to be valid from 2023-08-\n28, autumn semester of 2023.",
+    "Position in the educational system": "The course is offered within several programmes. It is also a single subject course at the\nUniversity of Gothenburg.\n\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Mathematical Sciences, Master's Programme (N2MAT), 3)\nApplied Data Science Master's Programme (N2ADS) and 4) Computer Science,\nBachelor's Programme (N1COS)",
+    "Entry requirements": "To be eligible for the course, the student should have successfully completed 60 credits\nof studies in Computer Science, Software Engineering, Data Science, Mathematics,\nMathematical Statistics, or equivalent. Furthermore, the student should have\nsuccessfully completed a course in Programming (DIT012 Imperative Programming\nwith Basic Object-orientation, DIT042 Object-oriented Programming, DIT143\nFunctional programming, or equivalent) and a basic course in discrete mathematic\n(DIT980, DIT856 or equivalent).\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• describe and summarise problems that have been addressed in the bioinformatics\nliterature, and computational approaches to solving them\nCompetence and skills\n• design and implement computational solutions to problems in bioinformatics\nJudgement and approach\n• critically discuss different bioinformatics methods that address the same task or\nrelated tasks, and to discuss differences in the tasks adddressed, or differences in the\ncomputational approaches\n• identify situations where the same computational methods are applied in addressing\ndifferent problems, even across different application areas",
+    "Course content": "This course demonstrates how computational methods that have been presented in other\ncomputing courses can be applied to solve problems in an application area. We look at\nproblems related to the analysis of biological sequence data (sequence bioinformatics)\nand macromolecular structures (structural bioinformatics).\nComputing scientists need to be able to understand problems that originate in areas that\nmay be unfamiliar to them, and to identify computational methods and approaches that\ncan be used to solve them. Biological concepts needed to understand the problems will\nbe introduced.\nReading research articles is valuable training for scientists and researchers. Developing\nskill in reading research articles is useful preparation for future scientific studies, and at\nthe same time their own scientific writing can be improved. Therefore, in this course,\nresearch articles are used as the main reference material, in particular to show how to\npresent ideas and methods, and how to critically evaluate them.\nComputational methods and concepts featured in this course include: dynamic\nprogramming; heuristic algorithms; graph partitioning; image skeletonisation,\nsmoothing and edge detection; clustering; sub-matrix matching; geometric hashing;\nconstraint logic programming; Monte Carlo optimisation; simulated annealing; self-\navoiding walks.\nBiological problems featured in this course include: sequence alignment; domain\nassignment; structure comparison; comparative modelling; protein folding; fold\nrecognition; finding channels; molecular docking; protein design.",
+    "Sub-courses": "1. Assignments (Inlämningsuppgifter), 7.5 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)",
+    "Form of teaching": "Lectures and programming assignments.\nLanguage of instruction: English",
+    "Assessment": "The course is examined by individual programming assignments and written\nassignments.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and\nFail (U).\nThe grading scale comprises Fail (U), 3, 4 or 5.\nTo pass the course, all mandatory components must be passed. To earn a higher grade\nthan Pass, a higher weighted average from the grades of the components is required.",
+    "Course evaluation": "The course is evaluated through meeting after the course between teachers and student\nrepresentatives. Further, an anonymous questionnaire is used to ensure written\ninformation. The outcome of the evaluations serves to improve the course by indicating\nwhich parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\nIt is recommended to have taken an introductory course in data structures beforehand.\nFamiliarity with some basic chemistry concepts (including atoms and molecules,\nchemical bonding) is useful.\nThe course replaces the course DIT741 Computational Methods in Bioinformatics, 7.5\ncredits. The course cannot be included in a degree which contains DIT741. Neither can\nthe course be included in a degree which is based on another degree in which the course\nDIT741 is included.\n\nLast modified 20 February 2025",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 17 753 SEK\n\nFirst payment: 17 753 SEK\n\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)\n\nApplication closed, late application opens 15 July 2025."
+  }
+}

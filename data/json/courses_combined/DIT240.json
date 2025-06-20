@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "source_document": "DIT240.pdf",
+    "course_code": "DIT240",
+    "course_title": "Distributed Systems",
+    "swedish_title": "Distribuerade system",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science-Networks and Distributed Systems",
+    "specialization": "AXX, Second cycle, in-depth level of the course cannot be classified",
+    "language_of_instruction": "English",
+    "confirmation_date": "2009-09-15",
+    "valid_from_date": "2017-08-20",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Computer Science, Bachelor's Programme (N1COS)"
+    ],
+    "iteration": "Autumn 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "3 Nov 2025 - 18 Jan 2026",
+    "application_period": "17 Mar 2025 - 15 Apr 2025",
+    "application_code": "GU-86094"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2009-09-15 and was\nlast revised on 2017-06-16 by Department of Computer Science and Engineering to be\nvalid from 2017-08-20, autumn semester of 2017.",
+    "Position in the educational system": "The course is a part of the Computer Science Master's Programme and a single-subject\ncourse at the University of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS) and 3)\nComputer Science, Bachelor's Programme (N1COS)",
+    "Entry requirements": "The requirement for the course is to have successfully completed courses corresponding\nto 120 hec within the subject Computer Science or equivalent.\nWithin the 120 hec the following courses are required;\n• DIT663 Computer Networks, 7.5 hec or DIT420 Computer Communication, 7.5\nhec (or equivalent)\n• DIT400 Operating systems, 7.5 hec or DIT390 Concurrent programming, 7.5 hec\n(or equivalent)\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completion of the course the student is expected to be able to:\n1. Knowledge and understanding\n•\napply of basic concepts of distributed systems and their challenges, naming and\nsynchronization of systems, consistency and replication, and fault tolerance in\ndistributed systems.\n• describe applications of distributed systems and the mechanisms these use to provide\ntheir services.\n• discuss and analyse the challenges and requirements of different approaches.\n• compare and summarize the strength and weaknesses associated with the individual\nmechanisms.\n2. Skills and Abilities\n• develop and evaluate small-scale distributed systems using fundamental\nmechanisms.\n• demonstrate software developments in advanced settings including unreliable links\nand systems as well as limited bandwidth.\n• demonstrate experimental results in oral and written presentation.\n3. Judgement and approach\n•\ndescribe and analyse existing and new methods for distributed systems design. In\nparticular, the systems ability for scalability and fault tolerance.\n• discuss and value the social and ethical aspects of distributed systems and tehir\napplications.",
+    "Course content": "The course with an introduction to the basic concepts of distributed systems and the\nchallenges they pose. After that, we revisit the required background in communication\nsystems and operating systems. The main course content:\n1. Naming\n2. Mutual Exclusion and Election\n3. Clocks and Time\n4. Consistency and Replication\n5. Fault Tolerance in Distributed Systems\n6. Selected Applications in Distributed Systems\nThe lectures provide students with the required fundamentals, and labs give students a\nhands-on experience in developing distributed systems and exploring their real-world\nchallenges.\nThis course involves hands-on experimentation and analysis as they reinforce student\nunderstanding of concepts and their application to real-world problems. Overall, this\ncourse provides the students the ability to understand fundamental issues in the design\nof methods for distributed systems.",
+    "Sub-courses": "1. Written exam (Tentamen), 6 higher education credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n2. Laboratory work (Laboration), 1.5 higher education credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "Lectures, home assignments, laboratory work.\nLanguage of instruction: English",
+    "Assessment": "The course is examined on basis of a\n• written exam done individually in an examination hall (6.0 hec)\n• and the home assignment and Laboratory work, each done in a groupt of two, (total\n1.5 hec) are presented both in written and oral form.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the text examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including\nthe ordinary examination) during a preiod of at least one year from the last time the\ncourse was given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nIn order to be awarded the grade Pass (G) for the entire course, the student must get the\ngrade Pass on both the sub-courses.\nIn order to get the grade Pass with Distinction (VG) for the entire course, the student\nmust get the grade Pass on the sub-course Written exam and get the grade Pass on the\nsub-course Laboratory work.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\n\nLast modified 20 February 2025",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 17 753 SEK\n\nFirst payment: 17 753 SEK\n\n**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)"
+  }
+}

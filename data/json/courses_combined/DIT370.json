@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "source_document": "DIT370.pdf",
+    "course_code": "DIT370",
+    "course_title": "Discrete Optimization",
+    "swedish_title": "Discrete Optimization",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science-Algorithms and Logic",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2017-06-07",
+    "valid_from_date": "2017-08-20",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Software Engineering Master's Programme (N2SOM)",
+      "Computer Science, Bachelor's Programme (N1COS)",
+      "No translation available (NDATM)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2009-09-18 and was\nlast revised on 2017-06-07 by Department of Computer Science and Engineering to be\nvalid from 2017-08-20, autumn semester of 2017.",
+    "Position in the educational system": "The course is a part of the Computer Science Master's programme and an elective\ncourse at the University of Gothenburg.\nThe level for the course in relation to degree requirements is Master's degree, code A1F.\nThe course has course/courses at second cycle level as entry requirements.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Software Engineering Master's Programme (N2SOM), 3)\nComputer Science, Bachelor's Programme (N1COS) and 4) No translation available\n(NDATM)",
+    "Entry requirements": "To be eligible for the course\nstudents should have successfully completed a first year studies within the subject\nComputer Science or equivalent. Specifically the course DIT600 Algorithms (or\nequivalent) is required.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completing the course the student is expected to be able to:\n• identify optimization problems in various fields (industrial production,\ninfrastructure, planning and scheduling, economics, data mining, bioinformatics,\ncomputer and network design, etc., and even in artificial intelligence)\n• formulate them in exact mathematical models that capture the essentials of the real\nproblems but are still manageable by computational methods\n• assess which problem class a given problem belongs to (linear, integer, mixed,\nnonlinear programming, polynomial or NP-hard, approximable or not), find and\nhow to use more information about problem classes and complexity\n• apply linear programming and the theory of network flows to suitable applications,\nunderstand these topics both formally and geometrically\n• distinguish approximation algorithms from heuristics, apply several heuristic\napproaches (e.g., branch-and-bound) as well as design techniques for approximation\nalgorithms, to concrete problems\n• dualize optimization problems (LP dual, Lagrange dual) and use the dual forms,\ne.g., to obtain bounds\n• apply techniques for the design of exact algorithms (dynamic programming, cutting\nplanes, column generation, parameterized algorithms) to concrete problems\n• find more information about available software tools (modelling languages, solvers)\nand use them",
+    "Course content": "You learn in this course specific methods to model and solve problems where some\nobjective function shall be maximized or minimized under side constraints, especially for\ndiscrete problems, i.e., such with countable objects and integer variables.",
+    "Sub-courses": "",
+    "Form of teaching": "Language of instruction: English\nThe course is held in English.",
+    "Assessment": "The course is examined by an exam and assignments. A student who has failed a test\ntwice has the right to change examiner, unless weighty argument can be adduced. A\nwritten application should be sent to the Department.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire can be used\nto ensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The Board of the IT Faculty."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "source_document": "DIT798.pdf",
+    "course_code": "DIT798",
+    "course_title": "Digital design",
+    "swedish_title": "Digital konstruktion",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "First Cycle",
+    "main_field_of_study": "Computer Science",
+    "specialization": "G2F, First cycle, has at least 60 credits in first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2021-11-15",
+    "valid_from_date": "2023-01-16",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Computer Science, Bachelor's Programme (N1COS)"
+    ],
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "20 Jan 2025 - 23 Mar 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-86025"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2021-11-15 to be valid from 2023-01-16, spring semester of 2023.",
+    "Position in the educational system": "The course is a part of the Computer Science Bachelor's Programme and a single-\nsubject course at the University of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS) and 2) Computer Science, Bachelor's Programme (N1COS)",
+    "Entry requirements": "To be eligible for the course students should have successfully completed courses\ncorresponding to 60 hec in the subject of Computer Science, including the course\nDIT791 Fundamentals of Digital Systems and Computers (or equivalent).",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• describe binary arithmetic units for addition, multiplication and division.\n• describe the different storage elements used in digital circuits (latches, flip-flops,\ndifferent types of memories).\n• recognize the function and uses of Reconfigurable and ASIC technologies.\n• list the differences of various types of Finite State Machines (Mealy, Moore,\nsynchronous Mealy).\n• recognize the basics of design for testability and the basic principles behind the\ntesting.\n• identify and describe asynchronous sequential circuits.\n• list the factors that affect the timing, power and area of a digital circuit.\nCompetence and skills\n• minimize a Boolean function or derive its canonical form.\n• create the design specifications of a digital circuit for a given problem.\n•\nmeasure the critical path delay of a digital circuit.\n•\n•\nuse VHDL to describe combinatorial and sequential circuits.\nuse modern tools to perform simulation, synthesis and implementation of\na digital circuit described in VHDL.\n• create test benches for VHDL designs to validate their correct functionality.\n•\nuse FPGA technology to implement a digital hardware design.\n• define FSM encodings and perform state minimization.\nJudgement and approach\n• evaluate the advantages and disadvantages of different implementation technologies\n(ASICs, FPGAs) for digital designs, and select one for a specific design.\ncompare different design for binary arithmetic (e.g. different adder designs).\n• critically evaluate and judge a design choice in terms of power, delay, area, and be\nable to select the one that fits the particular design constraints.",
+    "Course content": "The course is intended to give fundamental knowledge about design, implementation,\nand optimization of combinatorial and sequential digital circuits. It further\npresents the technologies used for implementing such circuits. As part of the course,\nthe students will be introduced to modern computer-based design tools (CAD), and\nlearn the basics of a hardware description language. More precisely, the course contents\nare the following:\n• Boolean Algebra and logic minimization\n• Arithmetic Units\n•\nMemory\n• Combinational circuits\n• Sequential circuits and Finite State Machines\n• Technologies of digital circuits (ASIC, FPGA)\n• Asynchronous circuits\n• Timing and Power consumption of digital circuits\n•\nTesting and design for testing\n• Hardware description languages (VHDL) for digital circuits\n• Hardware Design, test and evaluation of a simple processor",
+    "Sub-courses": "1. Written hall examination (Skriftlig salstentamen), 4.5 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)\n2. Laboration (Laboratory), 3 credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "The course additionally includes exercise sessions complimentary to the lectures.",
+    "Assessment": "The course is examined by an individual exam given in an examination hall and 7\nlaboratory assignments. The Laboratory work is carried out in groups of normally 2\nstudents. In cases where a course has been discontinued or has undergone major\nchanges, the student shall normally be guaranteed at least three examination occasions\n(including the ordinary examination) during a period of at least one year from the last\ntime the course was given.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and\nFail (U).\nIn order to pass the course both the laboration and the written hall examination have to\nbe approved. The final grade in the course is decided from the grade of the written hall\nexamination.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course\nbetween teachers and student representatives. Further, an anonymous questionnaire is\nused to ensure written information. The outcome of the evaluations serves to improve\nthe course by indicating which parts could be added, improved, changed or removed.\nThe results of and possible changes to the course will be shared with students who\nparticipated in the evaluation and students who are starting the course.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\nThe course replaces the course DIT797, 7.5 credits. The course cannot be included in a\ndegree which contains DIT797. Neither can the course be included in a degree which is\nbased on another degree in which the course DIT797 is included.\n\nLast modified: 29 August 2024",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits.",
+    "Tuition": "Full education cost: 19 253 SEK\n\nFirst payment: 19 253 SEK\n\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)"
+  }
+}

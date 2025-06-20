@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "source_document": "TIA101.pdf",
+    "course_code": "TIA101",
+    "course_title": "Methods of Interaction Analysis",
+    "swedish_title": "Methods of Interaction Analysis",
+    "department": "Dep of Applied Information Technology",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Interaction Design, Computer Science-Interaction Design",
+    "specialization": "AIN, Second cycle, has only first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2011-01-14",
+    "valid_from_date": "2011-01-19",
+    "programmes": [
+      "Computer Science Master's Programme N2COS",
+      "Computer Science Bachelors Programme N1COS"
+    ]
+  },
+  "sections": {
+    "Confirmation": "The course syllabus was confirmed by The IT Faculty Board on 2011-01-14 to be valid from 2011-01-19.",
+    "Position in the educational system": "The course is provided as a part of the Computer Science Master's Programme N2COS. The course is also\noffered as a programme course in the Computer Science Bachelors Programme N1COS. Please note the\nentrance qualifications for programme students in N1COS below for this course. The course is also offered as\na single subject course.\nMain field of studies\nInteraction Design\nComputer Science-Interaction Design\nSpecialization\nAIN, Second cycle, has only first-cycle course/s as\nentry requirements\n,-",
+    "Entry requirements": "To be eligible for the course the student must have a Bachelor degree of 180 credits. Additionally, the course\nTIG095 Human Computer Interaction 7.5 credits, or the equivalent is required.\nTo be eligible for this course as a programme student in Science Bachelors Programme N1COS, the student\nmust have passed at least 90 credits in programme courses and the additional course TIG095 Human\nComputer Interaction 7.5 credits.",
+    "Learning outcomes": "The course focuses on data collection and analysis methods to use within interaction design.\nAfter completing this course the student is expected to be able to:\nKnowledge and understanding\n•Understand what aspect affects the information gathered in methods for interaction analysis\nSkills and abilities\n•Identify user requirements through user studies\n•Plan and execute interaction analysis studies.\nJudgement and approach\n•Evaluate design solutions regarding user requirements",
+    "Course content": "The course consists of lectures, seminars and exercises based on a couple of central themes. Each theme is\npresented in a lecture and students are then given practical experience through assignments or exercises. The\ntheme is then concluded by a discussion to reflect upon the practical experiences. The themes studied include:\n•Core concepts and main theoretical frameworks in methods of interaction analysis\n•Methods to identify user requirements\n•Selection criteria for studies and what consequences these have\n•Consequences of the context of studies\n•Mediation artifacts\n•Theoretical and empirical perspectives",
+    "Sub-courses": "The course consists of three modules, namely Group Project 1, 2.5 credits (U-VG), Group Project 2, 2.5 credits (U-VG) and Individual Written Exam, 2.5 credits (U-VG).",
+    "Form of teaching": "The course consists of lectures, seminars and exercises based on a couple of central themes. Each theme is presented in a lecture and students are then given practical experience through assignments or exercises. The theme is then concluded by a discussion to reflect upon the practical experiences.",
+    "Assessment": "The course consists of three modules, namely Group Project 1, 2.5 credits (U-VG), Group Project 2, 2.5\ncredits (U-VG) and Individual Written Exam, 2.5 credits (U-VG).\nA student who has failed a test twice has to right to change examiners, if it is possible. A written application\nshould be sent to the Department.",
+    "Grades": "The grading scale comprises Fail (U), Pass (G), Pass with Distinction (VG).\nTo pass the course (G) the student must have completed both the two group projects and the individual exam.\nIn order to pass with distinction (VG) the student must have passed all three modules and have received\npassed with distinction (VG) on at least two of the modules.",
+    "Course evaluation": "After completion of the course the students are to be given the possibility of participating in course\nanonymously. The processed results of the course evaluations are to be made accessible to students and also\nmade available to new students at the beginning of the next course. Possible changes brought about as a result\nof course evaluations to be described.",
+    "Additional information": "Language of instruction: English."
+  }
+}

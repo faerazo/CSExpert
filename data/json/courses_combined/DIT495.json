@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "source_document": "DIT495.pdf",
+    "course_code": "DIT495",
+    "course_title": "Individual Project in Interaction Design, major",
+    "swedish_title": "Individuellt projekt i interaktionsdesign, större",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "15",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Interaction Design",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2017-12-19",
+    "valid_from_date": "2018-08-19",
+    "programmes": [
+      "Game Design & Technology Master's Programme (N2GDT)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2017-12-19 to be valid from 2018-08-19, autumn semester of 2018.",
+    "Position in the educational system": "The course is offered within the Game Design & Technology Master's Programme. It is also a single subject course at the University of Gothenburg.\n\nThe course can be part of the following programme: 1) Game Design & Technology Master's Programme (N2GDT)",
+    "Entry requirements": "To be eligible for this course, students must have successfully completed the courses TIA104 Interaction design methodologies, 7.5 credits, and TIA106 Graphical interfaces, 7.5 credits, or equivalent.\n\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completion of the course the student should be able to:\nKnowledge and understanding\n• Describe how project reports can be structured and what they should contain\n• Show how referencing of sources should be used in academic texts\n\nCompetence and skills\n• Independently carry out a mid-size project in interaction design following established best practices and procedures\n• Document project work in a suitable form given the nature of the project\n• Handle necessary changes in project processes due to unforeseen circumstances\n• Do appropriate literature and background research for a mid-size project\n• Plan for future work based on the results of the project\n\nJudgement and approach\n• Establish an appropriate scope for a project plan to make best possible use of all resources available, including skill sets and time\n• Reflect in depth upon potential social and ethical problems that may arise from the result of the project",
+    "Course content": "The course provides the student with an opportunity to individually or in a smaller group (1-3 people) study something of relevance in the area of interaction design outside of the regular syllabus. The project can focus upon implementation of software as long as there is a clear connection to interaction design.\n\nStudents (preferably with varying backgrounds) perform a development project. Suitable project ideas should be developed in collaboration with a teacher. The group should develop design or software (under supervision). The development should be based on a plan that is created in advance of the project start. The plan should contain goal of the project, planned process, and planned result.",
+    "Sub-courses": "",
+    "Form of teaching": "Independent project work typically in groups of 1-3 people, with supervision. The work shall start based upon the plan developed before the course starts, document how the work progresses, including any changes to the plan, and end with the writing of a report.\n\nLanguage of instruction: English",
+    "Assessment": "The course is examined via an individual written report. Common parts are allowed but should be noted. The report should contain an individual reflection.\n\nIf a student, who has failed the same examined component twice, wishes to change examiner before the next examination, a written application shall be sent to the department responsible for the course and shall be granted unless there are special reasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\n\nIn cases where a course has been discontinued or has undergone major changes, the student shall normally be guaranteed at least three examination occasions (including the ordinary examination) during a period of at least one year from the last time the course was given.",
+    "Grades": "The grading scale comprises: Pass (G) and Fail (U).\nTo pass the course, the individual student must have contributed in a substantial way to the final project results of the team, and must be able to explain their process, results, and the different team members' contribution.",
+    "Course evaluation": "The course is evaluated through meeting after the course between teachers and student representatives. Further, an anonymous questionnaire is used to ensure written information. The outcome of the evaluations serves to improve the course by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\n\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\n\nThe course cannot be included in a degree which contains TIA290. Neither can the course be included in a degree which is based on another degree in which the course TIA290 is included."
+  }
+}

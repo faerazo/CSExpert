@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "source_document": "DIT231.pdf",
+    "course_code": "DIT231",
+    "course_title": "Programming Language Technology",
+    "swedish_title": "Programspråksteknik",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Software Engineering, Computer Science-Algorithms and Logic",
+    "specialization": "A1N, Second cycle, has only first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2012-11-12",
+    "valid_from_date": "2019-09-02",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Computer Science, Bachelor's Programme (N1COS)",
+      "Software Engineering Master's Programme (N2SOM)"
+    ],
+    "iteration": "Autumn 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "3 Nov 2025 - 18 Jan 2026",
+    "application_period": "17 Mar 2025 - 15 Apr 2025",
+    "application_code": "GU-86087"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2012-11-12 and was last revised on 2019-02-07 to be valid from 2019-09-\n02, autumn semester of 2019.",
+    "Position in the educational system": "The course is a part of the Computer Science Master's Programme and a single-subject\ncourse at the University of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS), 3)\nComputer Science, Bachelor's Programme (N1COS) and 4) Software Engineering\nMaster's Programme (N2SOM)",
+    "Entry requirements": "The requirements for the course is to have successfully completed courses corresponding\nto 60 hec in the subject of Computer Science, including\n• 7.5 hec in programming (for example DIT143 Functional programming, DIT953\nObjektorienterad programmering and design, or equivalent);\n• 7.5 hec in data structures (for example DIT961 Data structures, DIT725 Logic,\nalgorithms and data structures or equivalent).\nEnglish B level or English proficiency equivalent to IELTS 6.5 no part under 5.5 or\nTOEFL 575 p, TWE score 4.5 is also required.",
+    "Learning outcomes": "After completing the course the student is expected to be able to:\nKnowledge and understanding\n• explain the functioning of finite automata;\n• explain the principles of LL and LR parsing;\n• explain the concept of compiler correctness;\nCompetence and skills\n• define and implement abstract syntax;\n• define the lexical structure of programming languages by using regular expressions,\nand implement lexical analyzers by using standard tools;\n• define the syntax of programming languages by using context-free grammars and\nimplement parsers by using standard tools;\n• write simple code generators;\n• apply the technique of syntax-directed translation and its efficient implementation in\ntheir chosen programming language;\n• formulate typing rules and implement type checkers for functional and imperative\nlanguages;\n• formulate operational semantic rules and implement interpreters for functional and\nimperative languages;\nJudgement and approach\n• judge about programming language design issues as for example with the respect to\nefficiency and usability.",
+    "Course content": "The aim of the course is to give understanding of how programming languages are\ndesigned, documented, and implemented. The course covers the basic techniques and\ntools needed to write interpreters, and gives a summary introduction to compilation as\nwell.\nThe students will learn about grammars when writing the syntax analysis and about type\nsystems when implementing the type checker. When implementing the interpreter and\ncompiler the students will learn about practical implementation concerns as well as the\ntheory of formal semantics.",
+    "Sub-courses": "1. Written exam (Tentamen), 6 credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n2. Laboration (Labborationer), 1.5 credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "The teaching consists of lectures, exercises, and laborations, as well as individual\nsupervision in connection to the laborations.\nLanguage of instruction: English",
+    "Assessment": "The course is examined through an individual written exam in an examination hall at\nthe end of the course and laboratory assignments carried out individually or in pairs.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nTo be awarded the grade Pass with Distinction (VG), the student must pass the sub-\ncourse Laboration and get the grade Pass with Distinction on the sub-course Written\nexam.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The course replaces the course DIT230 Programming Languges. The course cannot be\nincluded in a degree which contains DIT230. Neither can the course be included in a\ndegree which is based on another degree in which the course DIT230 is included.\nThe course cannot be included in a degree which contains DIT229. Neither can the\ncourse be included in a degree which is based on another degree in which the course\nDIT229 is included.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\nThe course is a joint course together with Chalmers.\n\nLast modified 18 February 2025",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 17 753 SEK\n\nFirst payment: 17 753 SEK\n\n**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)"
+  }
+}

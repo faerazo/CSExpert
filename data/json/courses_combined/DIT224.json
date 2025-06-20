@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "source_document": "DIT224.pdf",
+    "course_code": "DIT224",
+    "course_title": "Computer Graphics",
+    "swedish_title": "Datorgrafik",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science, Interaction Design",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2019-02-08",
+    "valid_from_date": "2019-09-02",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Game Design & Technology Master's Programme (N2GDT)",
+      "Computer Science, Bachelor's Programme (N1COS)"
+    ],
+    "iteration": "Autumn 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "3 Nov 2025 - 18 Jan 2026",
+    "application_period": "17 Mar 2025 - 15 Apr 2025",
+    "application_code": "GU-86096"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2019-02-08 to be valid from 2019-09-02, autumn semester of 2019.",
+    "Position in the educational system": "The course is compulsory within the N2GDT Game Design and Technology Master's\nProgramme. It is offered within several programmes. The course is also as a single\nsubject course at the University.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS), 3)\nGame Design & Technology Master's Programme (N2GDT) and 4) Computer Science,\nBachelor's Programme (N1COS)",
+    "Entry requirements": "To be eligible for the course, students should have successfully completed courses\ncorresponding to 90 credits within the subject of Computer Science, including the\nfollowing courses:\n- 7.5 credits in data structures (DIT960 or equivalent), and\n- 15 credits in imperative or object-oriented programing (DIT012 and DIT952, or\nequivalent).\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• state and describe how computer graphics are implemented using a high-level\nprogramming language and a typical graphics API such as OpenGL,\n• state and describe the fundamental algorithms used to create computer graphics in\n3D-games and movies,\n• to some extent, state how the current graphics hardware architectures are designed\nCompetence and skills\n•\nimplement algorithms to generate real-time renderings and, to some extent, photo\nrealistic renderings,\n• state how to utilize the functionality of dedicated hardware support for graphics\nthrough programming interfaces,\n• apply some basic mathematics used for solving relevant subproblems, e.g., for\nintersection tests, lighting computations, object transformations, and ray tracing.\nJudgement and approach\n• describe fundamental algorithms in 3D graphics and discriminate based on their\nsuitability and efficiency,\n• select suitable algorithms, data structures and matehematical methods for specific\nsubproblems in computer graphics.",
+    "Course content": "The course aims to provide broad knowledge about algorithms for three dimensional\ncomputer graphics and also gives the student experience in implementing basic 3D-\ngraphic techniques.\nThe course provides knowledge of the principles used to create images through\ncomputer algorithms. The primary focus is on real-time rendering and photo realistic\nrendering.\nThe first part of the course covers real-time rendering, where techniques and data\nstructures for e.g. illumination, special effects, shadows and reflections will be studied.\nDesign of graphics hardware and speedup algorithms will also be treated.\nThe second part focus on generating photo-realistic images and includes the studying of\nalgorithms for ray tracing and global illumination. Overall, the course provides\nexplanations and some capabilities to, on a basic level, apply corresponding\nmathematics, e.g., object and camera transformations, light/material interaction, and\nintersection tests. For this, linear algebra is used. The course contains some\nprogramming tutorials, giving the students practical skills concerning programming for\n3D-graphics.",
+    "Sub-courses": "1. Written exam (Skriftlig tentamen), 6 credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n2. Laboratory work (Laboration), 1.5 credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "The course is organized into lectures and exercises. The exercises focus on implementing\n3D graphics algorithms using C++. Students are not expected to have preknowledge in\nC++ but in at least another modern high-level language (e.g., Java, since C++ and Java\nare rather similar).\nLanguage of instruction: English",
+    "Assessment": "The course is examined by laborations done in pairs or individually, and a written exam\ndone individually in an examination hall.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nA Pass grade (G) for the entire course requires at least a Pass grade for all sub-courses.\nTo be awarded Pass with Distinction (VG) for a full course, the student must, in\naddition, receive the grade VG on the sub-course Written exam.",
+    "Course evaluation": "The course is evaluated through meeting after the course between teachers and student\nrepresentatives. Further, an anonymous questionnaire is used to ensure written\ninformation. The outcome of the evaluations serves to improve the course by indicating\nwhich parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\nThe course replaces the course DIT223 Computer Graphics, 7.5 credits. The course\ncannot be included in a degree which contains DIT223. Neither can the course be\nincluded in a degree which is based on another degree in which the course DIT223 is\nincluded.\nIt is also recommended that the student has 7.5 credits of linear algebra (MMGD20 or\nequivalent), but this is not a strict requirement.\n\n20 February 2025",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 17 753 SEK\n\nFirst payment: 17 753 SEK\n\n**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)\n\nApplication closed, late application opens 15 July 2025."
+  }
+}

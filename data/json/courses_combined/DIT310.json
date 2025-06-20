@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "source_document": "DIT310.pdf",
+    "course_code": "DIT310",
+    "course_title": "Models of Computation",
+    "swedish_title": "Models of Computation",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science-Algorithms and Logic",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2016-02-09",
+    "valid_from_date": "2016-08-29",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Computer Science, Bachelor's Programme (N1COS)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2009-09-18 and was last revised on 2016-02-09 by Department of Computer Science and Engineering to be valid from 2016-08-29, autumn semester of 2016.",
+    "Position in the educational system": "The course is a part of the Computer Science Master's programme and a single-subject course at the University of Gothenburg.\n\nThe course can be part of the following programmes: 1) Computer Science, Master's Programme (N2COS) and 2) Computer Science, Bachelor's Programme (N1COS)",
+    "Entry requirements": "To be eligible for the course students should have successfully completed courses corresponding to 120 hec two year studies within the subject Computer Science or equivalent. As part of these studies, students should have successfully completed the following courses:\n- 7.5 hec in Discrete Mathematics (DIT980 Discrete Mathematics for Computer Scientists or equivalent).\n- 7.5 hec in Functional Programming (DIT142 Functional programming or equivalent).\n- DIT231 Programming Language Technology or equivalent.\nEnglish 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completion of the course the student should be able to:\n\nKnowledge and understanding\n• define the notion of computable function,\n• explain the Church-Turing thesis,\n• explain the relationship between inductively defined sets, primitive recursion, and proofs by structural induction,\n\nSkills and abilities\n• prove that sets are countable or uncountable, for instance by using diagonalisation,\n• encode inductively defined sets in such a way that members of these sets can be used as inputs or outputs for programs in one or more models of computation,\n• implement programs in particular, interpreters correctly in one or more models of computation,\n• prove that functions are (not) computable in some models of computation,\n\nJudgement and approach\n• analyse programs from some models of computation, and\n• manipulate and analyse models of computation.",
+    "Course content": "This course is about the concept of \"computation\": how it can be modelled, and what its limits are.\n\nTo avoid unnecessary complexity one often chooses to study computation via simplified, but powerful, models. In the course several such models will be studied, both imperative and functional.\n\nOne or more models will be used to explore the limits of computation: problems that cannot be solved (within the confines of a given model), and programs that can run arbitrary programs (modelled in a certain way).\nThe course also includes a discussion of the Church-Turing thesis, a hypothesis which states, roughly, that a function is computable in a certain intuitive sense only if it can be defined within one of several models of computation.",
+    "Sub-courses": "1. Written exam (Skriftlig tentamen), 4.5 higher education credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n2. Assignments (Inlämningsuppgifter), 3 higher education credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "Lectures and exercise sessions.\n\nLanguage of instruction: English",
+    "Assessment": "The course is examined by an individual written examination carried out in an examination hall and by individual written assignments.\n\nIf a student, who has failed the same examined component twice, wishes to change examiner before the next examination, a written application shall be sent to the department responsible for the course and shall be granted unless there are special reasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\n\nIn cases where a course has been discontinued or has undergone major changes, the student shall normally be guaranteed at least three examination occasions (including the ordinary examination) during a period of at least one year from the last time the course was given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nTo be awarded the grade Pass (G) for the whole course, the student must get the grade Pass on both the sub-courses.\nTo be awarded the grade Pass with Distinction, the student must get the grade Pass\nwith Distinction on the sub-course Written exam and get the grade Pass on the sub-course Assignments.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between teachers and student representatives. Further, an anonymous questionnaire is used to ensure written information. As far as possible, evaluations ar to be completed electronically. The outcome of the evaluations serves to improve the course by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers."
+  }
+}

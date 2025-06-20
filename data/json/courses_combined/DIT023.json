@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "source_document": "DIT023.pdf",
+    "course_code": "DIT023",
+    "course_title": "Mathematical Foundations for Software Engineering",
+    "swedish_title": "Grundläggande matematik för mjukvarutekniker",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "First Cycle",
+    "main_field_of_study": "Software Engineering",
+    "specialization": "G1N, First cycle, has only upper-secondary level entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2020-12-18",
+    "valid_from_date": "2021-08-30",
+    "programmes": [
+      "Software Engineering and Management Bachelor's Programme (N1SOF)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2020-12-18 to be valid from 2021-08-30, autumn semester of 2021.",
+    "Position in the educational system": "The course is a compulsory course in the Software Engineering and Management Bachelor's Programme.\n\nThe course can be part of the following programme: 1) Software Engineering and Management Bachelor's Programme (N1SOF)",
+    "Entry requirements": "General entrance requirements for university studies and the Swedish upper secondary courses English B, Mathematics C, Civics A or English 6, Mathematics 3b/3c, Civics 1b/lal-1a2 or equivalent.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• describe the problem-solving process,\n• identify and demonstrate various problem-solving techniques,\n• explain the role of basic proof techniques to logically reason about phenomena, for\nexample inductive proofs to show properties of algorithms,\n\nCompetence and skills\n• apply problem-solving techniques in solving programming problems,\n• select and apply mathematical methods for solving problems in the area of software\nengineering or its application domain,\n\nJudgement and approach\n• recommend emerging problem solving techniques applied to programming activities,\n• assess decisions made to achieve programming objectives, and\n• determine when to apply which mathematical concept to problems in the area of\nsoftware engineering or its application domain.",
+    "Course content": "The course introduces the students to basic mathematical and critical thinking skills needed for modeling, analysis and design, implementation, and testing of software applications. The course has two general themes: (1) the role of problem solving techniques in programming activities; (2) the role of mathematics in addressing problems associated with software engineering.\n\nThe course provides students with general ability to solve engineering problems. Students will be equipped with basic principles, techniques, and heuristics of problem solving such as solving by analogy, means-ends analysis, divide and conquer, building blocks, and merging solutions, generalization, and induction.\n\nStudents will then get in touch with mathematical foundations for software engineering (e.g. functions, relations, sets, graphs, logic, logarithms, geometry, number theory, statistics, basic proof techniques) that are required in subsequent courses throughout their studies of software engineering.",
+    "Sub-courses": "1. Written exam (Tentamen), 4.5 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)\n\n2. Assignments (Inlämningsuppgifter), 3 credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "The teaching consists of lectures, group work, excercises, as well as supervision in connection to the excercises.\n\nLanguage of instruction: English",
+    "Assessment": "The course is examined by an individual written exam carried out in an examination hall at the end of the course and written assigments normally carried out in groups of 2-3 students. The assignments part is examined on the basis of solutions to compulsory problems handed in during the course and on the basis of individual contribution to the group work.\n\nStudents are required to complete written self- and peer-assessment forms during the course.\n\nRetake examinations of the assigments part consist of written individual assigments.\n\nIf a student, who has failed the same examined component twice, wishes to change examiner before the next examination, a written application shall be sent to the department responsible for the course and shall be granted unless there are special reasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\n\nIn cases where a course has been discontinued or has undergone major changes, the student shall normally be guaranteed at least three examination occasions (including the ordinary examination) during a period of at least one year from the last time the course was given.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U).\nThe grading scale comprises Fail (U), 3, 4 or 5.\nIn order to pass the course both the assignments and the written hall examination have to be approved.\nThe final grade in the course is decided from the grade of the written hall examination.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between teachers and student representatives. Further, an anonymous questionnaire is used to ensure written information. The outcome of the evaluations serves to improve the course by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "Course litterature to be announced 8 weeks prior to the start of the course."
+  }
+}

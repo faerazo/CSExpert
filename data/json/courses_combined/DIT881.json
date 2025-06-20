@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source_document": "DIT881.pdf",
+    "course_code": "DIT881",
+    "course_title": "Genome-Scale Bioinformatics",
+    "swedish_title": "Genome-scale Bioinformatik",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Data Science, Computer Science",
+    "specialization": "A1N, Second cycle, has only first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2021-11-19",
+    "valid_from_date": "2022-08-29",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Software Engineering and Management Master's Programme (N2SOF)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2021-11-19 to be valid from 2022-08-29, autumn semester of 2022.",
+    "Position in the educational system": "The course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS) and 3)\nSoftware Engineering and Management Master's Programme (N2SOF)\nMain field of studies\nData Science\nComputer Science\nSpecialization\nA1N, Second cycle, has only first-cycle\ncourse/s as entry requirements\nA1N, Second cycle, has only first-cycle\ncourse/s as entry requirements",
+    "Entry requirements": "To be eligible to the course, the student should have a Bachelor's degree in any subject,\nor have successfully completed 90 credits of studies in computer science, software\nengineering, or equivalent.\nSpecifically, at least 15 credits of successfully completed courses in programming, of\nwhich at least 7.5 credits in Python programming, or equivalent are required. The\nstudent needs to have successfully completed a course in probability theory or statistics,\nfor example DIT862 or MSG810 or similar, and a course on algorithms and data\nstructures, or equivalent. DIT375 fulfills both Python and algorithm and data structures\nrequirements.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• explain computational problems arising from questions of biological importance in\nthe analysis of omics data\n• discuss important algorithmic aspects when designing and implementing\nbioinformatics solutions for genome-scale data,\n• describe data structures and algorithms for genome-scale data and discuss their\nutility\nCompetence and skills\n•\n•\nimplement applications for analyzing genome-scale data with different\nbioinformatics frameworks,\nuse algorithms and datastructures for computations with genome-scale data\nJudgement and approach\n•\nsuggest appropriate methodological approaches for analysis tasks and discuss their\nadvantages and drawbacks,\n• discuss advantages and drawbacks of different computational models for biological\nquestions involving genome-scale data,",
+    "Course content": "The aim of this course is to deepen the students' knowledge and skills and familiarize\nthem with the exciting field of bioinformatics for genome-scale data. The course will\nintroduce aspects of designing and implementing large-scale bioinformatics solutions for\ngenomes, transcriptomes and other omics data.\nIn particular, the course will include:\n•\n•\nan overview of bioinformatics problems, algorithmic approaches, and high-\nperformance techniques to processing genome-scale data,\nan introduction to data structures such as index structures including suffix trees,\nsuffix arrays, the Burrows-Wheeler transform and the FM-index\n• an introduction to alignment-free methods including k-mer based approaches as\nwell as approximate computation approaches such as sketching\n• implementation of bioinformatics workflows on a cluster using appropriate software\nframeworks,\n• Case studies applying the methods to real-world data sets.",
+    "Sub-courses": "1. Project (Projekt), 3 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)\n2. Assignments (Inlämningsuppgifter), 4.5 credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "Lectures, computer lab sessions, and exercise sessions.",
+    "Assessment": "The course is examined by a final project, as well as mandatory written assignments,\nsome of which will be carried out individually and others will be carried out in groups of\nnormally 2-3 students. There will be non-obligatory individual assignments which grant\nbonus points for the final project. These bonus points are valid for the two next\nscheduled re- examinations.\nA student who has taken two exams in a course or part of a course without obtaining a\npass grade is entitled to the nomination of another examiner. The student needs to\ncontact the department for a new examiner, preferably in writing, and this should be\napproved by the department unless there are special reasons to the contrary (Chapter 6\nSection 22 of the Higher Education Ordinance).\nIf a student has received a recommendation from the University of Gothenburg for\nspecial educational support, where it is compatible with the learning outcomes of the\ncourse and provided that no unreasonable resources are required, the examiner may\ndecide to allow the student to sit an adjusted exam or alternative form of assessment.\nIn the event that a course has ceased or undergone major changes, students are to be\nguaranteed at least three examination sessions (including the ordinary examination\nsession) over a period of at least one year, but no more than two years, after the course\nhas ceased/been changed. The same applies to placements and professional placements\n(VFU), although this is restricted to just one additional examination session.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and\nFail (U).\nTo pass the course, students must receive a passing grade in both modules. The grade\nfor the entire course will be determined by the final project.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indication which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course."
+  }
+}

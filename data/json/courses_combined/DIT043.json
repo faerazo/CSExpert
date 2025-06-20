@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "source_document": "DIT043.pdf",
+    "course_code": "DIT043",
+    "course_title": "Object-Oriented Programming",
+    "swedish_title": "Objektorienterad programmering",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "First Cycle",
+    "main_field_of_study": "Software Engineering",
+    "specialization": "G1N, First cycle, has only upper-\nsecondary level entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2020-12-18",
+    "valid_from_date": "2021-08-30",
+    "programmes": [
+      "Software Engineering and Management Bachelor's Programme (N1SOF)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2020-12-18 to be valid from 2021-08-30, autumn semester of 2021.",
+    "Position in the educational system": "The course is a compulsory course in the Software Engineering and Management\nBachelor's Programme. The course is also a single subject course at the University of\nGothenburg.\nThe course can be part of the following programme: 1) Software Engineering and\nManagement Bachelor's Programme (N1SOF)",
+    "Entry requirements": "General entrance requirements for university studies and the Swedish upper secondary\ncourses English B, Mathematics C or English 6, Mathematics 3b/3c or equivalent.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• explain basic programing language concepts, e.g., statements, expressions,\noperators, types, control flow constructs, argument passing, method calls\nand exception handling,\n• explain object-oriented concepts, e.g., objects, methods, classes and inheritance,\n• explain the meaning and use of elementary data structures, e.g., strings and arrays,\nCompetence and skills\n• develop small (up to 5000 lines of code) software applications in an object oriented\nprogramming language using a modern development environment,\n• structure the program into separate parts that can be implemented independently in\na practicable way,\nJudgement and approach\n• evaluate the comprehensibility of a program, e.g., using class coupling, class\ncohesion and method cohesion,\n• assess the impact of errors in software development.",
+    "Course content": "Programming (or development or coding) is the act of solving computing problems\nusing a programming language. It involves the design, realisation, testing,\ntroubleshooting, and maintenance of program code, in a programming language, on top\nof some programming platform, by the help of a development environment. The course\nintroduces a contemporary object oriented programming language with associated\nplatforms and environments, with emphasis on basic programming language concepts,\nobject oriented concepts, and elementary data structures. It also introduces the notion\nof code quality, and contemporary methods for obtaining high code quality. In\naddition, the course introduces more advanced programming topics such as recursion\nand exception handling.",
+    "Sub-courses": "1. Written exam (Tentamen), 4.5 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)\n2. Assignements (Inlämningsuppgifter), 3 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)",
+    "Form of teaching": "The teaching consists of lectures, group work, exercises, as well as supervision in\nconnection to the exercises.",
+    "Assessment": "The course is examined by an individual written exam carried out in an examination hall\nat the end of the course and written assignments normally carried out in groups of 2–3\nstudents. The assignments part is examined on the basis of solutions to compulsory\nproblems handed in during the course and on the basis of individual contribution to the\ngroup work.\nStudents are required to complete written self- and peer-assessment forms during the\ncourse which will be part of the assessment of the student's individual contribution to\nthe project.\nRetake examinations of the assignments part consist of written individual assignments.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and\nFail (U).\nThe grading scale comprises Fail (U), 3, 4 or 5.\nTo pass the course, all mandatory components must be passed. To earn a higher grade\nthan Pass, a higher weighted average from the grades of the components is required.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "Course literature to be announced 8 weeks prior to the start of the course."
+  }
+}

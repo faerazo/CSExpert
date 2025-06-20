@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "source_document": "DIT260.pdf",
+    "course_code": "DIT260",
+    "course_title": "Advanced Functional Programming",
+    "swedish_title": "Avancerad funktionell programmering",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2009-09-19",
+    "valid_from_date": "2018-08-19",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Computer Science, Bachelor's Programme (N1COS)"
+    ],
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "20 Jan 2025 - 23 Mar 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-86014"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2009-09-19 and was\nlast revised on 2017-12-19 by Department of Computer Science and Engineering to be\nvalid from 2018-08-19, autumn semester of 2018.",
+    "Position in the educational system": "The course is offered within several programmes. It is also a single subject course at the\nUniversity of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS) and 3)\nComputer Science, Bachelor's Programme (N1COS)",
+    "Entry requirements": "To be eligible to the course, the student should have successfully completed 120 credits\nof studies in computer science or equivalent. Specifically, the following courses are\nrequired, or equivalent:\n• DIT143 Functional Programming, 7.5 credits, or DIT440 Introduction to\nFunctional Programming, 7.5 credits,\n• DIT980 Discrete Mathematics for Computer Scientists, 7.5 credits,\n• DIT231 Programming Language Technology, 7.5 credits.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completion of the course the student should be able to:\nKnowledge and understanding\n• explain advanced type system features, such as type classes, generalized algebraic\ndatatypes, functors, monads and monad transformers, and relate them to each other\nCompetence and skills\n•\n•\n• design embedded domain specific languages (EDSLs); explain and exemplify their\nabstract and concrete syntax and semantics; and implement them in Haskell as\ncombinator libraries\nuse specification-based development techniques to formulate and test properties\nabout programs\nreason about the correctness of functional programs, and transform them on the\nbasis of such reasoning\n• analyse and extend Haskell programs which use advanced type system features\nJudgement and approach\n• discuss the above topics (i.e., type system features, EDSLs, specification-based\ntechniques and correctness), and how they relate to each other",
+    "Course content": "The aim of the course is to explore the powerful mechanisms that functional\nprogramming languages offer to solve real problems and structure larger programs. The\nfocus lies on library design and the concept of embedded languages.\nThe big advantage with functional languages is that language constructions can be given\nnames and thereby reused, using higher order functions. Functional programs can\ntherefore often be constructed by composing constructions from a library. This method\nenables a way to construct programs quickly and with a high degree of correctness. This\nis the central idea in this course.\nWe can learn a lot from studying the standard library of list functions such as map, fold\nand so on. These functions can be generalised to operate on other datatypes.\nRealistic functional programs must also handle changes in state, exceptions,\nbacktracking and other \"non-functional\" behaviours. We will look at how these can be\nmodelled in a purely functional manner. The concept of \"monads\" will help us here.\nArmed with this knowledge we will construct domain specific libraries, designed to\nconstruct programs in a certain application domain. This type of library can be said to\ndefine a domain specific language, since the constructions the programmer uses to\nconstruct larger programs mainly consists of library functions. We will study libraries\nfor parsing, pretty printing, graphics, pseudo-parallel programming and interaction. The\ncourse will also present some recent research which can make the contents of the course\nvary to some degree. The programming language used in the course is Haskell.",
+    "Sub-courses": "1. Written examination (Skriftlig tentamen ), 3 higher education credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n2. Laboratory work (Laboration), 4.5 higher education credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)",
+    "Form of teaching": "Lectures, laborations, supervision and self-studies. The students are expected to do a lot\nof independent programming and self-study.",
+    "Assessment": "The course is examined by 2-3 programming laborations (U-VG) normally done in pairs\nduring the course, and an individual exam (U-VG) given in an examination hall at the\nend.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nA Pass grade (G) for the entire course requires at least a Pass grade for all sub-courses.\nThe final grade of the full course is based 60% on the result of the laborations and 40%\non the result of the written examination.",
+    "Course evaluation": "The course is evaluated through meeting after the course between teachers and student\nrepresentatives. Further, an anonymous questionnaire is used to ensure written\ninformation. The outcome of the evaluations serves to improve the course by indicating\nwhich parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\nIt is recommended, but not required, to read the following courses beforehand: DIT602\nAlgorithms, and one of DIT201 Logic in Computer Science or DIT321 Finite Automata\nTheory and Formal Languages.\n\nLast modified\n\n15 January 2025",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 19 253 SEK\n\nFirst payment: 19 253 SEK\n\n**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)"
+  }
+}

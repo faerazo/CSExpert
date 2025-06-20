@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "source_document": "DIT667.pdf",
+    "course_code": "DIT667",
+    "course_title": "Autonomous and Cooperative Vehicular Systems",
+    "swedish_title": "Självständiga och kooperativa fordonsystem",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science",
+    "specialization": "AXX, Second cycle, in-depth level of the course cannot be classified",
+    "language_of_instruction": "English",
+    "confirmation_date": "2013-11-11",
+    "valid_from_date": "2014-09-01",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2013-11-11 to be valid from 2014-09-01.",
+    "Position in the educational system": "The course is a part of the Computer Science Master's Programme and a single subject\ncourse at the University of Gothenburg.\nThe course can be part of the following programme: 1) Computer Science, Master's\nProgramme (N2COS)",
+    "Entry requirements": "Bachelor degree in Computer Science or equivalent. A course (7.5 hp or equivalent) in\none of the following areas is required: Computer Communication (DIT420 or\nequivalent), Computer Networks (DIT663 or equivalent), Operating Systems (DIT400\nor equivalent), Algorithms (DIT600 or equivalent) and Data Structures (DIT960 or\nequivalent).\nEnglish B level or English proficiency equivalent to IELTS 6.5 no part under 5.5 or\nTOEFL 575 p, TWE score 4.5 is also required.",
+    "Learning outcomes": "After completion of the course the student is expected to be able to:\n1. Knowledge and Understanding\n- demonstrate knowledge of the basics in robotics,\n- demonstrate knowlede of robotics control and/or communication systens with\nemphasis their contruction, their programming and insights of current research and\ndevelopment in the area.\n2. Skills and abilities\n- develop and design ditributed control algorithms, programs, network protocols, which\nare adapted to the needs and capacities of road users and which meet the societal\nrequirements of sustainalbe development in social and ecological terms.\n- demonstrate hands-on experience with programming of robots.\n- work in teams and to collaborate groups with different constitutions and backgrounds.\n- plan an engineering task and give a clear account of his/her and the team\nachievements, and conclusions in a way that is supported both orally and in writing\nwhile addressing different engineering audiences.\n- plan an engineering task and give a clear account of his/her and the team\nachievements, and conclusions in a way that is supported both orally and in writing\nwhile addressing different engineering audiences.\n3. Judgment and approach\n- referee peer engineering projects and provide feedback in a professional manner.\n- judge the applicability of different algorithmic and technical solution with constratins,\nsuch as cost and performance.",
+    "Course content": "This project studies vehicular systems of low cost miniature vehicles that use wireless\ncommunication on a large scale open source test-bed. The test-bed may be geared with\nonboard sensors, such as cameras, laser, radar, speed sensors, etc. In this course the\nstudent will learn how to design vehicle systems that can move autonomously and/or\ncommunicate with other vehicles for coordionating their actions. The student will\nsimulate vehicular systems or construct such systems that are based on miniature vehicle\nmodels (robots).",
+    "Sub-courses": "",
+    "Form of teaching": "This course setup includes a short sequence of cross-disciplinary lectures that will\nprepare the students and allow thier project groups to share a wider common\nbackground. Moreover, the course setup includes weekly presentations of project\nprogress reports in the class room that is followed by a discussion. These discussions, led\nby an expert in the area, would discuss solutions to problems that students encounter.\nThe classes focuson the finer details, and the student is expected to have a more\ncomplete control of the body of knowledge that is required in order to work.\nLanguage of instruction: English",
+    "Assessment": "The course is examined by a project plan, half time- and final written reports which are\nalso presented orally and require demonstration of the developed systems. In order to\npass the course the student is expected to participate actively in the seminar lectures,\nincluding presentations and discussion of studied topics. The student is also expected to\nprovide feedback for other group's projects plan and reports. All the work is commonly\ncarried out in groups of 2-3 students.\nA student who has failed two examinations on the same material has the right to request\na change of examiner. Such a request must be submitted to the Department in writing\nand shall be granted unless there are particular reasons not to do so.\nIn cases where a course has been discontinued or has undergone major changes, students\nmust be guaranteed at least three examination opportunities (including the regular\nopportunity) based on the previous content of the course for a period of at least one\nyear.",
+    "Grades": "The grading scale comprises: Fail (U), Pass (G), Pass with Distinction (VG).\nTo be awarded grade Pass (G), the student shall demonstrate multi structural knowledge\nby carrying out presentations and producing a report that is well structured and easy to\nread, that analyses a related problem using concepts defined by the course literature,\nthat properly cites the course literature, and whose content covers all learning outcomes\nand is innovative.\nTo be awarded grade Pass with Honor (VG), the student shall demonstrate the ability to\ncompare the state-of-the-art technologies with the results produced in this course.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers."
+  }
+}

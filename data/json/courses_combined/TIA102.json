@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "source_document": "TIA102.pdf",
+    "course_code": "TIA102",
+    "course_title": "Aesthetics of Interaction",
+    "swedish_title": "Aesthetics of Interaction",
+    "department": "Dep of Applied Information Technology",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": [
+      "Computer Science-Interaction Design",
+      "Interaction Design"
+    ],
+    "specialization": [
+      "AIN, Second cycle, has only first-cycle course/s as entry requirements",
+      "A1N, Second cycle, has only first-cycle course/s as entry requirements"
+    ],
+    "language_of_instruction": "English",
+    "confirmation_date": "2011-02-09",
+    "valid_from_date": "2011-09-01",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2011-02-09 to be valid\nfrom 2011-09-01, autumn semester of 2011.",
+    "Position in the educational system": "The course is provided as a part of the Computer Science Master's Programme N2COS.\nThe course is also offered as a programme course in the Computer Science Bachelors\nProgramme N1COS. Please note the entrance qualifications for programme students in\nNICOS below for this course. The course is also offered as a single subject course. The\ncourse is also a Ph. D course for Ph. D students within interaction design or related\nsubjects. The course is also offered as a single subject course.\nThe course can be part of the following programme: 1) Computer Science, Master's\nProgramme (N2COS)\nMain field of studies\nSpecialization\nComputer Science-Interaction Design\nAIN, Second cycle, has only first-cycle\ncourse/s as entry requirements\nInteraction Design\nA1N, Second cycle, has only first-cycle\ncourse/s as entry requirements",
+    "Entry requirements": "Requirements for the course is to have successfully completed a Bachelors degree,\nand have 22,5 credits from courses in Interaction Design including the course\nPrototyping in Interaction Design (TIA108) 7.5credits and Interaction Design\nMethodology (TIA104) 7.5credits.\nTo be eligible for this course as a programme student in Science Bachelors Programme\nNICOS, the student must have passed at least 90 credits in programme\ncourses, and have 22,5 credits from courses in Interaction Design including the course\nPrototyping in Interaction Design (TIA108) 7.5 credits and Interaction Design\nMethodology (TIA104) 7.5 credits.",
+    "Learning outcomes": "After completing the course the student is expected to be able to:\nKnowledge and understanding\n• describe and relate to common aesthetic ideals within interaction design,\n• describe these aesthetic ideals are rooted in other disciplines,\n• analyze and discuss an certain design in relation to current aesthetics ideal,\n• analyze and describe interaction in itself,\n• explain with the idea of the Gesamtkunstwerk.\nSkills and abilities\n• shape interaction in itself towards a certain expression or ideal,\n• design for a certain aesthetic ideal,\n• combine several aesthetic ideals in design,\n• redesign interaction-related aspects of an artifact,\n• motivate ones design decisions as being based on an aim of design,\n• give and receive constructive feedback.\nJudgement and approach\n• select and apply approaches and theories from related fields in order to discuss and\nattain a certain aesthetic ideal,\n• choose or express a suiting aesthetic ideal (or combination of ideals) depending on\ncontext and users,\n• establish and clearly express ones own view on aesthetics of interaction.",
+    "Course content": "When we say \"aesthetics of interaction\" we are not referring to visual appearance only.\nAesthetics of interaction is about all aspects of an artifact; not only how it looks but also\nhow it behaves, interacts, feels, sounds etc. Within interaction design there are a number\nof different aesthetic ideals. Many claim usability as their aesthetic ideal, but there are\nothers too; some say that we should design for pleasure, others that we should design for\nplay, others yet design to criticize whereas others advocate tangible interaction, or\ninteraction that engages all senses. In this course we will look closer at the\nabovementioned ideals and discuss and practice how to design for them. Content\nincludes, but is not limited to:\n• Common aesthetic ideals within interaction design\n• Different ways to describe interaction\n• Gestalt and expressions\n• Interactive artifacts as Gesamtkunstwerke\n• Temporal aspects of interaction design\n• Analysis of various aesthetic aspects of an interactive system or object\n• The connection between design objectives, design rationale and aesthetic design\ndecisions\nThe course features both practical and theoretical parts, as well as work in groups and\nindividual work. Lectures, literature and literature seminars give a theoretical\nfoundation, which is immediately put into practice in a series of small exercises and one\nlarger project. Focus is upon turning analysis and reflection into practical action. Focus\nis also on exchange of thoughts, feedback, designs and ideas. The course requires active\nparticipation; apart from work with the final project, participants will spend most of\ntheir study time at school, working in pairs or groups.",
+    "Sub-courses": "",
+    "Form of teaching": "Language of instruction: English",
+    "Assessment": "The course is examined through three modules, namely:\n1. Individual and Group-based lab exercises 2 credits (Pass/Fail)\n2. Individual literature assignments 1.5 credits (Pass/Fail)\n3. Individual design project 4 credits (Pass with Distinction/Pass/Fail)",
+    "Grades": "The grading scale comprises: Fail, Pass, Pass with distinction.\nIn order to receive Pass on the entire course, the student needs to receive Pass on all\nthree modules. In order to receive Pass with Distinction (VG) the student must receive\nPass with Distinction at the module Individual design project 4 credits, and Pass\non the other modules.",
+    "Course evaluation": "After completion of the course the students are to be given the possibility of\nparticipating in course anonymously. Continuous evaluation will be used, including\nthree meetings between teacher(s) and student representatives. Additionally, the course\nwill be evaluated with a course questionnaire, and discussed with the student\nrepresentatives.",
+    "Additional information": ""
+  }
+}

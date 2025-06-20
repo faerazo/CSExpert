@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "source_document": "TIA325.md",
+    "course_code": "TIA325",
+    "course_title": "Infrastructure",
+    "swedish_title": "Infrastruktur",
+    "department": "Department of Applied Information Technology",
+    "credits": "7.5",
+    "cycle": "Second cycle",
+    "language_of_instruction": "English",
+    "confirmation_date": "2024-06-10",
+    "valid_from_date": "Autumn Semester 2024",
+    "programmes": [
+      "Digital Leadership Master's Programme (N2DGL)"
+    ]
+  },
+  "sections": {
+    "Position in the educational system": "The course is a compulsory course in Digital Leadership Master's Programme (N2DGL).",
+    "Entry requirements": "Bachelor’s degree 180 credits including an independent project (degree project) of at least 15 credits or equivalent and English 6/English B from Swedish Upper Secondary School or equivalent.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\n\n_Knowledge and understanding_\n\n1\\. explain central theories and concepts in the field of digital infrastructure;\n\n2\\. describe methods for analysis and design of digital infrastructure;\n\n_Competence and skills_\n\n3\\. analyze opportunities and risks with digital infrastructures;\n\n4\\. plan for design and use of digital infrastructures;\n\n_Judgement and approach_\n\n5\\. discuss underlying assumptions and contextual parameters in the design of digital infrastructure;\n\n6\\. analyze and identify challenges in the design and use of digital infrastructures.",
+    "Course content": "The course develops students' knowledge about the role of socio-technical infrastructure in the digitalization of society, services and products. In particular, it focuses on how such digital infrastructures create opportunities and limitations, leading to both expected and unexpected consequences. The course will also develop students ability in designing and exploring the use of digital infrastructures.\n\nThe course is theoretically anchored in several domains, including but not limited to information systems and design. The course also includes guest lectures about digital infrastructure development.",
+    "Sub-courses": "Infrastructure, 7.5 Credits",
+    "Form of teaching": "The course is implemented through lectures, seminars, paper discussions and workshops.",
+    "Assessment": "The assessment consists of two parts.\n\nPart 1. Paper discussions and weekly tasks\n\nThroughout the course, students need to form groups, participate in paper discussions, and lead at least one paper discussion session. Weekly readings will be assessed through weekly tasks, such as a short essay and multiple choice questions. These tasks assess learning outcomes 3-6.\n\nPart 2. Final examination\n\nThis written examination focuses on the student’s conceptual understanding of digital infrastructure. It mainly assesses learning outcomes 1, 2, 3, and 5.\n\nIf a student who has twice received a failing grade for the same examination component wishes to change examiner ahead of the next examination session, such a request should be made to the department in writing and should be approved by the department unless there are special reasons to the contrary (Chapter 6 Section 22 of the Higher Education Ordinance).\n\nIf a student has received a recommendation from the University of Gothenburg for study support for students with disabilities, the examiner may, where it is compatible with the learning outcomes of the course and provided that no unreasonable resources are required, decide to allow the student to sit an adjusted exam or alternative form of assessment.\n\nIn the event that a course has ceased or undergone major changes, students are to be guaranteed at least three examination sessions (including the ordinary examination session) over a period of at least one year, but no more than two years after the course has ceased/been changed. The same applies to internships and professional placements (VFU), although this is restricted to just one additional examination session.",
+    "Grades": "The grading scale comprises: Pass (G) and Fail (U). In order to pass the course, students need to pass both parts.",
+    "Course evaluation": "After completion of the course the students are to be given the opportunity to participate in a course evaluation electronically. The result of the course evaluation is to be made accessible to the students. The next time the course is given the processed result of the course evaluation is to be presented to the students including possible changes brought about as a result of the course evaluation.",
+    "Additional information": "The course cannot be included in a degree together with the course TIA303 Infrastructure, 7,5 credits."
+  }
+}

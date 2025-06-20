@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "source_document": "DIT183.md",
+    "course_code": "DIT183",
+    "course_title": "Data structures and algorithms",
+    "swedish_title": "Datastrukturer och algoritmer",
+    "department": "Department of Computer Science and Engineering",
+    "credits": "7.5",
+    "cycle": "First cycle",
+    "language_of_instruction": "English",
+    "confirmation_date": "2024-06-27",
+    "valid_from_date": "Spring term 2025",
+    "programmes": [
+      "Software Engineering and Management, bachelor's Programme (N1SOF)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Mathematical Sciences, Master's Programme (N2MAT)",
+      "Bachelor's Programme in Mathematics (N1MAT)"
+    ],
+    "iteration": "Autumn 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "3 Nov 2025 - 18 Jan 2026",
+    "application_period": "17 Mar 2025 - 15 Apr 2025",
+    "application_code": "GU-86124"
+  },
+  "sections": {
+    "Position in the educational system": "The course is a compulsory course in the Software Engineering and Management, bachelor's Programme (N1SOF).\n\nThe course can also be part of the following programmes:\n\n1. Applied Data Science Master's Programme (N2ADS)\n2. Mathematical Sciences, Master's Programme (N2MAT)\n3. Bachelor's Programme in Mathematics (N1MAT)\n\nThe course is a also a single-subject course at Gothenburg University.",
+    "Entry requirements": "To be eligible for this course, students must have:\n\n- Course participation in at least 15 credits in programming, of which at least 10 credits completed (e.g. DIT009 Fundamentals of programming, 7.5 credits, and DIT044 Object-oriented programming, 7.5 credits, or equivalent).\n- Completed courses of at least 7.5 credits in discrete mathematics or algebra (e.g. DIT008 Discrete mathematics, or equivalent).\n\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "**_Knowledge and understanding_**\n\n- explain basic abstract data types and data structures, including lists, queues, hash tables, trees, and graphs\n- explain some of the algorithms used to manipulate and query these data structures in an efficient way, and explain why they are correct\n\n**_Competence and skills_**\n\n- apply basic abstract data types and data structures, and algorithms related to these\n- implement and use abstract data types as interfaces, and data structures as classes, in an object-oriented programming language\n- read, specify, and describe algorithms, at a higher level of abstraction than code\n\n**_Judgement and approach_**\n\n- analyse the efficiency of basic algorithms and data structures\n- make informed choices between different data structures and algorithms for different applications",
+    "Course content": "Data structures and algorithms are fundamental building blocks in almost all software products. Knowledge and skills in data abstraction, data structures, and algorithms are important in the construction, use, and maintenance of adaptable, reusable, correct, and efficient program components.\n\nThe course gives knowledge and skills in the construction and use of algorithms and data structures, an introduction to various techniques for the analysis of algorithms, and insights in the advantages of using data abstraction in program development.\n\nThe following topics are covered by the course:\n\n- abstract data types\n- data structures and algorithms focusing on imperative och object-oriented languages\n- common data structures such as arrays, linked lists, unbalanced and balanced trees, heaps, and hash tables\n- how these can be used to implement abstract data types such as stacks, queues, priority queues, maps, sets, and graphs\n- standard algorithms for these data structures, including their resource demands\n- searching and sorting algorithms\n- using different libraries for data structures and algorithms\n- basic complexity analysis of data structures and algorithms",
+    "Sub-courses": "Written hall examination, 4.5 Credits\n\nAssignments, 3 Credits",
+    "Form of teaching": "The teaching consists of lectures, exercises and supervised group work.\n\n_Language of instruction_: English",
+    "Assessment": "The course is examined by an individual written exam (4.5 hec), and assignments carried out in groups (3.0 hec).\n\nIf a student who has twice received a failing grade for the same examination component wishes to change examiner ahead of the next examination session, such a request should be made to the department in writing and should be approved by the department unless there are special reasons to the contrary (Chapter 6 Section 22 of the Higher Education Ordinance).\n\nIf a student has received a recommendation from the University of Gothenburg for study support for students with disabilities, the examiner may, where it is compatible with the learning outcomes of the course and provided that no unreasonable resources are required, decide to allow the student to sit an adjusted exam or alternative form of assessment.\n\nIn the event that a course has ceased or undergone major changes, students are to be guaranteed at least three examination sessions (including the ordinary examination session) over a period of at least one year, but no more than two years after the course has ceased/been changed. The same applies to internships and professional placements (VFU), although this is restricted to just one additional examination session.",
+    "Grades": "**_Sub-courses_**\n\n1. Written hall examination (Skriftlig salstentamen), 4.5 credits\n\n\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)\n2. Pass with credit (4), Pass (3) and Fail (U)\n\n\nGrading scale: Pass (G) and Fail (U)\n\nThe grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U). The final grade is given based on the grade for the written exam.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between teachers and student representatives. Further, an anonymous questionnaire is used to ensure written information. The outcome of the evaluations serves to improve the course by indication which parts could be added, improved, changed or removed.",
+    "Additional information": "The course can be taught together with Chalmers.\n\nThe course replaces the course DIT182, 7.5 hec. The course cannot be included in a degree which contains DIT182. Neither can the course be included in a degree which is based on another degree in which the course DIT182 is included.\n\nLast modified 3 March 2025",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits.",
+    "Tuition": "Full education cost: 17 753 SEK\n\nFirst payment: 17 753 SEK\n\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)\n\nApplication closed, late application opens 15 July 2025."
+  }
+}

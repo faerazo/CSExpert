@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "source_document": "DIT226.pdf",
+    "course_code": "DIT226",
+    "course_title": "Computer Graphics, Advanced Course",
+    "swedish_title": "Datorgrafik, fortsättningskurs",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements\nA1N, Second cycle, has only first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2017-02-13",
+    "valid_from_date": "2017-10-15",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Game Design & Technology Master's Programme (N2GDT)",
+      "Computer Science, Bachelor's Programme (N1COS)"
+    ]
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2017-02-13 and was last revised on 2017-10-03 to be valid from 2017-10-\n15, autumn semester of 2017.",
+    "Position in the educational system": "The course is part of the Computer Science Master's Programme. It is also a single\nsubject course at the University of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS), 3)\nGame Design & Technology Master's Programme (N2GDT) and 4) Computer Science,\nBachelor's Programme (N1COS)",
+    "Entry requirements": "To be eligible for the course, students should have successfully completed courses\ncorresponding to 120 hec within the subject of Computer Science, including the\nfollowing courses:\n• 7.5 hec of linear algebra (MMG20 or equivalent),\n• 7.5 hec in data structures (DIT960 or equivalent),\n• 15 hec in imperative or object oriented programing (DIT012 and DIT952, or\nequivalent), and\n• 7.5 hec in computer graphics (DIT223 or equivalent),\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• describe and apply advanced algorithms, often at a research level, and processes\nused to create computer graphics in 3D-games and/or movies,\nCompetence and skills\n• implement advanced algorithms used to generate real-time renderings and photo\nrealistic renderings, or GPU algorithms, as part of a project,\n• present and describe one or a few advanced algorithms used in computer graphics,\nJudgement and approach\n• judge and select suitable algorithms and methods for specific advanced sub\nproblems in computer graphics and/or GPU programming.",
+    "Course content": "The course aims to deepen and broaden the knowledge about three dimensional\ncomputer graphics. It is a follow-up course to an introductory course in computer\ngraphics, that gives the students a chance to dig deeper into particular subjects and also\nto perform a project.\nThere will be compulsory seminars, where more details on a research-level will be\npresented for a selection of topics, e.g.:\n• ambient occlusion,\n• hair rendering,\n• GPGPU applications,\n• ray tracing and global illumination,\n• advanced path tracing,\n• GPU-ray tracing,\n• hard and soft shadows,\n• real-time indirect illumination,\n• spherical harmonics, etc.\nThe initial seminars are presented by the teacher or other researchers. For the remaining\nseminars, short presentations are given by the students, followed by group discussions to\ndeepen the understanding of the presented algorithms/techniques. Since the topic is\nchosen by the presenter, the exact course content varies somewhat for each course\ninstance.\nThe student will achieve practical experience from a larger project around 3D-graphics\n(individually or in groups). E.g., the project can be to implement a specific advanced\nextensive technique or implementing several advanced but smaller techniques. This can,\nfor instance, be done as a render engine of a game or stand-alone programs.",
+    "Sub-courses": "1. Project (Projekt), 6 higher education credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n2. Seminars (Seminarier), 1.5 higher education credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "Project work, individually or in groups of 2-3 students. Compulsory seminars.\nLanguage of instruction: English",
+    "Assessment": "To pass the course, the student must have at least 80% attendance at the compulsory\nseminars, approved student presentation, and approved project. The final grade of the\ncourse corresponds to the grade of the project.\nThe sub-courses are assessed as follows:\n• The student presentation is assessed on how well the topic is explained and\npresented for the target audience, i.e., the other students. The presentations\ncomprise 15 minutes per student and can be performed individually or in groups of\n2-3 students.\n• The project is assessed on the complexity and magnitude of the implemented\ngraphics techniques and how successfully the project has been performed. The\nproject can be done individually or in groups of 2-3 students and focuses on graphics\nprogramming. The requirements for the grades scales linearly with the number of\ngroup members. There is no written report, instead the project is displayed and\nexplained to the teacher (e.g., source code and outcomes) by the project member(s)\nat the end of the course.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The course replaces the DIT221 Advanced Computer Graphics 7,5 hec course. The\ncourse cannot be included in a degree which contains DIT221. Neither can the course be\nincluded in a degree which is based on another degree in which the course DIT221 is\nincluded.\nThe course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course."
+  }
+}

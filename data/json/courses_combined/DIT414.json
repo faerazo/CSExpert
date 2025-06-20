@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "source_document": "DIT414.pdf",
+    "course_code": "DIT414",
+    "course_title": "Design and construction of digital games",
+    "swedish_title": "Design och konstruktion av datorspel",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Technology 100%",
+    "credits": "7.5",
+    "cycle": "First Cycle",
+    "main_field_of_study": "Interaction Design, Software Engineering",
+    "specialization": "G1F, First cycle, has less than 60 credits in first-cycle course/s as entry requirements, G1F, First cycle, has less than 60 credits in first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2020-11-03",
+    "valid_from_date": "2024-01-15",
+    "programmes": [
+      "Computer Science, Bachelor's Programme (N1COS)",
+      "Software Engineering and Management Bachelor's Programme (N1SOF)"
+    ],
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "20 Jan 2025 - 23 Mar 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-86047"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2020-11-03 and was last revised on 2022-11-23 to be valid from 2024-01-\n15, spring semester of 2024.",
+    "Position in the educational system": "The course is part of several programs and is also a single-subject course at Gothenburg\nUniversity.\n\nThe course can be part of the following programmes: 1) Computer Science, Bachelor's\nProgramme (N1COS) and 2) Software Engineering and Management Bachelor's\nProgramme (N1SOF)",
+    "Entry requirements": "Students taking this course are expected to have experience in software development,\nequivalent to having completed a course of at least five credits in an imperative\nprogramming language such as Java, C# or Python.\n\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\n\nKnowledge and understanding\n• Identify game accessibility issues and incorporate solutions\n• Document a game design against budgetary and time constraints\n• Identify an audience for which to design a game\n\nCompetence and skills\n• Design an experiential framework for a game\n• Make use of standard game design frameworks\n• Incorporate game assets\n• Make effective use of game development frameworks\n• Develop effective prototypes of a game design\n\nJudgement and approach\n• Effectively define success criteria against which a game should be assessed\n• Analyze playability tests conducted with actual users\n• Iteratively evaluate game goals against user feedback",
+    "Course content": "This course is divided into three successive parts. These parts cover design, construction\nand evaluation of games. The largest part will be given to game development in Unity or\nUnreal.\n\nThe first part is about the topic of game design. It will cover requirements gathering and\nspecification: what do you want a game to do; for whom are you designing a game; and\nwhat does success look like? Students on this course will develop the design\ndocumentation for their own game as a deliverable for the first part.\n\nThe second part will take that design documentation and turn it into an prototype using\nUnreal or Unity. A playable demo of a game design is produced here.\n\nThe third part takes the prototype created in the previous part and focuses on\nplaytesting. This will include ensuring accessibility for an audience that includes\ndisabled gamers. Together those are the deliverable for the final part of the course.\n\nEach part will also introduce theoretical concepts through lectures, academic papers,\nbooks, and professional literature.",
+    "Sub-courses": "1. Assignments (Inlämningsuppgifter), 7.5 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)",
+    "Form of teaching": "Each part will have a lecture series in which key concepts are introduced, along with\npractical hands-on workshops where the key actionable skills are taught. Each part has\nacademic and professional reading with which students are expected to become familiar.",
+    "Assessment": "The examination takes place in two parts. Partly, group work is assessed. Each student\nalso submits an individually written report for assessment. The assessments are the basis\nfor the individual grading.\n\nA student who has taken two exams in a course or part of a course without obtaining a\npass grade is entitled to the nomination of another examiner. The student needs to\ncontact the department for a new examiner, preferably in writing, and this should be\napproved by the department unless there are special reasons to the contrary (Chapter 6\nSection 22 of the Higher Education Ordinance).\n\nIf a student has received a recommendation from the University of Gothenburg for\nspecial educational support, where it is compatible with the learning outcomes of the\ncourse and provided that no unreasonable resources are required, the examiner may\ndecide to allow the student to sit an adjusted exam or alternative form of assessment.\n\nIn the event that a course has ceased or undergone major changes, students are to be\nguaranteed at least three examination sessions (including the ordinary examination\nsession) over a period of at least one year, but no more than two years, after the course\nhas ceased/been changed. The same applies to placements and professional placements\n(VFU), although this is restricted to just one additional examination session.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and\nFail (U).",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indication which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\n\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\n\nLast modified\n\n20 September 2024",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits.",
+    "Tuition": "Full education cost: 19 253 SEK\n\nFirst payment: 19 253 SEK\n\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)"
+  }
+}

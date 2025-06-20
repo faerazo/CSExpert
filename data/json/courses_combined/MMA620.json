@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "source_document": "MMA620.pdf",
+    "course_code": "MMA620",
+    "course_title": "High Performance Computing",
+    "swedish_title": "Högprestandaberäkning",
+    "department": "Department of Mathematical Sciences",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Mathematics",
+    "specialization": "A1N, Second cycle, has only first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2017-06-22",
+    "valid_from_date": "2019-09-02",
+    "programmes": [
+      "Mathematical Sciences, Master's Programme (N2MAT)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Bachelor's Programme in Mathematics (N1MAT)"
+    ],
+    "iteration": "",
+    "study_pace": "",
+    "time": "",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "",
+    "application_period": "",
+    "application_code": ""
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Mathematical Sciences on 2017-06-22 and was last revised on 2019-05-15 to be valid from 2019-09-02, autumn semester of 2019.",
+    "Position in the educational system": "The course can be part of the following programmes: 1) Mathematical Sciences,\nMaster's Programme (N2MAT), 2) Applied Data Science Master's Programme\n(N2ADS) and 3) Bachelor's Programme in Mathematics (N1MAT)",
+    "Entry requirements": "The prerequisite for the course High Performance Computing is the equivalent of 90 credits, including the courses MMG300 Multivariable Analysis, MMG410 Numerical Analysis, and some basic course in programming.",
+    "Learning outcomes": "After completing the course the student will be able to\n• organize programming work on a remote computer using Linux command line tools\n• write simple parallel programs using MPI, OpenMP, or OpenCL\n• describe the basic features of CPUs, GPUs, FPGAs, and hardware accelerators\n• assess the influence of hardware and software on runtime performance.",
+    "Course content": "• Short introduction to C and Python to the extent that is necessary for the computer labs.\n• Linux command line tools.\n• Parallel programming using threads, OpenMP, MPI, and OpenCL.\n• Hardware architecture.\n• Code optimization and compiler flags.\n• Overview of libraries in numerical analysis.",
+    "Sub-courses": null,
+    "Form of teaching": "Language of instruction: English",
+    "Assessment": "The examination consists of computer based assignments, a short presentation and a take-home exam.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).",
+    "Course evaluation": "Oral and/or written course evaluation will be performed. The results of the evaluation will be communicated to the students and will serve as a guide for the development of the course.",
+    "Additional information": "The syllabus for MMA620 was originally established to take effect from 2007-07-01, and was revised 2011-07-01.\n\nMathematical Sciences is a joint department of Chalmers/University of Gothenburg. Your education takes place in the spacious and bright premises of Mathematical Sciences at the Chalmers campus Johanneberg, where there are lecture halls, computer rooms and group rooms. Here you can also find student lunch room and reading room, as well as student counsellors and student office.\n\n[Maps for Campus Johanneberg](https://maps.chalmers.se/#a85a8be2-4ff6-4e39-9880-c2adb2a7626f)\n\nLast modified 15 January 2025",
+    "Selection": "",
+    "Tuition": ""
+  }
+}
