@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "source_document": "DIT762.pdf",
+    "course_code": "DIT762",
+    "course_title": "Continuous Optimization in Data Science",
+    "swedish_title": "Kontinuerlig optimering inom data science",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science, Data Science",
+    "specialization": "A1N, Second cycle, has only first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2021-11-03",
+    "valid_from_date": "2022-08-29",
+    "programmes": [
+      "Mathematical Sciences, Master's Programme (N2MAT)",
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2021-11-03 to be valid from 2022-08-29, autumn semester of 2022.",
+    "Position in the educational system": "The course can be part of the following programmes: 1) Mathematical Sciences, Master's Programme (N2MAT), 2) Computer Science, Master's Programme (N2COS) and 3) Applied Data Science Master's Programme (N2ADS)\n\nMain field of studies\nComputer Science\nData Science\n\nSpecialization\nA1N, Second cycle, has only first-cycle course/s as entry requirements\nA1N, Second cycle, has only first-cycle course/s as entry requirements",
+    "Entry requirements": "To be eligable for the course the students shall have 7.5 credits from courses in programming in a general-purpose programming language or equivalent (preferably, but not limited to Python), and 7.5 credits mathematics or statistics.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\n\nKnowledge and understanding\n• describe different types of optimization problems, such as continuous/discrete/mixed, convex/nonconvex\n• explain what types of data science problems can be addressed by optimization problems\n• explain the main principles of different optimization algorithms and their global/local convergence\n• account for the computational complexity of optimization algorithms in data science, as well as their performance\n\nCompetence and skills\n• implement various optimization algorithms as computer programs,\n• apply and adapt optimization algorithms to data science problems, such as machine learning and rule-based approaches\n• find approximate solutions to computationally hard problems\n• formulate various problems in data science as mathematical optimization problems\n\nJudgement and approach\n• reason about what type of information or features of the data could be useful in selecting optimization algorithms\n• select the appropriate evaluation methodology including performance and convergence analysis",
+    "Course content": "The course discusses the main aspects of optimization problems in data science, namely the concept of convergence and its relation to the statistical learning theory. The course presents different classifications of optimization problems such as convex/noncovex. The course also includes various challenges in data science by presenting real-world examples, and discusses main algorithmic ideas to address them.",
+    "Sub-courses": "1. Written hall examination (Skriftlig salstentamen), 4 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)\n2. Assignments (Inlämningsuppgifter), 3.5 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)",
+    "Form of teaching": "Lectures, exercise sessions, computer lab sessions.\nLanguage of instruction: English",
+    "Assessment": "The course is assessed through compulsory assignments and a written exam.\n\nA student who has taken two exams in a course or part of a course without obtaining a pass grade is entitled to the nomination of another examiner. The student needs to contact the department for a new examiner, preferably in writing, and this should be approved by the department unless there are special reasons to the contrary (Chapter 6 Section 22 of the Higher Education Ordinance).\n\nIf a student has received a recommendation from the University of Gothenburg for special educational support, where it is compatible with the learning outcomes of the course and provided that no unreasonable resources are required, the examiner may decide to allow the student to sit an adjusted exam or alternative form of assessment.\n\nIn the event that a course has ceased or undergone major changes, students are to be guaranteed at least three examination sessions (including the ordinary examination session) over a period of at least one year, but no more than two years, after the course has ceased/been changed. The same applies to placements and professional placements (VFU), although this is restricted to just one additional examination session.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U).\nPassing the course (3) requires passing the final exam and all assignments. Higher grades will be achieved by obtaining a higher weighted average of the grades in the final exam and the assignments.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between teachers and student representatives. Further, an anonymous questionnaire is used to ensure written information. The outcome of the evaluations serves to improve the course by indication which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course."
+  }
+}

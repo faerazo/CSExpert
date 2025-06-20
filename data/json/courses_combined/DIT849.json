@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "source_document": "DIT849.pdf",
+    "course_code": "DIT849",
+    "course_title": "Behavioral Software Engineering",
+    "swedish_title": "Mänskliga aspekter på programvaruteknik",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Software Engineering",
+    "specialization": "A1N, Second cycle, has only first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2020-10-27",
+    "valid_from_date": "2023-01-16",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Game Design & Technology Master's Programme (N2GDT)",
+      "Software Engineering and Management Master's Programme (N2SOF)"
+    ],
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "24 Mar 2025 - 8 Jun 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-86086",
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2020-10-27 and was last revised on 2021-10-28 to be valid from 2023-01-16, spring semester of 2023.",
+    "Position in the educational system": "The course is offered within the Software Engineering and Management Master's Programme. It is also a single subject course at the University of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's Programme (N2COS), 2) Game Design & Technology Master's Programme (N2GDT) and 3) Software Engineering and Management Master's Programme (N2SOF)",
+    "Entry requirements": "• Bachelor of science degree in Software Engineering, Computer Science, or\ncorresponding/equivalent,\n• Successfully completed project course in software development/engineering (7.5hp)\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• Explain why human and social factors are critical in (successful) SE,\n• Describe the risks of focusing mainly on technology in SE,\n• Describe and explain what Behavioral Software Engineering (BSE) is and how it relates to socio-technical systems analysis, human factors studies, and Human- Computer Interaction,\n• Describe important units of analysis in BSE: individual, group, organisational levels as well as how they interact,\n• Describe key cognitive biases and how they affect software developers,\n• Explain models of team development and maturity and how they relate to BSE,\n• Give an overview of recent, empirical research on BSE.\nCompetence and skills\n• Analyse why an SE intervention, like a process improvement or the introduction of a new tool, failed or succeeded from a BSE perspective,\n• Diagnose software teams based on their developmental maturity,\n• Propose interventions to improve a software development team based on a BSE analysis,\n• Identify cognitive biases that affect a particular developer or team,\n• Design a SE study using research methods suited to BSE.\nJudgement and approach\n• Analyse and hypothesize about sources of software project failures, and reflect on whether they are primarily because of technical or behavioral/human factors,\n• Assess and discuss ethical aspects and concerns as well as sustainability in software development on an individual and societal level.\nThe course is sustainability-related, which means that at least one of the learning outcomes clearly shows that the course content meets at least one of the University of Gothenburg's confirmed sustainability criteria.",
+    "Course content": "The course will comprise a number of modules/themes:\n• Introduction to BSE - Individuals: Personality and Cognitive Biases\n• Individuals: Motivation and Attitudes\n• Individuals: Experience and Emotion\n• Individuals: Personal sustainability\n• Groups: Norms and Creativity\n• Groups: Social factors on SW teams, Group dynamics\n• Organisations: Politics, happiness & freedom\n• Organisations: Gender, ethics and sustainability\n• Research methods: Ethnography, Interview studies, Reflexivity\n• Course summary: BSE implications and effects, Future of BSE in research & practice",
+    "Sub-courses": "1. Assignments (Inlämningsuppgifter), 4.5 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)\n2. Report (Rapport), 3 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)",
+    "Form of teaching": "The course is provided in the form of modules, which combines lectures, discussions and supervised practical work with exercises in small groups (assignments). The exercises are both theoretical and practical in nature. A final, individual essay/report is the final element of the course.\nLanguage of instruction: English",
+    "Assessment": "Individual- and group-based exercises is the basis for examination. A final, individual essay/report is also part of the examination.\nA student who has taken two exams in a course or part of a course without obtaining a pass grade is entitled to the nomination of another examiner. The student needs to contact the department for a new examiner, preferably in writing, and this should be approved by the department unless there are special reasons to the contrary (Chapter 6 Section 22 of the Higher Education Ordinance).\nIf a student has received a recommendation from the University of Gothenburg for special educational support, where it is compatible with the learning outcomes of the course and provided that no unreasonable resources are required, the examiner may decide to allow the student to sit an adjusted exam or alternative form of assessment.\nIn the event that a course has ceased or undergone major changes, students are to be guaranteed at least three examination sessions (including the ordinary examination session) over a period of at least one year, but no more than two years, after the course has ceased/been changed. The same applies to placements and professional placements (VFU), although this is restricted to just one additional examination session.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U).\nThe grading scale comprises Fail (U), 3, 4 or 5. To pass the course, all mandatory components must be passed. To earn a higher grade than Pass, a higher weighted average from the grades of the components is required.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between teachers and student representatives. Further, an anonymous questionnaire is used to ensure written information. The outcome of the evaluations serves to improve the course by indication which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\n\nLast modified: 13 December 2024",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 19 253 SEK\n\nFirst payment: 19 253 SEK\n\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)"
+  }
+}

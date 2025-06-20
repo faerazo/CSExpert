@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "source_document": "LT2213.pdf",
+    "course_code": "LT2213",
+    "course_title": "Computational semantics",
+    "swedish_title": "Komputationell semantik",
+    "department": "Department of Philosophy, Linguistics and Theory of Science",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Language Technology",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2023-05-29",
+    "valid_from_date": "2023-08-28",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Master in Language Technology (One year or Two years) (H2MLT)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Philosophy, Linguistics and\nTheory of Science on 2018-05-29 and was last revised on 2023-05-29 to be valid from\n2023-08-28, autumn semester of 2023.",
+    "Position in the educational system": "The course can also be offered as a freestanding course.\n\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS) and 3)\nMaster in Language Technology (One year or Two years) (H2MLT)",
+    "Entry requirements": "Admission to the course requires either successful completion of the following courses:\n• LT2001 Introduction to programming 7.5 credits\n• LT2002 Introduction to formal linguistics 7.5 credits\n• LT2003 Basic language technology 15 credits (or LT2123 Basic skills for language\ntechnology, 7.5 credits together with LT2124 Themes in NLP and language\ntechnology, 7.5 credits)\nor courses giving equivalent skills and knowledge. The course equivalence is evaluated\nby an area expert in language technology. If necessary, candidates may be required to\nsupply additional information.\nEnglish 6 or equivalent is also required.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\n\nKnowledge and understanding\n• Account for the differences between the types of semantic analysis covered in the\ncourse.\n• Describe the existing resources, approaches and applications related\nto computational semantic analysis.\n• Read and describe scientific literature and understand programming code.\n• Identify ethical considerations.\n\nCompetence and skills\n• Explain the existing resources and approaches for computational semantic analysis\nand their relevance for language technology applications.\n• Discuss the related scientific literature.\n• Write programming code to solve language technology problems related to\nsemantic analysis.\n• Perform work according to a pre-defined schedule.\n\nJudgement and approach\n• Evaluate how semantic analysis is modelled in computational resources,\napproaches, and applications.\n• Recognise problems and formulate new questions for its computational modelling.\n• Make informed judgments about selecting the type of computational semantic\nanalysis needed for particular language technology applications.\n• Critically evaluate different models.",
+    "Course content": "In this course we will discuss ways of representing meaning of words, sentences and\nconversations with computational methods, both top-down rule-based representations\nand data-driven representations learned by machine learning. We will contrast them\nwith each other, examine how we can draw inferences or reason with them\ncomputationally, and how can they be applied in different language technology tasks\nand applications.",
+    "Sub-courses": "",
+    "Form of teaching": "The course consists of (i) lectures, (ii) classes, (iv) seminar discussions, and (iii)\nindividual work.",
+    "Assessment": "The course is assessed by participation in classes and seminars, assignments and/or a\nwritten exam.\nObligatory attendance may be required for some components. Students will be given a\nchance to compensate the missed sessions with additional tasks and assignments during\nthe course if possible but otherwise they will have to take them the next time the course\nruns.\nA student who has failed an examination twice has the right to change examiners if it is\nfeasible. A written application should be sent to the board of the department.\nCompletion of examined student work is allowed.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).",
+    "Course evaluation": "Students participating in, or having completed the course, are given an opportunity to\nanonymously convey their experiences of and suggestions for the course in a course\nevaluation. A summary of the course evaluation and reflections of the teacher\nresponsible for the course, is made available to the students within a reasonable time\nafter the course has completed. A summary of the course evaluation and any potential\nimplemented measures are presented the next time the course is given.",
+    "Additional information": "The course requires access to a computer (or similar) with internet access.\nThe course may not be included in a degree together with LT2813."
+  }
+}

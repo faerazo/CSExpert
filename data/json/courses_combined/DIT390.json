@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "source_document": "DIT390.pdf",
+    "course_code": "DIT390",
+    "course_title": "Concurrent Programming",
+    "swedish_title": "Concurrent Programming",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "First Cycle",
+    "main_field_of_study": "Computer Science",
+    "specialization": "G1F, First Cycle, has less than 60 credits in first-cycle course/s as entry requirements\nG1F, First Cycle, has less than 60 credits in first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2006-11-17",
+    "valid_from_date": "2014-09-01",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Software Engineering Master's Programme (N2SOM)",
+      "Computer Science, Bachelor's Programme (N1COS)",
+      "No translation available (NDATM)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2006-11-17 and was last revised on 2014-02-10 by Department of Computer Science and Engineering to be valid from 2014-09-01.",
+    "Position in the educational system": "The course is a part of the Computer Science Bachelor's programme and an elective course at the University of Gothenburg.\n\nThe course can be part of the following programmes: 1) Computer Science, Master's Programme (N2COS), 2) Software Engineering Master's Programme (N2SOM), 3) Computer Science, Bachelor's Programme (N1COS) and 4) No translation available (NDATM)",
+    "Entry requirements": "Have successfully completed a course in Java corresponding to DIT011 or DIT950 or equivalent, and a course in functional programming corresponding to DIT440 or equivalent.",
+    "Learning outcomes": "After completion the course, the student should be able to:\n\n5.1. Knowledge and understanding\n• demonstrate the critical knowledge of the issues and problems that arise in shared-\nmemory and message-passing concurrent systems\n• identify concurrent (synchronization) problems, for example shared update, dining\nphilosophers, producer-consumer, resource allocation.\n\n5.2. Skills and abilities\n• design and argue for the correctness, clarity, and efficiency of solutions\n• adapt common patterns for solving those problems, for example locks, client-server,\npipelines, replicated workers, barrier synchronization, passing the baton\n• apply practical knowledge of the programming constructs and techniques offered by\nmodern concurrent programming languages\n• implement such solutions in expressive programming languages.\n\n5.3. Judgement and approach\n• judge whether a program or library is thread-safe or not\n• pick the right language construct for solving synchronization problems.",
+    "Course content": "Concurrent programming plays a vital role in systems where many events appear to\noccur simultaneously. This course aims to provide an introduction to the problems\ncommon to concurrent systems such as operating systems, distributed systems, real-time\nsystems but also systems that require parallelization such as internet services and\nmodern games.\n\nGeneral concepts: parallelism, interference, synchronisation, critical regions, mutual\nexclusion, deadlock, fairness, livelock. Synchronisation using shared variables; busy\nwaiting. Semaphores. Monitors. Synchronous message passing: extended rendezvous.\nAsynchronous message passing. Asynchronous coordination.",
+    "Sub-courses": null,
+    "Form of teaching": "Language of instruction: English",
+    "Assessment": "The course is examined by an individual written exam (4.5 hec), given in an exam hall, and laboratories which are normally carried out in pairs (3.0 hec).\n\nA student who has failed two examinations on the same material has the right to request a change of examiner. Such a request must be submitted to the Department in writing and shall be granted unless there are particular reasons not to do so.\n\nIn cases where a course has been discontinued or has undergone major changes, students must be guaranteed at least three examination opportunities (including the regular opportunity) based on the previous content of the course for a period of at least one year.",
+    "Grades": "The grading scale comprises: Fail (U), Pass (G), Pass with Distinction (VG).\nThe complete course grade is determined by the score on both the laboratory part and the written exam. To be awarded Pass (G) for a full course, the students must pass both the laboratory and the exam with the grade G.\n\nTo be awarded Pass with Distinction (VG) for a full course, the student must in addition obtain 80% of the total amount of points in labs and exam together.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between teachers and student representatives. Further, an anonymous questionnaire is used to ensure written information. The outcome of the evaluations serves to improve the course by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "Knowledge in discrete mathematics corresponding to MMGD10 or equivalent is recommended.\n\nThe course is a joint course together with Chalmers."
+  }
+}

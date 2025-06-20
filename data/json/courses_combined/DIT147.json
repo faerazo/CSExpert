@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "source_document": "DIT147.pdf",
+    "course_code": "DIT147",
+    "course_title": "Technical writing in computer systems and networks",
+    "swedish_title": "Teknisk rapportskrivning inom datorer, nätverk och system",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2020-11-11",
+    "valid_from_date": "2021-08-30",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2020-11-11 to be valid from 2021-08-30, autumn semester of 2021.",
+    "Position in the educational system": "The course is a part of the computer science master's programme and a single subject course at the university of Gothenburg.\nThe course can be part of the following programme: 1) Computer Science, Master's Programme (N2COS)",
+    "Entry requirements": "To be eligible for the course students should have successfully completed 120 credits of studies within computer science or equivalent, including the following courses (or other, equivalent courses):\n• DIT423 Computer communication,\n• DIT401 Operating Systems, and\n• DIT240 Distributed Systems.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completion of the course the student should be able to:\nKnowledge and understanding\n• Describe problems/challenges in the studied area of research, including challenges related to system design, networking and advanced programming techniques.\n• Identify critical issues and existing technological limitations in the state of the art in computer systems and networks.\nCompetence and skills\n• Find the most relevant sources in the scientific literature, possibly with other complementary industrial sources.\n• Review the relevant sources.\n• Structure and write a report based on the relevant sources and their reviews.\nJudgement and approach\n• Analyze the performance of studied solutions using numerical analysis and formal proofs.\n• Assess the impact that different solutions can have on an application or a system.\n• Critically analyze problems of modern networks and computer systems.",
+    "Course content": "The student examines the current state of the art in a specific research area and writes a report. The report should be based on published works within a research area connected to the field of computer systems and networks. Each research area and a number of related topics are presented to the student in introductory lectures. As a student you will work in a group with a few other students. Each group will be allocated a topic for the report that is to be written. The report shall be presented orally at a seminar. The student is also required to review publications and the reports of other groups. There will be lectures, seminars and workshops in the areas of scientific writing, reviewing and presentation as well as in ethics.",
+    "Sub-courses": "1. Report (Rapport), 7.5 credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "The course organisation includes the following items: lectures, seminars, workshops, home assignments, report writing, and oral presentation.\nLanguage of instruction: English",
+    "Assessment": "To pass the course, the student must: (1) write a report for a given topic in a specific research area, (2) complete review assignments and (3) make an oral presentation of the report.\nIf a student, who has failed the same examined element on two occasions, wishes to change examiner before the next examination session, such a request is to be submitted to the department in writing and granted unless there are special reasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn the event that a course has ceased or undergone major changes, students are to be guaranteed at least three examination sessions (including the ordinary examination session) over a period of at least one year, though at most two years after the course has ceased/been changed. The same applies to work experience and VFU, although this is restricted to just one additional examination session.",
+    "Grades": "The grading scale comprises: Pass (G) and Fail (U).\nIn order to get the grade Pass for the full course the student must Pass the written assignment, the presentation part and get the grade Pass on the extended written report.\nIn order to get the grade Pass with Distinction for the whole course, the student must get the grade Pass with Distinction on the extended written report and pass both the assignment part and the presentation part.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between teachers and student representatives. Further, an anonymous questionnaire isused to ensure written information. The outcome of the evaluations serves to improve the course by indication which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\nThe course replaces the course DIT665, 7.5 credits. The course cannot be included in a degree which contains DIT665. Neither can the course be included in a degree which is based on another degree in which the course DIT665 is included."
+  }
+}

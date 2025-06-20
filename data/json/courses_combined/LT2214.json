@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "source_document": "LT2214.pdf",
+    "course_code": "LT2214",
+    "course_title": "Computational syntax",
+    "swedish_title": "Komputationell syntax",
+    "department": "Department of Philosophy, Linguistics and Theory of Science",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Language Technology",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2018-05-29",
+    "valid_from_date": "2024-01-15",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Master in Language Technology (H2LTG)",
+      "Master in Language Technology (One year or Two years) (H2MLT)"
+    ],
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "27 Mar 2025 - 8 Jun 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-24020",
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Philosophy, Linguistics and Theory of Science on 2018-05-29 and was last revised on 2023-11-13 to be valid from 2024-01-15, spring semester of 2024.",
+    "Position in the educational system": "Can also be offered as a freestanding course.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS), 3)\nMaster in Language Technology (H2LTG) and 4) Master in Language Technology\n(One year or Two years) (H2MLT)",
+    "Entry requirements": "Admission to the course requires either successful completion of the following three courses:\n• LT2001 Introduction to programming 7.5 credits\n• LT2002 Introduction to formal linguistics 7.5 credits\n• LT2003 Natural language processing 15 credits\nor equivalent language technology skills.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• analyse the syntax of natural language of any level of complexity,\n• read and write computational grammar rules that account for basic syntactic\nconstructions in some natural language,\n• use syntactic analysis in a pipeline with other levels of analysis such as morphology\nand semantics,\n• have a conception of algorithms for syntactic analysis and their complexity,\nCompetence and skills\n• annotate natural language with syntactic structure using a standard annotation\nformat and create treebanks,\n• implement grammars using tools provided by programming languages and/or\ngrammar development systems,\n• write applications that use syntax as a component for analysis and generation of\nlanguage,\nJudgement and approach\n• make informed judgments about selecting types of analysis tools for particular\nlanguage technology applications,\n• evaluate implemented grammars and construct evaluation materials such as test\nsuites.",
+    "Course content": "The course deals with methods and techniques in the development of formal syntax for\nto natural language, such as: phrase structure grammar, categorial grammar,\ndependency structures. The course also provides an overview of syntactic constructions\nand how they are to be described and implemented in a formal grammar.",
+    "Sub-courses": "",
+    "Form of teaching": "The course includes lectures, supervised laboratory sessions and assignments.\nLanguage of instruction: English",
+    "Assessment": "The course is assessed through written and a written or oral exam. A student who has\nfailed a test twice has the right to change examiner, unless weighty argument can be\nadduced. Such a request must be made in writing to the department. The maximum\ntotal number of exam sessions is five. Students can be asked to re-work graded\nassignments and re-submit them.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).",
+    "Course evaluation": "Students who are currently taking the course or have completed it will be given the\nopportunity to express their views and share their experiences in an anonymous course\nevaluation. A compilation of the course evaluation and the course coordinator's\nreflections on it will be made available to the students within reasonable time after the\nend of the course. The next time the course is taught the compilation and any measures\nbased on it will be presented to the students.",
+    "Additional information": "\n\nLast modified\n\n\n16 April 2025",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits.",
+    "Tuition": "Full education cost: 18 000 SEK\n\nFirst payment: 18 000 SEK\n\n**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)"
+  }
+}

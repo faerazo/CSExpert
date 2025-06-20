@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source_document": "DIT664.pdf",
+    "course_code": "DIT664",
+    "course_title": "Advanced topics in Computer Systems and Networks",
+    "swedish_title": "Advanced topics in Computer Systems and Networks",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science-Networks and Distributed Systems",
+    "specialization": "AXX, Second cycle, in-depth level of the course cannot be classified",
+    "language_of_instruction": "English",
+    "confirmation_date": "2011-05-20",
+    "valid_from_date": "2013-09-01",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Computer Science, Bachelor's Programme (N1COS)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2011-05-20 and was\nlast revised on 2013-09-02 by Department of Computer Science and Engineering to be\nvalid from 2013-09-01.",
+    "Position in the educational system": "The course is a part of Computer Science Master's programme and an elective course at\nthe University of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS) and 2) Computer Science, Bachelor's Programme (N1COS)",
+    "Entry requirements": "To be eligible for the course students should have successfully completed two years of\nstudies within Computer Science or equivalent. The courses DIT420 Computer\ncommunication, DIT663 Computer Networks, DIT400 Operating Systems, DIT240\nDistributed Systems or equivalent are required.",
+    "Learning outcomes": "After completion of the course the student is expected to be able to:\n1. Knowledge and understanding\n- solve problems in the studied area of research including system design issues,\nnetworking and advanced programming techniques.\n- identify and evaluate critical issues and existing technological limitations in the state-\nof-the art in computer systems and networks.\n2. Skills and abilities\n- identify the most relevant papers in the professional literature and review them.\n3. Judgement and approach\n- analyze the performances of studied solutions using numerical analysis and formal\nproofs.\n- grasp the impact of different solutions can have to an application or a system.\n- critically analyze problems and find new solutions for modern networks and computer\nsystems.",
+    "Course content": "This course examines current state of the art, research-related topics in the fields of data\ncommunication, computer networks, distributed systems, computer security, real-time\nsystems computer architecture and computer system engineering. Covering a broad\nrange of topics and based on mainly scientific papers, it is intended for students\nplanning to carry out a thesis project in any of these areas or anyone interested in the\ncontemporary research problems of this field.\nThe course include at least four of the following main topics:\nComputer and network security\nDistributed computer systems\nReal-time computer systems\nComputer system architectures\nHot topics in computer Systems and Networks\nFor each main topic there will be one or two of introduction lectures that will explore\nthe literature review tasks. As a student you will be asked to pick (in pairs) a task for\nwhich you are to write a review report and deliver an oral presentation that is based on\nyour survey. Students are also required to peer review the presentations and reports.",
+    "Sub-courses": "",
+    "Form of teaching": "Language of instruction: English",
+    "Assessment": "Based on the peer review comments, a revised and extended version of the report is\nexpected.\nThe course is examined by written review assingment (1.5 hec), presented orally, and a\npeer review the assignments and presentations of other students (1,5 hec). In addition,\nthe course is also examined by an extended written report (4.5 hec).\nAll the work will be carried out in pairs. The extended written report version is the bases\nfor the final course grade.\nA student who has failed two examinations on the same material has the right to request\na change of examiner. Such a request must be submitted to the Department in writing\nand shall be granted unless there are particular reasons not to do so.\nIn cases where a course has been discontinued or has undergone major changes, students\nmust be guaranteed at least three examination opportunities (including the regular\nopportunity) based on the previous content of the course for a period of at least one\nyear.",
+    "Grades": "The grading scale comprises: Fail (U), Pass (G), Pass with Distinction (VG).\nIn order to get the grade Pass for the full course the student must Pass the written\nassignment, the presentation part and get the grade Pass on the extended written report.\nIn order to get the grade Pass with Distinction for the whole course, the student must in\naddition get the grade Pass with Distionction on the extended written report and pass\nboth the assignment and the presentation parts.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. As far as possible, evaluations to be completed\nelectronically. The outcome of the evaluations serves to improve the course by\nindicating which parts could be added, improved, changed or removed.",
+    "Additional information": ""
+  }
+}

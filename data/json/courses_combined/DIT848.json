@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "source_document": "DIT848.pdf",
+    "course_code": "DIT848",
+    "course_title": "Model-Based Testing",
+    "swedish_title": "Modellbaserad testning",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science, Software Engineering",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2019-12-09",
+    "valid_from_date": "2021-01-18",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Software Engineering and Management Master's Programme (N2SOF)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2010-09-24 and was\nlast revised on 2019-12-09 by Department of Computer Science and Engineering to be\nvalid from 2021-01-18, spring semester of 2021.",
+    "Position in the educational system": "The course is offered within the Software Engineering and Management Master's\nProgramme. It is also a single subject course at the University of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS) and 3)\nSoftware Engineering and Management Master's Programme (N2SOF)",
+    "Entry requirements": "To be eligible for the course Model-Based Testing, the student should have a bachelor\ndegree in Software Engineering, Computer Science, Computer Engineering, Information\nTechnology, Information Systems or equivalent.\nIn addition, the student should have completed courses in:\n\n• 7.5 credits programming (e.g. DIT948 Programming, DIT012 Imperative\nProgramming with Basic Object Orientation, DIT143 Functional Programming or\nequivalent).\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completion of the course the student should be able to:\nKnowledge and understanding\n• explain the distinction between software verification and software validation\n• describe the connection between software development phases and kinds of testing\n• describe and explain (a number of) different test methods, and use them in practical\nsituations\n• describe and explain what model-based testing is\n• describe many different types of models and explain their relative merits\n• describe and explain current research trends in automated testing\nCompetence and skills\n• construct models in the modeling and specification languages learned in the course\n• construct appropriate and meaningfuls tests and explain to stakeholders the results\nof applying them\n• apply model-based testing and automated testing technologies on realistic examples\nusing relevant tools\nJudgement and approach\n• understand the trade-offs between and judge which model-based testing approaches\nand tools best suit a particular situation\n• identify and hypothesize about sources of program failures, and reflect on how to\nbetter verify the correctness of such programs",
+    "Course content": "Testing is one of the most used verification and validation technique in industry. This\ncourse provides the students with a general background on testing techniques, with a\nfocus on the theory and practice of model-based testing.\nThe course provides the students with a background on the theory and practice of\nmodel-based testing, including how testing tools can be used to improve software\nquality. General test techniques are explained with focus on model-based testing.\nStudents will get hands-on experience in building models for testing and use these\nmodels for both testing and verification purposes.",
+    "Sub-courses": "1. Written examination (Skriftlig tentamen), 4.5 credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n2. Assignments (Inlämningsuppgifter), 3 credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)",
+    "Form of teaching": "The course is provided in the form of modules, which combines lectures, discussions and\nsupervised practical work with exercises in small groups (assignments). The students are\nexpected to have prepared for and to be active during the whole module. The exercises\nare both theoretical and practical in nature.\nLanguage of instruction: English",
+    "Assessment": "The course is examined by an individual written exam carried out in an examination hall\nand written assignments. Some of the assignments are carried out individually, some in\nsmall groups of normally 2-3 students, and some in larger groups.\nThe assignments are graded individually, taking into account the group work as well as\nthe student's individual contribution to the group work.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nA Pass grade (G) for the entire course requires at least a Pass grade for all sub-courses.\nIn order to get the grade Pass with Distinction (VG) the student must get the grade VG\non all sub-courses.",
+    "Course evaluation": "The course is evaluated through meeting after the course between teachers and student\nrepresentatives. Further, an anonymous questionnaire is used to ensure written\ninformation. The outcome of the evaluations serves to improve the course by indicating\nwhich parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course."
+  }
+}

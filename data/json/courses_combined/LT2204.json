@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source_document": "LT2204.pdf",
+    "course_code": "LT2204",
+    "course_title": "Computational syntax",
+    "swedish_title": "Komputationell syntax",
+    "department": "Department of Philosophy, Linguistics and Theory of Science",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Language Technology",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2011-01-17",
+    "valid_from_date": "2017-08-28",
+    "programmes": [
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Master in Language Technology (One year or Two years) (H2MLT)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The Faculty of Arts on 2011-01-17 and was last revised on 2017-06-01 by Department of Philosophy, Linguistics and Theory of Science to be valid from 2017-08-28, autumn semester of 2017.",
+    "Position in the educational system": "The course can be part of the following programmes: 1) Applied Data Science Master's\nProgramme (N2ADS) and 2) Master in Language Technology (One year or Two years)\n(H2MLT)",
+    "Entry requirements": "Admission to the course requires either successful completion of the course\n• LT2113 Natural Language Processing, 15 hecr\nor successful completion of the two courses\n• LT2103 Natural Language Processing, 7.5 hecr\n• LT2104 Programming for NLP, 7.5 hecr\nor equivalent language technology skills and knowledge.",
+    "Learning outcomes": "After completion of the course the students are expected to be able to:\nKnowledge and understanding\n• explain the differences between the types of grammar discussed in the course\n• write grammars which account for basic syntactic constructions in English and at\nleast one other language\nSkills and abilities\n• implement grammars using tools provided by programming languages and/or\ngrammar development systems\nJudgment and approach\n• make informed judgments about selecting types of grammars for particular language\ntechnology applications\n• evaluate particular implemented grammars and construct evaluation materials such\nas test suites",
+    "Course content": "The course deals with central methods and techniques in the development of formal\ngrammatical approaches to natural language, such as:\n• phrase-structure grammar\n•\ncategorial grammar\n• feature-based grammar formalisms\nIt also provides an overview of syntactic constructions and how they are to be described\nand implemented in a formal grammar.",
+    "Sub-courses": "",
+    "Form of teaching": "There are laboratory exercises that require attendance for a passing grade.",
+    "Assessment": "The examination consists of participation in laboratory exercises, assignments and a\nwritten exam.\nA student who has failed an examination twice has the right to change examiners if it is\nfeasible. A written application should be sent to the board of the department.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).",
+    "Course evaluation": "",
+    "Additional information": ""
+  }
+}

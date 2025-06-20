@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "source_document": "DIT642.pdf",
+    "course_code": "DIT642",
+    "course_title": "Computer Security",
+    "swedish_title": "Datasäkerhet",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science",
+    "specialization": "A1N, Second cycle, has only first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2022-12-16",
+    "valid_from_date": "2024-01-15",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Computer Science, Bachelor's Programme (N1COS)"
+    ],
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "20 Jan 2025 - 23 Mar 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-86035",
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2022-12-16 and was last revised on 2023-11-20 to be valid from 2024-01-\n15, spring semester of 2024.",
+    "Position in the educational system": "The course is a part of the Computer Science Master's Programme and a single subject\ncourse at University of Gothenburg.\n\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS) and 3)\nComputer Science, Bachelor's Programme (N1COS)",
+    "Entry requirements": "To be eligible for the course students should have successfully completed courses\ncorresponding to 60 hec within the subject Computer Science or equivalent.\nA 7.5 hec course in Programming is required.\n\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completing the course the student is expected to be able to:\n\nKnowledge and understanding\n• explain the fundamental goals of computer security,\n• describe several security vulnerabilities and possible protection mechanisms,\n• describe common methods for security assessment and evaluation as well as problems\nwith current security metrication\n\nCompetence and skills\n• analyze the security of different types of systems and suggest improvements\n• use a few methods for security modeling\n• demonstrate his or her skill in technical writing\n\nJudgement and approach\n• assess the advantages and disadvantages between different protection mechanisms\n• judge the consequences of insecurity\n• Keep an informed argument of the ethical and social aspects of computer security",
+    "Course content": "The course gives basic knowledge in the security area, i.e. how to protect your system\nagainst intrusions and attacks. The purpose of intrusions can be to change or delete\nresources (data, programs, hardware, etc), to get unauthorized access to confidential\ninformation or unauthorized use of the system's services. The course covers threats and\nvulnerabilities in the computer systems and networks, as well as rules, methods and\nmechanisms for protection. Modeling and assessment of security and dependability as\nwell as metrication methods are covered. A holistic security approach is taken and\norganizational, business-related, social, human, legal and ethical aspects are treated. The\nfollowing topics will be covered, among others.\n\n• Introduction to computer security\n• Overview of security threats\n• Introduction to cryptography.\n• Security in operating systems\n• Security mechanisms including authentication, authorization, and access control\n• Introduction to Network Security and Intrusion detection systems\n• Security Models: Bell-LaPadula, Biba, Chinese wall etc.\n• Security management, organization and ethics",
+    "Sub-courses": "1. Laboratory Experiment (Laboration), 1.5 credits\nGrading scale: Pass (G) and Fail (U)\n2. Assignments (Inlämningsuppgifter), 6 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)",
+    "Form of teaching": "The course consists of a series of lectures and exercises in a laboratory. Normally, one or\ntwo lectures are given by lecturers from industry, who give an application perspective on\nsecurity. The exercises in the laboratory focus on a few common security mechanisms.\n\nLanguage of instruction: English",
+    "Assessment": "The course is examined by laboratory exercises done in groups and through individual\nmandatory assignments, where a voluntary test is included.\n\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\n\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and\nFail (U).\nIn order to be awarded the grade 3 for the whole course, the student must pass the\nlaboratory exercises and the mandatory assignments.\nIn order to be awarded the grade 4 or 5 for the whole course, the student must get the\ngrade 4 respective 5 on the sub-course assignments and pass the other sub-courses.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\n\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\n\nThe course replaces the course DIT641, 7.5 credits. The course cannot be included in a\ndegree which contains DIT641. Neither can the course be included in a degree which is\nbased on another degree in which the course DIT641 is included.\n\nLast modified\n\n\n20 September 2024",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 19 253 SEK\n\nFirst payment: 19 253 SEK\n\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)"
+  }
+}

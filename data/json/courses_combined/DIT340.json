@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "source_document": "DIT340.pdf",
+    "course_code": "DIT340",
+    "course_title": "Human Computer Interaction",
+    "swedish_title": "Human Computer Interaction",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "First Cycle",
+    "main_field_of_study": "-",
+    "specialization": "G1F, First Cycle, has less than 60 credits in first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2006-11-17",
+    "valid_from_date": "2007-09-01",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Computer Science, Bachelor's Programme (N1COS)",
+      "No translation available (NDATM)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2006-11-17 to be valid\nfrom 2007-09-01.",
+    "Position in the educational system": "The course is a part of the Computer Science Bachelor's programme and an elective\ncourse at Göteborg University.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Computer Science, Bachelor's Programme (N1COS) and 3)\nNo translation available (NDATM)",
+    "Entry requirements": "To be eligible for the course students should have successfully completed a course in\nprogramming.",
+    "Learning outcomes": "Having successfully completed this course, the student is expected to have reached the\nfollowing theoretical and practical goals. Theoretical goals:\n• To be familiar with basic Human-computer interaction principles and usability\ndesign and evaluation process.\n• To have a good overview of the field of the HCI.\n• To have developed an understanding on how to design a product to have good\nusability level, and to evaluate and improve an existing product for better usability.\n• To have reached an understanding of how to carry out a design process where the\nusers are involving to reach high usability goals.\nPractical goals:\n• To have practical experience of basic usability evaluation methodologies.\n• To have practical experience of a new product development by involving users into\nthe earlier design process.\n• To have experience of how to work in a group and how to make the scientific\ndocumentation of their practical work.",
+    "Course content": "The course consists of both theoretical and practical parts. The theoretical part will\npresent the history and development of human-computer interaction from research to\nindustrial applications. Relevant Theories include mainly the following subjects: Human\nPerception and Cognition, Interaction theories, Task Analysis methods, Interaction\nDesign theories and design process, Usability principle and Evaluation Techniques,\nMultimodal Interaction, Ubiquitous Computing, Augmented and Tangible User\nInterfaces, social-organizational issue and Collaboration and Groupware. The practical\npart consists of hands-on laboratory exercises with different usability evaluation\nmethods and design process, as well as carries out a small project work on both product\ndesign and evaluation process to reach high usability goals.",
+    "Sub-courses": "",
+    "Form of teaching": "Language of instruction: English",
+    "Assessment": "The course is examined by means of laboratory reports (pass only), project\ndocumentation (pass only), and writing examination (grading). The project will be\ncarried out in small groups.",
+    "Grades": "The grading scale comprises: Fail, Pass, Pass with distinction.",
+    "Course evaluation": "null",
+    "Additional information": ""
+  }
+}

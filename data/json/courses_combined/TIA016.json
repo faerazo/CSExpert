@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source_document": "TIA016.pdf",
+    "course_code": "TIA016",
+    "course_title": "Digital Infrastructure",
+    "swedish_title": "Digital infrastruktur",
+    "department": "Department of Applied Information Technology",
+    "field_of_education": "Science 100%",
+    "credits": "15",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Informatics",
+    "specialization": "A1N, Second cycle, has only first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2017-06-26",
+    "valid_from_date": "2018-01-30",
+    "programmes": [
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Digital Leadership Master's Programme (N2DIG)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Applied Information Technology\non 2017-06-26 and was last revised on 2018-01-30 to be valid from 2018-01-30, spring\nsemester of 2018.",
+    "Position in the educational system": "The course can be part of the following programmes: 1) Applied Data Science Master's\nProgramme (N2ADS) and 2) Digital Leadership Master's Programme (N2DIG)\nMain field of studies\nInformatics\nSpecialization\nA1N, Second cycle, has only first-cycle\ncourse/s as entry requirements",
+    "Entry requirements": "To be eligible for the course the student must have a Bachelor degree of 180 credits and\nEnglish 6/English B from Swedish Upper Secondary School.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n1. describe central theories and concepts in the field of digital infrastructure,\n2. explain methods for analysis and design of digital infrastructure.\nCompetence and skills\n3. analyze opportunities and risks with digital infrastructures.\n4. plan for design as well as use of digital infrastructures.\nJudgement and approach\n5. evaluate underlying assumptions and contextual parameters in the design\nof digital infrastructure.\n6. compare and differentiate among different types of digital infrastructures.",
+    "Course content": "The course develops students' knowledge about the role of socio-technical infrastructure\nin the digitalization of society, services and products. In particular, it focuses on how\nsuch digital infrastructures create opportunities and limitations, leading to both\nexpected and unexpected consequences. The course will also develop students' ability to\ntake a leading role in designing and exploring the use of digital infrastructures.\nThe course has a strong theoretical foundation, combined with a distinct design\nperspective. This focus ensures that students develop skills in analyzing and developing\nfuture digital infrastructures for digital innovation.\nThe course is theoretically anchored in several domains, including but not limited to\ninformation systems, anthropology and design. The design perspective is based on\ndesign thinking and participatory design. The course also includes guest lectures from\ncommercial organizations and public authorities, involved in digital infrastructure\ndevelopment. The course ends with a project where the students, based on a scenario-\nbased approach and design fictions, elaborate on the challenges of digital infrastructures\ndevelopment.",
+    "Sub-courses": "",
+    "Form of teaching": "The course is implemented through lectures, seminars, case studies, supervision, and a\nproject where students apply and deepen their knowledge.\nLanguage of instruction: English",
+    "Assessment": "The course is examined through two modules:\nModule 1. Individual written exam (6 hec) which takes place in an examination hall.\nThis examination focuses on the student's conceptual understanding of digital\ninfrastructure. During the examination students should be able to describe the central\nconcepts and explain their meaning. The examination takes place after approximately 5\nweeks and assesses learning objective 1 and 2.\nModule 2. Written group assignment (9hec) where the results of a project work are\npresented. The project work consists of students in a group investigating and analyzing\na digital infrastructure. The examination covers learning goals 3, 4, 5 and 6.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nModule 1, Individual written exam, will be graded Pass with Distinction (VG), Pass (G)\nor Fail (U).\nModule 2, Group written assignment and oral presentation, will be graded Pass with\nDistinction (VG), Pass (G), or Fail (U).\nFor the grade Pass on the course, Pass is required on the two modules. To receive the\ngrade Pass with Distinction on the course, Pass with Distinction is required on Module 1\nand Pass is required for Module 2.",
+    "Course evaluation": "Students are to be given the opportunity to communicate their experience and views on\nthe course in an anonymous course evaluation. Evaluations are to be completed\nelectronically. The results of the course evaluation are to be made accessible to students.\nProcessed results of the latest evaluation, including changes made or planned, are also to\nbe made available to participants in the next round of the course. The results of and\npossible changes to the course will be shared with students who participated in the\nevaluation and students who are starting the course.",
+    "Additional information": ""
+  }
+}

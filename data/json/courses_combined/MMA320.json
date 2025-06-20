@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "source_document": "MMA320.md",
+    "course_code": "MMA320",
+    "course_title": "Introduction to Algebraic Geometry",
+    "department": "Department of Mathematical Sciences",
+    "credits": "7.5",
+    "iteration": null,
+    "study_pace": null,
+    "time": null,
+    "location": null,
+    "study_form": null,
+    "language_of_instruction": null,
+    "duration": null,
+    "application_period": null,
+    "application_code": null,
+    "content_type": "course"
+  },
+  "sections": {
+    "About": "Algebraic geometry studies curves, surfaces and their generalisations in higher dimensions, which can be described by systems of polynomial equations. The coefficients of the polynomials are often taken to be complex numbers, but can lie in an arbitrary field. The course starts with the basic theory of affine and projective varieties. A first application is the group law on cubic curves. More advanced theory is developed to be able to treat the existence of lines on cubic surfaces. The course ends with the resolution of curve singularities.",
+    "Entry requirements": "Knowledge equivalent to 90 credits in mathematics, including the course MMG500 Algebraic Structures. At least 7.5 credits should be on an advanced level.",
+    "Facilities": "Mathematical Sciences is a joint department of Chalmers/University of Gothenburg. Your education takes place in the spacious and bright premises of Mathematical Sciences at the Chalmers campus Johanneberg, where there are lecture halls, computer rooms and group rooms. Here you can also find student lunch room and reading room, as well as student counsellors and student office.",
+    "Selection": null,
+    "Tuition": null,
+    "Additional information": "Last modified 15 January 2025"
+  }
+}

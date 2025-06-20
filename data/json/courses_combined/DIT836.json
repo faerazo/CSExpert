@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "source_document": "DIT836.pdf",
+    "course_code": "DIT836",
+    "course_title": "Startups and Industrial Software Product Management",
+    "swedish_title": "Startups och industriell produktledning",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "First Cycle",
+    "main_field_of_study": "Software Engineering",
+    "specialization": "G1F, First cycle, has less than 60 credits in first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2022-11-23",
+    "valid_from_date": "2024-01-15",
+    "programmes": [
+      "Software Engineering and Management Bachelor's Programme (N1SOF)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2022-11-23 to be valid from 2024-01-15, spring semester of 2024.\n\nField of education: Science 100%\nDepartment: Department of Computer Science and Engineering",
+    "Position in the educational system": "The course is compulsory within the N1SOF Software Engineering and Management\nBachelor's Programme.\n\nThe course can be part of the following programme: 1) Software Engineering and\nManagement Bachelor's Programme (N1SOF)\n\nMain field of studies\nSoftware Engineering\n\nSpecialization\nG1F, First cycle, has less than 60 credits in\nfirst-cycle course/s as entry requirements",
+    "Entry requirements": "To be eligible for this course, students must have successfully completed the course\nDIT638 Project: Cyber Physical Systems and Systems of Systems, 15 credits, or\nequivalent.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\n\nKnowledge and understanding\n• explain industrial innovation challenges, e.g. disruptive vs. sustainable technologies,\ninnovator's role in an enterprise, minimum-viable-product, customer\nexperimentation systems\n• describe product innovation and management concepts, such as funding (e.g.\ncrowdfunding, venture capital), licensing (e.g. per user, per feature), A/B testing\n(e.g. feature toggles)\n• explain the fundamentals of start-ups and entrepreneurship in software engineering\nsuch as business plan, financing, product placement\n• explain the concepts needed to construct and validate business plans, business cases,\nbusiness models and product/service development roadmaps\n• explain the process of identifying product features and how to package them in\nreleases\n• explain the process of defining time plans for product releases\n• explain ethical challenges related to innovation and software development projects\n\nCompetence and skills\n• develop a business case and business plan\n• develop a product release and licensing plan\n• develop the product's/service's development roadmap\n• describe the product's/service's vision and possible impact on the market\n• develop a plan for product management before and after the release based on\nexamples from modern software products\n\nJudgement and approach\n• evaluate the business models of the existing software-intensive enterprises\n• evaluate the disruptiveness of a given software engineering innovation\n• classify the intellectual property assets from the perspective of their ownership, i.e.\nassess who owns an intellectual property asset based on the contract in the project,\nauthorship and licensing\n• evaluate the appropriateness of the innovation/development project given the\nexisting ethical schemes such as, for example, IEEE code of conduct",
+    "Course content": "This course prepares the students to collaborate with an industrial partner as either 1)\nan entrepreneur or 2) innovative software engineer. Therefore the course has two\nthemes:\n1. innovation and entrepreneurship\n2. industrial software engineering research projects.\n\nThese two themes prepare the students to create their own start-ups and to continue\ninteracting with such entities as innovation incubators and innovation financiers. The\nstudents are able to understand how business models work, how the companies innovate\ntoday and what it means to take a software product from a research prototype stage to a\nproduct that can be monetized.\nThe course also prepares the students to interact with their stakeholders in industrial\nsoftware engineering projects by explaining different communication strategies,\nexploring the ethical issues in software engineering (both research and development) and\nby explaining how to construct the product development roadmaps.",
+    "Sub-courses": "1. Oral presentation (Muntlig presentation), 2 credits\nGrading scale: Pass (G) and Fail (U)\n2. Written report (Skriftlig rapport), 5.5 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)",
+    "Form of teaching": "The teaching consists of lectures, seminars, exercises as well as supervision in connection\nto the exercises.\n\nLanguage of instruction: English",
+    "Assessment": "The course is examined by a written report.\n\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\n\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and\nFail (U).\nTo pass the course, students must receive a passing grade in both the oral presentation\nand the project. The grade for the entire course will be determined by the grade given for\nthe project.",
+    "Course evaluation": "The course is evaluated through meeting after the course between teachers and student\nrepresentatives. Further, an anonymous questionnaire is used to ensure written\ninformation. The outcome of the evaluations serves to improve the course by indicating\nwhich parts could be added, improved, changed or removed.",
+    "Additional information": "Course literature to be announced the latest 8 weeks prior to the start of the course.\n\nThe course replaces the course DIT835, 7.5 credits. The course cannot be included in a\ndegree which contains DIT835. Neither can the course be included in a degree which is\nbased on another degree in which the course DIT835 is included."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "source_document": "DIT276.pdf",
+    "course_code": "DIT276",
+    "course_title": "Requirements Engineering",
+    "swedish_title": "Requirements Engineering",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": [
+      "Software Engineering",
+      "Computer Science-Software Engineering and Tech"
+    ],
+    "specialization": "AIN, Second cycle, has only first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2009-09-29",
+    "valid_from_date": "2017-08-20",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Software Engineering and Management, Master's Programme (N2SEM)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Game Design & Technology Master's Programme (N2GDT)",
+      "Software Engineering Master's Programme (N2SOM)",
+      "Software Engineering and Management Master's Programme (N2SOF)",
+      "No translation available (NDATM)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2009-09-29 and was\nlast revised on 2017-06-16 by Department of Computer Science and Engineering to be\nvalid from 2017-08-20, autumn semester of 2017.",
+    "Position in the educational system": "The course is offered within the framework of several degree programmes. The course is\nalso a single subject course at the University of Gothenburg.\n\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Software Engineering and Management, Master's Programme\n(N2SEM), 3) Applied Data Science Master's Programme (N2ADS), 4) Game Design &\nTechnology Master's Programme (N2GDT), 5) Software Engineering Master's\nProgramme (N2SOM), 6) Software Engineering and Management Master's Programme\n(N2SOF) and 7) No translation available (NDATM)\n\nMain field of studies\nSoftware Engineering\n\nSpecialization\nAIN, Second cycle, has only first-cycle\ncourse/s as entry requirements\n\nComputer Science-Software Engineering\nand Tech\n\nAIN, Second cycle, has only first-cycle\ncourse/s as entry requirements",
+    "Entry requirements": "To be eligible for the course Requirements Engineering, the student should have a\nbachelor degree in Software Engineering, Computer Science or equivalent, including a\ncompleted course in programming (e.g. DIT948 Programming, DIT011 Object-oriented\nSoftware Development, DIT142 Functional Programming or equivalent), and a\ncompleted course in practical software development or software engineering project (e.g.\nDIT212 Object-oriented programming project, or DIT543 Software Engineering\nProject).\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completion of the course the student must be able to:\n\nKnowledge and understanding\n• explain why requirements engineering is a key to successful software engineering,\n• describe the challenges involved in requirements engineering,\n• explain the importance of identifying stakeholders and their knowledge, context and\ngoals,\n• explain the difference between functional and quality requirements,\n• describe how to conduct bespoke (in-project/single-customer) requirements\nengineering in terms of common processes and techniques,\n• explain how market-driven differs from bespoke (in-project/single-customer)\nrequirements engineering,\n• describe how requirements engineering in agile projects differ from traditional\nrequirements engineering.\n\nSkills and abilities\n• skilfully elicit software requirements,\n• clearly document software requirements according to industry standards and state-\nof-the-art,\n• prioritise requirements,\n• assure the quality of requirements and requirements specifications,\n• assess current requirements engineering practices in a software project or a software\ndevelopment company.\n\nJudgement and approach\n• suggest and motivate relevant improvements on requirements engineering processes,\n• discuss trade-offs in choosing between different requirements engineering methods\nand processes given a certain project context.",
+    "Course content": "One of the main challenges in software development is to make sure one is developing\nthe right system, i.e. to understand the requirements that need to be fulfilled. The focus\nof this course is how to find and collect requirements from relevant sources both at the\nstart and during a software development project. Different methods for this as well as\ndifferent underlying principles and formats for documenting and maintaining\nrequirements are covered. In particular the course covers the problems that arise when\nrequirements engineering is conducted in a fast-paced, cost-sensitive industrial reality.\nThe following topics are included in the course: Stakeholder Identification and\nManagement, Requirements Elicitation, Writing Requirements and Requirements\nSpecifications, Quality Assurance of Requirements, Prioritising Requirements,\nConnections and Alignment between Requirements Engineering and other Software\nEngineering activities, Requirements Engineering in In-Project vs. Market-driven\nDevelopment, Requirements Engineering in Agile and Iterative/Incremental\nDevelopment.",
+    "Sub-courses": "1. Written exam ( Written exam), 4 higher education credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n\n2. Project (Project), 3.5 higher education credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)",
+    "Form of teaching": "The course is organised as a series of lectures, workshops as well as project assignments.",
+    "Assessment": "The student is examined by individual active participation in all workshops, the\ncompletion of a group project and a written exam done individually in an\nexamination hall.\n\nA student who has failed two examinations on the same material has the right to request\na change of examiner. Such a request must be submitted to the Department in writing\nand shall be granted unless there are particular reasons not to do so.\n\nIn cases where a course has been discontinued or has undergone major changes, students\nmust be guaranteed at least three examination opportunities (including the regular\nopportunity) based on the previous content of the course for a period of at least one\nyear.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nIn order to be awarded the grade Pass for the whole course, the student must pass the\nwritten exam and the project, and participate in all workshops.\n\nIn order to be awarded the grade Pass with Distinction for the whole course, the student\nmust pass the written exam with distinction, pass the project, and participate in all\nworkshops.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers."
+  }
+}

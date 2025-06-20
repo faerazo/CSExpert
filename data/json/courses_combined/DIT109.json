@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "source_document": "DIT109.pdf",
+    "course_code": "DIT109",
+    "course_title": "Information Visualization",
+    "swedish_title": "Information Visualization",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science-Interaction Design, Interaction Design",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2020-12-18",
+    "valid_from_date": "2022-01-17",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Computer Science, Bachelor's Programme (N1COS)",
+      "Game Design & Technology Master's Programme (N2GDT)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2020-12-18 to be valid from 2022-01-17, spring semester of 2022.",
+    "Position in the educational system": "The course is offered as a single subject course.\nThe course can be part of the following programmes: 1) Computer Science, Master's Programme (N2COS), 2) Applied Data Science Master's Programme (N2ADS), 3) Computer Science, Bachelor's Programme (N1COS) and 4) Game Design & Technology Master's Programme (N2GDT)\nMain field of studies\nComputer Science-Interaction Design\nInteraction Design\nSpecialization\nA1F, Second cycle, has second-cycle course/s as entry requirements\nA1F, Second cycle, has second-cycle course/s as entry requirements",
+    "Entry requirements": "To be eligible for the course the student must have a Bachelor degree of 180 credits. Additionally, the course TIG095 Human Computer Interaction 7.5 credits, or the equivalent is required. In addition, students need to have successfully completed a course in Graphical Interfaces (TIA106) 7.5 credits at advanced level.\nTo be eligible for this course as a programme student in Science Bachelors Programme N1COS, the student must have passed at least 90 credits in programme courses and the additional courses TIG095 Human Computer Interaction 7.5 credits and Graphical Interfaces (TIA106) 7.5 credits at advanced level.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "The course aims to give an understanding in how information can be presented to provide efficient and effective knowledge transfer, as well as how to design interactive systems that allow users to easily adapt these presentations depending on task and context.\nAfter completion of the course the student should be able to\nKnowledge and understanding\n• realize the difference between well-known information visualization techniques, including the pros and cons they have in respect to types of data, functionality, adaptability, and scalability,\n• describe how the cognitive and perceptive abilities of humans affect the possibilities of information visualization.\nSkills and abilities\n• create concepts for information visualizations taking into consideration specific data sets, users, technical platforms, and use context,\n• iteratively develop visualizations from early non-functional sketches through mock- ups to functional prototype making use of user feedback.\nJudgement and approach\n• compare different interactive visualization techniques to evaluate their feasibility for both generic and specific use,\n• analyze and provide creative criticism on specific solutions to visualize information.",
+    "Course content": "The course provides an overview on how to design and analyze computer applications, based on knowledge of the human sensory and cognitive system. Screen based as well as other types of interactive interfaces, such as auditory and haptic ones, are discussed as means to efficiently and intelligibly present information. Not only actual applications are covered, but also the development of methods to pre-process data and the creation of interfaces so users can personalize the information presentations available so it suits their needs.",
+    "Sub-courses": "1. Group Work: Design Exercise (Grupparbete: designövning ), 1.5 credits\nGrading scale: Pass (G) and Fail (U)\n2. Design Project (Design Projekt), 2 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)\n3. Take home examination (Hemtentamen), 4 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)",
+    "Form of teaching": "The course consists of a series of lectures, one exercise, and a project.\nThe course is structured into several different modules, each consisting of reading material taken from academic research within one area of visualization and exercises or projects within these areas. The exercises and projects are done in groups with the exception of the final individual assignment. Areas covered include specific techniques with information visualization, e.g. data visualization, scientific visualization and virtual reality.",
+    "Assessment": "The course is examined by means of three modules:\n• Group Work: Design Exercise 1.5 credit (fail/pass)\n• Design Project 2.0 credits (fail/pass)\n• Written Examination 4.0 credits (fail/pass/pass with distinction)\nA student who has failed a test twice has the right to change examiners, if it is possible. A written application should be sent to the Department.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U).\nThe grading scale comprises Fail (U), 3, 4 or 5.\nTo pass the course, all mandatory components must be passed. To earn a higher grade than 3, a higher weighted average is required from the grades with the U345 scale.",
+    "Course evaluation": "After completion of the course the students are to be given the possibility of participating in course anonymously. Continuous evaluation will be used, including three meetings between teacher(s) and student representatives. Additionally, the course will be evaluated with a course questionnaire, and discussed with the student representatives.",
+    "Additional information": ""
+  }
+}

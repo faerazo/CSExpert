@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "source_document": "DIT461.md",
+    "course_code": "DIT461",
+    "course_title": "Game Development Project",
+    "swedish_title": "Spelutvecklingsprojekt",
+    "department": "Department of Pedagogical, Curricular and Professional Studies",
+    "credits": "7.5",
+    "cycle": "Second cycle",
+    "language_of_instruction": "English",
+    "confirmation_date": "2024-11-11",
+    "valid_from_date": "Autumn term 2025",
+    "programmes": [
+      "Game Design & Technology Master's Programme"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Position in the educational system": "The course is compulsory within the Game Design & Technology Master's Programme.",
+    "Entry requirements": "To be eligible for this course, students must have completed one or more of the following courses or equivalent:\n\n- Introduction to Game Research, or\n- Gameplay Design, or\n- Game Engine Architecture, or\n- Prototyping in Interaction Design, or\n- Interaction design methodology, or\n- Graphical Interfaces\n\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completion of the course the student should be able to:\n\n_Knowledge and understanding_\n\n- Identify and describe best practice methodologies for the development of computer games\n- Explain standard concepts and terms for describing games, game development tools, and game development projects\n\n_Competence and skills_\n\n- Apply user evaluation methods in practical projects\n- Apply design & development methods systematically to create and critically compare different possibilities in game development projects\n- Identify needs and requirements of specific intended user groups and stakeholders\n\n_Judgement and approach_\n\n- Motivate design choices in an game development process\n- Conduct an informed analysis of what ethical and societal effects technical solutions can create in a game develop process",
+    "Course content": "The game development project permits students an opportunity to develop a game of their choice and design. Each time the course runs a theme will be provided, and students will work together in groups to implement and deploy a game that fits into the theme.\n\nThis course is primarily intended as an opportunity for students to hone the craft of game development - some instruction is provided, but the course is primarily project and supervision based.",
+    "Sub-courses": "Portfolio, 7.5 Credits",
+    "Form of teaching": "The course is primarily aimed at giving students the opportunity to build a portfolio element through the focused development of a game-related product. Students will work in groups, with supervision, to conceptualise, develop and deploy a game around a particular theme.",
+    "Assessment": "The course is assessed from three aspects - a technical artefact, a presentation, and a written report. The overall grade is a weighted average of these units.\n\nIf a student who has been failed twice for the same examination element wishes to change examiner before the next examination session, such a request is to be granted unless there are specific reasons to the contrary (Chapter 6 Section 22 HF).\n\nIf a student has received a certificate of disability study support from the University of Gothenburg with a recommendation of adapted examination and/or adapted forms of assessment, an examiner may decide, if this is consistent with the course’s intended learning outcomes and provided that no unreasonable resources would be needed, to grant the student adapted examination and/or adapted forms of assessment.\n\nIf a course has been discontinued or undergone major changes, the student must be offered at least two examination sessions in addition to ordinary examination sessions. These sessions are to be spread over a period of at least one year but no more than two years after the course has been discontinued/changed. The same applies to placement and internship (VFU) except that this is restricted to only one further examination session.\n\nIf a student has been notified that they fulfil the requirements for being a student at Riksidrottsuniversitetet (RIU student), to combine elite sports activities with studies, the examiner is entitled to decide on adaptation of examinations if this is done in accordance with the Local rules regarding RIU students at the University of Gothenburg.",
+    "Grades": "_Sub-courses_\n\n1. **Portfolio**, 7.5 credits\n\n\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)\n\nThe grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U).\n\nTo pass the course, approved results on all exercises are required.\n\nThe final grade of the course is based on the project report and the individual report.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between teachers and student representatives. Further, an anonymous questionnaire is used to ensure written information. The outcome of the evaluations serves to improve the course by indication which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\n\nThe course replaces the course DIT460, 7.5 credits. The course cannot be included in a degree which contains DIT460. Neither can the course be included in a degree which is based on another degree in which the course DIT460 is included.\n\nThe courses DIT176 Prototyping in interaction design, DIT493 Graphical interfaces, and DIT104 Interaction design methodology or equivalent are recommended."
+  }
+}

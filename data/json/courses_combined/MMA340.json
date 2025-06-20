@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "source_document": "MMA340.md",
+    "course_code": "MMA340",
+    "course_title": "Analytic Number Theory",
+    "department": "Department of Mathematical Sciences",
+    "credits": "7.5",
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "20 Jan 2025 - 23 Mar 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-17021",
+    "content_type": "course"
+  },
+  "sections": {
+    "About": "Analytic number theory is the part of number theory that uses methods from analysis to answer questions about integers in general and prime numbers in particular. The subject became an independent part of number theory during the 19th century, when works by Dirichlet and Riemann, among others, showed that methods from complex analysis could be used to study the distribution of primes among the natural numbers. Riemann only wrote one ten-page paper in analytic number theory, but his ideas have permeated much of the research in the field during the last 150 years.\nRiemann’s fundamental insight was that the distribution of primes is intimately connected to a complex function called the Riemann zeta function. This function has since been thoroughly studied, not least in connection with the so-called Riemann hypothesis which describes the location of the zeroes of the zeta function.\nIn this course you will study arithmetic functions, Dirichlet series, the Riemann zeta function, and Dirichlet L functions. We will use this to prove the prime number theorem and the prime number theorem for arithmetic progressions, which in various ways describe the distribution of primes among the natural numbers.",
+    "Entry requirements": "General entry requirements and the equivalent of MMG700 Analytic Functions. The course MMG100 Elementary Number Theory is recommended but not required.",
+    "Selection": "All eligible applicants who have applied before the deadline will be granted a place.",
+    "Tuition": "Full education cost: 15 998 SEK\nFirst payment: 15 998 SEK\n**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)",
+    "Additional information": "Last modified: 15 January 2025"
+  }
+}

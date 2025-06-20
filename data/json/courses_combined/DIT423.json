@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "source_document": "DIT423.pdf",
+    "course_code": "DIT423",
+    "course_title": "Computer communication",
+    "swedish_title": "Datakommunikation",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "First Cycle",
+    "main_field_of_study": "Computer Science",
+    "specialization": "G1F, First Cycle, has less than 60 credits in first-cycle course/s as entry requirements",
+    "language_of_instruction": "English, Swedish",
+    "confirmation_date": "2017-02-10",
+    "valid_from_date": "2017-08-20",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Computer Science, Bachelor's Programme (N1COS)"
+    ],
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "24 Mar 2025 - 8 Jun 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-86077",
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2017-02-10 and was last revised on 2017-06-07 to be valid from 2017-08-\n20, autumn semester of 2017.",
+    "Position in the educational system": "The course is offered within the framework of several degree programmes. The course is\nalso a single subject course at the University of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS) and 3)\nComputer Science, Bachelor's Programme (N1COS)",
+    "Entry requirements": "The requirement for the course is to have succesfully completed 45 hec within the area of\nComputer Science or equivalent, including the following;\n\n• a 7.5 hec course on fundamentals of digital systems and computer organisation\n(DIT791 Introduction to computer engineering, or equivalent),\n• a 7.5 hec course in imperative/object oriented programming (DIT012, DIT952, or\nequivalent),\n• a 7.5 hec course in discrete mathematics (DIT980 or equivalent).",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\n\nKnowledge and understanding\n• distinguish the different network layers, their services and the related protocols;\n• describe clearly the two standard reference models, exemplify and define the major\nproblems in each of these models;\n• explain how such problems have been tackled by, for example, solutions adopted in\ntodays networks (e.g. in the Internet) and other possible solutions;\n• clarify how constraints in the currently existing reference models can place obstacles\nto other options for solving the main problems;\n\nCompetence and skills\n• build and configure a working network and have an understanding of computer\nconfiguration and routing issues in networks;\n\nJudgement and approach\n• demonstrate gained experience by doing practical work and being able to assess\nwhich technique should be applied in reallistic situations.",
+    "Course content": "In the study of protocols, we start with application level protocols enabling the student\nto start with more familiar paradigms in the context of applications that we use\nregularly. Moving to lower layers later in the course, we have the possibility to gradually\nuncover network services, their functionality and the ease/difficulty for achieving them.\nTopics covered include: networking applications and protocol; HTTP, SMTP and DNS.\nTransport protocols TCP, UDP. Content distribution systems. Performance and\ncongestion control. Internet Protocol ITv4 and addressing. Internet routing, mobile\nIPTv4. Local area networks LANs, medium access protocols; MAC protocols (IEEE\n802.X and others), Ethernet, switches and VLANs. Wireless LAN especially Wifi,\nAccess Points, bridges and physical media. Detection and correction of bit errors.\nMultimedia applications and network security.",
+    "Sub-courses": "1. Written exam (Tentamen), 5.5 higher education credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n\n2. Laboratory work (Laboration), 2 higher education credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "Lectures, exercise sessions, home assignment and laboratory work.\nThe course is given twice a year. Once in English and once in Swedish.",
+    "Assessment": "The course is examined by home assignments and laboratory work (2.0 hec in total)\ndone in groups of normally 2 students, and an individual written exam (5.5 hec) carried\nout in an examination hall.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nTo be awarded the grade Pass (G) for the course, the student must pass both the exam\nand the laboratory part with the grade (G). To be awarded Pass with distinction, (VG)\nthe student must receive a VG for the exam and get the grade G for the laboratory part.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\nThe course replaces the DIT420 Computer communication 7.5 hec course. The course\ncannot be included in a degree which contains DIT420. Neither can the course be\nincluded in a degree which is based on another degree in which the course DIT420 is\nincluded.\n\nLast modified\n\n\n15 January 2025",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits.",
+    "Tuition": "Full education cost: 19 253 SEK\n\nFirst payment: 19 253 SEK\n\n**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)"
+  }
+}

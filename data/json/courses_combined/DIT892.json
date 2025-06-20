@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "source_document": "DIT892.pdf",
+    "course_code": "DIT892",
+    "course_title": "Project in Data Science",
+    "swedish_title": "Projekt i Data Science",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Data Science",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2022-11-15",
+    "valid_from_date": "2023-08-28",
+    "programmes": [
+      "Applied Data Science Master's Programme (N2ADS)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2022-11-15 to be valid from 2023-08-28, autumn semester of 2023.",
+    "Position in the educational system": "The course is offered within the Applied Data Science Master's Programme.\nThe course can be part of the following programme: 1) Applied Data Science Master's\nProgramme (N2ADS)",
+    "Entry requirements": "To be eligible to the course, the student should have a Bachelor's degree, and have\nsuccessfully completed 22,5 credits of courses within the subject Data Science.\nThe subject of the proposed project must be within the field of Data Science and have\nbeen approved by the Head of the Programme, who also decides whether or not the\nstudent has the required prerequisites within the subject area to carry out the particular\nproject.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completion of the course the student should be able to:\nKnowledge and understanding\n• integrate knowledge from disparate fields\nCompetence and skills\n• work on a complex task which has a clear goal but in general no predefined result,\n• apply various skills, such as\n• problem recognition, modelling and solving,\n• application and adaptation of textbook methods,\n• independent literature investigation,\n• implementation of software and/or use of existing software packages,\n• drawing conclusions from experimental results\n• communicate and present results efficiently, both in writing and orally\nJudgement and approach\n• plan the steps of a complex work, set up intermediate goals and keep the project\nrunning, come to realistic estimates of resources and achievable results, revise goals\nand develop work-arounds if necessary\n• document the work in such a way that others can build on it later on",
+    "Course content": "The course aims to provide knowledge and training in professional development of\nprojects which involves working in a coordinated way to plan, implement and monitor\nthe project, with great emphasis on written commincation. During the course, students\ncarry out an academically or industrially relevant project in the area of data science. The\nstudent will carry out the project individually or in groups.\nThe subject can be freely chosen within the area of Data Science. The project can either\nsuggested by the students themselves or by a potential supervisor.",
+    "Sub-courses": "1. Project (Projekt), 7.5 credits\nGrading scale: Pass (G) and Fail (U)",
+    "Form of teaching": "The student shall individually or in a group of maximum 4 students develop a project.\nThe student is responsible for making contact with an academic supervisor who can\ncontinuously monitor the student's work for the duration of the course. Before the\nproject starts, a project plan must be approved by the programme responsible and the\nacademic supervisor.",
+    "Assessment": "The course is examined by submission of a project (e.g., in the form of program code\nand documentation), an oral presentation and a written report.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass (G) and Fail (U).\nTo pass the course, the individual student must have contributed in a reasonable way to\nthe final project results of the team, and must be able to explain the work of the team\nrelated to the report.\nThe final grade of the course is based on the written report, the oral presentation, and\nhow well the student has contributed to the final project results of the team.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The choice of the course material depends on the chosen project and will be determined\njointly by the students and their supervisor at the beginning of the work.\nThe course replaces the course DIT891, 7.5 credits. The course cannot be included in a\ndegree which contains DIT891. Neither can the course be included in a degree which is\nbased on another degree in which the course DIT891 is included"
+  }
+}

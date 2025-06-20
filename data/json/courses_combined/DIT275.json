@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "source_document": "DIT275.pdf",
+    "course_code": "DIT275",
+    "course_title": "Software Product Line Engineering",
+    "swedish_title": "Software Product Line Engineering",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science, Software Engineering",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2008-10-01",
+    "valid_from_date": "2018-08-19",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Software Engineering and Management, Master's Programme (N2SEM)",
+      "Software Engineering Master's Programme (N2SOM)",
+      "No translation available (NDATM)",
+      "Software Engineering and Management Master's Programme (N2SOF)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2008-10-01 and was last revised on 2018-02-09 by Department of Computer Science and Engineering to be valid from 2018-08-19, autumn semester of 2018.",
+    "Position in the educational system": "The course is a part of the Computer Science Master's programme and an elective course at the University of Gothenburg. The course is also offered as a programme course in the Software Egnineering Master's programme.\nSecond cycle course which has course/courses at second cycle level as entry requirements. (A1F).\nThe course can be part of the following programmes: 1) Computer Science, Master's Programme (N2COS), 2) Software Engineering and Management, Master's Programme (N2SEM), 3) Software Engineering Master's Programme (N2SOM), 4) No translation available (NDATM) and 5) Software Engineering and Management Master's Programme (N2SOF)",
+    "Entry requirements": "To be eligible for the course students should have successfully completed two years studies within the subject Computer Science or Software Engineering or equivalent.\nThe course DIT945 Model Driven Software Development or an equivalent course in Software Modeling with UML and DIT542 Advanced Software Architecting or an equivalent course in Software Architecture are required.",
+    "Learning outcomes": "A software product line (SPL) is a set of software products that share a common, managed set of features and that together address the needs of a particular market segment or mission. They are developed from a common set of core assets in a planned way. By developing large software systems in this way companies can produce a set of products more economically since the development effort put into the shared assets need not be duplicated. SPLs can also help companies to better address product customization tasks to meet specific needs of individual customers. This makes it possible to sustain a high rate of product innovation, while keeping guaranteed levels of overall system performance and quality. The fundamental concept of a software product line is a domain specific product architecture based upon a layered set of platforms. The issues in software product line are not just technical but also include process, organizational and business considerations.\nAfter completing the course the student is expected to be able to:\n1. Knowledge and understanding\n- Explain software product line (SPL) component development and how it differs from developing normal SW component developments\n- Explain contemporary concepts and techniques of SPL and how specific products may be instantiated from general architecture descriptions\n- Assess SPL implementations using evaluation frameworks for SPL assessments, in particular maturity frameworks\n- Expalin how verification and validation activities in SPL software development compared to conventional software development\n- Explain the challenges with large-scale software reuse and customization and explains how SPL tries to alleviate them\n- Recognize the situations in which SPL is an appropriate approach to software development\n2. Skills and abilities\n- Perform scoping and domain analysis\n- Analyse a SPL architecture/design\n- Use some contemporary technologies fo SPLE\n- Implement a SPL from a given software project\n3. Judgement and approach\n- Assess the maturity and potential for a company to implement or extend an SPL way of working in their software development\n- Judges, on the basis of a software development situation, and tool limitations and capabilities, whether SPL is an appropriate approach or not",
+    "Course content": "The course covers the following elements:\n• the problems with large-scale software reuse and customization,\n• scoping and domain analysis,\n• design of software product-line architectures,\n• development of software product-line components,\n• instantiation of family members, i.e. products,\n• verification and validation in software product line architectures,\n• evolution of software product-line assets, i.e. the product-line architecture, the components and the products, and\n• SEIs framework for Software Product Line Practice.\n• assessment of company's potential for working with software product line methodologies and techniques.",
+    "Sub-courses": "The course is divided into the following sub-courses:\n1. Written Exam, 3 hp, Content: Examines the teoretical and state-of-the-art knowledge parts of the course\n2. Project assignment, 4,5 hp, Content: Examines the practical skills, attitudes and application of the knowledge learnt in sub-course 1.",
+    "Form of teaching": "Language of instruction: English",
+    "Assessment": "Group assignments and an individual written exam given in an examination hall. The two subcourses corresponding to these different types of examination are graded individually. A final grade on the course as a whole is then given.\nA student who has failed a test twice has the right to change examiner, unless weighty argument can be adduced. The application has to be in writing.\nIn cases where a course has been discontinued or major changes have been made a student should be guaranteed at least three examination occasions (including the ordinary examination occasion) during a time of at least one year from the last time the course was given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nIn order to Pass (G) the course, the student must get grade G (at least) for both the assignments and the exam. To be awarded a Pass With Distinction (VG) for a full course, the student must get grade VG for both the assignments and the exam.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between teachers and student representatives. Further, an anonymous questionnaire is used to ensure written information. The outcome of the evaluations serves to improve the course by indication which parts could be added, improved, changed or removed.",
+    "Additional information": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "source_document": "DIT826.pdf",
+    "course_code": "DIT826",
+    "course_title": "Software Engineering for Data-Intensive Al Applications",
+    "swedish_title": "Software engineering för dataintensiva Al-applikationer",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "15",
+    "cycle": "First Cycle",
+    "main_field_of_study": "Software Engineering",
+    "specialization": "G1F, First cycle, has less than 60 credits in\nfirst-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2022-11-23",
+    "valid_from_date": "2023-08-28",
+    "programmes": [
+      "Software Engineering and Management Bachelor's Programme (N1SOF)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2022-11-23 to be valid from 2023-08-28, autumn semester of 2023.",
+    "Position in the educational system": "The course is offered within the N1SOF Software Engineering and Management\nBachelor's Programme.\nThe course can be part of the following programme: 1) Software Engineering and\nManagement Bachelor's Programme (N1SOF)",
+    "Entry requirements": "To be eligible for this course, students must have successfully completed DIT821\nSoftware Engineering for AI Systems, 7.5 credits, or equivalent.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• explain how data analytics and business intelligence have become driving forces for\nvalue creation in enterprises\n• exemplify problems in releasing and deploying software systems that rely on AI\ntechniques\n• evaluate the suitability of different AI techniques based on defined data analysis\ngoals\nCompetence and skills\n• select and implement suitable AI techniques for an open and realistic problem\n• apply enterprise-grade AI frameworks and apply them in a realistic context\n• apply data analytics and business intelligence software patterns and architectures\ndepending on requirements\n• create and apply a validation and deployment strategy for a data-intensive AI\nsystem\nJudgement and approach\n• judge which patterns and architectures work best for given data processing\nrequirements and how they can be implemented with the available frameworks\n• design a visualisation and reporting interface for the system that allows non-experts\nto use the outcome of the AI technique in a meaningful way",
+    "Course content": "This project course addresses issues relevant for software engineering for systems that\nuse artificial intelligence (AI) techniques such as machine learning or large-scale parallel\ndata processing. This includes a discussion of the value that can be created through the\nuse of AI, in particular for data analytics and business intelligence, as well as its ethical\nconsiderations. At the same time, technological and architectural foundations of\nsoftware systems using AI techniques and handling large amount of data are discussed.\nThe course addresses how software systems need to be structured and deployed in order\nto be able to achieve the performance required for realistic applications. The selection\nand implementation of different AI techniques based on requirements of a specific\nrealistic problem are discussed. Relevant software architectures and patterns are\nintroduced and discussed in the context of a realistic application scenario.\nA main focus is high-data throughput systems that incorporate complex business logic\nand business processes and work on large data sets, possibly with a continuous stream\nof data that needs to be processed. Such systems are very common in the industry and\nstudents are very likely to come in contact with the principles covered in this course in\ntheir early professional career. Students will create a running software that uses state-of-\nthe-art architectures and AI techniques to design and build a system based on realistic\nspecifications and requirements.",
+    "Sub-courses": "1. Project (Projekt), 15 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)",
+    "Form of teaching": "The teaching consists of lectures, workshops, and a project, as well as supervision in\nconnection to the project.\nLanguage of instruction: English",
+    "Assessment": "The course is examined through a review of the artifacts the students produced for their\nprojects, a written group report, and individual contributions to the group work. The\nproject is carried out in groups of students. In case a student fully participated in the\nproject work, but failed the project in a few elements, one individual re-examination is\nprovided. In case the student did not contribute to the project work, or failed the re-\nexamination, the student has to join a new project group.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and\nFail (U).\nThe final grades are given after reviewing the artifacts, the written group report, and\nindividual contributions to the project.",
+    "Course evaluation": "The course is evaluated through meeting after the course between teachers and student\nrepresentatives. Further, an anonymous questionnaire is used to ensure written\ninformation. The outcome of the evaluations serves to improve the course by indicating\nwhich parts could be added, improved, changed or removed.",
+    "Additional information": "Course literature to be announced the latest 8 weeks prior to the start of the course.\nThe course replaces the course DIT825, 7.5 credits. The course cannot be included in a\ndegree which contains DIT825. Neither can the course be included in a degree which is\nbased on another degree in which the course DIT825 is included."
+  }
+}

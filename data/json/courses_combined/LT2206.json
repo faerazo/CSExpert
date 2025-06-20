@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source_document": "LT2206.pdf",
+    "course_code": "LT2206",
+    "course_title": "Dialogue systems",
+    "swedish_title": "Dialogsystem",
+    "department": "Department of Philosophy, Linguistics and Theory of Science",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Language Technology",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2014-08-22",
+    "valid_from_date": "2017-08-28",
+    "programmes": [
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Master in Language Technology (One year or Two years) (H2MLT)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Philosophy, Linguistics and Theory of Science on 2014-08-22 and was last revised on 2017-06-01 to be valid from 2017-08-28, autumn semester of 2017.",
+    "Position in the educational system": "The course can be part of the following programmes: 1) Applied Data Science Master's Programme (N2ADS) and 2) Master in Language Technology (One year or Two years) (H2MLT)",
+    "Entry requirements": "Admission to the course requires either successful completion of the two courses\n• LT2111 Introduction to programming, 7.5 hecr\n• LT2112 Introduction to formal linguistics, 7.5 hecr\nor successful completion of at least one of the courses:\n• LT2101 Introduction for computer scientists, 15 hecr\n• LT2102 Introduction for linguists, 15 hecr\nor equivalent language technology skills and knowledge.",
+    "Learning outcomes": "After completion of the course students are expected to be able to:\nKnowledge and understanding\n• account for the limitations of contemporary components of speech synthesis and speech recognition, why the limitations are there, and what can be done to circumvent them.\n• account for the most common strategies for dialogue management\n• account for the most important methodological principles for development of dialogue systems\n• give a brief account of the most important standards in the field.\nSkills and abilities\n• do pen-and-paper design and testing of an idea for an implementation of a dialogue system\n• design SSML-prompts for speech synthesis\n• write SRGS grammars for speech recognition which effectively improves the ability to recognize an utterance\n• choose a suitable strategy for dialogue management for a given application and implement it in VoiceXML and/or SCXML.\n• implement strategies for error handling, such as failed recognition\nJudgement and approach\n• make informed judgements of the theories and technologies that underlie the kinds of speech synthesis, speech recognition and dialogue managers that are discussed in the course - their merits and shortcomings",
+    "Course content": "A dialogue system (or a conversational agent) is a computer system that can have a dialogue with a human user. The dialogue is often speech-based and can sometimes use text, graphics, gestures, or other modalities to enhance the communication so it will be as efficient as possible. The latter case is said to be multi-modal dialogue systems.\nA (pure) speech-based dialogue system can be said to consist of (at least) three modules: a module for the production of synthetic speech, a module for recognition of human speech, and a module for dialogue management. The lectures will treat the speech technology components as \"black boxes\" and spendmost of the time on theories behind dialogue management and how to combine components to usable systems. To some extent, these theories will also be connected to theories of human-human dialogue and to concepts such as dialogue structure, turn-taking and feedback.\nThe course lectures will also discuss important standards in the field, such as the W3C recommendations \"Speech Recognition Grammar Specification\" (SRGS), \"Semantic Interpretation for Speech Recognition\" (SISR), \"Speech Synthesis Markup Language\" (SSML) and \"VoiceXML\", and \"State Chart XML\" (SCXML). Time will also be spent on introducing good and proven methodology for design of dialogue systems.\nBut the course is primarily a laboratory course and participants are expected to spend much of the time experimenting (with teacher support) with speech synthesis and speech recognition and to actually design, implement and evaluate simple dialogue systems.",
+    "Sub-courses": "",
+    "Form of teaching": "There are laboratory exercises that require attendance for a passing grade.\nLanguage of instruction: English",
+    "Assessment": "The examination consists of: participation in laboratory exercises, assignments, a small project and a written exam.\nA student who has failed an examination twice has the right to change examiners if it is feasible. A written application should be sent to the board of the department.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).",
+    "Course evaluation": "",
+    "Additional information": ""
+  }
+}

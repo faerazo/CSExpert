@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "source_document": "DIT172.pdf",
+    "course_code": "DIT172",
+    "course_title": "Parallel and Distributed Real-time System",
+    "swedish_title": "Parallella och distribuerade realtidssystem",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2016-12-20",
+    "valid_from_date": "2017-08-20",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Game Design & Technology Master's Programme (N2GDT)",
+      "Computer Science, Bachelor's Programme (N1COS)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2016-12-20 and was last revised on 2017-06-07 to be valid from 2017-08-\n20, autumn semester of 2017.",
+    "Position in the educational system": "The course is part of the Computer Science Master's Programme. It is also given as\nsingle subject course at the University of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS), 3)\nGame Design & Technology Master's Programme (N2GDT) and 4) Computer Science,\nBachelor's Programme (N1COS)",
+    "Entry requirements": "To be eligible for the course students should have successfully completed courses\ncorresponding to 120 higher education credits within the subject Computer Science or\nequivalent, including DIT161 Real-Time systems, 7.5 hec, or equivalent is required.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• demonstrate knowledge about the terminology of scheduling and Complexity\ntheory.\n• describe the principles and mechanisms used for scheduling of task execution and\ndata communication in real-time systems\nCompetence and skills\n• formulate requirements for computer systems for time and safety critical\napplications.\n• design realtime systems and apply techniques to verify whether the realtime\nrequirements are met or not.\n• derive the theoretical performance limitations of a given real-time system.\nJudgement and approach\n• determine the best design for a target implementation by deriving performance of\ndesign alternatives of real-time systems",
+    "Course content": "This course is intended to give a deeper understanding of the problems involved in\ndesigning real-time systems based on multiprocessor architectures.\nSpecifically, the course covers the following topics:\n• Background: motivation for; and definition of; real-time computing systems.\n• Characteristics of real-time systems: application constraints; Design methods; task\nmodels; run-time mechanisms; architectures.\n• Evaluation of real-time systems: performance measures; Evaluation methodologies.\n• Single and multiprocessor scheduling: problem definition; terminology; and\nalgorithms.\n• Complexity theory and NP-completeness in the context of real-time scheduling.\n• real-time communications: protocols and end-to-end delay guarantees.\n• Fault-tolerance techniques for real-time systems: models; algorithms and architectures.\n• Estimation of task execution times.",
+    "Sub-courses": "1. Homework assignment 1 (Hemuppgift 1), 4 higher education credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n2. Homework assignment 2 (Hemuppgift 2), 3.5 higher education credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)",
+    "Form of teaching": "The course is organized as a series of lectures. There are two homework assignments on\nthe specific topics covered during the lectures. A weekly consultation session offers\nassistance regarding questions and problems related to the homework assignments.\nLanguage of instruction: English",
+    "Assessment": "The course is examined by 2 homework assignments, one in the middle of the course and\nthe other at the end of the course. For each of the homework assignments the student\nshall submit a written report that gets orally examined. The written reports are carried\nout normally in pairs and the oral exams are individually performed.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nIn order to be awarded the grade Pass (G) for the whole course, the students' needs to\nget the grade G on both sub courses . In order to be awarded the grade Pass with\nDistinction (VG) for the full course, the student needs to get the grade VG on both sub\ncourses.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\nThe course replaces the DIT171 Parallel and Distributed Real-time Systems, 7.5 hec,\ncourse. The course cannot be included in a degree which contains DIT171. Neither can\nthe course be included in a degree which is based on another degree in which the course\nDIT171 is included."
+  }
+}

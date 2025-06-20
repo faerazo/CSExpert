@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "source_document": "DIT173.pdf",
+    "course_code": "DIT173",
+    "course_title": "Dependable Real-Time Systems",
+    "swedish_title": "Pålitliga realtidssystem",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2019-02-07",
+    "valid_from_date": "2020-01-19",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Computer Science, Bachelor's Programme (N1COS)",
+      "Game Design & Technology Master's Programme (N2GDT)"
+    ],
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "24 Mar 2025 - 8 Jun 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-86075",
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2019-02-07 to be valid from 2020-01-19, spring semester of 2020.",
+    "Position in the educational system": "The course is offered within the Master's programme N2COS Computer Science. It is\nalso a single subject course at the University of Gothenburg.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS), 3)\nComputer Science, Bachelor's Programme (N1COS) and 4) Game Design & Technology\nMaster's Programme (N2GDT)",
+    "Entry requirements": "To be eligible for the course students should have successfully completed courses\ncorresponding to 120 higher education credits within the subject Computer Science or\nequivalent. In addition, a pass grade in the preparatory course DIT162 Real-Time\nsystems, 7.5 credits, is required.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\nKnowledge and understanding\n• demonstrate knowledge about the terminology of scheduling, dependability and\ncomplexity theory\n• describe the principles and mechanisms used for scheduling of task execution and\ndata communication in real-time systems\nCompetence and skills\n• formulate requirements for computer systems for time and safety critical\napplications\n• design realtime systems and apply techniques to verify whether the realtime\nrequirements are met or not\n• derive the theoretical performance limitations of a given real-time system\nJudgement and approach\n•\nreason about advantages and disadvantages regarding the choice of the optimal\ndesign for a real-time systems given certain conditions",
+    "Course content": "This course is intended to give a deeper understanding of the problems involved in\ndesigning dependable real-time systems based on multiprocessor architectures.\nSpecifically, the course covers the following topics:\n• Background: motivation for; and definition of; real-time computing systems.\n• Characteristics of real-time systems: application constraints; design methods; task\nmodels; run-time mechanisms; architectures.\n• Evaluation of real-time systems: performance measures; evaluation methodologies.\n• Single and multiprocessor scheduling: problem definition; terminology; and\nalgorithms.\n• Complexity theory and NP-completeness in the context of real-time scheduling.\n• Real-time communications: protocols and end-to-end delay guarantees.\n• Fault-tolerance techniques for real-time systems: models; algorithms and\narchitectures.",
+    "Sub-courses": "1. Homework assignment 1 (Hemuppgift 1), 4 credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)\n2. Homework assignment 2 (Hemuppgift 2), 3.5 credits\nGrading scale: Pass with Distinction (VG), Pass (G) and Fail (U)",
+    "Form of teaching": "The course is organized as a series of lectures where fundamental theories and\nimplementation methods are presented, as well as two homework assignments on the\nspecific topics covered during the lectures. Weekly consultation sessions offer assistance\nregarding questions and problems related to the homework assignments.\nLanguage of instruction: English",
+    "Assessment": "The course is examined by two homework assignments, one in the beginning of the\ncourse and the other at the end of the course.\nFor the first homework assignments the student shall implement a dependable software\nfor a distributed real-time system, that is examined by means of documentation and\ndemonstration of the software. For the second homework assignment the student shall\nsolve a set of theoretical problems and document the solutions in a written report that is\norally examined.\nThe homework assignments are carried out normally in groups of two students, while\nthe examination and grading of the assignments are individually performed.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nA Pass grade (G) for the entire course requires at least a Pass grade for all sub-courses.\nA Pass with Distinction grade (VG) for the entire course requires a VG grade for all\nsub-courses.",
+    "Course evaluation": "The course is evaluated through meeting after the course between teachers and student\nrepresentatives. Further, an anonymous questionnaire is used to ensure written\ninformation. The outcome of the evaluations serves to improve the course by indicating\nwhich parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\nThe course replaces the course DIT172 Parallel and Distributed Real-Time Systems, 7.5\ncredits. The course cannot be included in a degree which contains DIT172. Neither can\nthe course be included in a degree which is based on another degree in which the course\nDIT172 is included.\n\nLast modified: 15 January 2025",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 19 253 SEK\n\nFirst payment: 19 253 SEK\n\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\nMore information about tuition fees"
+  }
+}

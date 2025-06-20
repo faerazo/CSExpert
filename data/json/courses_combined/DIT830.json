@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "source_document": "DIT830.pdf",
+    "course_code": "DIT830",
+    "course_title": "Physical Computing",
+    "swedish_title": "Physical Computing",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science-Interaction Design",
+    "specialization": "AXX, Second cycle, in-depth level of the course cannot be classified",
+    "language_of_instruction": "English",
+    "confirmation_date": "2006-11-17",
+    "valid_from_date": "2007-09-01",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Computer Science, Bachelor's Programme (N1COS)",
+      "No translation available (NDATM)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2006-11-17 to be valid\nfrom 2007-09-01.",
+    "Position in the educational system": "The course is a part of the Computer Science Master's programme and an elective\ncourse at the University of Gothenburg.\nThe course is a second cycle course which cannot be classified (AXX).\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Computer Science, Bachelor's Programme (N1COS) and 3)\nNo translation available (NDATM)",
+    "Entry requirements": "To be eligible for the course\nstudents should have successfully completed a first year studies within the subject\nComputer Science or equivalent. Specifically, a course in Human-Computer Interaction\nis required.",
+    "Learning outcomes": "The course focuses on materials and methods used within interaction design to combine\nhardware, software and physical materials into working prototypes.\nAfter completing the course the student is expected to be able to:\n• Understand the importance of prototyping in interaction Design\n• Find possible hardware and software to use in prototypes of Computational things\n• identify suitable physical and smart materials and Understand their Design potential\n• Understand basic technical specifications of electronic components\n• Perform basic programming of micro-controllers connected to sensors and actuators\nof different kinds\n• Handle communication between microcontrollers and ordinary PCs\n• Build prototypes that through the use of software and hardware can respond the\nsurrounding world",
+    "Course content": "The course deals with central design materials in interaction design, and ways of\nprototyping at various levels of detail and functionality. The aim is to understand how\nhardware, software and other materials can be combined in the design of computational\nthings for human use. The course gives an overview of various design and prototyping\nmaterials. The major part deals with sensors, actuators, and the electronic and\ncomputational elements that enable and control their behaviour in real time in order to\nrealise an intended user experience. A large part of the course consists of laboratory\nexercises and workshops where the students will practice working with materials of\nvarious kinds.",
+    "Sub-courses": "",
+    "Form of teaching": "Language of instruction: English\nThe course is held in English.",
+    "Assessment": "The course is graded by group exercises and written individual exams. A student who\nhas failed a test twice has the right to change examiners, if it is possible. A written\napplication should be sent to the Department.",
+    "Grades": "The grading scale comprises: Fail, Pass, Pass with distinction.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire can be used\nto ensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": ""
+  }
+}

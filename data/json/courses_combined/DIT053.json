@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source_document": "DIT053.pdf",
+    "course_code": "DIT053",
+    "course_title": "Energy Aware Computing",
+    "swedish_title": "Energy Aware Computing",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2017-06-07",
+    "valid_from_date": "2017-08-20",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2012-12-10 and was last revised on 2017-06-07 to be valid from 2017-08-20, autumn semester of 2017.",
+    "Position in the educational system": "The course is a part of the Computer Science Master's Programme and a single-subject course at the University of Gothenburg.\n\nThe course can be part of the following programmes: 1) Computer Science, Master's Programme (N2COS) and 2) Applied Data Science Master's Programme (N2ADS)",
+    "Entry requirements": "The requirement for the course is to have successfully completed two years studies within the subject Computer Science or equivalent. The course DIT122 Computer System Engineering or equivalent is required.\n\nEnglish B level or English proficiency equivalent to IELTS 6.5 no part under 5.5 or TOEFL 575 p, TWE score 4.5 is also required.",
+    "Learning outcomes": "After completion of the course the student should be able to:\n1. Knowledge and understanding\n• describe why energy aware computing is an important current topic;\n• describe the electrical mechanisms that cause power and energy to be dissipated;\n• describe various circuit techniques for reducing power dissipation and, in particular, evaluate the effect of reducing frequency and supply voltage on performance, power and energy;\n• describe various computer architecture, memory, and secondary storage techniques for reducing energy usage.\n2. Skills and abilities\n• demonstrate the ability to use simulation tools to estimate the energy usage of a computer application.\n3. Judgement and approach\n• identify the strengths and weaknesses of different classes of computer processors, with respect to energy efficiency.",
+    "Course content": "The aim of the course is make students aware of the importance of energy aware computing and various techniques for reducing energy usage in computer systems. The course is intended to give an overview of the energy-dissipation aspects of computers and computing, ranging from electronic circuits to operating systems and from battery-powered pocket devices to data centers. In-depth treatments of several sub-fields of this wide range will be offered. A term paper will require independent literature research on a selected topic.",
+    "Sub-courses": "",
+    "Form of teaching": "Language of instruction: English",
+    "Assessment": "The course is examined by an individual written report, software simulation labs and an individual written exam done in an examination hall. The laboratory work is done in groups of normally 2-3 students and it involves one lab excercise and one lab project.\n\nOpportunity for re-examination is given twice a year.\n\nA student who has failed the same examination twice has the right to request of the department a change of examiner. The request is to be in writing and submitted as soon as possible. The department is to grant such a request without undue delay.\n\nIn cases where a course has been discontinued or major changes have been made a student should be guaranteed at least three examination occasions (including the ordinary examination occasion) during a time of at least one year from the last time the course was given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nIn order to be awarded the grade Pass (G) for a full course, the student must obtain a passing grade on all three parts, i.e. on the written exam, laboratory work and on the written report.\n\nIn order to be awarded he grade Pass with Distinction (VG), the student must in addition obtain the grade Pass with Distinction on the written exam and get a Pass with Distinction on either the laboratory work or the written report.\n\nRegarding the application of ECTS scales, please see Vice-Chancellor's decision 2007-05-28, dnr G 8 1976/07.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between teachers and student representatives. Further, an anonymous questionnaire can be used to ensure written information. The outcome of the evaluations serves to improve the course by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "Teaching is through lectures, class exercises, and laboratory."
+  }
+}

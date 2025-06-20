@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "source_document": "DIT251.pdf",
+    "course_code": "DIT251",
+    "course_title": "Algorithms, advanced course",
+    "swedish_title": "Algoritmer, fortsättningskurs",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2020-12-18",
+    "valid_from_date": "2022-08-29",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Computer Science, Bachelor's Programme (N1COS)"
+    ],
+    "iteration": "Autumn 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "3 Nov 2025 - 18 Jan 2026",
+    "application_period": "17 Mar 2025 - 15 Apr 2025",
+    "application_code": "GU-86065",
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2020-12-18 and was last revised on 2021-11-01 to be valid from 2022-08-\n29, autumn semester of 2022.",
+    "Position in the educational system": "The course is a part of the Computer Science Master's programme and is also given as a\nsingle subject course at University of Gothenburg.\n\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS) and 3)\nComputer Science, Bachelor's Programme (N1COS)",
+    "Entry requirements": "The requirement for the course is to have successfully completed courses corresponding\nto 120 hec within the subject Computer Science or equivalent, including successful\ncompletion of DIT093 Algorithms, 7.5 hec (or equivalent).\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completing the course the student is expected to be able to:\n\nKnowledge and understanding\n• apply important design and analysis techniques for algorithms, in particular, ways\nto approach NP-complete problems,\n• describe current research on algorithms,\n\nCompetence and skills\n•\napply design and analysis techniques to solve new problems that may arise in\nvarious applications,\n• explain complex algorithms and their proofs in written form,\n\nJudgement and approach\n•\n• find connections between algorithmic problems and turn them into formal\nreductions,\nperform more complex analysis of algorithms, in particular, analyze the worst case\nand expected time complexities and error probabilities for randomized algorithms.",
+    "Course content": "The course covers the following topics;\n•\n• approximation algorithms and approximation schemes for NP-complete problems,\nand their analysis,\nuse of linear programming, in particular for approximation,\n• network flow with some complex applications,\n• randomized algorithms and their analysis by appropriate random variables,\n• helpful input structures like tree structures and input parameters.",
+    "Sub-courses": "1. Assignment (Inlämningsuppgift), 7.5 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)",
+    "Form of teaching": "Lectures, exercises, feedback and consultations.",
+    "Assessment": "The course is examined by hand-in exercises and a final take-home exam.\nIf a student, who has failed the same examined component twice, wishes to change\nexaminer before the next examination, a written application shall be sent to the\ndepartment responsible for the course and shall be granted unless there are special\nreasons to the contrary (Chapter 6, Section 22 of Higher Education Ordinance).\nIn cases where a course has been discontinued or has undergone major changes, the\nstudent shall normally be guaranteed at least three examination occasions (including the\nordinary examination) during a period of at least one year from the last time the course\nwas given.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and\nFail (U).\nThe grading scale comprises Fail (U), 3, 4 or 5.\nTo pass the course, all mandatory components must be passed. To earn a higher grade\nthan Pass, a higher weighted average from the grades of the components is required.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The course replaces DIT280 Algorithms advanced course 7,5 hp. The course cannot be\nincluded in a degree which contains DIT280. Neither can the course be included in a\ndegree which is based on another degree in which the course DIT280 is included.\nThe course is a joint course together with Chalmers.\nCourse literature to be announced 8 weeks prior to the start of the course.\n\nLast modified 20 February 2025",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 17 753 SEK\nFirst payment: 17 753 SEK\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)\nApplication closed, late application opens 15 July 2025."
+  }
+}

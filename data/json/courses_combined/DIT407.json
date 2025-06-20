@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "source_document": "DIT407.md",
+    "course_code": "DIT407",
+    "course_title": "Introduction to Data science and AI",
+    "department": "Department of Computer Science and Engineering",
+    "credits": "7.5",
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "language_of_instruction": "English",
+    "duration": "24 Mar 2025 - 8 Jun 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-86067",
+    "content_type": "course"
+  },
+  "sections": {
+    "About": "During the course, a wide selection of methods for Data Science and AI will be introduced. The course is divided into three parts: **Introduction to data science**\n\n- Implementation of data science solutions, using Python, basic data analysis and visualization.\n- Introduction of the data science process, and appropriate methodology.\n\n- Examples of core data science methods with case studies such as in clustering,classification and regression.\n- Data science put in context regarding ethics, regulations and limitations.\n\n\n**Statistical methods for data science and AI**\n\n- Introduction of some common stochastic models with examples of applications in data science and AI (for instance, naive Bayes classifiers, topic models for text and Hidden Markov Models for sequence data).\n\n**Artificial Intelligence**\n\n- Introduction to classical AI and machine learning, including the relationship to related areas such as algorithms and optimization, and AI philosophy.\n- Examples of methods and applications of AI, in classical AI (search and constraint satisfaction), and ML-based (search engines, naive Bayes and neural networks)\n- Discussion of ethics and societal impact of AI.",
+    "Entry requirements": "To be eligible for the course students should have:\n\n\\- 7\\.5 hec in basic mathematics (containing e.g. calculus, linear algebra and/or discrete mathematics) or the course Applied mathematical thinking (DIT025 or equivalent)\n\n\\- 7,5 hec mathematical statistics (e.g. MSG810 or DIT862 or DIT278 or similar) or the two courses DIT847 and DIT278 (or equivalent) or the course DIT022\n\n\\- 7,5 hec Programming in a General-Purpose Language (e.g. C/C++/Java/Python or similar.\n\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 165 credits.",
+    "Tuition": "Full education cost: 19 253 SEK\n\nFirst payment: 19 253 SEK\n\nNo fees are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)",
+    "Additional information": "20 September 2024"
+  }
+}

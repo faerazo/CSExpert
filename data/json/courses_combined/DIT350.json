@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "source_document": "DIT350.pdf",
+    "course_code": "DIT350",
+    "course_title": "FOCAL project",
+    "swedish_title": "FoCAL project",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science-Algorithms and Logic",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2009-09-18",
+    "valid_from_date": "2010-01-18",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Computer Science, Bachelor's Programme (N1COS)",
+      "No translation available (NDATM)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2009-09-18 and was\nlast revised on 2009-09-18 to be valid from 2010-01-18.",
+    "Position in the educational system": "The course is a part of the Computer Science Master's programme and an elective\ncourse at the University at Gothenburg.\nThe level for the course in relation to degree requirements is a master degree, code A1F.\nThe course has a bachelor degree as entry requirement.\nThe course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Computer Science, Bachelor's Programme (N1COS) and 3)\nNo translation available (NDATM)",
+    "Entry requirements": "To be eligible for the course\nstudents should have successfully completed a bachelor degree within the subject\nComputer Science or equivalent. Specifically, the courses DIT230 Programming\nLanguages and DIT201 Logic in computer science are required.",
+    "Learning outcomes": "Learning outcomes are more general, as many details depend on the subject:\nAfter completing the course the student is expected to be able to:\n• experience the work on a more complex task which has a clear goal but no pre-\ndefined result (unlike usual course exercises) and can even require integration of\nknowledge from disparate fields (for example: Optimization methods applied to a\nMachine Learning problem)\n• apply and strengthen the skills in problem recognition, modeling, adaptation of\ntextbook methods, independent literature investigation, implementation, use of\nsoftware packages, testing, drawing conclusions, etc.\n• plan the steps of a complex project, set up intermediate goals and keep the project\nrunning, come to realistic estimates of resources and achievable results, revise goals\nand develop work-arounds if necessary\n• communicate efficiently and present results clearly, document the work in such a\nway that others can build on it later.",
+    "Course content": "In this course the students will carry out a project in Foundations of Computing. The\nsubject can be chosen freely by the students themselves or by potential supervisors, but\nit has to belong to the area of the Master's programme.",
+    "Sub-courses": "",
+    "Form of teaching": "Language of instruction: English\nThe course is held in English.",
+    "Assessment": "The course is examined by a final project. A student who has failed a test twice has the\nright to change examiner, unless weighty argument can be adduced. A written\napplication should be sent to the Department.",
+    "Grades": "The grading scale comprises: Fail, Pass, Pass with distinction.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire can be used\nto ensure written information. The outcome of the evaluations serves to improve the\ncourse by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "The Board of the IT Faculty."
+  }
+}

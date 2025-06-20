@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "source_document": "DIT066.pdf",
+    "course_code": "DIT066",
+    "course_title": "Computational techniques for large-scale data",
+    "swedish_title": "Beräkningsmetoder för storskaliga data",
+    "department": "Department of Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Data Science, Computer Science",
+    "specialization": "A1N, Second cycle, has only first-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2023-11-14",
+    "valid_from_date": "2025-01-20",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)",
+      "Software Engineering and Management Master's Programme (N2SOF)"
+    ],
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "24 Mar 2025 - 8 Jun 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-86107",
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2023-11-14 to be valid from 2025-01-20, spring semester of 2025.",
+    "Position in the educational system": "The course can be part of the following programmes: 1) Computer Science, Master's\nProgramme (N2COS), 2) Applied Data Science Master's Programme (N2ADS) and 3)\nSoftware Engineering and Management Master's Programme (N2SOF)\n\nMain field of studies\nData Science\nComputer Science\n\nSpecialization\nA1N, Second cycle, has only first-cycle\ncourse/s as entry requirements\nAIN, Second cycle, has only first-cycle\ncourse/s as entry requirements",
+    "Entry requirements": "To be eligible to the course, the student should have a Bachelor's degree in any subject,\nor have successfully completed 90 credits of studies in computer science, software\nengineering, or equivalent. Specifically, at least 15 credits of successfully completed\ncourses in programming, of which at least 7.5 credits in Python programming, or\nequivalent are required. The student needs to have successfully completed a course in\nprobability theory or statistics, for example DIT862 or MSG810 or similar.\nApplicants must prove knowledge of English: English 6/English B or the equivalent level\nof an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\n\nKnowledge and understanding\n• discuss important technological aspects when designing and implementing analysis\nsolutions for large-scale data,\n• explain differences between parallel programming models,\n• describe data structures and algorithms for big data and discuss their utility.\n\nCompetence and skills\n• implement applications for transforming and analyzing large-scale data with\ndifferent parallel software frameworks,\n• use algorithms and datastructures for computations with large-scale data.\n\nJudgement and approach\n• suggest appropriate computational infrastructures and methodological approaches\nfor analysis tasks and discuss their advantages and drawbacks,\n• discuss advantages and drawbacks of different strategies of parallelization,\n• decide between algorithmic and parallelization-based approaches for accelerating\ncomputational workloads.",
+    "Course content": "The aim of this course is to deepen the students' knowledge and skills and familiarize\nthem with the technical and technological side of data science, including software\nrespectively hardware environments. The course will introduce aspects of designing and\nimplementing large-scale data science solutions.\nIn particular, the course will include:\n\n• an overview of computer architectures, algorithmic approaches, and high-\nperformance computing infrastructures with a focus on limitations for processing\nlarge-scale data,\n• an introduction to relevant frameworks for cluster computing with large-scale data,\n• implementation of data analysis tools on a cluster using Python and appropriate\nsoftware frameworks,\n• data structures and algorithms, such as index structures, which can greatly\naccelerate computations with large-scale data",
+    "Sub-courses": "1. Written hall examination (Skriftlig salstentamen), 3 credits\nGrading scale: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)\n2. Assignments (Inlämningsuppgifter), 4.5 credits",
+    "Form of teaching": "Lectures, computer lab sessions, and exercise sessions.\n\nLanguage of instruction: English",
+    "Assessment": "The course is examined by a written hall examination, as well as mandatory written\nassignments, some of which will be carried out individually and others will be carried\nout in groups of normally 2-4 students. There will be non-obligatory individual\nassignments which grant bonus points for the written examination. These bonus points\nare valid for the two next scheduled re- examinations.\n\nA student who has taken two exams in a course or part of a course without obtaining a\npass grade is entitled to the nomination of another examiner. The student needs to\ncontact the department for a new examiner, preferably in writing, and this should be\napproved by the department unless there are special reasons to the contrary (Chapter 6\nSection 22 of the Higher Education Ordinance).\n\nIf a student has received a recommendation from the University of Gothenburg for\nspecial educational support, where it is compatible with the learning outcomes of the\ncourse and provided that no unreasonable resources are required, the examiner may\ndecide to allow the student to sit an adjusted exam or alternative form of assessment.\n\nIn the event that a course has ceased or undergone major changes, students are to be\nguaranteed at least three examination sessions (including the ordinary examination\nsession) over a period of at least one year, but no more than two years, after the course\nhas ceased/been changed. The same applies to placements and professional placements\n(VFU), although this is restricted to just one additional examination session.",
+    "Grades": "The grading scale comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and\nFail (U).\nTo pass the course, all mandatory components must be passed. To earn a higher grade\nthan Pass, a higher weighted average from the grades of the components is required.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between\nteachers and student representatives. Further, an anonymous questionnaire is used to\nensure written information. The outcome of the evaluations serves to improve the\ncourse by indication which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers.\nCourse literature to be announced the latest 8 weeks prior to the start of the course.\nThe course replaces the course DIT065, 7.5 credits. The course cannot be included in a\ndegree which contains DIT065. Neither can the course be included in a degree which is\nbased on another degree in which the course DIT065 is included.\n\nLast modified\n\n\n17 February 2025",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 19 253 SEK\n\nFirst payment: 19 253 SEK\n\n**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)"
+  }
+}

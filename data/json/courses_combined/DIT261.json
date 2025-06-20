@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "source_document": "DIT261.pdf",
+    "course_code": "DIT261",
+    "course_title": "Parallel Functional Programming",
+    "swedish_title": "Parallell Funktionell Programmering",
+    "department": "Computer Science and Engineering",
+    "field_of_education": "Science 100%",
+    "credits": "7.5",
+    "cycle": "Second Cycle",
+    "main_field_of_study": "Computer Science-Algorithms and Logic",
+    "specialization": "A1F, Second cycle, has second-cycle course/s as entry requirements",
+    "language_of_instruction": "English",
+    "confirmation_date": "2012-02-22",
+    "valid_from_date": "2017-08-20",
+    "programmes": [
+      "Computer Science, Master's Programme (N2COS)",
+      "Applied Data Science Master's Programme (N2ADS)"
+    ],
+    "iteration": "Spring 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "24 Mar 2025 - 8 Jun 2025",
+    "application_period": "16 Sep 2024 - 15 Oct 2024",
+    "application_code": "GU-86062",
+    "content_type": "course"
+  },
+  "sections": {
+    "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2012-02-22 and was last revised on 2017-06-16 by Department of Computer Science and Engineering to be valid from 2017-08-20, autumn semester of 2017.",
+    "Position in the educational system": "The course is a part of the Computer Science Master's Programme and a single subject course at the University of Gothenburg\nThe course can be part of the following programmes: 1) Computer Science, Master's Programme (N2COS) and 2) Applied Data Science Master's Programme (N2ADS)",
+    "Entry requirements": "The requirement for the course is to have successfully completed two years within the subject Computer Science or equivalent. The course participants must have completed an introductory course in Functional Programming, preferably using Haskell or Erlang (Examples at GU are DIT440 Introduction to Functional Programming and DIT142 Functional Programming).\n\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completion of the course the student is expected to be albe to:\n\n1. Knowledge and understanding\n- Distinguish between concurrency and parallelism.\n- Give an overview of approaches to parallelism in functional programming languages in the scientific literature.\n\n2. Skills and abilities\n- Write, modify and test parallel functional programs, to run on a variety of architectures such as shared memory multiprocessors, networks of commodity servers, and GPUs.\n- Interpret parallelism profiles and address bottlenecks.\n\n3. Judgement and approach\n- Identify when using a functional language may be appropriate for solving a parallel programming problem.\n- Select an appropriate form of parallel functional programming for a given problem, and explain the choice.",
+    "Course content": "The course introduce the principles and practice of parallel programming in a functional programming language. In this course, the term paralle programming means using multiple hardware cores of processors in order to gain speed. The course covers approaches to parallel fuctional programming in both Haskell and Erlang. It covers curret research on these topics, and relies heavily on scientific papers as its source materials.\n\n- Advantages of functional approaches to parallelism: immutability, absence of data races, determinism.\n- Profiling parallel functional programs: granularity, bottlenecks, locality, data-dependencies.\n- Parallel functional algorithms: divide-and-conquer.\n- Approaches to expressing parallelism in Haskell: the Eval monad, the Par monad, parallel strategies, skeletons, data parallelism.\n- Functional approaches to GPU programming\n- Parallelisation and distribution for Erlang. Scalability. Handling errors in a massively parallel system.\n- Case studies of industrial parallel functional programming, such as map-reduce and scalable no-SQL databases.",
+    "Sub-courses": "",
+    "Form of teaching": "Language of instruction: English",
+    "Assessment": "An individual written examination taken in an examination hall and two compulsory laboratory exercises. The laboratory exercises are normally done in groups of 2.\n\nA student who has failed the examination twice has the right to request of the department a change of examiner. The request is to be in writing and submitted as soon as possible. The department is to grant such a request without delay.\n\nIn cases where a course has been discontinued or major changes have been made a student should be guaranteed at least three examination occasions (including the ordinary examination occasion) during a time of at least one year from the last time the course was given.",
+    "Grades": "The grading scale comprises: Pass with Distinction (VG), Pass (G) and Fail (U).\nIn order to be awarded a Pass (G) for a full course, the laboatory assignments must be approved and a passing mark must be obtained in the written exam. To be awarded Pass with Distinction (VG), the student must receive a VG in the written exam and the laboratory assignments must be approved.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between teachers and student representatives. Further, an anonymous questionnaire can be used to ensure written information. The outcome of the evaluations serves to improve the course by indicating which parts could be added, improved, changed or removed.",
+    "Additional information": "\n\nLast modified: 15 January 2025",
+    "Selection": "Selection is based upon the number of credits from previous university studies, maximum 285 credits",
+    "Tuition": "Full education cost: 19 253 SEK\n\nFirst payment: 19 253 SEK\n\n**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)"
+  }
+}

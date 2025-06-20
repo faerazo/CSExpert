@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "source_document": "MSG501.md",
+    "course_code": "MSG501",
+    "course_title": "Statistical learning with regression models",
+    "swedish_title": "Statistisk inlärning med regressionsmodeller",
+    "department": "Department of Mathematical Sciences",
+    "credits": "7.5",
+    "cycle": "First cycle",
+    "language_of_instruction": "English",
+    "confirmation_date": "2025-01-17",
+    "valid_from_date": "HT 2025",
+    "programmes": [
+      "Mathematical Sciences, Master's Programme (N2MAT)",
+      "Matematikprogrammet (N1MAT)",
+      "Applied Data Science Master's Programme (N2ADS)"
+    ],
+    "iteration": "Autumn 2025",
+    "study_pace": "50%",
+    "time": "Day",
+    "location": "Göteborg",
+    "study_form": "Campus",
+    "duration": "5 Nov 2025 - 18 Jan 2026",
+    "application_period": "17 Mar 2025 - 15 Apr 2025",
+    "application_code": "GU-17033",
+    "content_type": "course"
+  },
+  "sections": {
+    "Position in the educational system": "The course can be taken by students enrolled in Matematikprogrammet and it can also be taken as a stand-alone course by students who meet the prerequisites.\n\nThe course can be included in the following programmes: 1) Mathematical Sciences, Master's Programme (N2MAT), 2) Matematikprogrammet (N1MAT) and 3) Applied Data Science Master's Programme (N2ADS).",
+    "Entry requirements": "MSG100/MSG110 and MSG200 or other courses covering the material of these courses.",
+    "Learning outcomes": "Having passed the course, the student should be able to:\n\n- describe the common mathematical structure of linear regression models and generalised linear models;\n- construct and use these models for data analysis using statistical inference and appropriate software;\n- interpret the results and recognise the limitations of the models;\n- identify situations in which linear models can be applied, estimate and interpret parameters, predict future values and test hypotheses using appropriate software, e.g. R;\n- construct regression models that fit current data and can be generalised to future observations;\n- explain model limitations and identify situations where the proposed model is not appropriate given the data.",
+    "Course content": "The course covers the following:\n\n- Simple linear models, multivariate linear models and underlying assumptions\n- Trade-off between variance and bias\n- Properties of least squares estimators\n- Identification of outliers, and the use of residuals and other measures to verify that model assumptions are met\n- The use of categorical covariates in regression\n- The testing of parameters using t-tests\n- Goodness-of-fit measures such as R2 and modified R2\n- Confidence and prediction intervals\n- The multicolinearity problem\n- Model selection using greedy algorithms and AIC\n- Model selection using partial F-tests\n- Prediction error and cross-validation\n- Interaction between covariates\n- An introduction to generalised linear models, the exponential family and asymptotic properties of MLE estimators\n- Test procedures for generalised linear models",
+    "Sub-courses": "Statistical learning with regression models, 7.5 Credits",
+    "Form of teaching": "Lectures, weekly (or almost weekly) mini-projects and presentations.",
+    "Assessment": "Summary report of the weekly mini-projects, a final project report and a written exam. Attendance at the weekly presentations of the mini-analyses is mandatory. See the course website for information on how to compensate for absences.\n\nIf a student who has been failed twice for the same examination element wishes to change examiner before the next examination session, such a request is to be granted unless there are specific reasons to the contrary (Chapter 6 Section 22 HF).\n\nIf a student has received a certificate of disability study support from the University of Gothenburg with a recommendation of adapted examination and/or adapted forms of assessment, an examiner may decide, if this is consistent with the course’s intended learning outcomes and provided that no unreasonable resources would be needed, to grant the student adapted examination and/or adapted forms of assessment.\n\nIf a course has been discontinued or undergone major changes, the student must be offered at least two examination sessions in addition to ordinary examination sessions. These sessions are to be spread over a period of at least one year but no more than two years after the course has been discontinued/changed. The same applies to placement and internship (VFU) except that this is restricted to only one further examination session.\n\nIf a student has been notified that they fulfil the requirements for being a student at Riksidrottsuniversitetet (RIU student), to combine elite sports activities with studies, the examiner is entitled to decide on adaptation of examinations if this is done in accordance with the Local rules regarding RIU students at the University of Gothenburg.",
+    "Grades": "The grades that can be obtained in the course are Pass with distinction (VG), Pass (G) and Fail (U).",
+    "Course evaluation": "A course evaluation is done through an anonymous survey and/or through interviews with student representatives. The results of and possible changes to the course will be shared with students who participated in the evaluation and students who are starting the course.",
+    "Additional information": "\n\nLast modified 7 March 2025",
+    "Selection": "All eligible applicants who have applied before the deadline will be granted a place.",
+    "Tuition": "Full education cost: 17 753 SEK\n\nFirst payment: 17 753 SEK\n\n**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.\n\n[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)"
+  }
+}

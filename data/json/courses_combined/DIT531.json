@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "source_document": "DIT531.md",
+    "course_code": "DIT531",
+    "course_title": "Emerging trends and critical topics in interaction design",
+    "swedish_title": "Trender och kritiska perspektiv inom interaktionsdesign",
+    "department": "Department of Computer Science and Engineering",
+    "credits": "7.5",
+    "cycle": "Second cycle",
+    "language_of_instruction": "English",
+    "confirmation_date": "2024-11-21",
+    "valid_from_date": "Autumn term 2025",
+    "programmes": [
+      "Game Design and Technology, masters programme (N2GDT)",
+      "Software Engineering and Management, masters programme (N2SOF)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Position in the educational system": "The course can be part of the following programmes:\n\n1. Game Design and Technology, masters programme (N2GDT)\n2. Software Engineering and Management, masters programme (N2SOF)",
+    "Entry requirements": "General entry requirements for Master's level (second cycle).\n\nApplicants must prove knowledge of English: English 6/English B or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.",
+    "Learning outcomes": "After completion of the course the student should be able to:\n\n**_Knowledge and understanding_**\n\n- get familiar with and get insights into current trends in interaction design.\n- get familiar with and get insights into novel technological solutions relevant for interaction design.\n\n**_Skills and abilities_**\n\n- analyze, discuss and sketch designs in relation to a certain trend.\n- analyze, discuss and sketch the use of novel technical solutions.\n- read, analyze and extract relevant content from academic literature.\n\n**_Judgement and approach_**\n\n- Discuss societal and ethical consequences of a certain trend, design or technical solution.",
+    "Course content": "Current trends in interaction design.\n\nTechnology trends relevant for interaction design.\n\nDifferent views and approaches in regard to trends and technologies.\n\nSystematic and practical exploration and communication of ideas within a design space.\n\nReading and understanding of academic literature and search for the current state of the art and practice presented on the web and in the media.",
+    "Sub-courses": "Project, 4.5 Credits\n\nAssignments, 3 Credits",
+    "Form of teaching": "The course consists of lectures, group work and seminars, where students are expected to participate actively. It contains a mandatory, individual design project that runs throughout the course.",
+    "Assessment": "The course is examined partly by written or oral assignments, and partly via a design project running through the course.\n\nIf a student who has been failed twice for the same examination element wishes to change examiner before the next examination session, such a request is to be granted unless there are specific reasons to the contrary (Chapter 6 Section 22 HF).\n\nIf a student has received a certificate of disability study support from the University of Gothenburg with a recommendation of adapted examination and/or adapted forms of assessment, an examiner may decide, if this is consistent with the course’s intended learning outcomes and provided that no unreasonable resources would be needed, to grant the student adapted examination and/or adapted forms of assessment.\n\nIf a course has been discontinued or undergone major changes, the student must be offered at least two examination sessions in addition to ordinary examination sessions. These sessions are to be spread over a period of at least one year but no more than two years after the course has been discontinued/changed. The same applies to placement and internship (VFU) except that this is restricted to only one further examination session.\n\nIf a student has been notified that they fulfil the requirements for being a student at Riksidrottsuniversitetet (RIU student), to combine elite sports activities with studies, the examiner is entitled to decide on adaptation of examinations if this is done in accordance with the Local rules regarding RIU students at the University of Gothenburg.",
+    "Grades": "Sub-courses\n\n1. **Project**, 4.5 credits\n\n\nGrading scale: Pass (G) and Fail (U)\n2. **Assignments**, 3 credits\n\n\nGrading scale: Pass (G) and Fail (U)\n\nThe grading scale for the whole course comprises: Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U).\n\nThe course is examined partly by written or oral assignments, and partly via a design project running through the course. In order to pass the course, both these parts must be passed.",
+    "Course evaluation": "The course is evaluated through meetings both during and after the course between teachers and student representatives. Further, an anonymous questionnaire is used to ensure written information. The outcome of the evaluations serves to improve the course by indication which parts could be added, improved, changed or removed.",
+    "Additional information": "The course is a joint course together with Chalmers."
+  }
+}

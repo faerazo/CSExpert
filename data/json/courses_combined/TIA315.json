@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "source_document": "TIA315.md",
+    "course_code": "TIA315",
+    "course_title": "Technology",
+    "swedish_title": "Teknologi",
+    "department": "Department of Applied Information Technology",
+    "credits": "7.5",
+    "cycle": "Second cycle",
+    "language_of_instruction": "English",
+    "confirmation_date": "2024-06-10",
+    "valid_from_date": "Autumn Semester 2024",
+    "programmes": [
+      "Digital Leadership Master's Programme (N2DIG)"
+    ],
+    "content_type": "course"
+  },
+  "sections": {
+    "Position in the educational system": "The course is a compulsory course in Digital Leadership Master's Programme (N2DIG).",
+    "Entry requirements": "Bachelor’s degree 180 credits including an independent project (degree project) of at least 15 credits or equivalent and English 6/English B from Swedish Upper Secondary School or equivalent.",
+    "Learning outcomes": "On successful completion of the course the student will be able to:\n\n_Knowledge and understanding_\n\n1. explain the notion of digitalization and compare it with digitization;\n\n2. explain the idea of material agency and relate it to human agency;\n\n_Competence and skills_\n\n3. assess the generative capacity of a digital innovation environment;\n\n_Judgement and approach_\n\n4. compare and distinguish the materiality of digital and non-digital technology;\n\n5. evaluate generative features of digital artifact designs.",
+    "Course content": "Digital leaders have to make sense of a broad range of interrelated and rapidly evolving subjects, including product design, organizing, governance, and strategizing. In many respects, digital leadership is a social skill. At the same time, the digital economy makes social and technological matters deeply intertwined. Platforms and infrastructures define how we socialize, purchase, work, exercise, etc. Therefore, digital leadership skills require an understanding for the basic premises of digital technology and how they shape human action.\n\nThis introductory course discusses what digital technology is, what unique properties it hold, and how these properties can be creatively leveraged for design and innovation. It puts particular emphasis on the concept of generativity. The overall objective is to set the stage for coming program courses, introduce key concepts, and offer hands-on design experience of digital technology. However, the course also aims to make the subject of technology less ‘dramatic’ and build self-confidence among students.",
+    "Sub-courses": "Technology, 7.5 Credits",
+    "Form of teaching": "The course includes lectures, seminars, and workshops, and relies on formative as well as summative assessment. Students are expected to engage actively in discussions and contribute to their own and other students’ learning. A blend of in-person and online teaching is used.\n\nTo underline that digital innovation is a practical endeavor, the course includes a design task were students collaboratively explore the materiality of digital technology. It is primarily a formative assignment, where student engage with and recombine digital artifacts to get first-hand experience of generativity.\n\nLanguage of instruction: English",
+    "Assessment": "The course relies on recurring formative tests, integrated in each module. These test are limited in scope and given in relation to readings, lectures, and group discussions. They are designed to capture learning outcomes: #1, #2, #3, #4.\n\nThe design task makes a second form of assessment. The design process will be examined in relation to assignment instructions. This examination is designed to capture learning outcomes: #3, #4, #5.\n\nFinally, the course includes a summative, final examination. This assessment is implemented as a combination of multiple-choice questions and open questions. It is designed to capture all learning outcomes.\n\nIf a student who has twice received a failing grade for the same examination component wishes to change examiner ahead of the next examination session, such a request should be made to the department in writing and should be approved by the department unless there are special reasons to the contrary (Chapter 6 Section 22 of the Higher Education Ordinance).\n\nIf a student has received a recommendation from the University of Gothenburg for study support for students with disabilities, the examiner may, where it is compatible with the learning outcomes of the course and provided that no unreasonable resources are required, decide to allow the student to sit an adjusted exam or alternative form of assessment.\n\nIn the event that a course has ceased or undergone major changes, students are to be guaranteed at least three examination sessions (including the ordinary examination session) over a period of at least one year, but no more than two years after the course has ceased/been changed. The same applies to internships and professional placements (VFU), although this is restricted to just one additional examination session.",
+    "Grades": "The grading scale comprises: Pass (G) and Fail (U). For the grade Pass on the course, Pass is required on all assignments.",
+    "Course evaluation": "After completion of the course the students are to be given the opportunity to participate in a course evaluation electronically. The result of the course evaluation is to be made accessible to the students. The next time the course is given the processed result of the course evaluation is to be presented to the students including possible changes brought about as a result of the course evaluation.",
+    "Additional information": "The course cannot be included in a degree together with the course TIA301 Technology, 7,5 hp."
+  }
+}
