@@ -1,13 +1,11 @@
 Menu
 
-[University of Gothenburg](/en)
+[University of Gothenburg](https://www.gu.se/en)
 
-- [Listen](//app-eu.readspeaker.com/cgi-bin/rsent?customerid=9467&lang=en_uk&readclass=region--content&url=https%3A%2F%2Fwww.gu.se%2Fen%2Fstudy-gothenburg%2Fcomputer-science-masters-programme-n2cos%2Fsyllabus%2Ff9915049-2d48-11ef-a2a0-4c1db4504bb5 "Listen with ReadSpeaker")
+- [Contact](https://www.gu.se/en/contact)
 
-- [Contact](/en/contact)
-
-- - [Svenska](/studera/hitta-utbildning/computer-science-masters-programme-n2cos/utbildningsplan/f9915049-2d48-11ef-a2a0-4c1db4504bb5)
-- [International website](/en/study-gothenburg/computer-science-masters-programme-n2cos/syllabus/f9915049-2d48-11ef-a2a0-4c1db4504bb5)
+- - [Svenska](https://www.gu.se/studera/hitta-utbildning/computer-science-masters-programme-n2cos/utbildningsplan/f9915049-2d48-11ef-a2a0-4c1db4504bb5)
+- [English](https://www.gu.se/en/study-gothenburg/computer-science-masters-programme-n2cos/syllabus/f9915049-2d48-11ef-a2a0-4c1db4504bb5)
 
 Search
 
@@ -39,7 +37,7 @@ N2COS
 
 
 Go to
-[Computer Science, Master's Programme](/en/study-gothenburg/computer-science-masters-programme-n2cos)
+[Computer Science, Master's Programme](https://www.gu.se/en/study-gothenburg/computer-science-masters-programme-n2cos)
 
 ## About the Syllabus
 
@@ -78,8 +76,6 @@ Decision maker
 
 Dean of the Faculty
 
-
-## Specialisations
 
 ## Purpose
 

@@ -1,13 +1,11 @@
 Menu
 
-[University of Gothenburg](/en)
+[University of Gothenburg](https://www.gu.se/en)
 
-- [Listen](//app-eu.readspeaker.com/cgi-bin/rsent?customerid=9467&lang=en_uk&readclass=region--content&url=https%3A%2F%2Fwww.gu.se%2Fen%2Fstudy-gothenburg%2Fsoftware-engineering-and-management-masters-programme-n2sof "Listen with ReadSpeaker")
+- [Contact](https://www.gu.se/en/contact)
 
-- [Contact](/en/contact)
-
-- - [Svenska](/studera/hitta-utbildning/software-engineering-and-management-masterprogram-n2sof)
-- [International website](/en/study-gothenburg/software-engineering-and-management-masters-programme-n2sof)
+- - [Svenska](https://www.gu.se/studera/hitta-utbildning/software-engineering-and-management-masterprogram-n2sof)
+- [English](https://www.gu.se/en/study-gothenburg/software-engineering-and-management-masters-programme-n2sof)
 
 Search
 
@@ -24,13 +22,15 @@ Search
 
 Bild
 
-![The student Tobias from the oftware Engineering and Management Master’s Programme](/sites/default/files/styles/100_10_3_xmedium_1x/public/kop_assets/0ef2949a14f93d2db9bab3254e9f9466898d2a25.jpg?h=b5f6a62e&itok=_jqsBuEU)
+![The student Tobias from the oftware Engineering and Management Master’s Programme](https://www.gu.se/sites/default/files/styles/100_10_3_xmedium_1x/public/kop_assets/0ef2949a14f93d2db9bab3254e9f9466898d2a25.jpg?h=b5f6a62e&itok=_jqsBuEU)
+
+Photo: Medieteknik
 
 Breadcrumb
 
-1. [Home](/en)
-2. [Study](/en/study-in-gothenburg)
-3. [Programmes and courses](/en/study-in-gothenburg/study-options)
+1. [Home](https://www.gu.se/en)
+2. [Study](https://www.gu.se/en/study-in-gothenburg)
+3. [Programmes and courses](https://www.gu.se/en/study-in-gothenburg/study-options)
 4. Software Engineering and Management Master's Programme
 
 
@@ -52,138 +52,11 @@ N2SOF
 
 
 
+
 Offered by the
 [Department of Computer Science and Engineering](https://www.gu.se/en/computer-science-engineering)
-at
+at the
 [Faculty of Science and Technology](https://www.gu.se/en/science-and-technology)
-
-## Autumn 2024
-
-Study pace
-
-
-100%
-
-Time
-
-
-Day
-
-Location
-
-
-Göteborg
-
-Study form
-
-
-Campus
-
-Language
-
-
-English
-
-Duration
-
-
-2 Sep 2024
-\- 7 Jun 2026
-
-Application period
-
-
-16 Oct 2023
-\- 15 Jan 2024
-
-Application code
-
-
-GU-6A86D
-
-Curriculum
-
-
-- [Syllabus (pdf)](https://www.gu.se/sites/default/files/2023-10/N2SOF_Utbildningsplan%20%28en%29%5B50%5D.pdf)
-
-
-Tuition
-
-
-Full education cost: 308 000 SEK
-
-First payment: 77 000 SEK
-
-**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.
-
-[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)
-
-Application closed
-
-
-* * *
-
-Study pace
-
-
-100%
-
-Time
-
-
-Day
-
-Location
-
-
-Göteborg
-
-Study form
-
-
-Campus
-
-Language
-
-
-English
-
-Duration
-
-
-2 Sep 2024
-\- 7 Jun 2026
-
-Application period
-
-
-15 Mar 2024
-\- 15 Apr 2024
-
-Application code
-
-
-GU-1A86D
-
-Curriculum
-
-
-- [Syllabus (pdf)](https://www.gu.se/sites/default/files/2023-10/N2SOF_Utbildningsplan%20%28en%29%5B50%5D.pdf)
-
-
-Tuition
-
-
-Full education cost: 308 000 SEK
-
-First payment: 77 000 SEK
-
-**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.
-
-[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)
-
-Application closed
-
 
 ## Autumn 2025
 
@@ -246,9 +119,8 @@ First payment: 71 010 SEK
 
 [More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)
 
-[Apply on University \\
-\\
-Admissions](https://www.universityadmissions.se/intl/addtobasket?id=GU-86006&period=HT+2025)
+Application closed
+
 
 * * *
 
@@ -311,7 +183,7 @@ First payment: 71 010 SEK
 
 [More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)
 
-Application opens 17 March 2025
+Application closed
 
 
 ## Summary
@@ -398,19 +270,19 @@ The master's programme is given by the Department of Computer Science and Engine
 
 ## Study at The University of Gothenburg
 
-[![](/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2020-03/cytonn-photography-ZJEKICY5EXY-unsplash.jpg?media_id=2553&width=1904&height=208)\\
+[![](https://www.gu.se/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2020-03/cytonn-photography-ZJEKICY5EXY-unsplash.jpg?media_id=2553&width=1904&height=208)\\
 \\
 How to apply \\
 \\
 \\
-To be admitted to the University, you need to do an online application. The application procedure is straightforward, but it…](/en/study-in-gothenburg/apply)
+To be admitted to the University, you need to do an online application. The application procedure is straightforward, but it…](https://www.gu.se/en/study-in-gothenburg/apply)
 
-[![](/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2024-01/GU-7.jpg?media_id=95188&width=1904&height=208)\\
+[![](https://www.gu.se/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2024-01/GU-7.jpg?media_id=95188&width=1904&height=208)\\
 \\
 Scholarships for fee paying students\\
 \\
 \\
-A scholarship can help cover the costs of your studies at the University of Gothenburg. On these pages, you will find…](/en/study-in-gothenburg/apply/scholarships-for-fee-paying-students)
+A scholarship can help cover the costs of your studies at the University of Gothenburg. On these pages, you will find…](https://www.gu.se/en/study-in-gothenburg/apply/scholarships-for-fee-paying-students)
 
 [University studies in Sweden External link](https://www.gu.se/en/study-in-gothenburg/before-you-arrive/university-studies-in-sweden "External link")
 
@@ -419,4 +291,4 @@ A scholarship can help cover the costs of your studies at the University of Goth
 Last modified
 
 
-3 October 2024
+26 May 2025

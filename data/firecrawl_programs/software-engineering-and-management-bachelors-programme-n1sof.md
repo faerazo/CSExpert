@@ -1,13 +1,11 @@
 Menu
 
-[University of Gothenburg](/en)
+[University of Gothenburg](https://www.gu.se/en)
 
-- [Listen](//app-eu.readspeaker.com/cgi-bin/rsent?customerid=9467&lang=en_uk&readclass=region--content&url=https%3A%2F%2Fwww.gu.se%2Fen%2Fstudy-gothenburg%2Fsoftware-engineering-and-management-bachelors-programme-n1sof "Listen with ReadSpeaker")
+- [Contact](https://www.gu.se/en/contact)
 
-- [Contact](/en/contact)
-
-- - [Svenska](/studera/hitta-utbildning/software-engineering-and-management-kandidatprogram-n1sof)
-- [International website](/en/study-gothenburg/software-engineering-and-management-bachelors-programme-n1sof)
+- - [Svenska](https://www.gu.se/studera/hitta-utbildning/software-engineering-and-management-kandidatprogram-n1sof)
+- [English](https://www.gu.se/en/study-gothenburg/software-engineering-and-management-bachelors-programme-n1sof)
 
 Search
 
@@ -24,13 +22,15 @@ Search
 
 Bild
 
-![Students in a classroom in front of their computers](/sites/default/files/styles/100_10_3_xmedium_1x/public/kop_assets/e999946f931de45fa1620714b79f1ef8e3706c2d.jpg?h=7757323e&itok=RBNKVQFJ)
+![Students in a classroom in front of their computers](https://www.gu.se/sites/default/files/styles/100_10_3_xmedium_1x/public/kop_assets/167bcb86382cdb6211046090f1268c85e78216a8.jpg?h=1db9d5f5&itok=7b-xDGUf)
+
+Photo: Medieteknik
 
 Breadcrumb
 
-1. [Home](/en)
-2. [Study](/en/study-in-gothenburg)
-3. [Programmes and courses](/en/study-in-gothenburg/study-options)
+1. [Home](https://www.gu.se/en)
+2. [Study](https://www.gu.se/en/study-in-gothenburg)
+3. [Programmes and courses](https://www.gu.se/en/study-in-gothenburg/study-options)
 4. Software Engineering and Management Bachelor's Programme
 
 
@@ -52,138 +52,11 @@ N1SOF
 
 
 
+
 Offered by the
 [Department of Computer Science and Engineering](https://www.gu.se/en/computer-science-engineering)
-at
+at the
 [Faculty of Science and Technology](https://www.gu.se/en/science-and-technology)
-
-## Autumn 2024
-
-Study pace
-
-
-100%
-
-Time
-
-
-Day
-
-Location
-
-
-Göteborg
-
-Study form
-
-
-Campus
-
-Language
-
-
-English
-
-Duration
-
-
-2 Sep 2024
-\- 6 Jun 2027
-
-Application period
-
-
-16 Oct 2023
-\- 15 Jan 2024
-
-Application code
-
-
-GU-6G86A
-
-Curriculum
-
-
-- [Syllabus (pdf)](https://www.gu.se/sites/default/files/2023-09/GU2023-1727_faststa%CC%88lld_utbildningsplan_N1SOF_220616_eng%5B2%5D.pdf)
-
-
-Tuition
-
-
-Full education cost: 462 000 SEK
-
-First payment: 77 000 SEK
-
-**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.
-
-[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)
-
-Application closed
-
-
-* * *
-
-Study pace
-
-
-100%
-
-Time
-
-
-Day
-
-Location
-
-
-Göteborg
-
-Study form
-
-
-Campus
-
-Language
-
-
-English
-
-Duration
-
-
-2 Sep 2024
-\- 6 Jun 2027
-
-Application period
-
-
-15 Mar 2024
-\- 15 Apr 2024
-
-Application code
-
-
-GU-1G86B
-
-Curriculum
-
-
-- [Syllabus (pdf)](https://www.gu.se/sites/default/files/2023-09/GU2023-1727_faststa%CC%88lld_utbildningsplan_N1SOF_220616_eng%5B2%5D.pdf)
-
-
-Tuition
-
-
-Full education cost: 462 000 SEK
-
-First payment: 77 000 SEK
-
-**No fees** are charged for EU and EEA citizens, Swedish residence permit holders and exchange students.
-
-[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)
-
-Application closed
-
 
 ## Autumn 2025
 
@@ -246,9 +119,8 @@ First payment: 71 010 SEK
 
 [More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)
 
-[Apply on University \\
-\\
-Admissions](https://www.universityadmissions.se/intl/addtobasket?id=GU-86010&period=HT+2025)
+Application closed
+
 
 * * *
 
@@ -311,7 +183,7 @@ First payment: 71 010 SEK
 
 [More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)
 
-Application opens 17 March 2025
+Application closed
 
 
 ## Summary
@@ -334,7 +206,7 @@ The programme has a tight relationship to the software industry, which is an imp
 
 You will be trained to take responsibility for your learning, and the teachers, supervisors, and the educational environment are all resources in this process. The programme is open to students from around the world, and we embrace the influence of this international group of students. We take pride in standing out among other bachelor’s programmes by offering ours completely in English, and our international environment—with teachers and students from all over the world—will prepare you for master’s studies in various fields or a career in industry, in Sweden or internationally.
 
-[Watch a film about the programme](https://www.youtube.com/watch?v=UENfFCzhZNM)
+[Watch a film about the programme](https://play.gu.se/media/Improve%20the%20world%20with%20software/0_5hz34q2l)
 
 [Student interviews](https://www.gu.se/en/study-gothenburg/student-interviews-software-engineering-and-management)
 
@@ -342,7 +214,7 @@ You will be trained to take responsibility for your learning, and the teachers, 
 
 In a hackathon, students and professionals come together in teams to create and build software solutions to cases provided by the organizer. You can participate in hackathons as an extracurricular activity, providing you an opportunity to practice and test your knowledge on real-world cases in collaboration with companies and non-profit organizations.
 
-[Read more about hackathons](http://www.gu.se/en/study-gothenburg/hackathons)
+[Read more about hackathons](https://www.gu.se/en/study-gothenburg/hackathons)
 
 ## Programme structure and content
 
@@ -385,7 +257,15 @@ English 6, Mathematics 3b or 3c
 
 ### Selection
 
-Selection is based upon your average grade from upper secondary school (66 %) and Högskoleprovet - Swedish Scholastic Aptitude Test (33 %)
+Selection is based upon:
+
+\- your average grade from upper-secondary school (allocated to 66% of seats)
+
+\- the Swedish Scholastic Aptitude Test (SweSAT) (allocated to 34% of seats)
+
+Please note that the SweSAT is a test only available in Swedish and is in no way mandatory for admission.
+
+More information can be found here: [Selection process bachelor’s](https://www.universityadmissions.se/en/selection-and-admissions-results/selection-process-bachelors/)
 
 ## After graduation
 
@@ -411,49 +291,49 @@ Gothenburg.
 
 There is  an opportunity in term five to study abroad in Europe, Asia, or the US. All other term courses are mandatory.
 
-[![](/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2020-09/mika-baumeister-J5yoGZLdpSI-unsplash.jpg?media_id=19403&width=1904&height=208)\\
-\\
-Read more about hackathons\\
-\\
-\\
-In a hackathon programmers, developers and designers come together to work in teams to build solutions to cases provided by…](/en/study-gothenburg/hackathons)
-
-[![](/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2020-03/CSE-DV-student.jpg?media_id=2545&width=1904&height=208)\\
-\\
-After graduation\\
-\\
-\\
-Graduates of the programme receive the Degree of Bachelor of Science with a major in Software Engineering.](/en/study-gothenburg/n1sof-after-graduation)
-
-[![](/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2020-10/DSC06756_72ppi.jpg?media_id=23020&width=1904&height=208)\\
+[![](https://www.gu.se/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2025-01/Screenshot%202025-01-09%20at%2016.18.59.png?media_id=151840&width=1904&height=208)\\
 \\
 Student interviews\\
 \\
 \\
-What do our current and former students in the Software Engineering and Management Bachelor's programme think of their…](/en/study-gothenburg/student-interviews-software-engineering-and-management)
+What do our current and former students in the Software Engineering and Management Bachelor's programme think of their…](https://www.gu.se/en/study-gothenburg/student-interviews-software-engineering-and-management)
 
-[![](/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2020-06/lindholmen-science-park_0.jpg?media_id=11611&width=1904&height=208)\\
+[![](https://www.gu.se/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2020-09/mika-baumeister-J5yoGZLdpSI-unsplash.jpg?media_id=19403&width=1904&height=208)\\
+\\
+Read more about hackathons\\
+\\
+\\
+In a hackathon programmers, developers and designers come together to work in teams to build solutions to cases provided by…](https://www.gu.se/en/study-gothenburg/hackathons)
+
+[![](https://www.gu.se/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2020-03/CSE-DV-student.jpg?media_id=2545&width=1904&height=208)\\
+\\
+After graduation\\
+\\
+\\
+Graduates of the programme receive the Degree of Bachelor of Science with a major in Software Engineering.](https://www.gu.se/en/study-gothenburg/n1sof-after-graduation)
+
+[![](https://www.gu.se/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2020-06/lindholmen-science-park_0.jpg?media_id=11611&width=1904&height=208)\\
 \\
 Collaboration with software companies\\
 \\
 \\
-One of the main ideas in the Bachelor's programme Software Engineering and Management is collaboration, and the students are…](/en/study-gothenburg/collaboration-with-software-companies-an-important-part-of-the-education)
+One of the main ideas in the Bachelor's programme Software Engineering and Management is collaboration, and the students are…](https://www.gu.se/en/study-gothenburg/collaboration-with-software-companies-an-important-part-of-the-education)
 
 ## Study at The University of Gothenburg
 
-[![](/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2020-03/cytonn-photography-ZJEKICY5EXY-unsplash.jpg?media_id=2553&width=1904&height=208)\\
+[![](https://www.gu.se/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2020-03/cytonn-photography-ZJEKICY5EXY-unsplash.jpg?media_id=2553&width=1904&height=208)\\
 \\
 How to apply \\
 \\
 \\
-To be admitted to the University, you need to do an online application. The application procedure is straightforward, but it…](/en/study-in-gothenburg/apply)
+To be admitted to the University, you need to do an online application. The application procedure is straightforward, but it…](https://www.gu.se/en/study-in-gothenburg/apply)
 
-[![](/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2024-01/GU-7.jpg?media_id=95188&width=1904&height=208)\\
+[![](https://www.gu.se/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2024-01/GU-7.jpg?media_id=95188&width=1904&height=208)\\
 \\
 Scholarships for fee paying students\\
 \\
 \\
-A scholarship can help cover the costs of your studies at the University of Gothenburg. On these pages, you will find…](/en/study-in-gothenburg/apply/scholarships-for-fee-paying-students)
+A scholarship can help cover the costs of your studies at the University of Gothenburg. On these pages, you will find…](https://www.gu.se/en/study-in-gothenburg/apply/scholarships-for-fee-paying-students)
 
 [University studies in Sweden External link](https://www.gu.se/en/study-in-gothenburg/before-you-arrive/university-studies-in-sweden "External link")
 
@@ -462,4 +342,4 @@ A scholarship can help cover the costs of your studies at the University of Goth
 Last modified
 
 
-19 November 2024
+26 May 2025
