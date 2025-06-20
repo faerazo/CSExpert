@@ -114,9 +114,10 @@ class RAGConfig:
     ]
     
     # === DEFAULT JSON DIRECTORIES ===
+    # Use absolute path based on this file's location to avoid working directory issues
+    _BASE_DIR = Path(__file__).parent.parent  # Go up from backend/ to project root
     DEFAULT_JSON_DIRS = {
-        "courses_syllabus": "data/json/courses_syllabus",
-        "course_webpages": "data/json/course_webpages"
+        "courses_combined": str(_BASE_DIR / "data" / "json" / "courses_combined")
     }
     
     @classmethod

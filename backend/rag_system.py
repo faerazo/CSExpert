@@ -17,6 +17,7 @@ from config import RAGConfig
 from rate_limiter import RateLimiter, RateLimitInfo
 # LangChain imports
 from langchain_community.document_loaders import JSONLoader
+from langchain_community.vectorstores.utils import filter_complex_metadata
 # RecursiveCharacterTextSplitter removed - using natural section-based chunking
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain_chroma import Chroma
@@ -26,7 +27,7 @@ from langchain_core.documents import Document
 from langchain_core.output_parsers import StrOutputParser
 
 # Load environment variables
-load_dotenv(dotenv_path="../.env")  # Look for .env file in parent directory
+load_dotenv()  # Automatically search for .env file
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -376,6 +377,27 @@ Be prepared to address:
         logger.info(f"Loaded {len(all_documents)} documents total")
         return all_documents
 
+    def _ensure_chroma_compatible_metadata(self, metadata: Dict) -> Dict:
+        """Ensure all metadata values are ChromaDB compatible (str, int, float, bool, None only)."""
+        compatible_metadata = {}
+        
+        for key, value in metadata.items():
+            if value is None:
+                compatible_metadata[key] = None
+            elif isinstance(value, (str, int, float, bool)):
+                compatible_metadata[key] = value
+            elif isinstance(value, list):
+                # Convert lists to comma-separated strings
+                compatible_metadata[key] = ", ".join(str(item) for item in value) if value else ""
+            elif isinstance(value, dict):
+                # Convert dicts to JSON strings (though we shouldn't have dicts in our data)
+                compatible_metadata[key] = str(value)
+            else:
+                # Convert everything else to string
+                compatible_metadata[key] = str(value)
+        
+        return compatible_metadata
+
     def _load_single_json_file(self, json_file: Path, doc_type: str) -> List[Document]:
         """Load a single JSON file and create section-based documents (no artificial chunking)."""
         documents = []
@@ -401,9 +423,17 @@ Be prepared to address:
             "main_field_of_study": metadata.get("main_field_of_study", ""),
             "specialization": metadata.get("specialization", ""),
             "programmes": ", ".join(metadata.get("programmes", [])) if isinstance(metadata.get("programmes"), list) else metadata.get("programmes", ""),
-            # Add all original metadata for rich filtering capabilities
-            **{k: v for k, v in metadata.items() if k not in ["programmes"]}  # Avoid duplicate programmes
         }
+        
+        # Add remaining metadata, converting lists to strings
+        for k, v in metadata.items():
+            if k not in base_metadata:  # Don't duplicate
+                if isinstance(v, list):
+                    # Convert lists to comma-separated strings
+                    base_metadata[k] = ", ".join(str(item) for item in v) if v else ""
+                elif v is not None:
+                    base_metadata[k] = str(v)
+                # Skip None values to keep metadata clean
         
         # === SECTION-BASED CHUNKING (Like gemini_rag.py) ===
         # Each section becomes a separate, focused document
@@ -428,6 +458,10 @@ Section: {section_name}
                     "section_type": "content"
                 })
                 
+                # Ensure ChromaDB compatibility
+                section_metadata = self._ensure_chroma_compatible_metadata(section_metadata)
+                
+                # Create document with compatible metadata
                 doc = Document(
                     page_content=section_text,
                     metadata=section_metadata
@@ -533,7 +567,7 @@ Section: {section_name}
                         
                         logger.info(f"📝 Will embed {len(documents_to_add)} new documents out of {len(documents)} total")
                         
-                        # Add only new documents
+                        # Add only new documents (metadata already ChromaDB-compatible)
                         self.vector_store.add_documents(documents_to_add)
                         final_count = len(self.vector_store.get()['ids'])
                         
@@ -552,7 +586,7 @@ Section: {section_name}
                 logger.info("Creating fresh vector store...")
         
         # === FALLBACK: CREATE FRESH VECTOR STORE ===
-        # Create vector store with the naturally chunked sections
+        # Create vector store with the naturally chunked sections (metadata already compatible)
         self.vector_store = Chroma.from_documents(
             documents=documents,
             embedding=self.embeddings,

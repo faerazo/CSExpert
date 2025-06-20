@@ -13,7 +13,7 @@ import uvicorn
 from dotenv import load_dotenv
 
 # Load environment variables from parent directory
-load_dotenv(dotenv_path="../.env")
+load_dotenv()
 
 from rag_system import GothenburgUniversityRAG
 from config import RAGConfig
@@ -57,11 +57,8 @@ async def initialize_rag_system():
         config_summary = RAGConfig.get_config_summary()
         logger.info(f"📊 Configuration: {config_summary}")
         
-        # Initialize with relative paths from backend directory
-        json_dirs = {
-            "courses_syllabus": "../data/json/courses_syllabus",
-            "course_webpages": "../data/json/course_webpages"
-        }
+        # Use the configured JSON directories from RAGConfig
+        json_dirs = RAGConfig.DEFAULT_JSON_DIRS
         
         # Initialize with default client ID for startup
         rag_system = GothenburgUniversityRAG(json_dirs=json_dirs, client_id="system")
