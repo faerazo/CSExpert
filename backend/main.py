@@ -16,6 +16,8 @@ from dotenv import load_dotenv
 load_dotenv(dotenv_path="../.env")
 
 from rag_system import GothenburgUniversityRAG
+from config import RAGConfig
+from rate_limiter import RateLimitInfo
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -49,7 +51,11 @@ async def initialize_rag_system():
     """Initialize the RAG system on startup."""
     global rag_system
     try:
-        logger.info("Initializing RAG system...")
+        logger.info("🚀 Initializing enhanced RAG system...")
+        
+        # Log configuration summary
+        config_summary = RAGConfig.get_config_summary()
+        logger.info(f"📊 Configuration: {config_summary}")
         
         # Initialize with relative paths from backend directory
         json_dirs = {
@@ -57,14 +63,21 @@ async def initialize_rag_system():
             "course_webpages": "../data/json/course_webpages"
         }
         
-        rag_system = GothenburgUniversityRAG(json_dirs=json_dirs)
+        # Initialize with default client ID for startup
+        rag_system = GothenburgUniversityRAG(json_dirs=json_dirs, client_id="system")
         
         # Initialize vector store
         num_docs = rag_system.initialize_vector_store()
-        logger.info(f"RAG system initialized successfully with {num_docs} documents")
+        logger.info(f"✅ RAG system initialized successfully with {num_docs} documents")
+        
+        # Validate configuration
+        config_validation = RAGConfig.validate_config()
+        failed_checks = [check for check, passed in config_validation.items() if not passed]
+        if failed_checks:
+            logger.warning(f"⚠️ Configuration warnings: {failed_checks}")
         
     except Exception as e:
-        logger.error(f"Failed to initialize RAG system: {e}")
+        logger.error(f"❌ Failed to initialize RAG system: {e}")
         rag_system = None
 
 @asynccontextmanager
@@ -105,10 +118,26 @@ app.add_middleware(
 # API Routes (defined first to take precedence)
 @app.get("/health", tags=["Health"])
 async def health_check():
-    """Health check endpoint."""
+    """Basic health check endpoint."""
     if rag_system is None or not rag_system.is_initialized:
         return {"status": "unhealthy", "reason": "RAG system not initialized"}
     return {"status": "healthy"}
+
+@app.get("/health/detailed", tags=["Health"])
+async def detailed_health_check():
+    """Detailed health check with system diagnostics."""
+    if rag_system is None:
+        return {"status": "unhealthy", "reason": "RAG system not initialized"}
+    
+    try:
+        health_info = rag_system.health_check()
+        return health_info
+    except Exception as e:
+        logger.error(f"Error in detailed health check: {e}")
+        return {
+            "status": "unhealthy", 
+            "reason": f"Health check failed: {str(e)}"
+        }
 
 @app.get("/system/status", response_model=SystemStatus, tags=["System"])
 async def get_system_status():
@@ -148,11 +177,12 @@ async def reload_rag_system():
         logger.error(f"Error reloading RAG system: {e}")
 
 @app.post("/chat", response_model=ChatResponse, tags=["Chat"])
-async def chat(message: ChatMessage):
+async def chat(message: ChatMessage, request: Request):
     """
     Send a message to the chatbot and get a response.
     
     This endpoint processes user questions about Gothenburg University courses and programs.
+    Includes rate limiting per client IP.
     """
     if rag_system is None or not rag_system.is_initialized:
         raise HTTPException(
@@ -163,15 +193,31 @@ async def chat(message: ChatMessage):
     if not message.message.strip():
         raise HTTPException(status_code=400, detail="Message cannot be empty")
     
+    # Get client identifier for rate limiting
+    client_ip = request.client.host if request.client else "unknown"
+    client_id = message.session_id or client_ip
+    
     # Log the incoming request
     logger.info(f"=== CHAT REQUEST ===")
     logger.info(f"Message: {message.message}")
     logger.info(f"Session ID: {message.session_id}")
+    logger.info(f"Client ID: {client_id}")
     logger.info(f"Message length: {len(message.message)} characters")
     
     try:
-        # Process the query
-        result = rag_system.query(message.message.strip())
+        # Create client-specific RAG instance for rate limiting
+        # (In production, you might want to cache these instances)
+        client_rag = GothenburgUniversityRAG(
+            json_dirs=rag_system.json_dirs,
+            client_id=client_id
+        )
+        
+        # Share the vector store from the global instance
+        client_rag.vector_store = rag_system.vector_store
+        client_rag.is_initialized = rag_system.is_initialized
+        
+        # Process the query with client-specific rate limiting
+        result = client_rag.query(message.message.strip())
         
         # Log the response details
         logger.info(f"=== CHAT RESPONSE ===")
