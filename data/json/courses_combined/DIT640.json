@@ -15,7 +15,8 @@
     "valid_from_date": "2024-09-02",
     "programmes": [
       "Software Engineering and Management Master's Programme (N2SOF)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2024-01-29 to be valid from 2024-09-02, autumn semester of 2024.",

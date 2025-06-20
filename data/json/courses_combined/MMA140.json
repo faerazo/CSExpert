@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "24 Mar 2025 - 8 Jun 2025",
     "application_period": "16 Sep 2024 - 15 Oct 2024",
-    "application_code": "GU-17038"
+    "application_code": "GU-17038",
+    "content_type": "course"
   },
   "sections": {
     "About": "In this course you will see a comprehensive treatment of the theory of linear operators on infinite-dimensional spaces. Our fundamental problem is to calculate spectra of specific operators. The spectrum of bounded operators on Banach spaces is best studied within the context of Banach and in particular C^\\*-algebras, and a part of the course will be devoted to the theory of these algebras. You will also learn about the spectral theorem for normal operators and the Riesz theory of compact operators with applications.",

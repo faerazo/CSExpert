@@ -18,7 +18,8 @@
       "Game Design & Technology Master's Programme (N2GDT)",
       "Software Engineering Master's Programme (N2SOM)",
       "Software Engineering and Management Master's Programme (N2SOF)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2014-10-27 and was last revised on 2019-12-09 to be valid from 2020-08-\n31, autumn semester of 2020.",

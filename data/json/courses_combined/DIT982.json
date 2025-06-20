@@ -19,7 +19,8 @@
       "Applied Data Science Master's Programme (N2ADS)",
       "Bachelor's Programme in Mathematics (N1MAT)",
       "Computer Science, Bachelor's Programme (N1COS)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2014-12-16 and was last revised on 2018-03-26 to be valid from 2019-01-\n21, spring semester of 2019.",

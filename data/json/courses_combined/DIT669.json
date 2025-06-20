@@ -17,7 +17,8 @@
       "Computer Science, Master's Programme (N2COS)",
       "Applied Data Science Master's Programme (N2ADS)",
       "Software Engineering and Management Master's Programme (N2SOF)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2016-07-01 and was last revised on 2019-12-17 to be valid from 2020-08-\n31, autumn semester of 2020.",

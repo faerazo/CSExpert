@@ -16,7 +16,8 @@
     "programmes": [
       "Computer Science, Master's Programme (N2COS)",
       "Applied Data Science Master's Programme (N2ADS)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2012-12-10 and was last revised on 2017-06-07 to be valid from 2017-08-20, autumn semester of 2017.",

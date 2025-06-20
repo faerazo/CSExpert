@@ -25,7 +25,8 @@
     "study_form": "Campus",
     "duration": "3 Nov 2025 - 18 Jan 2026",
     "application_period": "17 Mar 2025 - 15 Apr 2025",
-    "application_code": "GU-86105"
+    "application_code": "GU-86105",
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2020-10-27 to be valid from 2021-08-30, autumn semester of 2021.",

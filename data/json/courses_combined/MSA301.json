@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "24 Mar 2025 - 8 Jun 2025",
     "application_period": "16 Sep 2024 - 15 Oct 2024",
-    "application_code": "GU-17048"
+    "application_code": "GU-17048",
+    "content_type": "course"
   },
   "sections": {
     "About": "The course provides you with an introduction to spatial statistics and statistical image analysis. In the first part, statistical models for images (stochastic fields and point processes), methods for filtering and reconstruction, and simulation methods for stochastic inference are introduced. The second part of the course focuses on methods from statistics and machine learning for pattern recognition and classification. During the course, we look at applications in areas such as climate, remote sensing, microscopy, photography and medical imaging.",

@@ -23,7 +23,8 @@
       "Computer Science, Master's Programme (N2COS)",
       "Software Engineering Master's Programme (N2SOM)",
       "Computer Science, Bachelor's Programme (N1COS)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2011-10-11 and was last revised on 2012-11-12 by Department of Computer Science and Engineering to be valid from 2014-01-20.",

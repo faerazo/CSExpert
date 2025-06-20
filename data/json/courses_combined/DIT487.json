@@ -13,7 +13,8 @@
     "programmes": [
       "Computer Science, Master's Programme (N2COS)",
       "Software Engineering and Management Master's Programme (N2SOF)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Position in the educational system": "The course can be part of the following programmes:\n\n1. Computer Science, Master's Programme (N2COS),\n2. Software Engineering and Management Master's Programme (N2SOF)",

@@ -16,7 +16,8 @@
     "programmes": [
       "Computer Science, Master's Programme (N2COS)",
       "Computer Science, Bachelor's Programme (N1COS)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Applied Information Technology\non 2015-06-18 to be valid from 2015-09-01, autumn semester of 2015.",

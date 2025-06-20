@@ -16,7 +16,8 @@
     "programmes": [
       "Software Engineering and Management Bachelor's Programme (N1SOF)",
       "Software Engineering and Management, Bachelor's Programme (N1SEM)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2021-09-30 to be valid from 2022-01-17, spring semester of 2022.",

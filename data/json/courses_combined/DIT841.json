@@ -12,7 +12,8 @@
     "valid_from_date": "Autumn term 2025",
     "programmes": [
       "Software engineering and management, masters programme (N2SOF)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Position in the educational system": "The course can be part of the following programmes:\n\n1. Software engineering and management, masters programme (N2SOF)",

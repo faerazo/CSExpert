@@ -16,7 +16,8 @@
     "programmes": [
       "Computer Science Master's Programme N2COS",
       "Computer Science Bachelors Programme N1COS"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "The course syllabus was confirmed by The IT Faculty Board on 2011-01-14 to be valid from 2011-01-19.",

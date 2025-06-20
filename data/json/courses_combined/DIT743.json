@@ -26,7 +26,8 @@
     "study_form": "Campus",
     "duration": "3 Nov 2025 - 18 Jan 2026",
     "application_period": "17 Mar 2025 - 15 Apr 2025",
-    "application_code": "GU-86067"
+    "application_code": "GU-86067",
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2020-12-18 and was last revised on 2022-11-15 to be valid from 2023-08-\n28, autumn semester of 2023.",

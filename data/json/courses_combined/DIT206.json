@@ -30,7 +30,8 @@
     "study_form": "Campus",
     "duration": "20 Jan 2025 - 23 Mar 2025",
     "application_period": "16 Sep 2024 - 15 Oct 2024",
-    "application_code": "GU-86007"
+    "application_code": "GU-86007",
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2020-11-04 to be valid from 2022-01-17, spring semester of 2022.",

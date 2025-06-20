@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "1 Sep 2025 - 4 Nov 2025",
     "application_period": "17 Mar 2025 - 15 Apr 2025",
-    "application_code": "GU-24012"
+    "application_code": "GU-24012",
+    "content_type": "course"
   },
   "sections": {
     "About": "This course will give an introduction to programming suitable for students who have not programmed before. It offers an introduction to computer science aspects like algorithms, data structures and programming paradigms.\n\nThe course also introduces the programming environment and basic concepts, theories and technologies used in the master's programme in language technology.",

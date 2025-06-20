@@ -25,7 +25,8 @@
     "study_form": "Campus",
     "duration": "24 Mar 2025 - 8 Jun 2025",
     "application_period": "16 Sep 2024 - 15 Oct 2024",
-    "application_code": "GU-86052"
+    "application_code": "GU-86052",
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2020-11-13 to be valid from 2022-01-17, spring semester of 2022.",

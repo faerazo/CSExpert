@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "1 Sep 2025 - 4 Nov 2025",
     "application_period": "17 Mar 2025 - 15 Apr 2025",
-    "application_code": "GU-17008"
+    "application_code": "GU-17008",
+    "content_type": "course"
   },
   "sections": {
     "About": "The course treats measure theory and the Lebesgue integral. The Lebesgue integral is more general than the Riemann integral, and it is an important tool in modern analysis since it is easier to integrate limits of functions. Integrals with respect to general measures play an important role in many areas of mathematics and its applications, for example in probability theory and potential theory. The course is one of the first you will take as a graduate student in mathematics.",

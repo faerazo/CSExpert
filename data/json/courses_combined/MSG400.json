@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "1 Sep 2025 - 4 Nov 2025",
     "application_period": "17 Mar 2025 - 15 Apr 2025",
-    "application_code": "GU-17021"
+    "application_code": "GU-17021",
+    "content_type": "course"
   },
   "sections": {
     "About": "The core of the course are several projects in different areas of mathematical statistics and its applications (e.g., finance, bioinformatics). Each project contains a number of problems to be solved in a given programming language, e.g., Matlab, Python, and R.  The projects are presented at lectures and programming languages are introduced during teacher led laboratories. The project reports are to be written in LaTeX.",

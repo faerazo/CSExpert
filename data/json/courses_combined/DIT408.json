@@ -24,7 +24,8 @@
     "study_form": "Campus",
     "duration": "3 Nov 2025 - 18 Jan 2026",
     "application_period": "17 Mar 2025 - 15 Apr 2025",
-    "application_code": "GU-86072"
+    "application_code": "GU-86072",
+    "content_type": "course"
   },
   "sections": {
     "Position in the educational system": "The course can be part of the following programmes:\n\n1. Computer Science, Bachelor's Programme (N1COS)\n2. Computer Science, Master's Programme (N2COS)\n3. Software Engineering and Management Master's Programme (N2SOF)\n4. Bachelor's Programme in Mathematics (N1MAT)\n5. Mathematical Sciences, Master's Programme (N2MAT)\n\nThe course is a also a single-subject course at Gothenburg University.",

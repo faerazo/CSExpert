@@ -16,7 +16,8 @@
     "programmes": [
       "Computer Science, Master's Programme (N2COS)",
       "Computer Science, Bachelor's Programme (N1COS)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2019-02-08 and was last revised on 2019-02-26 to be valid from 2019-09-\n02, autumn semester of 2019.",

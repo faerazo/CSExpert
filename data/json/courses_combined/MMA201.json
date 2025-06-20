@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "1 Sep 2025 - 2 Nov 2025",
     "application_period": "17 Mar 2025 - 15 Apr 2025",
-    "application_code": "GU-17005"
+    "application_code": "GU-17005",
+    "content_type": "course"
   },
   "sections": {
     "About": "Representation theory is about how groups and other algebraic structures can be realized in a concrete way as linear transformations. These methods are not only used in algebra, but also in analysis, geometry, number theory and mathematical physics. For example, representation theory is a basis of the standard model of particle physics. In the course, we will focus on representation theory for rings (module theory) and finite groups. We also introduce tensor algebra and exterior algebra, which are important in differential geometry and relativity theory.",

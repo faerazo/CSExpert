@@ -12,7 +12,8 @@
     "valid_from_date": "Autumn Semester 2024",
     "programmes": [
       "Digital Leadership Master's Programme"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Position in the educational system": "The course is a compulsory course in the Digital Leadership Master's Programme.",

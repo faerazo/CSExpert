@@ -13,7 +13,8 @@
     "language_of_instruction": "Swedish",
     "duration": "1 Sep 2025 - 2 Nov 2025",
     "application_period": "17 Mar 2025 - 15 Apr 2025",
-    "application_code": "GU-86115"
+    "application_code": "GU-86115",
+    "content_type": "course"
   },
   "sections": {
     "About": "This is an introductory course in programming, and uses a functional language. The primary goal is to enable students to write small programs, while introducing some of the fundamental concepts of computer science. Secondary goals are to provide orientation regarding the courses to come (particularly data structures, algorithms, digital circuits, formal methods and programming language courses).\n\nConcrete topics encountered in the course include:\n\n- values, types and functions\n- compound data types (lists, tuples, and user-defined types)\n- higher-order functions\n- using abstraction to avoid repetitive programming\n- recursion and recursive data types\n- efficient and inefficient programs\n- input-output\n- verification with the help of testing",

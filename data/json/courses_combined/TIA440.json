@@ -12,7 +12,8 @@
     "valid_from_date": "Autumn Semester 2024",
     "programmes": [
       "Human-centered Artificial Intelligence Master's Programme (T2HAI)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Position in the educational system": "This course is a compulsory course in Human-centered Artificial Intelligence Master's Programme (T2HAI).",

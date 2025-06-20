@@ -24,7 +24,8 @@
     "study_form": "Campus",
     "duration": "1 Sep 2025 - 4 Nov 2025",
     "application_period": "17 Mar 2025 - 15 Apr 2025",
-    "application_code": "GU-17018"
+    "application_code": "GU-17018",
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Mathematical Sciences on 2022-12-20 to be valid from 2023-08-28, autumn semester of 2023.",

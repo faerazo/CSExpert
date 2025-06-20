@@ -20,7 +20,8 @@
       "Bachelor's Programme in Mathematics (N1MAT)",
       "Software Engineering Master's Programme (N2SOM)",
       "Computer Science, Bachelor's Programme (N1COS)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2011-05-20 and was last revised on 2017-06-07 by Department of Computer Science and Engineering to be valid from 2017-08-20, autumn semester of 2017.",

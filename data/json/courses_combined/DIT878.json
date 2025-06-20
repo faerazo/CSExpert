@@ -15,7 +15,8 @@
     "valid_from_date": "2019-09-02",
     "programmes": [
       "N2ADS Applied Data Science"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2019-02-08 to be valid from 2019-09-02, autumn semester of 2019.",

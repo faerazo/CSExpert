@@ -16,7 +16,8 @@
     "programmes": [
       "Computer Science, Bachelor's Programme (N1COS)",
       "Software Engineering and Management Bachelor's Programme (N1SOF)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2017-12-19 and was last revised on 2019-10-28 to be valid from 2020-08-\n31, autumn semester of 2020.",

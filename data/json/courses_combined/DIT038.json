@@ -20,7 +20,8 @@
     "study_form": "Campus",
     "duration": "1 Sep 2025 - 2 Nov 2025",
     "application_period": "17 Mar 2025 - 15 Apr 2025",
-    "application_code": "GU-86119"
+    "application_code": "GU-86119",
+    "content_type": "course"
   },
   "sections": {
     "Position in the educational system": "The course can be part of the following programmes:\n\n1. Software Engineering and Management, bachelors programme (N1SOF).",

@@ -12,7 +12,8 @@
     "valid_from_date": "Autumn term 2025",
     "programmes": [
       "Game Design & Technology Master's Programme"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Position in the educational system": "The course is compulsory within the Game Design & Technology Master's Programme.",

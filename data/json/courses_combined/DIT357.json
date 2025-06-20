@@ -12,7 +12,8 @@
     "valid_from_date": "Autumn term 2025",
     "programmes": [
       "Software Engineering and Management, bachelors programme (N1SOF)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Position in the educational system": "The course is compulsory within the Software Engineering and Management, bachelors programme (N1SOF).",

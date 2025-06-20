@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "1 Sep 2025 - 4 Nov 2025",
     "application_period": "17 Mar 2025 - 15 Apr 2025",
-    "application_code": "GU-24017"
+    "application_code": "GU-24017",
+    "content_type": "course"
   },
   "sections": {
     "About": "In this course, students will get hands-on experience in machine\n\nlearning for language technology applications, including multimodal\n\napplications. This course will cover neural networks and related\n\ncontemporary techniques and concepts.  Students will improve their\n\nmachine learning skills by developing simple NLP applications in\n\nwidely-used programming frameworks and get practice in making and\n\nimplementing design choices independently.",

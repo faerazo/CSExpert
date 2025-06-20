@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "20 Jan 2025 - 23 Mar 2025",
     "application_period": "16 Sep 2024 - 15 Oct 2024",
-    "application_code": "GU-17031"
+    "application_code": "GU-17031",
+    "content_type": "course"
   },
   "sections": {
     "About": "This course gives an introduction to experimental design and sampling theory. In experimental design we will learn how to construct various types of designs, such as factorial design, mixed-effect models, split-plot designs and response surface methods, as well as statistical analysis methods such as analysis of variance (ANOVA) and linear and non-linear regression. In sampling theory we treat different types of sampling strategies, such as simple random sampling, systematic sampling, stratified sampling, weighted sampling and cluster sampling, and the subsequent analysis such as population and variance estimates, model based inference and pseudo-likelihood methods.",

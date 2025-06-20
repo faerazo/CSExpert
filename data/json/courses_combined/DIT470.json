@@ -17,7 +17,8 @@
       "Computer Science, Master's Programme (N2COS)",
       "Mathematical Sciences, Master's Programme (N2MAT)",
       "Applied Data Science Master's Programme (N2ADS)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2019-12-04 to be valid from 2021-01-18, spring semester of 2021.",

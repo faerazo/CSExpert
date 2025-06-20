@@ -18,7 +18,8 @@
       "Applied Data Science Master's Programme (N2ADS)",
       "Game Design & Technology Master's Programme (N2GDT)",
       "Software Engineering and Management Master's Programme (N2SOF)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2019-02-08 to be valid from 2019-09-02, autumn semester of 2019.\nField of education: Science 100%\nDepartment: Department of Computer Science and Engineering",

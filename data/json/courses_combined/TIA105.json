@@ -16,7 +16,8 @@
     "programmes": [
       "Computer Science Master's Programme N2COS",
       "Computer Science Bachelors Programme N1COS"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "The course syllabus was confirmed by The IT Faculty Board on 2010-12-10 and was last revised by The IT Faculty Board on 2011-01-31 to be valid from 2012-01-19.\nField of education: Science 100%\nDepartment: Dep of Applied Information Technology",

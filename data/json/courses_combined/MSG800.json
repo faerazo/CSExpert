@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "5 Nov 2025 - 18 Jan 2026",
     "application_period": "17 Mar 2025 - 15 Apr 2025",
-    "application_code": "GU-17034"
+    "application_code": "GU-17034",
+    "content_type": "course"
   },
   "sections": {
     "About": "The course gives a solid basic knowledge of stochastic processes, intended to be sufficient for applications on undergraduate and masters levels in engineering and natural sciences, as well as for selected applications on graduate level. The purpose is to give an applied treatment of stochastic processes, in part by means of applications and examples. The following topics are included:\n\n- elements of time series with random walks,\n- Brownian motion and elements of diffusions,\n- Gaussian processes,\n- stationarity and weak stationarity,\n- elements of continuous time Markov chains and queues,\n- elements of filtering and forecasting.",

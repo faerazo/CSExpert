@@ -23,7 +23,8 @@
     "study_form": "Campus",
     "duration": "20 Jan 2025 - 23 Mar 2025",
     "application_period": "16 Sep 2024 - 15 Oct 2024",
-    "application_code": "GU-86043"
+    "application_code": "GU-86043",
+    "content_type": "course"
   },
   "sections": {
     "Position in the educational system": "The course is a compulsory course in the Software Engineering and Management, Bachelor’s Programme (N1SOF).\n\nThe course can also be part of the following programmes:\n\n1.  Computer Science, Bachelor's Programme (N1COS)\n2.  Software Engineering and Management, Master's Programme (N2SOF)\n3.  Applied Data Science, Master'sProgramme (N2ADS)\n\nThe course is a also a single-subject course at Gothenburg University.",

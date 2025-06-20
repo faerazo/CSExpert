@@ -17,7 +17,8 @@
       "Computer Science, Master's Programme (N2COS)",
       "Game Design & Technology Master's Programme (N2GDT)",
       "Software Engineering and Management Master's Programme (N2SOF)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2020-11-24 to be valid from 2022-01-17, spring semester of 2022.",

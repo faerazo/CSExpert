@@ -12,7 +12,8 @@
     "valid_from_date": "Autumn term 2025",
     "programmes": [
       "Applied data science, masters programme (N2ADS)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Position in the educational system": "The course can be part of the following programmes:\n\n1. Applied data science, masters programme (N2ADS)",

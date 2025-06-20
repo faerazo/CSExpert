@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "19 Jan 2026 - 22 Mar 2026",
     "application_period": "15 Sep 2025 - 15 Oct 2025",
-    "application_code": "GU-17004"
+    "application_code": "GU-17004",
+    "content_type": "course"
   },
   "sections": {
     "About": "Algebraic number theory is the part of number theory that uses methods from algebra to answer questions about integers in general and number fields in particular. The subject has inspired the Langlands Program, which won the Abel Prize, and is fundamental to parts of algebraic geometry. An important concept is algebraic integers, which concern the relationship between ordinary integers and rational numbers. But in most number fields, unique factorization of integers as a product of primes does not work.\n\nIn this course you will study algebraic integers and fractional ideals which work as “ideal numbers” in number fields. You will also learn how different factorization of ideals and integers can be.",

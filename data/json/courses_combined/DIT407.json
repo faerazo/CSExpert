@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "24 Mar 2025 - 8 Jun 2025",
     "application_period": "16 Sep 2024 - 15 Oct 2024",
-    "application_code": "GU-86067"
+    "application_code": "GU-86067",
+    "content_type": "course"
   },
   "sections": {
     "About": "During the course, a wide selection of methods for Data Science and AI will be introduced. The course is divided into three parts: **Introduction to data science**\n\n- Implementation of data science solutions, using Python, basic data analysis and visualization.\n- Introduction of the data science process, and appropriate methodology.\n\n- Examples of core data science methods with case studies such as in clustering,classification and regression.\n- Data science put in context regarding ethics, regulations and limitations.\n\n\n**Statistical methods for data science and AI**\n\n- Introduction of some common stochastic models with examples of applications in data science and AI (for instance, naive Bayes classifiers, topic models for text and Hidden Markov Models for sequence data).\n\n**Artificial Intelligence**\n\n- Introduction to classical AI and machine learning, including the relationship to related areas such as algorithms and optimization, and AI philosophy.\n- Examples of methods and applications of AI, in classical AI (search and constraint satisfaction), and ML-based (search engines, naive Bayes and neural networks)\n- Discussion of ethics and societal impact of AI.",

@@ -14,7 +14,8 @@
       "Computer science, bachelors programme (N1COS)",
       "Computer science, masters programme (N2COS)",
       "Software engineering and management, masters programme (N2SOF)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Position in the educational system": "The course can be part of the following programmes:\n\n1. Computer science, bachelors programme (N1COS)\n2. Computer science, masters programme (N2COS)\n3. Software engineering and management, masters programme (N2SOF)\n\nThe course is a also a single-subject course at Gothenburg University.",

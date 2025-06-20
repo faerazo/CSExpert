@@ -19,7 +19,8 @@
       "Computer Science, Bachelor's Programme (N1COS)",
       "Bachelor's Programme in Mathematics (N1MAT)",
       "No translation available (NDATM)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2006-11-17 and was\nlast revised on 2018-03-26 by Department of Computer Science and Engineering to be\nvalid from 2019-01-21, spring semester of 2019.",

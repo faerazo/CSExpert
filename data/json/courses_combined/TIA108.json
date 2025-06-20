@@ -17,7 +17,8 @@
       "Computer Science, Master's Programme (N2COS)",
       "Game Design & Technology Master's Programme (N2GDT)",
       "Computer Science, Bachelor's Programme (N1COS)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2010-12-21 and was last revised on 2018-02-09 by Department of Computer Science and Engineering to be valid from 2018-08-19, autumn semester of 2018.",

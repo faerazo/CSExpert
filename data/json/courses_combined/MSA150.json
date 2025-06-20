@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "5 Nov 2025 - 18 Jan 2026",
     "application_period": "17 Mar 2025 - 15 Apr 2025",
-    "application_code": "GU-17031"
+    "application_code": "GU-17031",
+    "content_type": "course"
   },
   "sections": {
     "About": "The course comprises lectures, and classes with exercises and discussions. Probability theory is a rich and varied area of mathematics, with many applications; modern statistics is based on this theory. The purpose of this course is to study its foundations. Key words and phrases are: basics, moments, independence and conditioning, the strong law of large numbers, transforms and the central limit theorem, random walk and the Markov property.",

@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "5 Nov 2025 - 18 Jan 2026",
     "application_period": "17 Mar 2025 - 15 Apr 2025",
-    "application_code": "GU-17026"
+    "application_code": "GU-17026",
+    "content_type": "course"
   },
   "sections": {
     "About": "This course in optimization primarily treats large-scale, difficult, and often combinatorial optimization problems. You will study different methods of tackling such problems, through a lecture series and working on projects in a group. You will also touch on current research topics such as optimality conditions for non-convex optimization, column generation, and Lagrange duality. The course will conclude with an algorithm contest, where you compete by choosing the best and/or quickest approach to solving a problem!",

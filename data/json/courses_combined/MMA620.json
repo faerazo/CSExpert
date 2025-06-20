@@ -25,7 +25,8 @@
     "study_form": "Campus",
     "duration": "",
     "application_period": "",
-    "application_code": ""
+    "application_code": "",
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Mathematical Sciences on 2017-06-22 and was last revised on 2019-05-15 to be valid from 2019-09-02, autumn semester of 2019.",

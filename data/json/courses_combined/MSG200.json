@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "20 Jan 2025 - 23 Mar 2025",
     "application_period": "16 Sep 2024 - 15 Oct 2024",
-    "application_code": "GU-17035"
+    "application_code": "GU-17035",
+    "content_type": "course"
   },
   "sections": {
     "About": "This is a second course in mathematical statistics introducing the following key topics of statistical inference: sampling designs and summarizing data, maximum likelihood estimation of parameters, bootstrap, parametric and non-parametric inference, analysis of variance, linear least squares, categorical data analysis, basics of Bayesian inference.",

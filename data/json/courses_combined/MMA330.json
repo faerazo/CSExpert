@@ -13,7 +13,8 @@
     "language_of_instruction": "",
     "duration": "",
     "application_period": "",
-    "application_code": ""
+    "application_code": "",
+    "content_type": "course"
   },
   "sections": {
     "About": "In this course you will study structural theorems for commutative rings, with applications in algebraic geometry, algebraic number theory, and complex analysis. To construct and study new commutative rings from known ones, you will look at polynomials, fractions, and congruences. We introduce a concept of dimension for commutative rings and relate it to the transcendence degree of extension fields. Finally, you will study Dedekind rings and (if we have time) p-adic numbers. The course is one of the first you will take as a graduate student in mathematics.",

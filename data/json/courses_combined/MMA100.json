@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "20 Jan 2025 - 23 Mar 2025",
     "application_period": "16 Sep 2024 - 15 Oct 2024",
-    "application_code": "GU-17019"
+    "application_code": "GU-17019",
+    "content_type": "course"
   },
   "sections": {
     "About": "In this course you will study the basic concepts of set topology, which is used in almost all modern mathematics. From analysis in several variables you will be familiar with the space R^n and its concept of distance. Instead of using the concept of distance between points, topology begins by designating a collection of subsets of a fixed set as open sets. From this, we will build up the theory of topological spaces and continuous functions. Classical continuity arguments can now be used in new situations.\n\nAn interesting question to ask is whether two spaces are equivalent (homeomorphic). Sometimes we can see that the answer is “no” by using compactness or connectedness; a compact space cannot be homeomorphic with a non-compact one, nor a connected space with a non-connected one. These topological invariants are quite coarse. A finer invariant is the fundamental group of a topological space, which also connects the subject with algebra.",

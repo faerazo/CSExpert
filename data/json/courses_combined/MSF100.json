@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "19 Jan 2026 - 22 Mar 2026",
     "application_period": "15 Sep 2025 - 15 Oct 2025",
-    "application_code": "GU-17002"
+    "application_code": "GU-17002",
+    "content_type": "course"
   },
   "sections": {
     "About": "The course is intended for students of the second year of master studies. This course takes an advanced and rigorous look at mathematical statistics and approaches to inference. In addition to covering central concepts and models of statistics, differing philosophical perspectives on scientific inference are discussed and compared.",

@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "24 Mar 2025 - 8 Jun 2025",
     "application_period": "16 Sep 2024 - 15 Oct 2024",
-    "application_code": "GU-17049"
+    "application_code": "GU-17049",
+    "content_type": "course"
   },
   "sections": {
     "About": "This course introduces time-series techniques and their application to the analysis and forecasting of financial time-series. Emphasis is given to nonlinear methods applied to high-frequency financial data.\n\nThe theoretical discourse is supplemented by hands-on data analysis. Familiarity with a statistical software analysis tool (like Matlab, S-PLUS, R) is assumed.",

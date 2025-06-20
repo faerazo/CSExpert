@@ -15,7 +15,8 @@
     "valid_from_date": "2020-08-31",
     "programmes": [
       "Applied Data Science Master's Programme (N2ADS)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2018-02-02 and was last revised on 2019-12-02 to be valid from 2020-08-\n31, autumn semester of 2020.",

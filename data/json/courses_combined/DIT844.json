@@ -17,7 +17,8 @@
       "Software Engineering and Management, Master's Programme (N2SEM)",
       "Software Engineering Master's Programme (N2SOM)",
       "Software Engineering and Management Master's Programme (N2SOF)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2014-02-18 and was last revised on 2017-06-16 to be valid from 2017-08-\n20, autumn semester of 2017.",

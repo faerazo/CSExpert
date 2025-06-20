@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "19 Jan 2026 - 22 Mar 2026",
     "application_period": "15 Sep 2025 - 15 Oct 2025",
-    "application_code": "GU-17005"
+    "application_code": "GU-17005",
+    "content_type": "course"
   },
   "sections": {
     "About": "Modelling under uncertainty has become one of the buzzwords of these days. Finance, weather prediction, biology, and geophysics are just some examples where we can nowadays apply random models. To use these models, we have to understand which information is required from the model in practice and how it can be extracted efficiently. Typical information that needs to be computed is so called “quantities of interest” which are of the form E[g(X)], where X is the solution to a stochastic differential equation given by the random model, g is some functional, and E notes the expected value.\n\nIn this course we discuss the efficient simulation of such quantities from two perspectives: As a first approach, we consider approximations of X and combine them with Monte Carlo methods to approximate the expected value. Secondly, we observe that our quantity of interest satisfies a partial differential equation, which we discretize with finite element methods. A combination of theory and explicit implementation of examples from applications helps us to get a sense of the power of the two different approaches.",

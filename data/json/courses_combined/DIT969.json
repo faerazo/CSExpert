@@ -14,7 +14,8 @@
       "Applied Data Science Master's Programme (N2ADS)",
       "Computer Science, Master's Programme (N2COS)",
       "Mathematical Sciences, Master's Programme (N2MAT)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Position in the educational system": "The course can be part of the following programmes:\n\n1. Applied Data Science Master's Programme (N2ADS)\n2. Computer Science, Master's Programme (N2COS)\n3. Mathematical Sciences, Master's Programme (N2MAT)",

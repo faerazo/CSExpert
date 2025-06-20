@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "24 Mar 2025 - 8 Jun 2025",
     "application_period": "16 Sep 2024 - 15 Oct 2024",
-    "application_code": "GU-86092"
+    "application_code": "GU-86092",
+    "content_type": "course"
   },
   "sections": {
     "About": "The research and development of robots range from domestic robots, autonomous robotic agents, virtual agents, and industrial robots. Human-Robot Interaction (HRI) is a discipline that is concerned with how we design, develop, and evaluate robotic agents with the user in the loop. This course introduces the HRI design practices, evaluation methods and approaches. In particular, the course will apply human-centered approaches to design for the (1) abilities to consider in a robot, the (2) interaction modalities a robot should have, and (3) the form and appearance of a robot. The course will also give an understanding of the impact robots can have on our society, and the importance of the ethical and critical considerations when designing them.",

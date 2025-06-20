@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "5 Nov 2025 - 18 Jan 2026",
     "application_period": "17 Mar 2025 - 15 Apr 2025",
-    "application_code": "GU-17025"
+    "application_code": "GU-17025",
+    "content_type": "course"
   },
   "sections": {
     "About": "The course treats infinite-dimensional vector spaces, where the vectors most often are functions of some sort. Using a so-called norm you can measure their size and define limits and other concepts. Important theorems treat different kinds of limits and compactness. You will also study interpolation problems and surprising continuity properties. The course gives you a framework to better understand many linear phenomena, for example complex measures. The course is one of the first you will take as a graduate student in mathematics.",

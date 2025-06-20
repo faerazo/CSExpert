@@ -20,7 +20,8 @@
     "study_form": "Campus",
     "duration": "3 Nov 2025 - 18 Jan 2026",
     "application_period": "17 Mar 2025 - 15 Apr 2025",
-    "application_code": "GU-86083"
+    "application_code": "GU-86083",
+    "content_type": "course"
   },
   "sections": {
     "Position in the educational system": "The course can be part of the following programme:\n\n1. Computer Science, Bachelor's Programme (N1COS)\n\nThe course is a also a single-subject course at Gothenburg University.",

@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "19 Jan 2026 - 22 Mar 2026",
     "application_period": "15 Sep 2025 - 15 Oct 2025",
-    "application_code": "GU-17003"
+    "application_code": "GU-17003",
+    "content_type": "course"
   },
   "sections": {
     "About": "In this course we will study the foundations of differential and integral calculus on smooth manifolds, along with applications of the theory in topology and geometry. One of the main purposes is to acquaint you with differential forms and their great usefulness in many areas of mathematics. The course is one of the first you will take as a graduate student in mathematics.",

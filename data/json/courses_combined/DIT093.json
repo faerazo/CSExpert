@@ -27,7 +27,8 @@
     "study_form": "Campus",
     "duration": "20 Jan 2025 - 23 Mar 2025",
     "application_period": "16 Sep 2024 - 15 Oct 2024",
-    "application_code": "GU-86000"
+    "application_code": "GU-86000",
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2020-12-18 and was last revised on 2022-11-15 to be valid from 2023-08- 28, autumn semester of 2023.",

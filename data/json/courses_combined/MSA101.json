@@ -16,7 +16,8 @@
     "programmes": [
       "Mathematical Sciences, Master's Programme (N2MAT)",
       "Applied Data Science Master's Programme (N2ADS)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Mathematical Sciences on 2016-09-23 and was last revised on 2019-05-14 to be valid from 2019-09-02, autumn semester of 2019.",

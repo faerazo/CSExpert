@@ -13,7 +13,8 @@
     "language_of_instruction": null,
     "duration": null,
     "application_period": null,
-    "application_code": null
+    "application_code": null,
+    "content_type": "course"
   },
   "sections": {
     "About": "Algebraic geometry studies curves, surfaces and their generalisations in higher dimensions, which can be described by systems of polynomial equations. The coefficients of the polynomials are often taken to be complex numbers, but can lie in an arbitrary field. The course starts with the basic theory of affine and projective varieties. A first application is the group law on cubic curves. More advanced theory is developed to be able to treat the existence of lines on cubic surfaces. The course ends with the resolution of curve singularities.",

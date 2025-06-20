@@ -22,7 +22,8 @@
     "study_form": "Campus",
     "duration": "5 Nov 2025 - 18 Jan 2026",
     "application_period": "17 Mar 2025 - 15 Apr 2025",
-    "application_code": "GU-17033"
+    "application_code": "GU-17033",
+    "content_type": "course"
   },
   "sections": {
     "Position in the educational system": "The course can be taken by students enrolled in Matematikprogrammet and it can also be taken as a stand-alone course by students who meet the prerequisites.\n\nThe course can be included in the following programmes: 1) Mathematical Sciences, Master's Programme (N2MAT), 2) Matematikprogrammet (N1MAT) and 3) Applied Data Science Master's Programme (N2ADS).",

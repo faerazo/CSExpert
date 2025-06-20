@@ -17,7 +17,8 @@
       "Computer Science, Master's Programme (N2COS)",
       "Bachelor's Programme in Mathematics (N1MAT)",
       "Computer Science, Bachelor's Programme (N1COS)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2009-09-18 and was\nlast revised on 2015-11-17 by Department of Computer Science and Engineering to be\nvalid from 2016-08-29, autumn semester of 2016.",

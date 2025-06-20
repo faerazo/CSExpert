@@ -14,7 +14,8 @@
       "Computer Science, masters programme (N2COS)",
       "Applied Data Science, masters programme (N2ADS)",
       "Software Engineering and Management, masters programme (N2SOF)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Position in the educational system": "The course can be part of the following programmes:\n\n1. Computer Science, masters programme (N2COS)\n2. Applied Data Science, masters programme (N2ADS)\n3. Software Engineering and Management, masters programme (N2SOF)",

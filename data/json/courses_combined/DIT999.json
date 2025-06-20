@@ -15,7 +15,8 @@
     "valid_from_date": "2022-08-29",
     "programmes": [
       "Game Design & Technology Master's Programme (N2GDT)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and\nEngineering on 2020-11-03 and was last revised on 2021-11-19 to be valid from 2022-08-\n29, autumn semester of 2022.",

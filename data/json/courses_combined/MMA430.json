@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "24 Mar 2025 - 8 Jun 2025",
     "application_period": "16 Sep 2024 - 15 Oct 2024",
-    "application_code": "GU-17039"
+    "application_code": "GU-17039",
+    "content_type": "course"
   },
   "sections": {
     "About": "In this course you will learn to model scientific and technical problems using differential equations with the proper boundary and initial conditions. You will study existence, stability and regularity results. You will also learn to approximate solutions with difference or finite element methods and to find bounds on the errors, and gain insight in the role of stability when analyzing errors.",

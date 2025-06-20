@@ -19,7 +19,8 @@
       "Computer Science, Bachelor's Programme (N1COS)",
       "Bachelor's Programme in Mathematics (N1MAT)",
       "Software Engineering and Management Master's Programme (N2SOF)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by Department of Computer Science and Engineering on 2020-01-21 to be valid from 2020-08-31, autumn semester of 2020.",

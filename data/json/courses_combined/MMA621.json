@@ -13,7 +13,8 @@
     "language_of_instruction": "English",
     "duration": "1 Sep 2025 - 4 Nov 2025",
     "application_period": "17 Mar 2025 - 15 Apr 2025",
-    "application_code": "GU-17011"
+    "application_code": "GU-17011",
+    "content_type": "course"
   },
   "sections": {
     "About": "Modern computers can make billions of calculations per second, but it is often difficult to attain these top speeds. An important part of the course is code optimization, where you will learn to write efficient programs in Fortran, C, and Matlab. For even higher performance you will learn to write parallell programs using OpenMP (threads) and MPI (process-based). The course also touches on Unix and computer hardware.\n\nThe focus is on numerical calculations, but you can also apply the methods to most programming problems.",

@@ -17,7 +17,8 @@
       "Computer Science, Master's Programme (N2COS)",
       "Applied Data Science Master's Programme (N2ADS)",
       "Game Design & Technology Master's Programme (N2GDT)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2011-02-22 and was\nlast revised on 2019-11-19 by Department of Computer Science and Engineering to be\nvalid from 2020-08-31, autumn semester of 2020.",

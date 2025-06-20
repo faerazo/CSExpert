@@ -18,7 +18,8 @@
       "Applied Data Science Master's Programme (N2ADS)",
       "Software Engineering Master's Programme (N2SOM)",
       "Software Engineering and Management Master's Programme (N2SOF)"
-    ]
+    ],
+    "content_type": "course"
   },
   "sections": {
     "Confirmation": "This course syllabus was confirmed by The IT Faculty Board on 2010-09-28 and was\nlast revised on 2017-06-16 by Department of Computer Science and Engineering to be\nvalid from 2017-08-20, autumn semester of 2017.",
