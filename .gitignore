@@ -32,3 +32,12 @@ data/.DS_Store
 /frontend/.env.test.local
 /frontend/.env.production.local
 /chroma_db_store
+/data/
+
+# Python cache directories
+__pycache__/
+**/__pycache__/
+/venv/
+
+# Database files
+*.db
