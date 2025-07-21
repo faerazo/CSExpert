@@ -109,9 +109,7 @@ class Course(Base):
     
     # True metadata fields (for RAG/embeddings)
     content_type = Column(String(20), CheckConstraint("content_type IN ('course', 'program')"), default='course')
-    study_pace = Column(String(20))  # 100%, 50%, 25%
     study_form = Column(String(50))  # Campus, Online, Distance, Hybrid
-    time_schedule = Column(String(50))  # Day, Evening, Weekend
     field_of_education = Column(Text)  # Computer Science, Mathematics
     main_field_of_study = Column(Text)  # Software Engineering, Data Science
     specialization = Column(Text)  # Requirements Engineering, Machine Learning
@@ -120,10 +118,10 @@ class Course(Base):
     # Administrative fields (not for embeddings)
     confirmation_date = Column(Date)
     valid_from_date = Column(String(50))  # Mixed format: dates and terms
-    valid_to_date = Column(Date)
     is_current = Column(Boolean, default=True)
     is_replaced = Column(Boolean, default=False)
     replaced_by_course_id = Column(Integer, ForeignKey('courses.id'))
+    replacing_course_code = Column(String(10))  # Course code that this course replaces
     content_completeness_score = Column(Numeric(3,2), default=0.0)
     data_quality_score = Column(Numeric(3,2), default=0.0)
     processing_method = Column(String(50))
@@ -140,7 +138,7 @@ class Course(Base):
         Index('idx_courses_dates', 'confirmation_date', 'valid_from_date'),
         Index('idx_courses_updated', 'updated_at'),
         # Metadata indexes for RAG optimization
-        Index('idx_courses_metadata', 'cycle', 'study_form', 'study_pace'),
+        Index('idx_courses_metadata', 'cycle', 'study_form'),
         Index('idx_courses_field', 'field_of_education', 'main_field_of_study'),
         Index('idx_courses_term', 'term'),
         Index('idx_courses_content_type', 'content_type'),
@@ -175,12 +173,6 @@ class Course(Base):
         
         return credits
     
-    @validates('study_pace')
-    def validate_study_pace(self, key, study_pace):
-        """Validate study pace format."""
-        if study_pace and not re.match(r'^\d+%$', study_pace):
-            logger.warning(f"Non-standard study pace format: {study_pace}")
-        return study_pace
     
     @validates('content_completeness_score', 'data_quality_score')
     def validate_scores(self, key, score):
@@ -216,9 +208,7 @@ class Course(Base):
             'cycle': self.cycle,
             'credits': float(self.credits) if self.credits else None,
             'content_type': self.content_type,
-            'study_pace': self.study_pace,
             'study_form': self.study_form,
-            'time_schedule': self.time_schedule,
             'field_of_education': self.field_of_education,
             'main_field_of_study': self.main_field_of_study,
             'specialization': self.specialization,

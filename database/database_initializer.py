@@ -115,7 +115,7 @@ class DatabaseInitializer:
                     standard_code VARCHAR(10) UNIQUE NOT NULL,
                     display_name VARCHAR(50) NOT NULL,
                     original_variations TEXT,
-                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                    created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now'))
                 )
             """,
             
@@ -127,8 +127,8 @@ class DatabaseInitializer:
                     program_type VARCHAR(20) CHECK (program_type IN ('bachelor', 'master', 'phd')) NOT NULL,
                     department VARCHAR(100),
                     description TEXT,
-                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                    created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
+                    updated_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now'))
                 )
             """,
             
@@ -145,15 +145,14 @@ class DatabaseInitializer:
                     language_of_instruction_id INTEGER REFERENCES language_standards(id),
                     confirmation_date DATE NULL,
                     valid_from_date VARCHAR(50) NULL,
-                    valid_to_date DATE NULL,
                     is_current BOOLEAN DEFAULT TRUE,
                     is_replaced BOOLEAN DEFAULT FALSE,
                     replaced_by_course_id INTEGER REFERENCES courses(id),
                     content_completeness_score DECIMAL(3,2) DEFAULT 0.0 CHECK (content_completeness_score >= 0.0 AND content_completeness_score <= 1.0),
                     data_quality_score DECIMAL(3,2) DEFAULT 0.0 CHECK (data_quality_score >= 0.0 AND data_quality_score <= 1.0),
                     processing_method VARCHAR(50),
-                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
+                    updated_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
                     
                     UNIQUE(course_code, version_id)
                 )
@@ -167,7 +166,7 @@ class DatabaseInitializer:
                     section_content TEXT NOT NULL,
                     section_order INTEGER DEFAULT 0,
                     word_count INTEGER DEFAULT 0,
-                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
                     
                     UNIQUE(course_id, section_name)
                 )
@@ -179,7 +178,7 @@ class DatabaseInitializer:
                     course_id INTEGER NOT NULL REFERENCES courses(id) ON DELETE CASCADE,
                     program_id INTEGER NOT NULL REFERENCES programs(id) ON DELETE CASCADE,
                     is_primary BOOLEAN DEFAULT FALSE,
-                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
                     
                     UNIQUE(course_id, program_id)
                 )
@@ -191,8 +190,6 @@ class DatabaseInitializer:
                     field_of_education TEXT,
                     main_field_of_study TEXT,
                     specialization TEXT,
-                    time_schedule VARCHAR(50),
-                    study_pace VARCHAR(20),
                     location VARCHAR(100),
                     study_form VARCHAR(50),
                     duration VARCHAR(100),
@@ -201,8 +198,8 @@ class DatabaseInitializer:
                     iteration VARCHAR(50),
                     tuition_fee DECIMAL(10,2),
                     additional_info TEXT,
-                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                    created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
+                    updated_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now'))
                 )
             """,
             
@@ -215,7 +212,7 @@ class DatabaseInitializer:
                     severity VARCHAR(10) CHECK (severity IN ('low', 'medium', 'high')) NOT NULL,
                     is_resolved BOOLEAN DEFAULT FALSE,
                     resolution_notes TEXT,
-                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
                     resolved_at TIMESTAMP NULL
                 )
             """,
@@ -228,14 +225,14 @@ class DatabaseInitializer:
                     previous_version_id INTEGER,
                     changes_summary TEXT,
                     changed_fields TEXT,
-                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                    created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now'))
                 )
             """,
             
             'schema_version': """
                 CREATE TABLE schema_version (
                     version VARCHAR(20) PRIMARY KEY,
-                    applied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    applied_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
                     description TEXT,
                     migration_script TEXT
                 )
@@ -271,7 +268,7 @@ class DatabaseInitializer:
                 CREATE TRIGGER update_course_updated_at
                     AFTER UPDATE ON courses
                     BEGIN
-                        UPDATE courses SET updated_at = CURRENT_TIMESTAMP WHERE id = NEW.id;
+                        UPDATE courses SET updated_at = strftime('%Y-%m-%d %H:%M:%S', 'now') WHERE id = NEW.id;
                     END
             """,
             
@@ -279,7 +276,7 @@ class DatabaseInitializer:
                 CREATE TRIGGER update_program_updated_at
                     AFTER UPDATE ON programs
                     BEGIN
-                        UPDATE programs SET updated_at = CURRENT_TIMESTAMP WHERE id = NEW.id;
+                        UPDATE programs SET updated_at = strftime('%Y-%m-%d %H:%M:%S', 'now') WHERE id = NEW.id;
                     END
             """,
             
@@ -287,7 +284,7 @@ class DatabaseInitializer:
                 CREATE TRIGGER update_course_metadata_updated_at
                     AFTER UPDATE ON course_metadata
                     BEGIN
-                        UPDATE course_metadata SET updated_at = CURRENT_TIMESTAMP WHERE course_id = NEW.course_id;
+                        UPDATE course_metadata SET updated_at = strftime('%Y-%m-%d %H:%M:%S', 'now') WHERE course_id = NEW.course_id;
                     END
             """,
             
@@ -308,7 +305,7 @@ class DatabaseInitializer:
                             FROM course_sections 
                             WHERE course_id = NEW.course_id
                         ),
-                        updated_at = CURRENT_TIMESTAMP
+                        updated_at = strftime('%Y-%m-%d %H:%M:%S', 'now')
                         WHERE id = NEW.course_id;
                     END
             """,
@@ -409,45 +406,9 @@ class DatabaseInitializer:
                 {'program_code': 'N1SOF', 'program_name': 'Software Engineering and Management Bachelors Programme',
                  'program_type': 'bachelor', 'department': 'Computer Science and Engineering',
                  'description': 'Bachelor programme in software engineering with management perspective'},
-                {'program_code': 'N2ADS', 'program_name': 'Applied Data Science Masters Programme',
-                 'program_type': 'master', 'department': 'Computer Science and Engineering',
-                 'description': 'Master programme focusing on data science applications and machine learning'},
                 {'program_code': 'N2GDT', 'program_name': 'Game Design Technology Masters Programme',
                  'program_type': 'master', 'department': 'Computer Science and Engineering',
-                 'description': 'Master programme specializing in game development and interactive media'},
-                {'program_code': 'N1COS', 'program_name': 'Computer Science Bachelors Programme',
-                 'program_type': 'bachelor', 'department': 'Computer Science and Engineering',
-                 'description': 'Bachelor programme in computer science with broad foundation in algorithms and software development'},
-                {'program_code': 'N1MAT', 'program_name': 'Bachelor Programme in Mathematics',
-                 'program_type': 'bachelor', 'department': 'Mathematical Sciences',
-                 'description': 'Bachelor programme providing comprehensive education in mathematics'},
-                {'program_code': 'N2MAT', 'program_name': 'Mathematical Sciences Masters Programme',
-                 'program_type': 'master', 'department': 'Mathematical Sciences',
-                 'description': 'Master programme in mathematical sciences with specializations in pure and applied mathematics'},
-                {'program_code': 'N2SEM', 'program_name': 'Software Engineering and Management Masters Programme',
-                 'program_type': 'master', 'department': 'Computer Science and Engineering',
-                 'description': 'Master programme in software engineering and management'},
-                {'program_code': 'ISOFK', 'program_name': 'Software Engineering and Management',
-                 'program_type': 'bachelor', 'department': 'Computer Science and Engineering',
-                 'description': 'Software engineering and management programme'},
-                {'program_code': 'N2CMN', 'program_name': 'Master in Communication',
-                 'program_type': 'master', 'department': 'Applied Information Technology',
-                 'description': 'Master programme in communication studies'},
-                {'program_code': 'H2MLT', 'program_name': 'Master in Language Technology',
-                 'program_type': 'master', 'department': 'Department of Philosophy, Linguistics and Theory of Science',
-                 'description': 'Master programme in computational linguistics and language technology'},
-                {'program_code': 'H2LTG', 'program_name': 'Master in Language Technology',
-                 'program_type': 'master', 'department': 'Department of Philosophy, Linguistics and Theory of Science',
-                 'description': 'Master programme in language technology and computational linguistics'},
-                {'program_code': 'N1SEM', 'program_name': 'Software Engineering and Management Bachelors Programme',
-                 'program_type': 'bachelor', 'department': 'Computer Science and Engineering',
-                 'description': 'Bachelor programme in software engineering and management (abbreviated code)'},
-                {'program_code': 'N1SOB', 'program_name': 'Software Engineering and Business Bachelors Programme',
-                 'program_type': 'bachelor', 'department': 'Computer Science and Engineering',
-                 'description': 'Bachelor programme combining software engineering with business studies'},
-                {'program_code': 'N2SOM', 'program_name': 'Software Engineering and Management Masters Programme',
-                 'program_type': 'master', 'department': 'Computer Science and Engineering',
-                 'description': 'Master programme in software engineering and management (alternative code)'}
+                 'description': 'Master programme specializing in game development and interactive media'}
             ]
         }
     

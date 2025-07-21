@@ -18,8 +18,8 @@ CREATE TABLE programs (
     program_type VARCHAR(20) CHECK (program_type IN ('bachelor', 'master', 'phd', 'invalid')) NOT NULL,
     department VARCHAR(100),
     description TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
+    updated_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now'))
 );
 
 -- Language standards lookup table for normalization
@@ -28,7 +28,7 @@ CREATE TABLE language_standards (
     standard_code VARCHAR(10) NOT NULL, -- EN, SV, EN,SV etc.
     display_name VARCHAR(50) NOT NULL,
     original_variations TEXT, -- JSON array of original variations
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now'))
 );
 
 -- Main courses table with version support and optimized metadata for RAG/embeddings
@@ -45,9 +45,7 @@ CREATE TABLE courses (
     
     -- True metadata fields (for RAG/embeddings)
     content_type VARCHAR(20) CHECK (content_type IN ('course', 'program')) DEFAULT 'course',
-    study_pace VARCHAR(20), -- 100%, 50%, 25%
     study_form VARCHAR(50), -- Campus, Online, Distance, Hybrid
-    time_schedule VARCHAR(50), -- Day, Evening, Weekend
     field_of_education TEXT, -- Computer Science, Mathematics
     main_field_of_study TEXT, -- Software Engineering, Data Science
     specialization TEXT, -- Requirements Engineering, Machine Learning
@@ -56,15 +54,15 @@ CREATE TABLE courses (
     -- Administrative fields (not for embeddings)
     confirmation_date DATE NULL,
     valid_from_date VARCHAR(50) NULL, -- Mixed format: dates and terms like "Autumn term 2025"
-    valid_to_date DATE NULL,
     is_current BOOLEAN DEFAULT TRUE,
     is_replaced BOOLEAN DEFAULT FALSE,
     replaced_by_course_id INTEGER REFERENCES courses(id),
+    replacing_course_code VARCHAR(10) NULL, -- Course code that this course replaces
     content_completeness_score DECIMAL(3,2) DEFAULT 0.0, -- 0.0 to 1.0
     data_quality_score DECIMAL(3,2) DEFAULT 0.0, -- 0.0 to 1.0
     processing_method VARCHAR(50),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
+    updated_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
     
     -- Ensure unique course_code per version
     UNIQUE(course_code, version_id),
@@ -86,7 +84,7 @@ CREATE TABLE course_sections (
     section_content TEXT NOT NULL,
     section_order INTEGER DEFAULT 0,
     word_count INTEGER DEFAULT 0,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
     
     -- Ensure unique section names per course
     UNIQUE(course_id, section_name)
@@ -98,7 +96,7 @@ CREATE TABLE course_program_mapping (
     course_id INTEGER NOT NULL REFERENCES courses(id) ON DELETE CASCADE,
     program_id INTEGER NOT NULL REFERENCES programs(id) ON DELETE CASCADE,
     is_primary BOOLEAN DEFAULT FALSE, -- Indicates primary program for course
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
     
     -- Prevent duplicate mappings
     UNIQUE(course_id, program_id)
@@ -126,8 +124,8 @@ CREATE TABLE course_details (
     -- Additional flexible information
     additional_info JSON NULL, -- For truly rare/varying fields
     
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
+    updated_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now'))
 );
 
 -- Data quality tracking
@@ -139,7 +137,7 @@ CREATE TABLE data_quality_issues (
     severity VARCHAR(10) CHECK (severity IN ('low', 'medium', 'high')) NOT NULL,
     is_resolved BOOLEAN DEFAULT FALSE,
     resolution_notes TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
     resolved_at TIMESTAMP NULL
 );
 
@@ -151,7 +149,7 @@ CREATE TABLE course_version_history (
     previous_version_id INTEGER,
     changes_summary TEXT,
     changed_fields JSON, -- Array of field names that changed
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now'))
 );
 
 -- Performance indexes for common queries
@@ -162,7 +160,7 @@ CREATE INDEX idx_courses_current ON courses(is_current, course_code);
 CREATE INDEX idx_courses_department ON courses(department);
 
 -- Metadata indexes for RAG optimization
-CREATE INDEX idx_courses_metadata ON courses(cycle, study_form, study_pace);
+CREATE INDEX idx_courses_metadata ON courses(cycle, study_form);
 CREATE INDEX idx_courses_field ON courses(field_of_education, main_field_of_study);
 CREATE INDEX idx_courses_term ON courses(term);
 CREATE INDEX idx_courses_content_type ON courses(content_type);
@@ -213,7 +211,7 @@ CREATE TRIGGER update_course_completeness_score
             FROM course_sections 
             WHERE course_id = NEW.course_id
         ),
-        updated_at = CURRENT_TIMESTAMP
+        updated_at = strftime('%Y-%m-%d %H:%M:%S', 'now')
         WHERE id = NEW.course_id;
     END;
 
@@ -294,22 +292,12 @@ INSERT INTO language_standards (standard_code, display_name, original_variations
 ('EN,SV', 'English and Swedish', '["English and Swedish", "English, Swedish", "Swedish and English", "English,Swedish"]'),
 ('SV,EN', 'Swedish with English', '["The course is given in Swedish but English may occur."]');
 
--- Initial program data based on analysis and document extraction
+-- Initial program data - only active programs
 INSERT INTO programs (program_code, program_name, program_type, department) VALUES
--- Original validated programs
 ('N2COS', 'Computer Science Master''s Programme', 'master', 'Computer Science and Engineering'),
 ('N2SOF', 'Software Engineering and Management Master''s Programme', 'master', 'Computer Science and Engineering'),
 ('N1SOF', 'Software Engineering and Management Bachelor''s Programme', 'bachelor', 'Computer Science and Engineering'),
-('N2ADS', 'Applied Data Science Master''s Programme', 'master', 'Computer Science and Engineering'),
-('N2GDT', 'Game Design Technology Master''s Programme', 'master', 'Computer Science and Engineering'),
--- Additional programs found in course documents
-('N1COS', 'Computer Science Bachelor''s Programme', 'bachelor', 'Computer Science and Engineering'),
-('N2MAT', 'Mathematical Sciences Master''s Programme', 'master', 'Mathematical Sciences'),
-('N1SEM', 'Software Engineering and Management Bachelor''s Programme (abbreviated)', 'bachelor', 'Computer Science and Engineering'),
-('N1SOB', 'Software Engineering and Business Bachelor''s Programme', 'bachelor', 'Computer Science and Engineering'),
-('N2SOM', 'Software Engineering and Management Master''s Programme (variant)', 'master', 'Computer Science and Engineering'),
--- Invalid/placeholder programs (for reference, not to be used)  
-('NDATM', 'No Translation Available', 'invalid', NULL);
+('N2GDT', 'Game Design Technology Master''s Programme', 'master', 'Computer Science and Engineering');
 
 -- Views for common queries
 
@@ -377,7 +365,7 @@ GROUP BY p.id;
 -- Schema version tracking
 CREATE TABLE schema_version (
     version VARCHAR(20) PRIMARY KEY,
-    applied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    applied_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
     description TEXT
 );
 
