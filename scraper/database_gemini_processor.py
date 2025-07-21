@@ -57,20 +57,9 @@ DEFAULT_BATCH_SIZE = 100  # Larger batches for 10,000/day limit
 CONTENT_PREVIEW_LENGTH = 100
 
 # Valid program codes - only these should be created automatically
-# Expanded program codes based on actual data extraction
+# Valid program codes - only active programs
 VALID_PROGRAM_CODES = {
-    'N2COS', 'N2SOF', 'N1SOF', 'N2ADS', 'N2GDT', # Originally validated codes
-    'N1COS',  # Computer Science, Bachelor's Programme
-    'N2MAT',  # Mathematical Sciences, Master's Programme  
-    'N1SEM',  # Software Engineering and Management, Bachelor's (abbreviated)
-    'N1SOB',  # Software Engineering and Business (potential)
-    'N2SOM',  # Software Engineering and Management (potential typo for N2SOF)
-    'N1MAT',  # Bachelor's Programme in Mathematics
-    'ISOFK',  # Software Engineering and Management
-    'N2SEM',  # Software Engineering and Management, Master's Programme
-    'N2CMN',  # Master in Communication
-    'H2MLT',  # Master in Language Technology
-    'H2LTG'   # Master in Language Technology
+    'N2COS', 'N2SOF', 'N1SOF', 'N2GDT'
 }
 
 
@@ -350,17 +339,26 @@ def normalize_language_instruction(language: str) -> Optional[str]:
     if not language:
         return None
     
-    language_lower = language.lower().strip()
-    
-    # Language mapping
-    if 'english' in language_lower and 'swedish' in language_lower:
-        return 'EN,SV'
-    elif 'english' in language_lower:
-        return 'EN'
-    elif 'swedish' in language_lower:
-        return 'SV'
-    
-    return language  # Return original if no match
+    # Ensure we have a string to work with
+    try:
+        language_str = str(language).strip()
+        if not language_str:
+            return None
+            
+        language_lower = language_str.lower()
+        
+        # Language mapping
+        if 'english' in language_lower and 'swedish' in language_lower:
+            return 'EN,SV'
+        elif 'english' in language_lower:
+            return 'EN'
+        elif 'swedish' in language_lower:
+            return 'SV'
+        
+        return language_str  # Return cleaned string if no match
+    except Exception as e:
+        logger.warning(f"Error normalizing language '{language}': {e}")
+        return None
 
 
 def validate_credits(credits: Any) -> Optional[Decimal]:
@@ -383,12 +381,10 @@ def validate_credits(credits: Any) -> Optional[Decimal]:
         if match:
             credits_value = Decimal(match.group(1))
             
-            # Validate against GU standards
-            standard_credits = {Decimal('1.5'), Decimal('3.0'), Decimal('7.5'), 
-                              Decimal('15.0'), Decimal('22.5'), Decimal('30.0')}
-            
-            if credits_value not in standard_credits:
-                logger.warning(f"Non-standard credits value: {credits_value}")
+            # Only validate that credits is positive
+            if credits_value <= 0:
+                logger.warning(f"Invalid credits value (must be positive): {credits_value}")
+                return None
             
             return credits_value
         
@@ -478,7 +474,7 @@ class DatabaseGeminiProcessor:
            - confirmation_date (e.g. 2025-01-01)
            - revision_date (e.g. 2025-01-01, some courses have this, some don't)
            - valid_from_date (e.g. 2025-01-01)
-           - programmes (as a list of strings look in the "Position in the educational system" section) (e.g. [N1SOF, N2COS, N2SOF, N2ADS, N2GDT, N2MAT] if there is no programme or program code, return an empty list)
+           - programmes (as a list of strings look in the "Position in the educational system" section, only retrieve the program codes e.g "N2COS", "N2SOF", "N1SOF", "N2GDT", if there is no programme or program code, return an empty list, never return a program name e.g. "Software Engineering and Management", "Computer Science and Engineering", etc.)
         
         2. Sections: 
            - Confirmation
@@ -491,6 +487,7 @@ class DatabaseGeminiProcessor:
            - Grades
            - Course evaluation
            - Additional information (some courses have this, some don't)
+           - Replacing course code (only retrieve the course code this course is replacing, e.g. "DIT231", "DIT6132", the information is in the "Additional information" section, some courses have this, some don't)
         
         Return the information in the following JSON format:
         {
@@ -508,7 +505,7 @@ class DatabaseGeminiProcessor:
             "confirmation_date": "[date]",
             "valid_from_date": "[date]",
             "programmes": [
-              "[programme names as list items]"
+              "[programme codes as list items]"
             ]
           },
           "sections": {
@@ -521,7 +518,8 @@ class DatabaseGeminiProcessor:
             "Assessment": "[text]",
             "Grades": "[text]",
             "Course evaluation": "[text]",
-            "Additional information": "[text]"
+            "Additional information": "[text]",
+            "Replacing course code": "[text]"
           }
         }
         
@@ -544,7 +542,7 @@ class DatabaseGeminiProcessor:
            - language_of_instruction (e.g. English, Swedish, etc.)
            - confirmation_date (may be called "Decision date")
            - valid_from_date (may be called "Date of entry into force")
-           - programmes (as a list of strings, look in the "Position" section, e.g. N2MAT, N2ADS, etc.)
+           - programmes (as a list of strings, look in the "Position" section, only retrieve the program codes e.g "N2COS", "N2SOF", "N1SOF", "N2GDT", if there is no programme or program code, return an empty list, never return a program name e.g. "Software Engineering and Management", "Computer Science and Engineering", etc.)
         
         2. COURSE DETAILS (specific information, not for search):
            - confirmation_date (may be called "Decision date")
@@ -574,7 +572,7 @@ class DatabaseGeminiProcessor:
             "confirmation_date": "[date]",
             "valid_from_date": "[date]",
             "programmes": [
-              "[programme names as list items]"
+              "[programme codes as list items]"
             ]
           },
           "sections": {
@@ -632,9 +630,7 @@ class DatabaseGeminiProcessor:
             "course_title": "[title]",
             "department": "[department]",
             "credits": "[credits]",
-            "study_pace": "[study_pace]",
             "study_form": "[study_form]",
-            "time_schedule": "[time_schedule]",
             "language_of_instruction": "[language]",
             "field_of_education": "[field]",
             "main_field_of_study": "[main_field]",
@@ -656,7 +652,7 @@ class DatabaseGeminiProcessor:
           }
         }
         
-        Only return valid JSON, no explanations or other text.
+        Only return valid JSON, no explanations or other text. If information is not available, return an empty string.
         """
     
     def process_single_content(self, source_path: str, content_type: str) -> ProcessingResult:
@@ -768,6 +764,12 @@ class DatabaseGeminiProcessor:
             # Check sections
             if not isinstance(sections, dict) or len(sections) == 0:
                 return False
+            
+            # Optional: validate course_details if present (for course page content)
+            if 'course_details' in data:
+                course_details = data['course_details']
+                if not isinstance(course_details, dict):
+                    return False
             
             return True
             
@@ -891,6 +893,16 @@ class DatabaseGeminiProcessor:
                 
                 session.flush()  # Get the course ID
                 
+                # Handle "Replacing course code" section specially
+                if 'Replacing course code' in sections:
+                    replacing_code = sections.get('Replacing course code', '').strip()
+                    if replacing_code:
+                        # Extract just the course code (e.g., "DIT231" from any surrounding text)
+                        code_match = re.search(r'\b([A-Z]{2,3}\d{3,4})\b', replacing_code)
+                        if code_match:
+                            course.replacing_course_code = code_match.group(1)
+                            logger.info(f"Course {course.course_code} replaces {course.replacing_course_code}")
+                
                 # Handle course sections
                 for section_name, section_content in sections.items():
                     if not section_content or not section_content.strip():
@@ -922,7 +934,7 @@ class DatabaseGeminiProcessor:
                     for program_code in programs:
                         # Validate program code against expanded whitelist
                         if program_code not in VALID_PROGRAM_CODES:
-                            logger.warning(f"Unknown program code '{program_code}' for course {course.course_code}. Consider adding to VALID_PROGRAM_CODES if legitimate. Currently allowed: {VALID_PROGRAM_CODES}")
+                            logger.warning(f"Unknown program code '{program_code}' for course {course.course_code}. Currently allowed: {VALID_PROGRAM_CODES}")
                             continue
                         
                         # Find or create program (only for valid codes)
@@ -950,7 +962,7 @@ class DatabaseGeminiProcessor:
                 # Store metadata fields directly in course table
                 metadata_fields = {
                     'field_of_education', 'main_field_of_study', 'specialization', 
-                    'study_pace', 'study_form', 'time_schedule', 'term'
+                    'study_form', 'term'
                 }
                 
                 for field in metadata_fields:
@@ -958,7 +970,7 @@ class DatabaseGeminiProcessor:
                         setattr(course, field, metadata[field])
                 
                 # Handle course details in separate table
-                if course_details_data or any(key in metadata for key in ['location', 'iteration', 'duration', 'application_period', 'application_code', 'tuition_fee']):
+                if course_details_data or any(key in metadata for key in ['duration', 'application_period', 'application_code', 'tuition_fee']):
                     # Delete existing course details
                     session.query(CourseDetails).filter_by(course_id=course.id).delete()
                     
@@ -969,9 +981,7 @@ class DatabaseGeminiProcessor:
                         'tuition_fee': 'tuition_fee',
                         'duration': 'duration',
                         'application_period': 'application_period',
-                        'application_code': 'application_code',
-                        'location': 'location',
-                        'iteration': 'iteration'
+                        'application_code': 'application_code'
                     }
                     
                     for details_key, db_field in details_mapping.items():

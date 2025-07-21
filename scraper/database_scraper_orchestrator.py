@@ -589,7 +589,7 @@ class DatabaseScraperOrchestrator:
                         all_pdf_files = session.execute(
                             text("""SELECT file_path FROM pdf_downloads 
                                     WHERE status = 'success' 
-                                    AND file_path NOT IN (SELECT DISTINCT source_document FROM courses WHERE source_document IS NOT NULL)""")
+                                    AND file_path NOT IN (SELECT DISTINCT source_path FROM gemini_processing_jobs WHERE processing_status = 'success')""")
                         ).fetchall()
                         # Filter to only include files that exist and have reasonable size
                         pdf_files = []
@@ -652,54 +652,63 @@ class DatabaseScraperOrchestrator:
             successful_processing = 0
             total_cost = 0.0
             
-            # Combine all files for processing
-            all_files = [(pdf_row[0], "pdf") for pdf_row in pdf_files]
-            # Add HTML files with proper content_type based on url_type
+            # Separate files by type for ordered processing
+            pdf_file_list = [(pdf_row[0], "pdf") for pdf_row in pdf_files]
+            syllabus_file_list = []
+            course_page_file_list = []
+            
+            # Separate HTML files by type
             for html_row in html_files:
                 url_type = html_row[1] if len(html_row) > 1 else 'course_page'
-                content_type = "syllabus_md" if url_type == 'syllabus' else "course_page_md"
-                all_files.append((html_row[0], content_type))
+                if url_type == 'syllabus':
+                    syllabus_file_list.append((html_row[0], "syllabus_md"))
+                else:
+                    course_page_file_list.append((html_row[0], "course_page_md"))
             
-            # Process files in batches to manage API rate limits
-            batch_size = self.config.batch_size  # Use configured batch size for tier 1
+            # Process in three phases to ensure correct order
+            logger.info("=" * 80)
+            logger.info("PROCESSING ORDER: PDFs → Syllabus Pages → Course Pages")
+            logger.info("=" * 80)
             
-            for i in range(0, len(all_files), batch_size):
-                batch = all_files[i:i+batch_size]
-                
-                logger.info(f"Processing batch {i//batch_size + 1}/{(len(all_files) + batch_size - 1)//batch_size} ({len(batch)} files)")
-                
-                # Use ThreadPoolExecutor for parallel processing
-                with concurrent.futures.ThreadPoolExecutor(max_workers=self.config.max_concurrent_processing) as executor:
-                    processing_futures = []
-                    
-                    for file_path, content_type in batch:
-                        future = executor.submit(self._process_single_file_with_rate_limit, file_path, content_type)
-                        processing_futures.append(future)
-                    
-                    # Process results
-                    for future in concurrent.futures.as_completed(processing_futures):
-                        try:
-                            result = future.result()
-                            if result and result.get('success'):
-                                successful_processing += 1
-                                total_cost += result.get('cost', 0.0)
-                        except Exception as e:
-                            logger.error(f"Content processing failed: {e}")
-                            self.stats.errors_encountered += 1
-                
-                # Save progress checkpoint after each batch
-                self._save_progress()
-                logger.info(f"Processed {successful_processing} files so far, cost: ${total_cost:.4f}")
-                
-                # Rate limiting delay between batches to respect Gemini API limits
-                if i + batch_size < len(all_files):
-                    time.sleep(1.0)  # 1 second between batches
+            # Phase 1: Process PDF files (syllabi_pdfs)
+            if pdf_file_list:
+                logger.info("\n" + "="*80)
+                logger.info(f"PHASE 1: Processing {len(pdf_file_list)} PDF files from /data/syllabi_pdfs/")
+                logger.info("="*80)
+                phase_results = self._process_file_batch(pdf_file_list, "PDF syllabi")
+                successful_processing += phase_results['successful']
+                total_cost += phase_results['cost']
+            
+            # Phase 2: Process syllabus markdown files (syllabi_pages)
+            if syllabus_file_list:
+                logger.info("\n" + "="*80)
+                logger.info(f"PHASE 2: Processing {len(syllabus_file_list)} syllabus pages from /data/syllabi_pages/")
+                logger.info("="*80)
+                phase_results = self._process_file_batch(syllabus_file_list, "syllabus pages")
+                successful_processing += phase_results['successful']
+                total_cost += phase_results['cost']
+            
+            # Phase 3: Process course page markdown files (course_pages)
+            if course_page_file_list:
+                logger.info("\n" + "="*80)
+                logger.info(f"PHASE 3: Processing {len(course_page_file_list)} course pages from /data/course_pages/")
+                logger.info("="*80)
+                phase_results = self._process_file_batch(course_page_file_list, "course pages")
+                successful_processing += phase_results['successful']
+                total_cost += phase_results['cost']
             
             self.stats.processing_cost = total_cost
             
             self.stats.courses_processed = successful_processing
-            logger.info(f"Content processing phase completed: {successful_processing} files processed")
+            logger.info("\n" + "="*80)
+            logger.info("GEMINI PROCESSING SUMMARY")
+            logger.info("="*80)
+            logger.info(f"Total files processed: {successful_processing}")
+            logger.info(f"  - PDFs processed: {len(pdf_file_list)}")
+            logger.info(f"  - Syllabus pages processed: {len(syllabus_file_list)}")
+            logger.info(f"  - Course pages processed: {len(course_page_file_list)}")
             logger.info(f"Total processing cost: ${self.stats.processing_cost:.4f}")
+            logger.info("="*80)
             
         except Exception as e:
             logger.error(f"Content processing phase failed: {e}")
@@ -766,6 +775,55 @@ class DatabaseScraperOrchestrator:
             )
             self.gemini_processor.gemini_store.record_processing_attempt(failed_result)
             return {'success': False, 'cost': 0.0}
+    
+    def _process_file_batch(self, file_list: List[Tuple[str, str]], phase_name: str) -> Dict[str, Any]:
+        """Process a batch of files with rate limiting and parallel processing.
+        
+        Args:
+            file_list: List of (file_path, content_type) tuples
+            phase_name: Name of the processing phase for logging
+            
+        Returns:
+            Dictionary with 'successful' count and 'cost' total
+        """
+        successful = 0
+        cost = 0.0
+        batch_size = self.config.batch_size
+        
+        for i in range(0, len(file_list), batch_size):
+            batch = file_list[i:i+batch_size]
+            
+            logger.info(f"Processing {phase_name} batch {i//batch_size + 1}/{(len(file_list) + batch_size - 1)//batch_size} ({len(batch)} files)")
+            
+            # Use ThreadPoolExecutor for parallel processing
+            with concurrent.futures.ThreadPoolExecutor(max_workers=self.config.max_concurrent_processing) as executor:
+                processing_futures = []
+                
+                for file_path, content_type in batch:
+                    future = executor.submit(self._process_single_file_with_rate_limit, file_path, content_type)
+                    processing_futures.append(future)
+                
+                # Process results
+                for future in concurrent.futures.as_completed(processing_futures):
+                    try:
+                        result = future.result()
+                        if result and result.get('success'):
+                            successful += 1
+                            cost += result.get('cost', 0.0)
+                    except Exception as e:
+                        logger.error(f"Content processing failed: {e}")
+                        self.stats.errors_encountered += 1
+            
+            # Save progress checkpoint after each batch
+            self._save_progress()
+            logger.info(f"Phase {phase_name}: Processed {successful} files so far, cost: ${cost:.4f}")
+            
+            # Rate limiting delay between batches to respect Gemini API limits
+            if i + batch_size < len(file_list):
+                time.sleep(1.0)  # 1 second between batches
+        
+        logger.info(f"Phase {phase_name} completed: {successful}/{len(file_list)} files processed, cost: ${cost:.4f}")
+        return {'successful': successful, 'cost': cost}
     
     def _run_duplicate_management_phase(self):
         """Execute duplicate management phase using database duplicate manager."""
