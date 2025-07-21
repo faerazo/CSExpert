@@ -49,7 +49,7 @@ load_dotenv()
 # Gemini model configuration
 DEFAULT_MODEL_NAME = "gemini-2.5-flash"  # Dont change this, it is the best model for this task
 API_RETRY_ATTEMPTS = 3
-API_DELAY = 0.06  # TIER 1: 0.06 seconds between requests (1000 RPM limit)
+API_DELAY = 0.06  # TIER 1
 REQUEST_TIMEOUT = 60
 
 # Processing settings - TIER 1 optimized
@@ -59,9 +59,7 @@ CONTENT_PREVIEW_LENGTH = 100
 # Valid program codes - only these should be created automatically
 # Expanded program codes based on actual data extraction
 VALID_PROGRAM_CODES = {
-    # Originally validated codes
-    'N2COS', 'N2SOF', 'N1SOF', 'N2ADS', 'N2GDT',
-    # Additional codes found in course documents
+    'N2COS', 'N2SOF', 'N1SOF', 'N2ADS', 'N2GDT', # Originally validated codes
     'N1COS',  # Computer Science, Bachelor's Programme
     'N2MAT',  # Mathematical Sciences, Master's Programme  
     'N1SEM',  # Software Engineering and Management, Bachelor's (abbreviated)
@@ -122,11 +120,10 @@ class DatabaseGeminiStore:
                         processing_time REAL DEFAULT 0.0,
                         cost_estimate REAL DEFAULT 0.0,
                         retry_count INTEGER DEFAULT 0,
+                        gemini_response TEXT,
                         processed_at TIMESTAMP,
                         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                         updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                        gemini_response TEXT,
-                        
                         FOREIGN KEY (course_id) REFERENCES courses(id),
                         UNIQUE(source_path, content_type)
                     )
@@ -189,7 +186,7 @@ class DatabaseGeminiStore:
             query = """
                 INSERT OR REPLACE INTO gemini_processing_jobs 
                 (source_path, content_type, course_code, processing_status, course_id, 
-                 error_message, processing_time, cost_estimate, retry_count, processed_at, gemini_response)
+                 error_message, processing_time, cost_estimate, retry_count, gemini_response, processed_at)
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """
             
@@ -211,8 +208,8 @@ class DatabaseGeminiStore:
                 result.processing_time,
                 result.cost_estimate,
                 retry_count,
-                result.processed_at,
-                gemini_response_json
+                gemini_response_json,
+                result.processed_at
             ))
             
             return True
@@ -468,32 +465,32 @@ class DatabaseGeminiProcessor:
         
         Extract the following information from the PDF:
         1. Metadata: 
-           - course_code (from the filename which is always course_code.pdf)
+           - course_code (e.g. DIT231, LT343, TIA335, MSA341, MMA341, etc.)
            - course_title
            - swedish_title
-           - department
-           - field_of_education
-           - credits (only the number, not the text)
-           - cycle
-           - main_field_of_study
-           - specialization 
-           - language_of_instruction
-           - confirmation_date
-           - valid_from_date
-           - programmes (as a list of strings)
+           - department (e.g. Department of Computer Science and Engineering, Department of Mathematics, Department of Applied Information Technology, etc.)
+           - field_of_education (e.g. Science 100%, Technology 100%, etc.)
+           - credits (only the number, not the text) (e.g. 7.5, 6.0, 15.0, etc.)
+           - cycle (e.g. First cycle, Second cycle, etc.)
+           - main_field_of_study (e.g. Computer Science, Communication, Mathematics, etc. if there is no main field of study, return an empty string)
+           - specialization (e.g. G1N, A1N, G2F, G1F, etc.  if there is no specialization, return an empty string)
+           - language_of_instruction (e.g. English, Swedish, etc.)
+           - confirmation_date (e.g. 2025-01-01)
+           - revision_date (e.g. 2025-01-01, some courses have this, some don't)
+           - valid_from_date (e.g. 2025-01-01)
+           - programmes (as a list of strings look in the "Position in the educational system" section) (e.g. [N1SOF, N2COS, N2SOF, N2ADS, N2GDT, N2MAT] if there is no programme or program code, return an empty list)
         
         2. Sections: 
            - Confirmation
-           - Position in the educational system
            - Entry requirements
            - Learning outcomes
            - Course content
-           - Sub-courses
+           - Sub-courses or Course modules (some courses have this, some don't)
            - Form of teaching
            - Assessment
            - Grades
            - Course evaluation
-           - Additional information
+           - Additional information (some courses have this, some don't)
         
         Return the information in the following JSON format:
         {
@@ -516,7 +513,6 @@ class DatabaseGeminiProcessor:
           },
           "sections": {
             "Confirmation": "[text]",
-            "Position in the educational system": "[text]",
             "Entry requirements": "[text]",
             "Learning outcomes": "[text]",
             "Course content": "[text]",
@@ -539,27 +535,26 @@ class DatabaseGeminiProcessor:
         
         Extract the following information from the markdown:
         1. Metadata: 
-           - course_code (from the filename which is always course_code.md)
+           - course_code (e.g. DIT231, LT343, TIA335, MSA341, MMA341, etc.)
            - course_title
            - swedish_title
-           - department (if available)
-           - credits (only the number, not the text)
-           - cycle
-           - language_of_instruction
+           - department (e.g. Department of Computer Science and Engineering, Department of Mathematics, Department of Applied Information Technology, etc.)
+           - credits (only the number, not the text) (e.g. 7.5, 6.0, 15.0, etc.)
+           - cycle (e.g. First cycle, Second cycle, etc.)
+           - language_of_instruction (e.g. English, Swedish, etc.)
            - confirmation_date (may be called "Decision date")
-           - valid_from_date (may be called "Valid from semester" or similar)
-           - programmes (as a list of strings, look in the "Position" section)
+           - valid_from_date (may be called "Date of entry into force")
+           - programmes (as a list of strings, look in the "Position" section, e.g. N2MAT, N2ADS, etc.)
         
         2. COURSE DETAILS (specific information, not for search):
            - confirmation_date (may be called "Decision date")
-           - valid_from_date (may be called "Valid from semester" or similar - original text)
+           - valid_from_date (may be called "Date of entry into force" or similar - original text)
         
         3. SECTIONS (content - map to these exact keys in the output): 
-           - Position in the educational system (from "Position")
            - Entry requirements
            - Course content (may be just "Content")
+           - Sub-courses (may be called "Modules")
            - Learning outcomes (may be "Objectives")
-           - Sub-courses
            - Form of teaching
            - Assessment (from "Examination formats")
            - Grades
@@ -609,33 +604,26 @@ class DatabaseGeminiProcessor:
         Extract the following information from the markdown:
         
         1. METADATA (searchable attributes): 
-           - course_code (from filename or content)
+           - course_code (e.g. DIT231, LT343, TIA335, MSA341, MMA341, etc.)
            - course_title (main course title)
-           - department (offering department)
-           - credits (only the number as string, e.g. "7.5")
-           - study_pace (percentage like "100%", "50%")
+           - department (offering department) (e.g. Department of Computer Science and Engineering, Department of Mathematics, Department of Applied Information Technology, etc.)
+           - credits (only the number as string, e.g. "7.5", "6.0", "15.0", etc.)
            - study_form ("Campus", "Online", "Distance", "Hybrid")
-           - time_schedule ("Day", "Evening", "Weekend")
            - language_of_instruction ("English", "Swedish")
-           - field_of_education ("Computer Science", "Mathematics")
-           - main_field_of_study ("Software Engineering", "Data Science")
-           - term (parsed from dates like "Autumn 2025", "Spring 2025")
-           - programmes (as a list of strings)
+           - term (parsed from dates like "Autumn 2025", "Spring 2025", "Summer 2025", "Autumn 2026")
         
         2. COURSE DETAILS (specific information, not for search):
-           - tuition_fee (specific amount)
+           - tuition_fee (specific amount without spaces or special characters, e.g. "17753", "150000", etc.)
+           - application_period (specific application dates, e.g. "24 Mar 2025 - 8 Jun 2025")
            - duration (specific date ranges like "24 Mar 2025 - 8 Jun 2025")
-           - application_period (specific application dates)
            - application_code (administrative codes like "GU-86092")
-           - location (specific campus/building info)
-           - iteration (specific instance info)
         
         3. SECTIONS (content):
            - About
            - Entry requirements  
            - Selection
-           - Tuition
-           - Additional information
+           - Tuition (full text including full education cost, first payment, no fee are charged for EU and EEA citizens...)
+           - Last modified (date of last modification e.g. "19 June 2025")
         
         Return the information in the following JSON format:
         {
@@ -655,11 +643,9 @@ class DatabaseGeminiProcessor:
           },
           "course_details": {
             "tuition_fee": "[amount]",
-            "duration": "[date_range]",
             "application_period": "[application_dates]",
+            "duration": "[date_range]",
             "application_code": "[code]",
-            "location": "[location]",
-            "iteration": "[iteration]"
           },
           "sections": {
             "About": "[text]",
