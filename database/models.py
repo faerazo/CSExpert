@@ -307,15 +307,18 @@ class CourseSection(Base):
             self.word_count = 0
             return None
         
-        if not content.strip():
+        # Convert to string to handle any data type
+        content_str = str(content)
+        
+        if not content_str.strip():
             self.word_count = 0
             return ""
         
         # Calculate word count
-        word_count = len(content.split())
+        word_count = len(content_str.split())
         self.word_count = word_count
         
-        return content.strip()
+        return content_str.strip()
     
     @property
     def content_preview(self) -> str:

@@ -827,11 +827,32 @@ class DatabaseGeminiProcessor:
                     logger.info(f"Creating new course: {course_code}")
                     course = Course()
                 
-                # Update course metadata
+                # Update course metadata with safe field handling
                 course.course_code = course_code
-                course.course_title = metadata.get('course_title', '')[:500]  # Limit length
-                course.swedish_title = metadata.get('swedish_title')
-                course.department = metadata.get('department', 'Unknown')[:100]
+                
+                # Safely handle course title
+                try:
+                    title = metadata.get('course_title', '')
+                    course.course_title = str(title)[:500] if title else ''
+                except Exception as e:
+                    logger.warning(f"Error setting course_title for {course_code}: {e}")
+                    course.course_title = f"Course {course_code}"  # Fallback title
+                
+                # Safely handle swedish title
+                try:
+                    swedish_title = metadata.get('swedish_title')
+                    course.swedish_title = str(swedish_title) if swedish_title else None
+                except Exception as e:
+                    logger.warning(f"Error setting swedish_title for {course_code}: {e}")
+                    course.swedish_title = None
+                
+                # Safely handle department
+                try:
+                    dept = metadata.get('department', 'Unknown')
+                    course.department = str(dept)[:100] if dept else 'Unknown'
+                except Exception as e:
+                    logger.warning(f"Error setting department for {course_code}: {e}")
+                    course.department = 'Unknown'
                 
                 # Handle credits
                 credits = validate_credits(metadata.get('credits'))
@@ -844,12 +865,13 @@ class DatabaseGeminiProcessor:
                 # Handle cycle with normalization
                 cycle = metadata.get('cycle')
                 if cycle:
-                    # Normalize cycle capitalization
-                    if 'first' in cycle.lower():
+                    # Convert to string and normalize cycle capitalization
+                    cycle_str = str(cycle).lower()
+                    if 'first' in cycle_str:
                         course.cycle = 'First cycle'
-                    elif 'second' in cycle.lower():
+                    elif 'second' in cycle_str:
                         course.cycle = 'Second cycle'
-                    elif 'third' in cycle.lower():
+                    elif 'third' in cycle_str:
                         course.cycle = 'Third cycle'
                     else:
                         course.cycle = 'Second cycle'  # Default
@@ -895,7 +917,13 @@ class DatabaseGeminiProcessor:
                 
                 # Handle "Replacing course code" section specially
                 if 'Replacing course code' in sections:
-                    replacing_code = sections.get('Replacing course code', '').strip()
+                    try:
+                        replacing_code_raw = sections.get('Replacing course code', '')
+                        replacing_code = str(replacing_code_raw).strip() if replacing_code_raw else ''
+                    except Exception as e:
+                        logger.warning(f"Error processing replacing course code: {e}")
+                        replacing_code = ''
+                    
                     if replacing_code:
                         # Extract just the course code (e.g., "DIT231" from any surrounding text)
                         code_match = re.search(r'\b([A-Z]{2,3}\d{3,4})\b', replacing_code)
@@ -914,14 +942,18 @@ class DatabaseGeminiProcessor:
                     ).first()
                     
                     if existing_section:
-                        existing_section.section_content = section_content.strip() if section_content else ""
-                        existing_section.word_count = len(section_content.split()) if section_content else 0
+                        # Safe handling - convert to string first
+                        content_str = str(section_content) if section_content is not None else ""
+                        existing_section.section_content = content_str.strip() if content_str else ""
+                        existing_section.word_count = len(content_str.split()) if content_str else 0
                     else:
+                        # Safe handling - convert to string first
+                        content_str = str(section_content) if section_content is not None else ""
                         section = CourseSection(
                             course_id=course.id,
                             section_name=section_name,
-                            section_content=section_content.strip() if section_content else "",
-                            word_count=len(section_content.split()) if section_content else 0
+                            section_content=content_str.strip() if content_str else "",
+                            word_count=len(content_str.split()) if content_str else 0
                         )
                         session.add(section)
                 
@@ -996,7 +1028,8 @@ class DatabaseGeminiProcessor:
                                 except:
                                     setattr(course_details, db_field, None)
                             else:
-                                setattr(course_details, db_field, value)
+                                # Convert empty strings to None for all fields
+                                setattr(course_details, db_field, value if value and str(value).strip() else None)
                         elif details_key in metadata:  # Fallback for legacy data
                             value = metadata[details_key]
                             # Apply same tuition_fee handling for metadata fallback
