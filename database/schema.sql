@@ -65,15 +65,7 @@ CREATE TABLE courses (
     updated_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
     
     -- Ensure unique course_code per version
-    UNIQUE(course_code, version_id),
-    
-    -- Business rule: confirmation_date should be before or equal to valid_from_date (when both are dates)
-    CHECK (
-        confirmation_date IS NULL OR 
-        valid_from_date IS NULL OR 
-        NOT (confirmation_date LIKE '____-__-__' AND valid_from_date LIKE '____-__-__') OR
-        confirmation_date <= DATE(SUBSTR(valid_from_date, 1, 10))
-    )
+    UNIQUE(course_code, version_id)
 );
 
 -- Course sections for structured content storage
@@ -81,7 +73,7 @@ CREATE TABLE course_sections (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     course_id INTEGER NOT NULL REFERENCES courses(id) ON DELETE CASCADE,
     section_name VARCHAR(100) NOT NULL,
-    section_content TEXT NOT NULL,
+    section_content TEXT,
     section_order INTEGER DEFAULT 0,
     word_count INTEGER DEFAULT 0,
     created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
@@ -183,15 +175,6 @@ CREATE INDEX idx_course_version_history_course ON course_version_history(course_
 CREATE INDEX idx_courses_dates ON courses(confirmation_date, valid_from_date);
 CREATE INDEX idx_courses_updated ON courses(updated_at);
 
--- Full-text search index for course content (SQLite FTS5)
-CREATE VIRTUAL TABLE course_content_fts USING fts5(
-    course_code,
-    course_title,
-    section_name,
-    section_content,
-    content='course_sections',
-    content_rowid='id'
-);
 
 -- Triggers for maintaining data integrity and automation
 
@@ -226,17 +209,6 @@ CREATE TRIGGER update_section_word_count
         WHERE ROWID = NEW.ROWID;
     END;
 
--- Trigger to maintain FTS index
-CREATE TRIGGER course_sections_ai AFTER INSERT ON course_sections BEGIN
-    INSERT INTO course_content_fts(rowid, course_code, course_title, section_name, section_content)
-    SELECT 
-        NEW.id,
-        c.course_code,
-        c.course_title,
-        NEW.section_name,
-        NEW.section_content
-    FROM courses c WHERE c.id = NEW.course_id;
-END;
 
 -- Trigger to log version changes
 CREATE TRIGGER log_course_changes

@@ -462,8 +462,8 @@ class DatabaseGeminiProcessor:
         Extract the following information from the PDF:
         1. Metadata: 
            - course_code (e.g. DIT231, LT343, TIA335, MSA341, MMA341, etc.)
-           - course_title
-           - swedish_title
+           - course_title (e.g. "Mathematical Foundations for Software Engineering", it is possible that you find other information in the title e.g. 7.5, don't consider this)
+           - swedish_title (e.g. "Grundläggande matematik för mjukvarutekniker", it is possible that you find other information in the title e.g. 7.5, don't consider this)
            - department (e.g. Department of Computer Science and Engineering, Department of Mathematics, Department of Applied Information Technology, etc.)
            - field_of_education (e.g. Science 100%, Technology 100%, etc.)
            - credits (only the number, not the text) (e.g. 7.5, 6.0, 15.0, etc.)
@@ -534,8 +534,8 @@ class DatabaseGeminiProcessor:
         Extract the following information from the markdown:
         1. Metadata: 
            - course_code (e.g. DIT231, LT343, TIA335, MSA341, MMA341, etc.)
-           - course_title
-           - swedish_title
+           - course_title (e.g. "Mathematical Foundations for Software Engineering", it is possible that you find other information in the title e.g. 7.5, don't consider this)
+           - swedish_title (e.g. "Grundläggande matematik för mjukvarutekniker", it is possible that you find other information in the title e.g. 7.5, don't consider this)
            - department (e.g. Department of Computer Science and Engineering, Department of Mathematics, Department of Applied Information Technology, etc.)
            - credits (only the number, not the text) (e.g. 7.5, 6.0, 15.0, etc.)
            - cycle (e.g. First cycle, Second cycle, etc.)
@@ -905,7 +905,7 @@ class DatabaseGeminiProcessor:
                 
                 # Handle course sections
                 for section_name, section_content in sections.items():
-                    if not section_content or not section_content.strip():
+                    if section_content is None or (isinstance(section_content, str) and not section_content.strip()):
                         continue
                     
                     # Check if section already exists
@@ -914,14 +914,14 @@ class DatabaseGeminiProcessor:
                     ).first()
                     
                     if existing_section:
-                        existing_section.section_content = section_content.strip()
-                        existing_section.word_count = len(section_content.split())
+                        existing_section.section_content = section_content.strip() if section_content else ""
+                        existing_section.word_count = len(section_content.split()) if section_content else 0
                     else:
                         section = CourseSection(
                             course_id=course.id,
                             section_name=section_name,
-                            section_content=section_content.strip(),
-                            word_count=len(section_content.split())
+                            section_content=section_content.strip() if section_content else "",
+                            word_count=len(section_content.split()) if section_content else 0
                         )
                         session.add(section)
                 
@@ -1001,7 +1001,7 @@ class DatabaseGeminiProcessor:
                             value = metadata[details_key]
                             # Apply same tuition_fee handling for metadata fallback
                             if details_key == 'tuition_fee':
-                                if value and str(value).strip():  # Check if value is not empty
+                                if value is not None and str(value).strip():  # Check if value is not empty
                                     try:
                                         import re
                                         fee_str = re.sub(r'[^\d.]', '', str(value))

@@ -285,7 +285,7 @@ class CourseSection(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     course_id = Column(Integer, ForeignKey('courses.id', ondelete='CASCADE'), nullable=False)
     section_name = Column(String(100), nullable=False)
-    section_content = Column(Text, nullable=False)
+    section_content = Column(Text, nullable=True)
     section_order = Column(Integer, default=0)
     word_count = Column(Integer, default=0)
     created_at = Column(DateTime, default=datetime.utcnow)
@@ -303,8 +303,13 @@ class CourseSection(Base):
     @validates('section_content')
     def validate_section_content(self, key, content):
         """Validate and calculate word count for section content."""
-        if not content or not content.strip():
-            raise ValueError("Section content cannot be empty")
+        if content is None:
+            self.word_count = 0
+            return None
+        
+        if not content.strip():
+            self.word_count = 0
+            return ""
         
         # Calculate word count
         word_count = len(content.split())
@@ -315,6 +320,8 @@ class CourseSection(Base):
     @property
     def content_preview(self) -> str:
         """Get preview of section content (first 100 characters)."""
+        if self.section_content is None:
+            return ""
         if len(self.section_content) <= 100:
             return self.section_content
         return self.section_content[:97] + "..."

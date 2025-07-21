@@ -163,7 +163,7 @@ class DatabaseInitializer:
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
                     course_id INTEGER NOT NULL REFERENCES courses(id) ON DELETE CASCADE,
                     section_name VARCHAR(100) NOT NULL,
-                    section_content TEXT NOT NULL,
+                    section_content TEXT,
                     section_order INTEGER DEFAULT 0,
                     word_count INTEGER DEFAULT 0,
                     created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),

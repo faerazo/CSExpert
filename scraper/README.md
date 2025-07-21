@@ -12,7 +12,7 @@ python -m scraper.database_scraper_orchestrator
 
 The CSExpert scraper is a database-driven pipeline that extracts academic course information from the University of Gothenburg. It discovers URLs, downloads PDFs, scrapes HTML content, and uses Google Gemini AI to extract structured course data.
 
-**Pipeline**: URL Extraction → PDF Download → HTML Scraping → AI Processing → Duplicate Management
+**Pipeline**: URL Extraction → PDF Download → HTML Scraping → AI Processing
 
 ## Components
 
@@ -36,10 +36,7 @@ AI-powered content extraction with three processing modes:
 - `syllabus_md` - Web syllabus pages
 - `course_page_md` - Course overview pages
 
-### 6. **database_duplicate_manager.py**
-Detects and resolves duplicate courses, keeping highest quality version
-
-### 7. **webdriver_pool.py**
+### 6. **webdriver_pool.py**
 Manages Chrome WebDriver instances for efficient web scraping
 
 ## Configuration

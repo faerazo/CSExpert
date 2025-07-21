@@ -49,7 +49,6 @@ try:
     from scraper.database_pdf_downloader import DatabasePDFDownloader  
     from scraper.database_html_scraper import DatabaseHTMLScraper
     from scraper.database_gemini_processor import DatabaseGeminiProcessor
-    from scraper.database_duplicate_manager import DatabaseDuplicateManager
     DATABASE_COMPONENTS_AVAILABLE = True
 except ImportError as e:
     logger.warning(f"Some database components not available: {e}")
@@ -72,9 +71,6 @@ except ImportError as e:
         def __init__(self, db_path): pass
         def process_single_content(self, path, content_type): return type('Result', (), {'success': True, 'processing_cost': 0.0, 'course_id': 1, 'error': None})()
     
-    class DatabaseDuplicateManager:
-        def __init__(self, db_path): pass
-        def detect_and_resolve_duplicates(self): return type('Result', (), {'success': True, 'resolved_count': 0, 'quality_issues_created': 0, 'error_message': None})()
 
 class ProcessingPhase(Enum):
     """Database-tracked processing phases."""
@@ -82,7 +78,6 @@ class ProcessingPhase(Enum):
     PDF_DOWNLOAD = "pdf_download"
     HTML_SCRAPING = "html_scraping"
     CONTENT_PROCESSING = "content_processing"
-    DUPLICATE_MANAGEMENT = "duplicate_management"
     COMPLETED = "completed"
 
 @dataclass
@@ -124,7 +119,6 @@ class ProcessingStats:
     pdfs_downloaded: int = 0
     pages_scraped: int = 0
     courses_processed: int = 0
-    duplicates_resolved: int = 0
     errors_encountered: int = 0
     network_errors: int = 0  # Track network-specific errors
     processing_cost: float = 0.0
@@ -152,7 +146,6 @@ class DatabaseScraperOrchestrator:
             course_dir="data/course_pages"
         )
         self.gemini_processor = DatabaseGeminiProcessor(self.config.database_path)
-        self.duplicate_manager = DatabaseDuplicateManager(self.config.database_path)
         
         # Create database session factory
         self.engine = create_engine(f'sqlite:///{self.config.database_path}', echo=False)
@@ -197,12 +190,6 @@ class DatabaseScraperOrchestrator:
             # Phase 4: Content Processing
             if self.stats.phase == ProcessingPhase.CONTENT_PROCESSING:
                 self._run_content_processing_phase()
-                self.stats.phase = ProcessingPhase.DUPLICATE_MANAGEMENT
-                self._save_progress()
-            
-            # Phase 5: Duplicate Management
-            if self.stats.phase == ProcessingPhase.DUPLICATE_MANAGEMENT:
-                self._run_duplicate_management_phase()
                 self.stats.phase = ProcessingPhase.COMPLETED
                 self._save_progress()
             
@@ -276,8 +263,8 @@ class DatabaseScraperOrchestrator:
                 """)).scalar() or 0
                 
                 # Determine current phase based on data
-                if course_count > 0:
-                    self.stats.phase = ProcessingPhase.DUPLICATE_MANAGEMENT
+                if course_count > 0 and html_count > 0 and pdf_count > 0 and pending_html_urls == 0:
+                    self.stats.phase = ProcessingPhase.COMPLETED
                 elif html_count > 0 and pdf_count > 0 and pending_html_urls == 0:
                     self.stats.phase = ProcessingPhase.CONTENT_PROCESSING
                 elif pending_html_urls > 0:
@@ -825,29 +812,6 @@ class DatabaseScraperOrchestrator:
         logger.info(f"Phase {phase_name} completed: {successful}/{len(file_list)} files processed, cost: ${cost:.4f}")
         return {'successful': successful, 'cost': cost}
     
-    def _run_duplicate_management_phase(self):
-        """Execute duplicate management phase using database duplicate manager."""
-        logger.info("=== Phase 5: Database Duplicate Management ===")
-        
-        try:
-            # Run duplicate detection and resolution
-            resolution_result = self.duplicate_manager.detect_and_resolve_duplicates()
-            
-            if resolution_result.success:
-                self.stats.duplicates_resolved = resolution_result.resolved_count
-                logger.info(f"Duplicate management completed: {resolution_result.resolved_count} duplicates resolved")
-                
-                if resolution_result.quality_issues_created > 0:
-                    logger.info(f"{resolution_result.quality_issues_created} quality issues created for manual review")
-                    
-            else:
-                logger.error(f"Duplicate management failed: {resolution_result.error_message}")
-                self.stats.errors_encountered += 1
-                
-        except Exception as e:
-            logger.error(f"Duplicate management phase failed: {e}")
-            self.stats.errors_encountered += 1
-            raise
     
     def _finalize_pipeline(self):
         """Finalize the scraping pipeline and generate summary."""
@@ -871,7 +835,6 @@ class DatabaseScraperOrchestrator:
                 logger.info(f"Courses processed: {total_courses}")
                 logger.info(f"Course sections: {total_sections}")
                 logger.info(f"Program mappings: {total_mappings}")
-                logger.info(f"Duplicates resolved: {self.stats.duplicates_resolved}")
                 logger.info(f"Processing cost: ${self.stats.processing_cost:.4f}")
                 logger.info(f"Quality issues: {quality_issues}")
                 logger.info(f"Total errors: {self.stats.errors_encountered}")
@@ -937,7 +900,6 @@ class DatabaseScraperOrchestrator:
             'pdfs_downloaded': self.stats.pdfs_downloaded,
             'pages_scraped': self.stats.pages_scraped,
             'courses_processed': self.stats.courses_processed,
-            'duplicates_resolved': self.stats.duplicates_resolved,
             'errors_encountered': self.stats.errors_encountered,
             'processing_cost': self.stats.processing_cost,
             'total_time': self.stats.total_time,
