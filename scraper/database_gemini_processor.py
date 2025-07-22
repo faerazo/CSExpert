@@ -211,9 +211,17 @@ class DatabaseGeminiStore:
         """Extract course code from file path"""
         try:
             filename = os.path.basename(path)
-            course_code = os.path.splitext(filename)[0].upper()
-            # Validate course code format (letters followed by digits)
-            if re.match(r'^[A-Z]{2,3}\d{3}$', course_code):
+            base_name = os.path.splitext(filename)[0].upper()
+            
+            # Handle files with suffixes like "DIT007_course" or "DIT007_syllabus"
+            # Extract just the course code part before any underscore
+            if '_' in base_name:
+                course_code = base_name.split('_')[0]
+            else:
+                course_code = base_name
+                
+            # Validate course code format (2-3 letters followed by 3-4 digits)
+            if re.match(r'^[A-Z]{2,3}\d{3,4}$', course_code):
                 return course_code
             return None
         except Exception:
