@@ -286,7 +286,6 @@ class CourseSection(Base):
     course_id = Column(Integer, ForeignKey('courses.id', ondelete='CASCADE'), nullable=False)
     section_name = Column(String(100), nullable=False)
     section_content = Column(Text, nullable=True)
-    section_order = Column(Integer, default=0)
     word_count = Column(Integer, default=0)
     created_at = Column(DateTime, default=datetime.utcnow)
     
@@ -370,10 +369,6 @@ class CourseDetails(Base):
     # Temporal/scheduling details
     duration = Column(String(100))  # Specific date ranges like "24 Mar 2025 - 8 Jun 2025"
     application_period = Column(String(100))  # "15 October - 15 January"
-    iteration = Column(String(50))  # Specific semester instance
-    
-    # Location/contact details
-    location = Column(String(100))  # Specific campus/building information
     
     # Administrative codes/references
     application_code = Column(String(50))  # "GU-86092"
@@ -406,9 +401,7 @@ class CourseDetails(Base):
             'tuition_fee': float(self.tuition_fee) if self.tuition_fee else None,
             'duration': self.duration,
             'application_period': self.application_period,
-            'application_code': self.application_code,
-            'location': self.location,
-            'iteration': self.iteration
+            'application_code': self.application_code
         }
         
         # Add additional info if available

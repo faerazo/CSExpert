@@ -34,7 +34,7 @@ Main course entity with version support
 #### 3. **course_sections**
 Structured course content
 - `course_id`, `section_name`, `section_content`
-- `word_count`, `section_order`
+- `word_count`
 
 #### 4. **course_program_mapping**
 Links courses to programs (many-to-many)

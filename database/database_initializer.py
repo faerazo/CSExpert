@@ -124,7 +124,7 @@ class DatabaseInitializer:
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
                     program_code VARCHAR(10) UNIQUE NOT NULL,
                     program_name TEXT NOT NULL,
-                    program_type VARCHAR(20) CHECK (program_type IN ('bachelor', 'master', 'phd')) NOT NULL,
+                    program_type VARCHAR(20) CHECK (program_type IN ('bachelor', 'master', 'phd', 'invalid')) NOT NULL,
                     department VARCHAR(100),
                     description TEXT,
                     created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
@@ -143,11 +143,22 @@ class DatabaseInitializer:
                     credits DECIMAL(4,1) NOT NULL CHECK (credits > 0),
                     cycle VARCHAR(20) CHECK (cycle IN ('First cycle', 'Second cycle', 'Third cycle')) NOT NULL,
                     language_of_instruction_id INTEGER REFERENCES language_standards(id),
+                    
+                    -- True metadata fields (for RAG/embeddings)
+                    content_type VARCHAR(20) CHECK (content_type IN ('course', 'program')) DEFAULT 'course',
+                    study_form VARCHAR(50), -- Campus, Online, Distance, Hybrid
+                    field_of_education TEXT, -- Computer Science, Mathematics
+                    main_field_of_study TEXT, -- Software Engineering, Data Science
+                    specialization TEXT, -- Requirements Engineering, Machine Learning
+                    term VARCHAR(50), -- Autumn 2025, Spring 2025 (parsed from valid_from_date)
+                    
+                    -- Administrative fields (not for embeddings)
                     confirmation_date DATE NULL,
                     valid_from_date VARCHAR(50) NULL,
                     is_current BOOLEAN DEFAULT TRUE,
                     is_replaced BOOLEAN DEFAULT FALSE,
                     replaced_by_course_id INTEGER REFERENCES courses(id),
+                    replacing_course_code VARCHAR(10) NULL, -- Course code that this course replaces
                     content_completeness_score DECIMAL(3,2) DEFAULT 0.0 CHECK (content_completeness_score >= 0.0 AND content_completeness_score <= 1.0),
                     data_quality_score DECIMAL(3,2) DEFAULT 0.0 CHECK (data_quality_score >= 0.0 AND data_quality_score <= 1.0),
                     processing_method VARCHAR(50),
@@ -164,7 +175,6 @@ class DatabaseInitializer:
                     course_id INTEGER NOT NULL REFERENCES courses(id) ON DELETE CASCADE,
                     section_name VARCHAR(100) NOT NULL,
                     section_content TEXT,
-                    section_order INTEGER DEFAULT 0,
                     word_count INTEGER DEFAULT 0,
                     created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
                     
@@ -184,20 +194,23 @@ class DatabaseInitializer:
                 )
             """,
             
-            'course_metadata': """
-                CREATE TABLE course_metadata (
+            'course_details': """
+                CREATE TABLE course_details (
                     course_id INTEGER PRIMARY KEY REFERENCES courses(id) ON DELETE CASCADE,
-                    field_of_education TEXT,
-                    main_field_of_study TEXT,
-                    specialization TEXT,
-                    location VARCHAR(100),
-                    study_form VARCHAR(50),
-                    duration VARCHAR(100),
-                    application_period VARCHAR(100),
-                    application_code VARCHAR(50),
-                    iteration VARCHAR(50),
-                    tuition_fee DECIMAL(10,2),
-                    additional_info TEXT,
+                    
+                    -- Financial information
+                    tuition_fee DECIMAL(10,2) NULL,
+                    
+                    -- Temporal/scheduling details
+                    duration VARCHAR(100) NULL, -- Specific date ranges like "24 Mar 2025 - 8 Jun 2025"
+                    application_period VARCHAR(100) NULL, -- "15 October - 15 January"
+                    
+                    -- Administrative codes/references
+                    application_code VARCHAR(50) NULL, -- "GU-86092"
+                    
+                    -- Additional flexible information
+                    additional_info JSON NULL, -- For truly rare/varying fields
+                    
                     created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
                     updated_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now'))
                 )
@@ -224,7 +237,7 @@ class DatabaseInitializer:
                     change_type VARCHAR(20) NOT NULL,
                     previous_version_id INTEGER,
                     changes_summary TEXT,
-                    changed_fields TEXT,
+                    changed_fields JSON,
                     created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now'))
                 )
             """,
@@ -249,6 +262,12 @@ class DatabaseInitializer:
             'idx_courses_dates': 'CREATE INDEX idx_courses_dates ON courses(confirmation_date, valid_from_date)',
             'idx_courses_updated': 'CREATE INDEX idx_courses_updated ON courses(updated_at)',
             
+            # Metadata indexes for RAG optimization
+            'idx_courses_metadata': 'CREATE INDEX idx_courses_metadata ON courses(cycle, study_form)',
+            'idx_courses_field': 'CREATE INDEX idx_courses_field ON courses(field_of_education, main_field_of_study)',
+            'idx_courses_term': 'CREATE INDEX idx_courses_term ON courses(term)',
+            'idx_courses_content_type': 'CREATE INDEX idx_courses_content_type ON courses(content_type)',
+            
             'idx_course_sections_course': 'CREATE INDEX idx_course_sections_course ON course_sections(course_id)',
             'idx_course_sections_name': 'CREATE INDEX idx_course_sections_name ON course_sections(section_name)',
             
@@ -257,6 +276,8 @@ class DatabaseInitializer:
             
             'idx_data_quality_issues_severity': 'CREATE INDEX idx_data_quality_issues_severity ON data_quality_issues(severity, is_resolved)',
             
+            'idx_course_version_history_course': 'CREATE INDEX idx_course_version_history_course ON course_version_history(course_id)',
+            
             'idx_programs_code': 'CREATE INDEX idx_programs_code ON programs(program_code)',
             'idx_programs_type': 'CREATE INDEX idx_programs_type ON programs(program_type)'
         }
@@ -264,31 +285,6 @@ class DatabaseInitializer:
     def _get_trigger_definitions(self) -> Dict[str, str]:
         """Get all trigger creation SQL statements."""
         return {
-            'update_course_updated_at': """
-                CREATE TRIGGER update_course_updated_at
-                    AFTER UPDATE ON courses
-                    BEGIN
-                        UPDATE courses SET updated_at = strftime('%Y-%m-%d %H:%M:%S', 'now') WHERE id = NEW.id;
-                    END
-            """,
-            
-            'update_program_updated_at': """
-                CREATE TRIGGER update_program_updated_at
-                    AFTER UPDATE ON programs
-                    BEGIN
-                        UPDATE programs SET updated_at = strftime('%Y-%m-%d %H:%M:%S', 'now') WHERE id = NEW.id;
-                    END
-            """,
-            
-            'update_course_metadata_updated_at': """
-                CREATE TRIGGER update_course_metadata_updated_at
-                    AFTER UPDATE ON course_metadata
-                    BEGIN
-                        UPDATE course_metadata SET updated_at = strftime('%Y-%m-%d %H:%M:%S', 'now') WHERE course_id = NEW.course_id;
-                    END
-            """,
-            
-            
             'update_course_completeness_score': """
                 CREATE TRIGGER update_course_completeness_score
                     AFTER INSERT ON course_sections
@@ -310,17 +306,62 @@ class DatabaseInitializer:
                     END
             """,
             
+            'update_section_word_count': """
+                CREATE TRIGGER update_section_word_count
+                    BEFORE INSERT ON course_sections
+                    BEGIN
+                        UPDATE course_sections 
+                        SET word_count = (
+                            LENGTH(NEW.section_content) - LENGTH(REPLACE(NEW.section_content, ' ', '')) + 1
+                        )
+                        WHERE ROWID = NEW.ROWID;
+                    END
+            """,
+            
             'log_course_changes': """
                 CREATE TRIGGER log_course_changes
                     AFTER UPDATE ON courses
+                    WHEN OLD.course_title != NEW.course_title 
+                      OR OLD.credits != NEW.credits
+                      OR OLD.confirmation_date != NEW.confirmation_date
                     BEGIN
                         INSERT INTO course_version_history (
-                            course_id, change_type, changes_summary, changed_fields
+                            course_id, 
+                            change_type, 
+                            changes_summary,
+                            changed_fields
                         ) VALUES (
-                            NEW.id, 'updated',
-                            'Course updated via trigger',
-                            'Multiple fields updated'
+                            NEW.id,
+                            'updated',
+                            'Course metadata updated',
+                            json_array(
+                                CASE WHEN OLD.course_title != NEW.course_title THEN 'course_title' END,
+                                CASE WHEN OLD.credits != NEW.credits THEN 'credits' END,
+                                CASE WHEN OLD.confirmation_date != NEW.confirmation_date THEN 'confirmation_date' END
+                            )
                         );
+                    END
+            """,
+            
+            'check_minimal_content': """
+                CREATE TRIGGER check_minimal_content
+                    AFTER INSERT ON courses
+                    BEGIN
+                        -- Check after a delay to ensure sections are inserted
+                        INSERT INTO data_quality_issues (
+                            course_id,
+                            issue_type,
+                            issue_description,
+                            severity
+                        )
+                        SELECT 
+                            NEW.id,
+                            'minimal_content',
+                            'Course has only ' || COUNT(*) || ' sections (expected >= 3)',
+                            'high'
+                        FROM course_sections 
+                        WHERE course_id = NEW.id
+                        HAVING COUNT(*) < 3;
                     END
             """
         }
@@ -328,6 +369,32 @@ class DatabaseInitializer:
     def _get_view_definitions(self) -> Dict[str, str]:
         """Get all view creation SQL statements."""
         return {
+            'v_current_courses': """
+                CREATE VIEW v_current_courses AS
+                SELECT 
+                    c.id,
+                    c.course_code,
+                    c.course_title,
+                    c.swedish_title,
+                    c.department,
+                    c.credits,
+                    c.cycle,
+                    ls.display_name as language_of_instruction,
+                    c.confirmation_date,
+                    c.valid_from_date,
+                    c.content_completeness_score,
+                    c.data_quality_score,
+                    COUNT(cs.id) as section_count,
+                    GROUP_CONCAT(p.program_code) as programs
+                FROM courses c
+                LEFT JOIN course_sections cs ON c.id = cs.course_id
+                LEFT JOIN language_standards ls ON c.language_of_instruction_id = ls.id
+                LEFT JOIN course_program_mapping cpm ON c.id = cpm.course_id
+                LEFT JOIN programs p ON cpm.program_id = p.id
+                WHERE c.is_current = TRUE
+                GROUP BY c.id
+            """,
+            
             'v_course_quality_summary': """
                 CREATE VIEW v_course_quality_summary AS
                 SELECT 
@@ -336,51 +403,26 @@ class DatabaseInitializer:
                     AVG(content_completeness_score) as avg_completeness,
                     AVG(data_quality_score) as avg_quality,
                     COUNT(CASE WHEN content_completeness_score < 0.6 THEN 1 END) as low_content_courses,
-                    COUNT(CASE WHEN data_quality_score < 0.7 THEN 1 END) as low_quality_courses,
-                    COUNT(CASE WHEN is_current = FALSE THEN 1 END) as archived_courses
+                    COUNT(CASE WHEN data_quality_score < 0.7 THEN 1 END) as low_quality_courses
                 FROM courses 
+                WHERE is_current = TRUE
                 GROUP BY department
-                ORDER BY avg_quality DESC
             """,
             
-            'v_course_with_programs': """
-                CREATE VIEW v_course_with_programs AS
-                SELECT 
-                    c.id,
-                    c.course_code,
-                    c.course_title,
-                    c.department,
-                    c.credits,
-                    c.cycle,
-                    c.is_current,
-                    GROUP_CONCAT(p.program_code, ', ') as program_codes,
-                    GROUP_CONCAT(p.program_name, '; ') as program_names,
-                    COUNT(cs.id) as section_count,
-                    c.content_completeness_score,
-                    c.data_quality_score
-                FROM courses c
-                LEFT JOIN course_program_mapping cpm ON c.id = cpm.course_id
-                LEFT JOIN programs p ON cpm.program_id = p.id
-                LEFT JOIN course_sections cs ON c.id = cs.course_id
-                GROUP BY c.id
-                ORDER BY c.course_code
-            """,
-            
-            'v_program_course_counts': """
-                CREATE VIEW v_program_course_counts AS
+            'v_program_statistics': """
+                CREATE VIEW v_program_statistics AS
                 SELECT 
                     p.program_code,
                     p.program_name,
                     p.program_type,
-                    COUNT(cpm.course_id) as total_courses,
-                    COUNT(CASE WHEN c.is_current = TRUE THEN 1 END) as current_courses,
-                    AVG(c.content_completeness_score) as avg_completeness,
-                    AVG(c.data_quality_score) as avg_quality
+                    COUNT(cpm.course_id) as course_count,
+                    AVG(c.credits) as avg_credits,
+                    COUNT(CASE WHEN c.cycle = 'First cycle' THEN 1 END) as bachelor_courses,
+                    COUNT(CASE WHEN c.cycle = 'Second cycle' THEN 1 END) as master_courses
                 FROM programs p
                 LEFT JOIN course_program_mapping cpm ON p.id = cpm.program_id
-                LEFT JOIN courses c ON cpm.course_id = c.id
+                LEFT JOIN courses c ON cpm.course_id = c.id AND c.is_current = TRUE
                 GROUP BY p.id
-                ORDER BY total_courses DESC
             """
         }
     

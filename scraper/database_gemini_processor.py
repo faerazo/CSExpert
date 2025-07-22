@@ -470,7 +470,7 @@ class DatabaseGeminiProcessor:
            - cycle (e.g. First cycle, Second cycle, etc.)
            - main_field_of_study (e.g. Computer Science, Communication, Mathematics, etc. if there is no main field of study, return an empty string)
            - specialization (e.g. G1N, A1N, G2F, G1F, etc.  if there is no specialization, return an empty string)
-           - language_of_instruction (e.g. English, Swedish, etc.)
+           - language_of_instruction (e.g. English, Swedish, English and Swedish, etc.)
            - confirmation_date (e.g. 2025-01-01)
            - revision_date (e.g. 2025-01-01, some courses have this, some don't)
            - valid_from_date (e.g. 2025-01-01)
@@ -539,7 +539,7 @@ class DatabaseGeminiProcessor:
            - department (e.g. Department of Computer Science and Engineering, Department of Mathematics, Department of Applied Information Technology, etc.)
            - credits (only the number, not the text) (e.g. 7.5, 6.0, 15.0, etc.)
            - cycle (e.g. First cycle, Second cycle, etc.)
-           - language_of_instruction (e.g. English, Swedish, etc.)
+           - language_of_instruction (e.g. English, Swedish, English and Swedish, etc.)
            - confirmation_date (may be called "Decision date")
            - valid_from_date (may be called "Date of entry into force")
            - programmes (as a list of strings, look in the "Position" section, only retrieve the program codes e.g "N2COS", "N2SOF", "N1SOF", "N2GDT", if there is no programme or program code, return an empty list, never return a program name e.g. "Software Engineering and Management", "Computer Science and Engineering", etc.)
@@ -607,7 +607,7 @@ class DatabaseGeminiProcessor:
            - department (offering department) (e.g. Department of Computer Science and Engineering, Department of Mathematics, Department of Applied Information Technology, etc.)
            - credits (only the number as string, e.g. "7.5", "6.0", "15.0", etc.)
            - study_form ("Campus", "Online", "Distance", "Hybrid")
-           - language_of_instruction ("English", "Swedish")
+           - language_of_instruction ("English", "Swedish", "English and Swedish")
            - term (parsed from dates like "Autumn 2025", "Spring 2025", "Summer 2025", "Autumn 2026")
         
         2. COURSE DETAILS (specific information, not for search):

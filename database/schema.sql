@@ -74,7 +74,6 @@ CREATE TABLE course_sections (
     course_id INTEGER NOT NULL REFERENCES courses(id) ON DELETE CASCADE,
     section_name VARCHAR(100) NOT NULL,
     section_content TEXT,
-    section_order INTEGER DEFAULT 0,
     word_count INTEGER DEFAULT 0,
     created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
     
@@ -105,10 +104,6 @@ CREATE TABLE course_details (
     -- Temporal/scheduling details
     duration VARCHAR(100) NULL, -- Specific date ranges like "24 Mar 2025 - 8 Jun 2025"
     application_period VARCHAR(100) NULL, -- "15 October - 15 January"
-    iteration VARCHAR(50) NULL, -- Specific semester instance
-    
-    -- Location/contact details
-    location VARCHAR(100) NULL, -- Specific campus/building information
     
     -- Administrative codes/references
     application_code VARCHAR(50) NULL, -- "GU-86092"
@@ -331,7 +326,7 @@ GROUP BY p.id;
 -- course_sections: Normalized storage of course content sections for vector embedding generation  
 -- programs: Master data for academic programs
 -- course_program_mapping: Many-to-many relationship supporting courses in multiple programs
--- course_metadata: Extended metadata for rare/optional fields stored as structured data
+-- course_details: Extended details for rare/optional fields stored as structured data
 -- data_quality_issues: Tracking of data quality problems for ongoing maintenance
 
 -- Schema version tracking

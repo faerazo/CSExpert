@@ -283,7 +283,7 @@ class ConnectionManagerTest:
             with self.db_manager.get_connection() as conn:
                 cursor = conn.execute("SELECT COUNT(*) FROM programs")
                 count = cursor.fetchone()[0]
-                if count < 5:  # Should have at least 5 programs
+                if count < 4:  # Should have at least 4 programs
                     return False
             
             return True
@@ -348,8 +348,8 @@ class ConnectionManagerTest:
                     logger.error(f"Expected 4 language standards, got {lang_count}")
                     return False
                 
-                if prog_count != 5:
-                    logger.error(f"Expected 5 programs, got {prog_count}")
+                if prog_count != 4:
+                    logger.error(f"Expected 4 programs, got {prog_count}")
                     return False
                 
                 return True

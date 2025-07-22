@@ -848,9 +848,24 @@ class DatabaseScraperOrchestrator:
                     logger.info("Network connectivity: Excellent (no network errors)")
                 
                 # Calculate success rates
-                if self.stats.urls_extracted > 0:
-                    pdf_success_rate = (self.stats.pdfs_downloaded / self.stats.urls_extracted) * 100
-                    logger.info(f"PDF download success rate: {pdf_success_rate:.1f}%")
+                # Get URL type breakdown for accurate statistics
+                pdf_url_count = session.execute(text(
+                    "SELECT COUNT(*) FROM extraction_urls WHERE url_type = 'syllabus' AND url LIKE '%/pdf/kurs/%'"
+                )).scalar() or 0
+                
+                html_url_count = session.execute(text(
+                    "SELECT COUNT(*) FROM extraction_urls WHERE url_type = 'course_page' OR (url_type = 'syllabus' AND url NOT LIKE '%/pdf/kurs/%')"
+                )).scalar() or 0
+                
+                # Log URL breakdown
+                logger.info(f"URL breakdown: {pdf_url_count} PDF URLs, {html_url_count} HTML URLs, {self.stats.urls_extracted} total URLs")
+                
+                # Calculate correct PDF success rate
+                if pdf_url_count > 0:
+                    pdf_success_rate = (self.stats.pdfs_downloaded / pdf_url_count) * 100
+                    logger.info(f"PDF download success rate: {pdf_success_rate:.1f}% ({self.stats.pdfs_downloaded}/{pdf_url_count} PDFs)")
+                else:
+                    logger.info("No PDF URLs found to download")
                 
                 error_rate = (self.stats.errors_encountered / max(1, self.stats.urls_extracted)) * 100
                 logger.info(f"Error rate: {error_rate:.1f}%")
