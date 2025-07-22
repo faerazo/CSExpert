@@ -129,15 +129,19 @@ pip install -r requirements.txt
 
 ## Next Steps
 
-1. **Run the backend API:**
-   ```bash
-   python backend/app.py
-   ```
-
-2. **Run the scraper:**
+1. **Run the scraper (populate the database):**
    ```bash
    python -m scraper.database_scraper_orchestrator
    ```
+   
+   ⚠️ **Important:** Run the scraper first to populate the database with course data. The backend API won't have any data to serve until this step is complete.
+
+2. **Run the backend API:**
+   ```bash
+   python backend/main.py
+   ```
+   
+   The API will be available at http://localhost:8000
 
 3. **Set up the frontend:**
    ```bash
@@ -145,10 +149,9 @@ pip install -r requirements.txt
    npm install
    npm run dev
    ```
+   
+   The frontend will be available at http://localhost:5173
 
 ## Development Tips
 
-- Always activate the virtual environment before working
-- Keep your Gemini API key secure (never commit .env)
-- Run the scraper during off-peak hours to avoid rate limits
 - Backup the database regularly: `cp data/csexpert.db data/csexpert.db.backup`
