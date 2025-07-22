@@ -58,7 +58,7 @@ GUID_SYLLABUS_PATTERN = r"/syllabus/[0-9a-f-]{36}"
 class ExtractedURL:
     """Container for URL extraction results"""
     url: str
-    url_type: str  # 'syllabus' or 'course_page'
+    url_type: str  # 'syllabus', 'course_page', 'program_page', or 'program_syllabus'
     course_code: Optional[str] = None
     source_search_url: Optional[str] = None
     extracted_at: Optional[datetime] = None
@@ -101,7 +101,7 @@ class DatabaseURLStore:
                     CREATE TABLE IF NOT EXISTS extraction_urls (
                         id INTEGER PRIMARY KEY AUTOINCREMENT,
                         url TEXT NOT NULL,
-                        url_type TEXT NOT NULL CHECK (url_type IN ('syllabus', 'course_page', 'program_page')),
+                        url_type TEXT NOT NULL CHECK (url_type IN ('syllabus', 'course_page', 'program_page', 'program_syllabus')),
                         course_code VARCHAR(10),
                         source_search_url TEXT,
                         extracted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -245,6 +245,44 @@ class DatabaseURLStore:
                     
             except Exception as e:
                 logger.error(f"Failed to insert program URL {url}: {e}")
+        
+        return inserted_count
+    
+    def insert_program_syllabus_urls(self) -> int:
+        """Insert specific program syllabus URLs manually into the database."""
+        program_syllabus_urls = [
+            ("https://www.gu.se/sites/default/files/2023-09/GU2023-1727_faststa%CC%88lld_utbildningsplan_N1SOF_220616_eng%5B2%5D.pdf", "N1SOF"),
+            ("https://www.gu.se/en/study-gothenburg/computer-science-masters-programme-n2cos/syllabus/f9915049-2d48-11ef-a2a0-4c1db4504bb5", "N2COS"),
+            ("https://www.gu.se/sites/default/files/2022-09/GU2022-2361%20beslutad%20UP%20N2GDT%20eng%20220913.pdf", "N2GDT"),
+            ("https://www.gu.se/sites/default/files/2023-10/N2SOF_Utbildningsplan%20%28en%29%5B50%5D.pdf", "N2SOF"),
+        ]
+        
+        inserted_count = 0
+        for url, program_code in program_syllabus_urls:
+            try:
+                # Check if already exists
+                existing = self.db_manager.execute_query(
+                    "SELECT id FROM extraction_urls WHERE url = ? AND url_type = 'program_syllabus'",
+                    (url,)
+                )
+                
+                if not existing:
+                    query = """
+                        INSERT INTO extraction_urls 
+                        (url, url_type, course_code, source_search_url, extracted_at)
+                        VALUES (?, ?, ?, ?, ?)
+                    """
+                    
+                    self.db_manager.execute_update(query, (
+                        url, 'program_syllabus', program_code, 'manual_insertion', datetime.now()
+                    ))
+                    inserted_count += 1
+                    logger.info(f"Inserted program syllabus URL: {program_code} - {url}")
+                else:
+                    logger.debug(f"Program syllabus URL already exists: {program_code}")
+                    
+            except Exception as e:
+                logger.error(f"Failed to insert program syllabus URL {url}: {e}")
         
         return inserted_count
     
@@ -646,8 +684,13 @@ class DatabaseURLExtractor:
             program_urls_inserted = self.url_store.insert_program_urls()
             logger.info(f"Program URLs inserted: {program_urls_inserted}")
             
+            # Insert program syllabus URLs
+            logger.info("--- Inserting Program Syllabus URLs ---")
+            program_syllabus_urls_inserted = self.url_store.insert_program_syllabus_urls()
+            logger.info(f"Program syllabus URLs inserted: {program_syllabus_urls_inserted}")
+            
             # Calculate totals
-            result.total_urls = len(result.syllabus_urls) + len(result.course_page_urls) + program_urls_inserted
+            result.total_urls = len(result.syllabus_urls) + len(result.course_page_urls) + program_urls_inserted + program_syllabus_urls_inserted
             result.processing_time = time.time() - start_time
             
             # Log summary
@@ -655,6 +698,7 @@ class DatabaseURLExtractor:
             logger.info(f"Syllabus URLs: {len(result.syllabus_urls)}")
             logger.info(f"Course page URLs: {len(result.course_page_urls)}")
             logger.info(f"Program URLs: {program_urls_inserted}")
+            logger.info(f"Program syllabus URLs: {program_syllabus_urls_inserted}")
             logger.info(f"Total URLs: {result.total_urls}")
             logger.info(f"Unique course codes: {len(result.unique_course_codes)}")
             logger.info(f"Processing time: {result.processing_time:.2f} seconds")

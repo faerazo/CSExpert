@@ -71,7 +71,7 @@ class ProcessingResult:
     def __init__(self, source_path: str, content_type: str, 
                  success: bool = False, course_data: Optional[Dict] = None,
                  error: Optional[str] = None, processing_time: float = 0.0,
-                 cost_estimate: float = 0.0, course_id: Optional[int] = None):
+                 cost_estimate: float = 0.0):
         self.source_path = source_path
         self.content_type = content_type  # 'pdf', 'syllabus_md', 'course_page_md'
         self.success = success
@@ -79,7 +79,6 @@ class ProcessingResult:
         self.error = error
         self.processing_time = processing_time
         self.cost_estimate = cost_estimate
-        self.course_id = course_id
         self.processed_at = datetime.utcnow()
 
 
@@ -104,7 +103,6 @@ class DatabaseGeminiStore:
                         content_type VARCHAR(20) CHECK (content_type IN ('pdf', 'syllabus_md', 'course_page_md')) NOT NULL,
                         course_code VARCHAR(10),
                         processing_status VARCHAR(20) CHECK (processing_status IN ('pending', 'processing', 'success', 'failed')) DEFAULT 'pending',
-                        course_id INTEGER,
                         error_message TEXT,
                         processing_time REAL DEFAULT 0.0,
                         cost_estimate REAL DEFAULT 0.0,
@@ -113,7 +111,6 @@ class DatabaseGeminiStore:
                         processed_at TIMESTAMP,
                         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                         updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                        FOREIGN KEY (course_id) REFERENCES courses(id),
                         UNIQUE(source_path, content_type)
                     )
                 """)
@@ -174,9 +171,9 @@ class DatabaseGeminiStore:
             
             query = """
                 INSERT OR REPLACE INTO gemini_processing_jobs 
-                (source_path, content_type, course_code, processing_status, course_id, 
+                (source_path, content_type, course_code, processing_status, 
                  error_message, processing_time, cost_estimate, retry_count, gemini_response, processed_at)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """
             
             # Extract course code from path
@@ -192,7 +189,6 @@ class DatabaseGeminiStore:
                 result.content_type,
                 course_code,
                 status,
-                result.course_id,
                 result.error,
                 result.processing_time,
                 result.cost_estimate,
@@ -1235,7 +1231,6 @@ class DatabaseGeminiProcessor:
                     # Store in database if successful
                     if result.success and result.course_data:
                         course_id = self.store_course_in_database(result.course_data, item['content_type'])
-                        result.course_id = course_id
                         
                         if course_id:
                             successful += 1
