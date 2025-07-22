@@ -8,10 +8,11 @@ The CSExpert database module provides a SQLite database system for managing acad
 
 ```
 database/
-├── connection_manager.py      # Database connection pooling
-├── models.py                 # SQLAlchemy ORM models
-├── database_initializer.py   # Schema creation and setup
-└── schema.sql               # Database schema definition
+├── connection_manager.py      # Database connection pooling and management
+├── models.py                 # SQLAlchemy ORM models for all tables
+├── database_initializer.py   # Schema creation and initial data setup
+├── schema.sql               # Complete database schema definition
+└── test_connection_manager.py # Connection manager test suite
 ```
 
 ## Database Schema
@@ -77,6 +78,41 @@ Version control and change tracking
 - `previous_version_id`
 - `changes_summary`, `changed_fields` (JSON)
 
+### Processing Tables
+
+These tables manage the scraping and AI processing workflow:
+
+#### 9. **extraction_urls**
+URL discovery and tracking
+- `url`, `url_type` - Discovered URLs and their types (course_page, syllabus, program_syllabus)
+- `course_code` - Associated course code
+- `source_search_url` - Original search page
+- `status` - Processing status (pending, success, failed)
+
+#### 10. **pdf_downloads** 
+PDF download tracking and management
+- `extraction_url_id`, `course_code`, `original_url`
+- `file_path` - Local storage path for downloaded PDF
+- `file_size`, `checksum` - File validation data
+- `status` - Download status with retry tracking
+- `download_time` - Performance metrics
+
+#### 11. **html_scrapes**
+HTML scraping results and storage
+- `extraction_url_id`, `course_code`, `original_url` 
+- `markdown_file_path` - Converted markdown content location
+- `content_length` - Content size for validation
+- `status` - Scraping status with error handling
+- `scraping_time`, `retry_count` - Performance and reliability tracking
+
+#### 12. **gemini_processing_jobs**
+AI processing queue and results
+- `file_path`, `content_type` - Input file and processing type (pdf, syllabus_md, course_page_md)
+- `course_code` - Extracted course identifier
+- `processing_status` - Status tracking (pending, processing, success, failed)
+- `error_message` - Detailed error information for debugging
+- `retry_count`, `processing_time` - Reliability and performance metrics
+
 ### Key Indexes
 
 **Course Lookups**
@@ -96,6 +132,12 @@ Version control and change tracking
 - `idx_courses_updated` - Recent changes tracking
 - `idx_course_sections_course` - Section lookups
 - `idx_course_program_mapping_*` - Program relationships
+
+**Processing Workflow**
+- `idx_extraction_urls_status` - URL processing tracking
+- `idx_gemini_processing_jobs_status` - AI processing queue management
+- `idx_pdf_downloads_course_code` - Course-based PDF lookups
+- `idx_html_scrapes_course_code` - Course-based content lookups
 
 ## Usage Examples
 
@@ -165,28 +207,57 @@ Only these program codes are valid in the system:
 - **N1SOF** - Software Engineering and Management Bachelor's Programme
 - **N2GDT** - Game Design Technology Master's Programme
 
-## Course Replacement System
+## Post-Processing Pipeline
 
-The database tracks course replacements through a post-processing system:
+After all content is processed, the system runs automatic post-processing to ensure data quality and consistency:
 
-1. **During Import**: The `replacing_course_code` field is populated when a course indicates it replaces another
-2. **Post-Processing**: After all courses are imported, the system:
-   - Builds a mapping of all replacements
-   - Updates replaced courses with `is_current = FALSE` and `is_replaced = TRUE`
-   - Populates `replaced_by_course_codes` with comma-separated list of new course codes
-   - Handles multiple replacements (e.g., DIT002 replaced by both DIT003 and TIA009)
+### 1. Course Replacement System
+Tracks course replacements through automated processing:
+- **During Import**: The `replacing_course_code` field is populated when a course indicates it replaces another
+- **Post-Processing**: After all courses are imported, the system:
+  - Builds a mapping of all replacements
+  - Updates replaced courses with `is_current = FALSE` and `is_replaced = TRUE`
+  - Populates `replaced_by_course_codes` with comma-separated list of new course codes
+  - Handles multiple replacements (e.g., DIT002 replaced by both DIT003 and TIA009)
 
 Example:
 - DIT002 is replaced by DIT003
 - DIT003 has `replacing_course_code = 'DIT002'`
 - After processing, DIT002 has `replaced_by_course_codes = 'DIT003'` and `is_current = FALSE`
 
+### 2. Data Quality Standardization
+Automatic data cleanup ensures consistency:
+
+#### Department Name Standardization
+- Ensures all department names have "Department of" prefix
+- Converts variations: "Dep of Applied Information Technology" → "Department of Applied Information Technology"
+- Standardizes: "Computer Science and Engineering" → "Department of Computer Science and Engineering"
+
+#### Specialization Code Cleaning  
+- Extracts only 3-character specialization codes (AXX, G1F, A1E, etc.)
+- Removes descriptive text: "AXX, Second cycle, in-depth level of the course cannot be classified" → "AXX"
+
+#### Empty String Standardization
+- Converts all empty strings ('') to NULL across the entire database
+- Ensures consistent empty value representation for better data quality and query reliability
+- Affects all nullable text and varchar columns in all tables
+
+### 3. Processing Workflow
+The complete processing pipeline follows this sequence:
+1. **URL Extraction** → `extraction_urls` table populated
+2. **PDF Downloads** → `pdf_downloads` table tracks file acquisition 
+3. **HTML Scraping** → `html_scrapes` table stores converted content
+4. **AI Processing** → `gemini_processing_jobs` manages content extraction
+5. **Post-Processing** → Data standardization and course relationship processing
+6. **Final Validation** → Quality scores updated, statistics generated
+
 ## Best Practices
 
 ### Data Integrity
 - Always validate course codes and credits before insertion
 - Use the language_standards table for consistent language values
-- Run course replacement processing after all courses are imported
+- Trust the post-processing pipeline for data standardization
+- Course replacement processing runs automatically after content import
 
 ### Performance
 - Use indexed fields for queries when possible
@@ -195,15 +266,16 @@ Example:
 
 ### Content Processing
 - Keep metadata fields (in courses table) separate from details
-- Store large text content in course_sections
-- Update completeness scores after adding sections
+- Store large text content in course_sections with automatic character_count
+- Completeness scores update automatically via database triggers
+- Processing status tracking prevents duplicate work and enables resume functionality
 
 ## Views
 
 The database includes several helpful views:
-- `v_current_courses` - All current courses with aggregated data
-- `v_course_quality_summary` - Department-level quality metrics
-- `v_program_statistics` - Program course counts and statistics
+- `v_current_courses` - All current courses with aggregated data and section counts
+- `v_course_quality_summary` - Department-level quality metrics and completion scores
+- `v_program_statistics` - Program course counts, credit averages, and cycle distribution
 
 ## Testing
 
