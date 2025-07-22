@@ -9,6 +9,7 @@
 
 # Database files
 *.db
+!data/csexpert.db
 /database_scraper.log
 
 # ===========================
