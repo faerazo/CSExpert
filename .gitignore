@@ -1,18 +1,27 @@
+# ===========================
+# PROJECT-SPECIFIC
+# ===========================
 /data/syllabi_pdfs
 /data/syllabi_pdfs_backup
-# macOS system files
-.DS_Store
-**/.DS_Store
+/data/course_pages
+/data/syllabi_pages
+/chroma_db_store
 
-# Other files to ignore
-data/.DS_Store
+# Database files
+*.db
+/database_scraper.log
+
+# ===========================
+# FRONTEND
+# ===========================
+# Frontend dependencies
 /frontend/node_modules
 
 # Frontend build output
 /frontend/dist
 /frontend/build
 
-# Frontend dependency files
+# Frontend package manager files
 /frontend/package-lock.json
 /frontend/yarn.lock
 /frontend/bun.lockb
@@ -24,21 +33,196 @@ data/.DS_Store
 /frontend/yarn-debug.log*
 /frontend/yarn-error.log*
 
-# Frontend environment files
+# ===========================
+# PYTHON / BACKEND
+# ===========================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Test files
+test_*.py
+tests/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+# .python-version
+
+# pipenv
+# Pipfile.lock
+
+# poetry
+# poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# ===========================
+# ENVIRONMENTS & CONFIGS
+# ===========================
+# Environment files
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 /frontend/.env
 /frontend/.env.local
 /frontend/.env.development.local
 /frontend/.env.test.local
 /frontend/.env.production.local
-/chroma_db_store
-/data/
 
-# Python cache directories
-__pycache__/
-**/__pycache__/
+# Virtual environments
+.venv
+env/
+venv/
 /venv/
+ENV/
+env.bak/
+venv.bak/
 
-# Database files
-*.db
-/database_scraper.log
+# ===========================
+# IDE & EDITORS
+# ===========================
+# VS Code
+.vscode/
+
+# PyCharm / JetBrains
+.idea/
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Rope
+.ropeproject
+
+# ===========================
+# OS FILES
+# ===========================
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Windows
+Thumbs.db
+
+# Linux
+*.swp
+*~
+
+# ===========================
+# OTHER
+# ===========================
+# Temporary files
+*.tmp
+*.temp
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# mkdocs documentation
+/site
+
+# Chroma DB (Vector database)
+# Uncomment the line below if you want to exclude the vector database
+# /backend/chroma_db/
