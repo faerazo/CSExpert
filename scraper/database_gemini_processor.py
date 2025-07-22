@@ -473,7 +473,7 @@ class DatabaseGeminiProcessor:
            - credits (only the number, not the text) (e.g. 7.5, 6.0, 15.0, etc.)
            - cycle (e.g. First cycle, Second cycle, etc.)
            - main_field_of_study (e.g. Computer Science, Communication, Mathematics, etc. if there is no main field of study, return an empty string)
-           - specialization (e.g. G1N, A1N, G2F, G1F, etc.  if there is no specialization, return an empty string)
+           - specialization (provide only the code, not the name, e.g. in "G1F, First Cycle, has less than 60 credits..." only return "G1F". Other specializations are "A1N", "G2F", "G1F", etc. if there is no specialization, return an empty string)
            - language_of_instruction (e.g. English, Swedish, English and Swedish, etc.)
            - confirmation_date (e.g. 2025-01-01)
            - revision_date (e.g. 2025-01-01, some courses have this, some don't)
