@@ -615,13 +615,13 @@ class DatabaseGeminiProcessor:
            - application_period (specific application dates, e.g. "24 Mar 2025 - 8 Jun 2025")
            - duration (specific date ranges like "24 Mar 2025 - 8 Jun 2025")
            - application_code (administrative codes like "GU-86092")
+           - page_last_modified (date of last modification e.g. "19 June 2025", "June 19, 2025", "2025-06-19")
         
         3. SECTIONS (content):
            - About
            - Entry requirements  
            - Selection
            - Tuition (full text including full education cost, first payment, no fee are charged for EU and EEA citizens...)
-           - Last modified (date of last modification e.g. "19 June 2025")
         
         Return the information in the following JSON format:
         {
@@ -642,6 +642,7 @@ class DatabaseGeminiProcessor:
             "application_period": "[application_dates]",
             "duration": "[date_range]",
             "application_code": "[code]",
+            "page_last_modified": "[date]"
           },
           "sections": {
             "About": "[text]",
@@ -797,8 +798,13 @@ class DatabaseGeminiProcessor:
         except Exception:
             return 0.002  # Default estimate
     
-    def store_course_in_database(self, course_data: Dict) -> Optional[int]:
-        """Store parsed course data in database using ORM models"""
+    def store_course_in_database(self, course_data: Dict, content_type: str) -> Optional[int]:
+        """Store parsed course data in database using ORM models
+        
+        Args:
+            course_data: Parsed course data from Gemini
+            content_type: Type of content being processed ('pdf', 'syllabus_md', 'course_page_md')
+        """
         try:
             from sqlalchemy.orm import sessionmaker
             
@@ -830,84 +836,94 @@ class DatabaseGeminiProcessor:
                 # Update course metadata with safe field handling
                 course.course_code = course_code
                 
-                # Safely handle course title
-                try:
-                    title = metadata.get('course_title', '')
-                    course.course_title = str(title)[:500] if title else ''
-                except Exception as e:
-                    logger.warning(f"Error setting course_title for {course_code}: {e}")
-                    course.course_title = f"Course {course_code}"  # Fallback title
-                
-                # Safely handle swedish title
-                try:
-                    swedish_title = metadata.get('swedish_title')
-                    course.swedish_title = str(swedish_title) if swedish_title else None
-                except Exception as e:
-                    logger.warning(f"Error setting swedish_title for {course_code}: {e}")
-                    course.swedish_title = None
-                
-                # Safely handle department
-                try:
-                    dept = metadata.get('department', 'Unknown')
-                    course.department = str(dept)[:100] if dept else 'Unknown'
-                except Exception as e:
-                    logger.warning(f"Error setting department for {course_code}: {e}")
-                    course.department = 'Unknown'
-                
-                # Handle credits
-                credits = validate_credits(metadata.get('credits'))
-                if credits:
-                    course.credits = credits
+                # For course_page_md, only update specific fields
+                if content_type == 'course_page_md':
+                    logger.info(f"Updating only specific fields for course page: {course_code}")
+                    # Only update study_form and term from metadata
+                    if 'study_form' in metadata:
+                        course.study_form = metadata['study_form']
+                    if 'term' in metadata:
+                        course.term = metadata['term']
                 else:
-                    course.credits = Decimal('7.5')  # Default
-                    logger.warning(f"Using default credits for {course_code}")
-                
-                # Handle cycle with normalization
-                cycle = metadata.get('cycle')
-                if cycle:
-                    # Convert to string and normalize cycle capitalization
-                    cycle_str = str(cycle).lower()
-                    if 'first' in cycle_str:
-                        course.cycle = 'First cycle'
-                    elif 'second' in cycle_str:
-                        course.cycle = 'Second cycle'
-                    elif 'third' in cycle_str:
-                        course.cycle = 'Third cycle'
-                    else:
-                        course.cycle = 'Second cycle'  # Default
-                else:
-                    course.cycle = 'Second cycle'  # Default for graduate courses
-                
-                # Handle language
-                language = normalize_language_instruction(metadata.get('language_of_instruction'))
-                if language:
-                    # Find or create language standard
-                    lang_standard = session.query(LanguageStandard).filter_by(standard_code=language).first()
-                    if not lang_standard:
-                        lang_standard = LanguageStandard(
-                            standard_code=language,
-                            display_name=language.replace(',', ' and '),
-                            original_variations=json.dumps([metadata.get('language_of_instruction')])
-                        )
-                        session.add(lang_standard)
-                        session.flush()
-                    
-                    course.language_of_instruction_id = lang_standard.id
-                
-                # Handle dates
-                if metadata.get('confirmation_date'):
+                    # For PDF and syllabus_md, update all fields as before
+                    # Safely handle course title
                     try:
-                        import re
-                        from datetime import datetime
-                        # Try to parse date
-                        date_str = metadata['confirmation_date']
-                        if re.match(r'\d{4}-\d{2}-\d{2}', date_str):
-                            course.confirmation_date = datetime.strptime(date_str, '%Y-%m-%d').date()
+                        title = metadata.get('course_title', '')
+                        course.course_title = str(title)[:500] if title else ''
                     except Exception as e:
-                        logger.warning(f"Failed to parse confirmation_date: {e}")
-                
-                course.valid_from_date = metadata.get('valid_from_date')
-                course.processing_method = 'gemini_ai'
+                        logger.warning(f"Error setting course_title for {course_code}: {e}")
+                        course.course_title = f"Course {course_code}"  # Fallback title
+                    
+                    # Safely handle swedish title
+                    try:
+                        swedish_title = metadata.get('swedish_title')
+                        course.swedish_title = str(swedish_title) if swedish_title else None
+                    except Exception as e:
+                        logger.warning(f"Error setting swedish_title for {course_code}: {e}")
+                        course.swedish_title = None
+                    
+                    # Safely handle department
+                    try:
+                        dept = metadata.get('department', 'Unknown')
+                        course.department = str(dept)[:100] if dept else 'Unknown'
+                    except Exception as e:
+                        logger.warning(f"Error setting department for {course_code}: {e}")
+                        course.department = 'Unknown'
+                    
+                    # Handle credits
+                    credits = validate_credits(metadata.get('credits'))
+                    if credits:
+                        course.credits = credits
+                    else:
+                        course.credits = Decimal('7.5')  # Default
+                        logger.warning(f"Using default credits for {course_code}")
+                    
+                    # Handle cycle with normalization
+                    cycle = metadata.get('cycle')
+                    if cycle:
+                        # Convert to string and normalize cycle capitalization
+                        cycle_str = str(cycle).lower()
+                        if 'first' in cycle_str:
+                            course.cycle = 'First cycle'
+                        elif 'second' in cycle_str:
+                            course.cycle = 'Second cycle'
+                        elif 'third' in cycle_str:
+                            course.cycle = 'Third cycle'
+                        else:
+                            course.cycle = 'Second cycle'  # Default
+                    else:
+                        course.cycle = 'Second cycle'  # Default for graduate courses
+                    
+                    # Handle language
+                    language = normalize_language_instruction(metadata.get('language_of_instruction'))
+                    if language:
+                        # Find or create language standard
+                        lang_standard = session.query(LanguageStandard).filter_by(standard_code=language).first()
+                        if not lang_standard:
+                            lang_standard = LanguageStandard(
+                                standard_code=language,
+                                display_name=language.replace(',', ' and '),
+                                original_variations=json.dumps([metadata.get('language_of_instruction')])
+                            )
+                            session.add(lang_standard)
+                            session.flush()
+                        
+                        course.language_of_instruction_id = lang_standard.id
+                    
+                    # Handle dates
+                    if metadata.get('confirmation_date'):
+                        try:
+                            import re
+                            from datetime import datetime
+                            # Try to parse date
+                            date_str = metadata['confirmation_date']
+                            if re.match(r'\d{4}-\d{2}-\d{2}', date_str):
+                                course.confirmation_date = datetime.strptime(date_str, '%Y-%m-%d').date()
+                        except Exception as e:
+                            logger.warning(f"Failed to parse confirmation_date: {e}")
+                    
+                    course.valid_from_date = metadata.get('valid_from_date')
+                    course.processing_method = 'gemini_ai'
                 
                 # Add to session if new
                 if not existing_course:
@@ -932,136 +948,237 @@ class DatabaseGeminiProcessor:
                             logger.info(f"Course {course.course_code} replaces {course.replacing_course_code}")
                 
                 # Handle course sections
-                for section_name, section_content in sections.items():
-                    if section_content is None or (isinstance(section_content, str) and not section_content.strip()):
-                        continue
-                    
-                    # Check if section already exists
-                    existing_section = session.query(CourseSection).filter_by(
-                        course_id=course.id, section_name=section_name
-                    ).first()
-                    
-                    if existing_section:
-                        # Safe handling - convert to string first
-                        content_str = str(section_content) if section_content is not None else ""
-                        existing_section.section_content = content_str.strip() if content_str else ""
-                        existing_section.word_count = len(content_str.split()) if content_str else 0
-                    else:
-                        # Safe handling - convert to string first
-                        content_str = str(section_content) if section_content is not None else ""
-                        section = CourseSection(
-                            course_id=course.id,
-                            section_name=section_name,
-                            section_content=content_str.strip() if content_str else "",
-                            word_count=len(content_str.split()) if content_str else 0
-                        )
-                        session.add(section)
-                
-                # Handle program mappings
-                programs = extract_program_codes(metadata.get('programmes'))
-                if programs:
-                    # Clear existing mappings
-                    session.query(CourseProgramMapping).filter_by(course_id=course.id).delete()
-                    
-                    for program_code in programs:
-                        # Validate program code against expanded whitelist
-                        if program_code not in VALID_PROGRAM_CODES:
-                            logger.warning(f"Unknown program code '{program_code}' for course {course.course_code}. Currently allowed: {VALID_PROGRAM_CODES}")
+                if content_type == 'course_page_md':
+                    # For course pages, only update Selection and Tuition sections
+                    allowed_sections = {'Selection', 'Tuition'}
+                    for section_name, section_content in sections.items():
+                        if section_name not in allowed_sections:
+                            continue
+                        if section_content is None or (isinstance(section_content, str) and not section_content.strip()):
                             continue
                         
-                        # Find or create program (only for valid codes)
-                        program = session.query(Program).filter_by(program_code=program_code).first()
-                        if not program:
-                            program = Program(
-                                program_code=program_code,
-                                program_name=f"Program {program_code}",
-                                program_type='master',  # Default
-                                department=course.department
-                            )
-                            session.add(program)
-                            session.flush()
+                        # Check if section already exists
+                        existing_section = session.query(CourseSection).filter_by(
+                            course_id=course.id, section_name=section_name
+                        ).first()
                         
-                        # Create mapping
-                        mapping = CourseProgramMapping(
-                            course_id=course.id,
-                            program_id=program.id
-                        )
-                        session.add(mapping)
+                        if existing_section:
+                            # Safe handling - convert to string first
+                            content_str = str(section_content) if section_content is not None else ""
+                            existing_section.section_content = content_str.strip() if content_str else ""
+                            existing_section.word_count = len(content_str.split()) if content_str else 0
+                        else:
+                            # Safe handling - convert to string first
+                            content_str = str(section_content) if section_content is not None else ""
+                            section = CourseSection(
+                                course_id=course.id,
+                                section_name=section_name,
+                                section_content=content_str.strip() if content_str else "",
+                                word_count=len(content_str.split()) if content_str else 0
+                            )
+                            session.add(section)
+                else:
+                    # For PDF and syllabus_md, update all sections as before
+                    for section_name, section_content in sections.items():
+                        if section_content is None or (isinstance(section_content, str) and not section_content.strip()):
+                            continue
+                        
+                        # Check if section already exists
+                        existing_section = session.query(CourseSection).filter_by(
+                            course_id=course.id, section_name=section_name
+                        ).first()
+                        
+                        if existing_section:
+                            # Safe handling - convert to string first
+                            content_str = str(section_content) if section_content is not None else ""
+                            existing_section.section_content = content_str.strip() if content_str else ""
+                            existing_section.word_count = len(content_str.split()) if content_str else 0
+                        else:
+                            # Safe handling - convert to string first
+                            content_str = str(section_content) if section_content is not None else ""
+                            section = CourseSection(
+                                course_id=course.id,
+                                section_name=section_name,
+                                section_content=content_str.strip() if content_str else "",
+                                word_count=len(content_str.split()) if content_str else 0
+                            )
+                            session.add(section)
+                
+                # Handle program mappings (skip for course_page_md)
+                if content_type != 'course_page_md':
+                    programs = extract_program_codes(metadata.get('programmes'))
+                    if programs:
+                        # Clear existing mappings
+                        session.query(CourseProgramMapping).filter_by(course_id=course.id).delete()
+                        
+                        for program_code in programs:
+                            # Validate program code against expanded whitelist
+                            if program_code not in VALID_PROGRAM_CODES:
+                                logger.warning(f"Unknown program code '{program_code}' for course {course.course_code}. Currently allowed: {VALID_PROGRAM_CODES}")
+                                continue
+                            
+                            # Find or create program (only for valid codes)
+                            program = session.query(Program).filter_by(program_code=program_code).first()
+                            if not program:
+                                program = Program(
+                                    program_code=program_code,
+                                    program_name=f"Program {program_code}",
+                                    program_type='master',  # Default
+                                    department=course.department
+                                )
+                                session.add(program)
+                                session.flush()
+                            
+                            # Create mapping
+                            mapping = CourseProgramMapping(
+                                course_id=course.id,
+                                program_id=program.id
+                            )
+                            session.add(mapping)
                 
                 # Handle course details and additional metadata fields
                 course_details_data = course_data.get('course_details', {})
                 
-                # Store metadata fields directly in course table
-                metadata_fields = {
-                    'field_of_education', 'main_field_of_study', 'specialization', 
-                    'study_form', 'term'
-                }
-                
-                for field in metadata_fields:
-                    if field in metadata:
-                        setattr(course, field, metadata[field])
-                
-                # Handle course details in separate table
-                if course_details_data or any(key in metadata for key in ['duration', 'application_period', 'application_code', 'tuition_fee']):
-                    # Delete existing course details
-                    session.query(CourseDetails).filter_by(course_id=course.id).delete()
-                    
-                    course_details = CourseDetails(course_id=course.id)
-                    
-                    # Store course details
-                    details_mapping = {
-                        'tuition_fee': 'tuition_fee',
-                        'duration': 'duration',
-                        'application_period': 'application_period',
-                        'application_code': 'application_code'
+                # Store metadata fields directly in course table (skip most for course_page_md)
+                if content_type != 'course_page_md':
+                    metadata_fields = {
+                        'field_of_education', 'main_field_of_study', 'specialization', 
+                        'study_form', 'term'
                     }
                     
-                    for details_key, db_field in details_mapping.items():
-                        if details_key in course_details_data:
-                            value = course_details_data[details_key]
-                            if details_key == 'tuition_fee' and value:
-                                try:
-                                    # Try to parse tuition fee as decimal
-                                    import re
-                                    fee_str = re.sub(r'[^\d.]', '', str(value))
-                                    setattr(course_details, db_field, Decimal(fee_str) if fee_str else None)
-                                except:
-                                    setattr(course_details, db_field, None)
-                            else:
-                                # Convert empty strings to None for all fields
-                                setattr(course_details, db_field, value if value and str(value).strip() else None)
-                        elif details_key in metadata:  # Fallback for legacy data
-                            value = metadata[details_key]
-                            # Apply same tuition_fee handling for metadata fallback
-                            if details_key == 'tuition_fee':
-                                if value is not None and str(value).strip():  # Check if value is not empty
+                    for field in metadata_fields:
+                        if field in metadata:
+                            setattr(course, field, metadata[field])
+                
+                # Handle course details in separate table
+                if content_type == 'course_page_md':
+                    # For course pages, only update specific course details fields
+                    allowed_details_fields = {'tuition_fee', 'duration', 'application_period', 'application_code', 'page_last_modified'}
+                    
+                    # Check if we have any allowed fields to update
+                    if any(key in course_details_data for key in allowed_details_fields) or any(key in metadata for key in allowed_details_fields):
+                        # Get existing course details or create new
+                        existing_details = session.query(CourseDetails).filter_by(course_id=course.id).first()
+                        if not existing_details:
+                            course_details = CourseDetails(course_id=course.id)
+                        else:
+                            course_details = existing_details
+                        
+                        # Only update allowed fields
+                        for details_key in allowed_details_fields:
+                            if details_key in course_details_data:
+                                value = course_details_data[details_key]
+                                if details_key == 'tuition_fee' and value:
                                     try:
+                                        # Try to parse tuition fee as decimal
+                                        import re
+                                        fee_str = re.sub(r'[^\d.]', '', str(value))
+                                        setattr(course_details, details_key, Decimal(fee_str) if fee_str else None)
+                                    except:
+                                        setattr(course_details, details_key, None)
+                                elif details_key == 'page_last_modified' and value:
+                                    try:
+                                        # Parse last modified date
+                                        from datetime import datetime
+                                        import re
+                                        date_str = str(value).strip()
+                                        # Try different date formats
+                                        for fmt in ['%Y-%m-%d', '%d %B %Y', '%d %b %Y', '%B %d, %Y', '%b %d, %Y']:
+                                            try:
+                                                parsed_date = datetime.strptime(date_str, fmt).date()
+                                                setattr(course_details, details_key, parsed_date)
+                                                break
+                                            except ValueError:
+                                                continue
+                                        else:
+                                            # If no format matched, try extracting date components
+                                            logger.warning(f"Could not parse page_last_modified date: {date_str}")
+                                            setattr(course_details, details_key, None)
+                                    except Exception as e:
+                                        logger.warning(f"Error parsing page_last_modified: {e}")
+                                        setattr(course_details, details_key, None)
+                                else:
+                                    # Convert empty strings to None for all fields
+                                    setattr(course_details, details_key, value if value and str(value).strip() else None)
+                            elif details_key in metadata:  # Fallback for legacy data
+                                value = metadata[details_key]
+                                if details_key == 'tuition_fee':
+                                    if value is not None and str(value).strip():
+                                        try:
+                                            import re
+                                            fee_str = re.sub(r'[^\d.]', '', str(value))
+                                            setattr(course_details, details_key, Decimal(fee_str) if fee_str else None)
+                                        except:
+                                            setattr(course_details, details_key, None)
+                                    else:
+                                        setattr(course_details, details_key, None)
+                                else:
+                                    setattr(course_details, details_key, value if value else None)
+                        
+                        if not existing_details:
+                            session.add(course_details)
+                else:
+                    # For PDF and syllabus_md, update all fields as before
+                    if course_details_data or any(key in metadata for key in ['duration', 'application_period', 'application_code', 'tuition_fee']):
+                        # Delete existing course details
+                        session.query(CourseDetails).filter_by(course_id=course.id).delete()
+                        
+                        course_details = CourseDetails(course_id=course.id)
+                        
+                        # Store course details
+                        details_mapping = {
+                            'tuition_fee': 'tuition_fee',
+                            'duration': 'duration',
+                            'application_period': 'application_period',
+                            'application_code': 'application_code'
+                        }
+                        
+                        for details_key, db_field in details_mapping.items():
+                            if details_key in course_details_data:
+                                value = course_details_data[details_key]
+                                if details_key == 'tuition_fee' and value:
+                                    try:
+                                        # Try to parse tuition fee as decimal
                                         import re
                                         fee_str = re.sub(r'[^\d.]', '', str(value))
                                         setattr(course_details, db_field, Decimal(fee_str) if fee_str else None)
                                     except:
                                         setattr(course_details, db_field, None)
                                 else:
-                                    setattr(course_details, db_field, None)  # Convert empty string to None
-                            else:
-                                # For non-numeric fields, convert empty strings to None
-                                setattr(course_details, db_field, value if value else None)
-                    
-                    # Handle confirmation_date and valid_from_date from course_details
-                    if 'confirmation_date' in course_details_data:
-                        try:
-                            import re
-                            from datetime import datetime
-                            date_str = course_details_data['confirmation_date']
-                            if re.match(r'\d{4}-\d{2}-\d{2}', date_str):
-                                course.confirmation_date = datetime.strptime(date_str, '%Y-%m-%d').date()
-                        except Exception as e:
-                            logger.warning(f"Failed to parse confirmation_date from details: {e}")
-                    
-                    if 'valid_from_date' in course_details_data:
-                        course.valid_from_date = course_details_data['valid_from_date']
-                    
-                    session.add(course_details)
+                                    # Convert empty strings to None for all fields
+                                    setattr(course_details, db_field, value if value and str(value).strip() else None)
+                            elif details_key in metadata:  # Fallback for legacy data
+                                value = metadata[details_key]
+                                # Apply same tuition_fee handling for metadata fallback
+                                if details_key == 'tuition_fee':
+                                    if value is not None and str(value).strip():  # Check if value is not empty
+                                        try:
+                                            import re
+                                            fee_str = re.sub(r'[^\d.]', '', str(value))
+                                            setattr(course_details, db_field, Decimal(fee_str) if fee_str else None)
+                                        except:
+                                            setattr(course_details, db_field, None)
+                                    else:
+                                        setattr(course_details, db_field, None)  # Convert empty string to None
+                                else:
+                                    # For non-numeric fields, convert empty strings to None
+                                    setattr(course_details, db_field, value if value else None)
+                        
+                        # Handle confirmation_date and valid_from_date from course_details
+                        if 'confirmation_date' in course_details_data:
+                            try:
+                                import re
+                                from datetime import datetime
+                                date_str = course_details_data['confirmation_date']
+                                if re.match(r'\d{4}-\d{2}-\d{2}', date_str):
+                                    course.confirmation_date = datetime.strptime(date_str, '%Y-%m-%d').date()
+                            except Exception as e:
+                                logger.warning(f"Failed to parse confirmation_date from details: {e}")
+                        
+                        if 'valid_from_date' in course_details_data:
+                            course.valid_from_date = course_details_data['valid_from_date']
+                        
+                        session.add(course_details)
                 
                 # Update completeness score
                 course.update_completeness_score()
@@ -1109,7 +1226,7 @@ class DatabaseGeminiProcessor:
                     
                     # Store in database if successful
                     if result.success and result.course_data:
-                        course_id = self.store_course_in_database(result.course_data)
+                        course_id = self.store_course_in_database(result.course_data, item['content_type'])
                         result.course_id = course_id
                         
                         if course_id:

@@ -373,26 +373,14 @@ class CourseDetails(Base):
     # Administrative codes/references
     application_code = Column(String(50))  # "GU-86092"
     
-    # Additional flexible information
-    additional_info = Column(JSON)
+    # Page metadata
+    page_last_modified = Column(Date)  # Last modified date from course page
     
     created_at = Column(DateTime, default=datetime.utcnow)
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
     
     # Relationships
     course = relationship("Course", back_populates="course_details")
-    
-    def get_additional_field(self, field_name: str) -> Any:
-        """Get value from additional_info JSON field."""
-        if self.additional_info and isinstance(self.additional_info, dict):
-            return self.additional_info.get(field_name)
-        return None
-    
-    def set_additional_field(self, field_name: str, value: Any):
-        """Set value in additional_info JSON field."""
-        if self.additional_info is None:
-            self.additional_info = {}
-        self.additional_info[field_name] = value
     
     @property 
     def details_dict(self) -> Dict[str, Any]:
@@ -401,13 +389,10 @@ class CourseDetails(Base):
             'tuition_fee': float(self.tuition_fee) if self.tuition_fee else None,
             'duration': self.duration,
             'application_period': self.application_period,
-            'application_code': self.application_code
+            'application_code': self.application_code,
+            'page_last_modified': self.page_last_modified.isoformat() if self.page_last_modified else None
         }
         
-        # Add additional info if available
-        if self.additional_info:
-            details.update(self.additional_info)
-            
         return {k: v for k, v in details.items() if v is not None}
     
     def __repr__(self):

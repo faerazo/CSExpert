@@ -108,8 +108,8 @@ CREATE TABLE course_details (
     -- Administrative codes/references
     application_code VARCHAR(50) NULL, -- "GU-86092"
     
-    -- Additional flexible information
-    additional_info JSON NULL, -- For truly rare/varying fields
+    -- Page metadata
+    page_last_modified DATE NULL, -- Last modified date from course page
     
     created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
     updated_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now'))
