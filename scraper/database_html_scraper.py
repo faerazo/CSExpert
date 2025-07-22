@@ -601,15 +601,13 @@ def main():
     parser = argparse.ArgumentParser(description='Database HTML Scraper')
     parser.add_argument('--url', help='Test single URL')
     parser.add_argument('--database', default='data/csexpert.db', help='Database path')
-    parser.add_argument('--output', default=DEFAULT_OUTPUT_DIR, help='Output directory')
     
     args = parser.parse_args()
     
     scraper = None
     try:
         scraper = DatabaseHTMLScraper(
-            database_path=args.database,
-            output_dir=args.output
+            database_path=args.database
         )
         
         if args.url:
