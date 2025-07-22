@@ -851,6 +851,152 @@ class DatabaseScraperOrchestrator:
             logger.error(f"Error processing course replacements: {e}")
             self.stats.errors_encountered += 1
     
+    def _standardize_department_names(self):
+        """Standardize all department names to include 'Department of' prefix"""
+        logger.info("Standardizing department names...")
+        
+        try:
+            with self.SessionFactory() as session:
+                # Get all courses with department names that need standardization
+                courses_to_update = session.query(Course).filter(
+                    Course.department.isnot(None),
+                    ~Course.department.like('Department of %')
+                ).all()
+                
+                if not courses_to_update:
+                    logger.info("All department names are already standardized")
+                    return
+                
+                updated_count = 0
+                for course in courses_to_update:
+                    original_dept = course.department
+                    
+                    # Standardization logic
+                    if original_dept:
+                        # Remove common prefixes and clean up
+                        cleaned_dept = original_dept.strip()
+                        
+                        # Handle "Department:" prefix
+                        if cleaned_dept.startswith('Department:'):
+                            cleaned_dept = cleaned_dept[11:].strip()
+                        
+                        # Handle "Dep of" abbreviation
+                        elif cleaned_dept.startswith('Dep of '):
+                            cleaned_dept = cleaned_dept[7:].strip()
+                        
+                        # Handle existing "Department of" prefix
+                        elif cleaned_dept.startswith('Department of '):
+                            # Already standardized, skip
+                            continue
+                        
+                        # Add "Department of" prefix if not already present
+                        if cleaned_dept:
+                            standardized_dept = f"Department of {cleaned_dept}"
+                            course.department = standardized_dept
+                            updated_count += 1
+                            logger.debug(f"Updated department: '{original_dept}' → '{standardized_dept}'")
+                
+                if updated_count > 0:
+                    session.commit()
+                    logger.info(f"Standardized {updated_count} department names")
+                else:
+                    logger.info("No department names required standardization")
+                    
+        except Exception as e:
+            logger.error(f"Failed to standardize department names: {e}")
+    
+    def _clean_specialization_codes(self):
+        """Clean specialization codes to keep only the 3-character codes"""
+        logger.info("Cleaning specialization codes...")
+        
+        try:
+            with self.SessionFactory() as session:
+                # Get all courses with specialization values that contain commas (indicating extra text)
+                courses_to_update = session.query(Course).filter(
+                    Course.specialization.isnot(None),
+                    Course.specialization.like('%,%')
+                ).all()
+                
+                if not courses_to_update:
+                    logger.info("All specialization codes are already clean")
+                    return
+                
+                updated_count = 0
+                for course in courses_to_update:
+                    original_spec = course.specialization
+                    
+                    # Extract the first 3 characters (the code) before any comma
+                    if original_spec and ',' in original_spec:
+                        cleaned_spec = original_spec.split(',')[0].strip()
+                        
+                        # Validate it's a 3-character code (letters and/or numbers)
+                        if len(cleaned_spec) == 3 and cleaned_spec.isalnum():
+                            course.specialization = cleaned_spec
+                            updated_count += 1
+                            logger.debug(f"Updated specialization: '{original_spec}' → '{cleaned_spec}'")
+                
+                if updated_count > 0:
+                    session.commit()
+                    logger.info(f"Cleaned {updated_count} specialization codes")
+                else:
+                    logger.info("No specialization codes required cleaning")
+                    
+        except Exception as e:
+            logger.error(f"Failed to clean specialization codes: {e}")
+    
+    def _standardize_empty_strings_to_null(self):
+        """Standardize all empty strings to NULL across the database"""
+        logger.info("Standardizing empty strings to NULL across database...")
+        
+        try:
+            with self.SessionFactory() as session:
+                total_updated = 0
+                
+                # Define tables and their nullable text columns that need checking
+                tables_to_check = {
+                    'courses': ['study_form', 'main_field_of_study', 'term', 'field_of_education', 
+                               'specialization', 'swedish_title', 'valid_from_date', 
+                               'replaced_by_course_codes', 'replacing_course_code', 'processing_method'],
+                    'course_details': ['duration', 'application_period', 'application_code'],
+                    'course_sections': ['section_content'],
+                    'programs': ['department', 'description'],
+                    'data_quality_issues': ['resolution_notes'],
+                    'extraction_urls': ['course_code', 'source_search_url'],
+                    'html_scrapes': ['markdown_file_path', 'error_message'],
+                    'pdf_downloads': ['file_path', 'checksum', 'error_message']
+                }
+                
+                for table_name, columns in tables_to_check.items():
+                    table_updated = 0
+                    for column_name in columns:
+                        try:
+                            # Use raw SQL to update empty strings to NULL
+                            result = session.execute(
+                                text(f"UPDATE {table_name} SET {column_name} = NULL WHERE {column_name} = ''")
+                            )
+                            rows_updated = result.rowcount
+                            if rows_updated > 0:
+                                table_updated += rows_updated
+                                logger.debug(f"Updated {rows_updated} empty strings to NULL in {table_name}.{column_name}")
+                        
+                        except Exception as e:
+                            # Column might not exist or other issues - log and continue
+                            logger.debug(f"Skipped {table_name}.{column_name}: {e}")
+                            continue
+                    
+                    if table_updated > 0:
+                        total_updated += table_updated
+                        logger.info(f"Updated {table_updated} empty strings in {table_name}")
+                
+                if total_updated > 0:
+                    session.commit()
+                    logger.info(f"Standardized {total_updated} empty strings to NULL across database")
+                else:
+                    logger.info("No empty strings found - database is already standardized")
+                    
+        except Exception as e:
+            logger.error(f"Failed to standardize empty strings: {e}")
+    
     def _finalize_pipeline(self):
         """Finalize the scraping pipeline and generate summary."""
         logger.info("=== Pipeline Finalization ===")
@@ -858,6 +1004,15 @@ class DatabaseScraperOrchestrator:
         try:
             # Process course replacements before finalizing
             self._process_course_replacements()
+            
+            # Standardize department names
+            self._standardize_department_names()
+            
+            # Clean specialization codes
+            self._clean_specialization_codes()
+            
+            # Standardize empty strings to NULL
+            self._standardize_empty_strings_to_null()
             
             # Get final statistics from database
             with self.SessionFactory() as session:
