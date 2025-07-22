@@ -3,7 +3,7 @@ Configuration settings for the RAG system.
 Centralizes all magic numbers and settings for better maintainability.
 """
 import os
-from typing import Dict, List
+from typing import Dict
 from pathlib import Path
 
 
@@ -20,7 +20,6 @@ class RAGConfig:
     DEFAULT_K = int(os.getenv("DEFAULT_K", "20"))
     MAX_SEARCH_K = int(os.getenv("MAX_SEARCH_K", "50"))
     MIN_SEARCH_K = int(os.getenv("MIN_SEARCH_K", "5"))
-    SIMILARITY_THRESHOLD = float(os.getenv("SIMILARITY_THRESHOLD", "0.7"))
     
     # === CACHE SETTINGS ===
     CACHE_SIZE = int(os.getenv("CACHE_SIZE", "100"))
@@ -33,15 +32,12 @@ class RAGConfig:
     MIN_QUESTION_LENGTH = int(os.getenv("MIN_QUESTION_LENGTH", "3"))
     MAX_DOCUMENTS_FOR_CONTEXT = int(os.getenv("MAX_DOCUMENTS_FOR_CONTEXT", "15"))
     
-    # === QUERY VARIATIONS ===
-    MAX_QUERY_VARIATIONS = int(os.getenv("MAX_QUERY_VARIATIONS", "6"))
-    MIN_QUERY_VARIATIONS = int(os.getenv("MIN_QUERY_VARIATIONS", "2"))
     
     # === MEMORY SETTINGS ===
     CONVERSATION_MEMORY_K = int(os.getenv("CONVERSATION_MEMORY_K", "5"))
     
     # === DATABASE SETTINGS ===
-    CHROMA_PERSIST_DIRECTORY = os.getenv("CHROMA_PERSIST_DIRECTORY", "./data/chroma_db")
+    CHROMA_PERSIST_DIRECTORY = os.getenv("CHROMA_PERSIST_DIRECTORY", "./chroma_db")
     COLLECTION_NAME = os.getenv("COLLECTION_NAME", "gu_courses_programs")
     
     # === RATE LIMITING ===
@@ -56,42 +52,6 @@ class RAGConfig:
         "text-embedding-004": 0.00001
     }
     
-    # === SECTION MAPPINGS ===
-    # User terminology → JSON section names
-    SECTION_MAPPINGS = {
-        # Prerequisites/Requirements
-        'prerequisite': ['entry requirements', 'prerequisites', 'required courses'],
-        'requirement': ['entry requirements', 'prerequisites'], 
-        'need': ['entry requirements', 'prerequisites'],
-        
-        # Assessment/Grading
-        'assessment': ['examination', 'grading', 'assessment methods'],
-        'exam': ['examination', 'assessment', 'grading'],
-        'grade': ['grading', 'examination', 'assessment'],
-        'test': ['examination', 'assessment'],
-        
-        # Course content
-        'about': ['course content', 'learning outcomes', 'course overview'],
-        'content': ['course content', 'learning outcomes'],
-        'topic': ['course content', 'learning outcomes'],
-        'cover': ['course content', 'learning outcomes'],
-        'syllabus': ['course content', 'learning outcomes'],
-        
-        # Teaching format
-        'teaching': ['form of teaching', 'teaching methods'],
-        'lecture': ['form of teaching', 'teaching methods'],
-        'format': ['form of teaching', 'teaching methods'],
-    }
-    
-    # === CYCLE MAPPINGS ===
-    CYCLE_MAPPINGS = {
-        'bachelor': 'First cycle',
-        'master': 'Second cycle', 
-        'phd': 'Third cycle',
-        'first cycle': 'First cycle',
-        'second cycle': 'Second cycle', 
-        'third cycle': 'Third cycle'
-    }
     
     # === COMMON TYPO CORRECTIONS ===
     TYPO_CORRECTIONS = {
@@ -159,8 +119,7 @@ class RAGConfig:
             },
             "search_settings": {
                 "default_k": cls.DEFAULT_K,
-                "max_search_k": cls.MAX_SEARCH_K,
-                "similarity_threshold": cls.SIMILARITY_THRESHOLD
+                "max_search_k": cls.MAX_SEARCH_K
             },
             "cache_settings": {
                 "enabled": cls.ENABLE_CACHE,
