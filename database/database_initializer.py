@@ -135,8 +135,7 @@ class DatabaseInitializer:
             'courses': """
                 CREATE TABLE courses (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    course_code VARCHAR(10) NOT NULL,
-                    version_id INTEGER DEFAULT 1,
+                    course_code VARCHAR(10) UNIQUE NOT NULL,
                     course_title TEXT NOT NULL,
                     swedish_title TEXT NULL,
                     department VARCHAR(100) NOT NULL,
@@ -157,15 +156,13 @@ class DatabaseInitializer:
                     valid_from_date VARCHAR(50) NULL,
                     is_current BOOLEAN DEFAULT TRUE,
                     is_replaced BOOLEAN DEFAULT FALSE,
-                    replaced_by_course_id INTEGER REFERENCES courses(id),
+                    replaced_by_course_codes TEXT NULL, -- Comma-separated list of course codes that replace this course
                     replacing_course_code VARCHAR(10) NULL, -- Course code that this course replaces
                     content_completeness_score DECIMAL(3,2) DEFAULT 0.0 CHECK (content_completeness_score >= 0.0 AND content_completeness_score <= 1.0),
                     data_quality_score DECIMAL(3,2) DEFAULT 0.0 CHECK (data_quality_score >= 0.0 AND data_quality_score <= 1.0),
                     processing_method VARCHAR(50),
                     created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
-                    updated_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
-                    
-                    UNIQUE(course_code, version_id)
+                    updated_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now'))
                 )
             """,
             
@@ -175,7 +172,7 @@ class DatabaseInitializer:
                     course_id INTEGER NOT NULL REFERENCES courses(id) ON DELETE CASCADE,
                     section_name VARCHAR(100) NOT NULL,
                     section_content TEXT,
-                    word_count INTEGER DEFAULT 0,
+                    character_count INTEGER DEFAULT 0,
                     created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
                     
                     UNIQUE(course_id, section_name)
@@ -306,14 +303,12 @@ class DatabaseInitializer:
                     END
             """,
             
-            'update_section_word_count': """
-                CREATE TRIGGER update_section_word_count
+            'update_section_character_count': """
+                CREATE TRIGGER update_section_character_count
                     BEFORE INSERT ON course_sections
                     BEGIN
                         UPDATE course_sections 
-                        SET word_count = (
-                            LENGTH(NEW.section_content) - LENGTH(REPLACE(NEW.section_content, ' ', '')) + 1
-                        )
+                        SET character_count = LENGTH(NEW.section_content)
                         WHERE ROWID = NEW.ROWID;
                     END
             """,

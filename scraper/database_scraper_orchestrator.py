@@ -738,7 +738,7 @@ class DatabaseScraperOrchestrator:
                 logger.debug(f"Successfully processed: {file_path}")
                 # Store course in database if successful
                 if result.course_data:
-                    course_id = self.gemini_processor.store_course_in_database(result.course_data)
+                    course_id = self.gemini_processor.store_course_in_database(result.course_data, content_type)
                     result.course_id = course_id
                 
                 return {
@@ -813,11 +813,52 @@ class DatabaseScraperOrchestrator:
         return {'successful': successful, 'cost': cost}
     
     
+    def _process_course_replacements(self):
+        """Process course replacements after all courses are parsed."""
+        logger.info("Processing course replacements...")
+        
+        try:
+            with self.SessionFactory() as session:
+                # Step 1: Build replacement mapping
+                replacements = {}  # old_code -> [new_codes]
+                
+                courses = session.query(Course).all()
+                for course in courses:
+                    if course.replacing_course_code:
+                        old_code = course.replacing_course_code
+                        if old_code not in replacements:
+                            replacements[old_code] = []
+                        replacements[old_code].append(course.course_code)
+                
+                # Step 2: Update replaced courses
+                updated_count = 0
+                for old_code, new_codes in replacements.items():
+                    old_course = session.query(Course).filter_by(course_code=old_code).first()
+                    if old_course:
+                        # Update the old course
+                        old_course.replaced_by_course_codes = ','.join(sorted(new_codes))
+                        old_course.is_current = False
+                        old_course.is_replaced = True
+                        updated_count += 1
+                        logger.info(f"Course {old_code} marked as replaced by: {', '.join(new_codes)}")
+                    else:
+                        logger.warning(f"Replacement target course {old_code} not found in database")
+                
+                session.commit()
+                logger.info(f"Processed {updated_count} course replacements from {len(replacements)} mappings")
+                
+        except Exception as e:
+            logger.error(f"Error processing course replacements: {e}")
+            self.stats.errors_encountered += 1
+    
     def _finalize_pipeline(self):
         """Finalize the scraping pipeline and generate summary."""
         logger.info("=== Pipeline Finalization ===")
         
         try:
+            # Process course replacements before finalizing
+            self._process_course_replacements()
+            
             # Get final statistics from database
             with self.SessionFactory() as session:
                 total_courses = session.query(Course).filter(Course.is_current == True).count()

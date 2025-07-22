@@ -14,7 +14,7 @@ class RAGConfig:
     TEMPERATURE = float(os.getenv("TEMPERATURE", "0.1"))
     MAX_TOKENS = int(os.getenv("MAX_TOKENS", "1000"))
     EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "models/text-embedding-004")
-    LLM_MODEL = os.getenv("LLM_MODEL", "gemini-2.5-flash-preview-05-20")
+    LLM_MODEL = os.getenv("LLM_MODEL", "gemini-2.5-flash")
     
     # === SEARCH SETTINGS ===
     DEFAULT_K = int(os.getenv("DEFAULT_K", "20"))

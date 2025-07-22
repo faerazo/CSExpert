@@ -94,12 +94,11 @@ class LanguageStandard(Base):
 
 
 class Course(Base):
-    """Main course entity with version support and optimized metadata for RAG/embeddings."""
+    """Main course entity with optimized metadata for RAG/embeddings."""
     __tablename__ = 'courses'
     
     id = Column(Integer, primary_key=True, autoincrement=True)
-    course_code = Column(String(10), nullable=False)
-    version_id = Column(Integer, default=1)
+    course_code = Column(String(10), nullable=False, unique=True)
     course_title = Column(Text, nullable=False)
     swedish_title = Column(Text)
     department = Column(String(100), nullable=False)
@@ -120,7 +119,7 @@ class Course(Base):
     valid_from_date = Column(String(50))  # Mixed format: dates and terms
     is_current = Column(Boolean, default=True)
     is_replaced = Column(Boolean, default=False)
-    replaced_by_course_id = Column(Integer, ForeignKey('courses.id'))
+    replaced_by_course_codes = Column(Text)  # Comma-separated list of course codes that replace this course
     replacing_course_code = Column(String(10))  # Course code that this course replaces
     content_completeness_score = Column(Numeric(3,2), default=0.0)
     data_quality_score = Column(Numeric(3,2), default=0.0)
@@ -130,7 +129,6 @@ class Course(Base):
     
     # Constraints
     __table_args__ = (
-        UniqueConstraint('course_code', 'version_id', name='uix_course_code_version'),
         Index('idx_courses_code', 'course_code'),
         Index('idx_courses_current', 'is_current', 'course_code'),
         Index('idx_courses_department', 'department'),
@@ -151,9 +149,6 @@ class Course(Base):
     course_details = relationship("CourseDetails", back_populates="course", uselist=False, cascade="all, delete-orphan")
     quality_issues = relationship("DataQualityIssue", back_populates="course", cascade="all, delete-orphan")
     version_history = relationship("CourseVersionHistory", back_populates="course", cascade="all, delete-orphan")
-    
-    # Self-referential relationship for replaced courses
-    replaced_by = relationship("Course", remote_side=[id])
     
     @validates('course_code')
     def validate_course_code(self, key, course_code):
@@ -182,10 +177,12 @@ class Course(Base):
             raise ValueError(f"{key} must be between 0.0 and 1.0")
         return score
     
-    @hybrid_property
-    def full_code(self):
-        """Get full course identifier with version."""
-        return f"{self.course_code}v{self.version_id}"
+    @property
+    def replaced_by_list(self) -> List[str]:
+        """Get list of course codes that replace this course."""
+        if self.replaced_by_course_codes:
+            return [code.strip() for code in self.replaced_by_course_codes.split(',')]
+        return []
     
     @property
     def programs(self) -> List[Program]:
@@ -223,9 +220,9 @@ class Course(Base):
         return len(self.sections)
     
     @property
-    def total_word_count(self) -> int:
-        """Get total word count across all sections."""
-        return sum(section.word_count or 0 for section in self.sections)
+    def total_character_count(self) -> int:
+        """Get total character count across all sections."""
+        return sum(section.character_count or 0 for section in self.sections)
     
     def calculate_completeness_score(self) -> float:
         """Calculate content completeness score based on sections."""
@@ -286,7 +283,7 @@ class CourseSection(Base):
     course_id = Column(Integer, ForeignKey('courses.id', ondelete='CASCADE'), nullable=False)
     section_name = Column(String(100), nullable=False)
     section_content = Column(Text, nullable=True)
-    word_count = Column(Integer, default=0)
+    character_count = Column(Integer, default=0)
     created_at = Column(DateTime, default=datetime.utcnow)
     
     # Constraints
@@ -301,21 +298,20 @@ class CourseSection(Base):
     
     @validates('section_content')
     def validate_section_content(self, key, content):
-        """Validate and calculate word count for section content."""
+        """Validate and calculate character count for section content."""
         if content is None:
-            self.word_count = 0
+            self.character_count = 0
             return None
         
         # Convert to string to handle any data type
         content_str = str(content)
         
         if not content_str.strip():
-            self.word_count = 0
+            self.character_count = 0
             return ""
         
-        # Calculate word count
-        word_count = len(content_str.split())
-        self.word_count = word_count
+        # Calculate character count (including spaces)
+        self.character_count = len(content_str)
         
         return content_str.strip()
     

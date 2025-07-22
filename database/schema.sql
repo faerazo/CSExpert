@@ -31,11 +31,10 @@ CREATE TABLE language_standards (
     created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now'))
 );
 
--- Main courses table with version support and optimized metadata for RAG/embeddings
+-- Main courses table with optimized metadata for RAG/embeddings
 CREATE TABLE courses (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    course_code VARCHAR(10) NOT NULL,
-    version_id INTEGER DEFAULT 1,
+    course_code VARCHAR(10) UNIQUE NOT NULL,
     course_title TEXT NOT NULL,
     swedish_title TEXT NULL,
     department VARCHAR(100) NOT NULL,
@@ -56,16 +55,13 @@ CREATE TABLE courses (
     valid_from_date VARCHAR(50) NULL, -- Mixed format: dates and terms like "Autumn term 2025"
     is_current BOOLEAN DEFAULT TRUE,
     is_replaced BOOLEAN DEFAULT FALSE,
-    replaced_by_course_id INTEGER REFERENCES courses(id),
+    replaced_by_course_codes TEXT NULL, -- Comma-separated list of course codes that replace this course
     replacing_course_code VARCHAR(10) NULL, -- Course code that this course replaces
     content_completeness_score DECIMAL(3,2) DEFAULT 0.0, -- 0.0 to 1.0
     data_quality_score DECIMAL(3,2) DEFAULT 0.0, -- 0.0 to 1.0
     processing_method VARCHAR(50),
     created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
-    updated_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
-    
-    -- Ensure unique course_code per version
-    UNIQUE(course_code, version_id)
+    updated_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now'))
 );
 
 -- Course sections for structured content storage
@@ -74,7 +70,7 @@ CREATE TABLE course_sections (
     course_id INTEGER NOT NULL REFERENCES courses(id) ON DELETE CASCADE,
     section_name VARCHAR(100) NOT NULL,
     section_content TEXT,
-    word_count INTEGER DEFAULT 0,
+    character_count INTEGER DEFAULT 0,
     created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now')),
     
     -- Ensure unique section names per course
@@ -193,14 +189,12 @@ CREATE TRIGGER update_course_completeness_score
         WHERE id = NEW.course_id;
     END;
 
--- Trigger to update word count when section content changes
-CREATE TRIGGER update_section_word_count
+-- Trigger to update character count when section content changes
+CREATE TRIGGER update_section_character_count
     BEFORE INSERT ON course_sections
     BEGIN
         UPDATE course_sections 
-        SET word_count = (
-            LENGTH(NEW.section_content) - LENGTH(REPLACE(NEW.section_content, ' ', '')) + 1
-        )
+        SET character_count = LENGTH(NEW.section_content)
         WHERE ROWID = NEW.ROWID;
     END;
 
@@ -322,7 +316,7 @@ LEFT JOIN courses c ON cpm.course_id = c.id AND c.is_current = TRUE
 GROUP BY p.id;
 
 -- Schema documentation (SQLite doesn't support COMMENT ON TABLE)
--- courses: Main course entity with version support for handling course updates and replacements
+-- courses: Main course entity for handling course updates and replacements
 -- course_sections: Normalized storage of course content sections for vector embedding generation  
 -- programs: Master data for academic programs
 -- course_program_mapping: Many-to-many relationship supporting courses in multiple programs

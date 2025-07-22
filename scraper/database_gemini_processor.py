@@ -966,7 +966,7 @@ class DatabaseGeminiProcessor:
                             # Safe handling - convert to string first
                             content_str = str(section_content) if section_content is not None else ""
                             existing_section.section_content = content_str.strip() if content_str else ""
-                            existing_section.word_count = len(content_str.split()) if content_str else 0
+                            existing_section.character_count = len(content_str) if content_str else 0
                         else:
                             # Safe handling - convert to string first
                             content_str = str(section_content) if section_content is not None else ""
@@ -974,7 +974,7 @@ class DatabaseGeminiProcessor:
                                 course_id=course.id,
                                 section_name=section_name,
                                 section_content=content_str.strip() if content_str else "",
-                                word_count=len(content_str.split()) if content_str else 0
+                                character_count=len(content_str) if content_str else 0
                             )
                             session.add(section)
                 else:
@@ -992,7 +992,7 @@ class DatabaseGeminiProcessor:
                             # Safe handling - convert to string first
                             content_str = str(section_content) if section_content is not None else ""
                             existing_section.section_content = content_str.strip() if content_str else ""
-                            existing_section.word_count = len(content_str.split()) if content_str else 0
+                            existing_section.character_count = len(content_str) if content_str else 0
                         else:
                             # Safe handling - convert to string first
                             content_str = str(section_content) if section_content is not None else ""
@@ -1000,7 +1000,7 @@ class DatabaseGeminiProcessor:
                                 course_id=course.id,
                                 section_name=section_name,
                                 section_content=content_str.strip() if content_str else "",
-                                word_count=len(content_str.split()) if content_str else 0
+                                character_count=len(content_str) if content_str else 0
                             )
                             session.add(section)
                 

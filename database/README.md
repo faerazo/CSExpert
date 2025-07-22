@@ -31,8 +31,8 @@ Academic program information
 - `description` - Program description
 
 #### 3. **courses**
-Main course entity with version support
-- **Identity**: `course_code` + `version_id` (UNIQUE together)
+Main course entity
+- **Identity**: `course_code` (UNIQUE)
 - **Basic Info**: `course_title`, `swedish_title`, `department`, `credits`, `cycle`
 - **Language**: `language_of_instruction_id` (FK to language_standards)
 - **Metadata** (for RAG/search): 
@@ -40,7 +40,7 @@ Main course entity with version support
   - `main_field_of_study`, `specialization`, `term`
 - **Administrative**: 
   - `confirmation_date`, `valid_from_date`
-  - `is_current`, `is_replaced`, `replaced_by_course_id`
+  - `is_current`, `is_replaced`, `replaced_by_course_codes`
   - `replacing_course_code`
 - **Quality**: `content_completeness_score`, `data_quality_score`
 - **Processing**: `processing_method`
@@ -48,7 +48,7 @@ Main course entity with version support
 #### 4. **course_sections**
 Structured course content for embeddings
 - `course_id` (FK), `section_name`, `section_content`
-- `word_count` - Automatically calculated
+- `character_count` - Automatically calculated (includes spaces)
 
 #### 5. **course_program_mapping**
 Many-to-many relationship between courses and programs
@@ -165,12 +165,28 @@ Only these program codes are valid in the system:
 - **N1SOF** - Software Engineering and Management Bachelor's Programme
 - **N2GDT** - Game Design Technology Master's Programme
 
+## Course Replacement System
+
+The database tracks course replacements through a post-processing system:
+
+1. **During Import**: The `replacing_course_code` field is populated when a course indicates it replaces another
+2. **Post-Processing**: After all courses are imported, the system:
+   - Builds a mapping of all replacements
+   - Updates replaced courses with `is_current = FALSE` and `is_replaced = TRUE`
+   - Populates `replaced_by_course_codes` with comma-separated list of new course codes
+   - Handles multiple replacements (e.g., DIT002 replaced by both DIT003 and TIA009)
+
+Example:
+- DIT002 is replaced by DIT003
+- DIT003 has `replacing_course_code = 'DIT002'`
+- After processing, DIT002 has `replaced_by_course_codes = 'DIT003'` and `is_current = FALSE`
+
 ## Best Practices
 
 ### Data Integrity
 - Always validate course codes and credits before insertion
 - Use the language_standards table for consistent language values
-- Maintain course version history for tracking changes
+- Run course replacement processing after all courses are imported
 
 ### Performance
 - Use indexed fields for queries when possible
