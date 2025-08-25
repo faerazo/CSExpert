@@ -1,129 +1,132 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
-// Professional markdown renderer using standard HTML elements
-const SimpleMarkdownRenderer: React.FC<{ content: string }> = ({ content }) => {
-  const parseMarkdown = (text: string) => {
-    // Escape HTML for security
-    text = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    
-    // Code blocks (before other formatting)
-    text = text.replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>');
-    
-    // Inline code
-    text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
-    
-    // Headers
-    text = text.replace(/^### (.+)$/gm, '<h3>$1</h3>');
-    text = text.replace(/^## (.+)$/gm, '<h2>$1</h2>');
-    text = text.replace(/^# (.+)$/gm, '<h1>$1</h1>');
-    
-    // Bold and italic
-    text = text.replace(/\*\*([^*\n]+)\*\*/g, '<strong>$1</strong>');
-    text = text.replace(/__([^_\n]+)__/g, '<strong>$1</strong>');
-    text = text.replace(/(?<!\*)\*([^*\n]+)\*(?!\*)/g, '<em>$1</em>');
-    text = text.replace(/(?<!_)_([^_\n]+)_(?!_)/g, '<em>$1</em>');
-    
-    // Links
-    text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
-    
-    // Course codes
-    text = text.replace(/\b([A-Z]{2,4}\d{3})\b/g, '<span class="course-code">$1</span>');
-    
-    // Blockquotes
-    text = text.replace(/^>\s+(.+)$/gm, '<blockquote>$1</blockquote>');
-    
-    // Horizontal rules
-    text = text.replace(/^---+$/gm, '<hr>');
-    text = text.replace(/^\*\*\*+$/gm, '<hr>');
-    
-    // Strikethrough
-    text = text.replace(/~~([^~]+)~~/g, '<del>$1</del>');
-    
-    // Lists - improved parsing
-    const lines = text.split('\n');
-    const processedLines = [];
-    let inUnorderedList = false;
-    let inOrderedList = false;
-    
-    for (const line of lines) {
-      const unorderedMatch = line.match(/^(\s*)([*+-])\s+(.+)$/);
-      const orderedMatch = line.match(/^(\s*)(\d+)\.\s+(.+)$/);
-      
-      if (unorderedMatch) {
-        const [, indent, , content] = unorderedMatch;
-        const indentLevel = Math.floor(indent.length / 2);
-        
-        if (inOrderedList) {
-          processedLines.push('</ol>');
-          inOrderedList = false;
-        }
-        
-        if (!inUnorderedList) {
-          processedLines.push('<ul>');
-          inUnorderedList = true;
-        }
-        
-        processedLines.push(`<li>${content}</li>`);
-        
-      } else if (orderedMatch) {
-        const [, , , content] = orderedMatch;
-        
-        if (inUnorderedList) {
-          processedLines.push('</ul>');
-          inUnorderedList = false;
-        }
-        
-        if (!inOrderedList) {
-          processedLines.push('<ol>');
-          inOrderedList = true;
-        }
-        
-        processedLines.push(`<li>${content}</li>`);
-        
-      } else {
-        if (inUnorderedList) {
-          processedLines.push('</ul>');
-          inUnorderedList = false;
-        }
-        if (inOrderedList) {
-          processedLines.push('</ol>');
-          inOrderedList = false;
-        }
-        processedLines.push(line);
-      }
-    }
-    
-    // Close any remaining lists
-    if (inUnorderedList) processedLines.push('</ul>');
-    if (inOrderedList) processedLines.push('</ol>');
-    
-    text = processedLines.join('\n');
-    
-    // Paragraphs
-    const paragraphs = text.split(/\n\s*\n/);
-    const formattedParagraphs = paragraphs.map(para => {
-      para = para.trim();
-      if (!para) return '';
-      
-      // Skip if already wrapped in block elements
-      if (para.match(/^<(h[1-6]|ul|ol|blockquote|hr|pre|div)/)) {
-        return para;
-      }
-      
-      // Convert line breaks to <br> and wrap in <p>
-      const withBreaks = para.replace(/\n/g, '<br>');
-      return `<p>${withBreaks}</p>`;
-    }).filter(p => p);
-    
-    return formattedParagraphs.join('\n');
-  };
+interface MarkdownRendererProps {
+  content: string;
+}
 
-  return (
-    <div className="markdown-content">
-      <div dangerouslySetInnerHTML={{ __html: parseMarkdown(content) }} />
-    </div>
-  );
+const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
+  // Error boundary and null check
+  if (!content) {
+    return <div className="markdown-content">No content</div>;
+  }
+
+  try {
+    return (
+      <div className="markdown-content prose prose-sm max-w-none">
+        <ReactMarkdown 
+          remarkPlugins={[remarkGfm]}
+          components={{
+            // Custom link renderer to open in new tab
+            a: ({ node, href, children }) => (
+              <a 
+                href={href}
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-800 hover:text-brand-accent underline transition-colors duration-200 font-medium"
+              >
+                {children}
+              </a>
+            ),
+            // Custom code styling
+            code: ({ node, inline, className, children, ...props }) => {
+              const match = /language-(\w+)/.exec(className || '');
+              return !inline ? (
+                <pre className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto my-4 shadow-lg border border-gray-800">
+                  <code className={`${className} text-sm leading-relaxed`} {...props}>
+                    {children}
+                  </code>
+                </pre>
+              ) : (
+                <code className="bg-gray-100 text-red-600 px-1.5 py-0.5 rounded text-sm font-mono" {...props}>
+                  {children}
+                </code>
+              );
+            },
+            // Custom paragraph spacing with better line height
+            p: ({ node, ...props }) => (
+              <p className="mb-4 last:mb-0 leading-relaxed text-gray-800" {...props} />
+            ),
+            // Custom list styling with better spacing
+            ul: ({ node, ...props }) => (
+              <ul className="list-disc pl-6 mb-4 space-y-2 marker:text-gray-400" {...props} />
+            ),
+            ol: ({ node, ...props }) => (
+              <ol className="list-decimal pl-6 mb-4 space-y-2 marker:text-gray-400" {...props} />
+            ),
+            li: ({ node, ...props }) => (
+              <li className="leading-relaxed" {...props} />
+            ),
+            // Custom heading styling with better hierarchy
+            h1: ({ node, ...props }) => (
+              <h1 className="text-2xl font-bold mb-4 mt-6 first:mt-0 text-brand-primary border-b border-gray-200 pb-2" {...props} />
+            ),
+            h2: ({ node, ...props }) => (
+              <h2 className="text-xl font-bold mb-3 mt-5 first:mt-0 text-brand-primary" {...props} />
+            ),
+            h3: ({ node, ...props }) => (
+              <h3 className="text-lg font-semibold mb-2 mt-4 first:mt-0 text-brand-secondary" {...props} />
+            ),
+            h4: ({ node, ...props }) => (
+              <h4 className="text-base font-semibold mb-2 mt-3 first:mt-0 text-gray-800" {...props} />
+            ),
+            // Enhanced blockquote styling
+            blockquote: ({ node, ...props }) => (
+              <blockquote className="border-l-4 border-brand-primary bg-gray-50 pl-4 pr-4 py-3 my-4 italic text-gray-700 rounded-r-md" {...props} />
+            ),
+            // Table styling for better readability
+            table: ({ node, ...props }) => (
+              <div className="overflow-x-auto my-4">
+                <table className="min-w-full border-collapse border border-gray-300 rounded-lg overflow-hidden shadow-sm" {...props} />
+              </div>
+            ),
+            thead: ({ node, ...props }) => (
+              <thead className="bg-gray-100" {...props} />
+            ),
+            th: ({ node, ...props }) => (
+              <th className="border border-gray-300 px-4 py-2 text-left font-semibold text-gray-800" {...props} />
+            ),
+            td: ({ node, ...props }) => (
+              <td className="border border-gray-300 px-4 py-2 text-gray-700" {...props} />
+            ),
+            // Horizontal rule styling
+            hr: ({ node, ...props }) => (
+              <hr className="my-6 border-t-2 border-gray-200" {...props} />
+            ),
+            // Handle course codes and strong text
+            strong: ({ node, children, ...props }) => {
+              const text = String(children);
+              // Check if it's a course code pattern
+              if (/^[A-Z]{2,4}\d{3}[A-Z]?$/.test(text)) {
+                return (
+                  <span className="inline-flex items-center px-2 py-0.5 rounded text-sm font-semibold bg-brand-light text-brand-primary border border-brand-medium" {...props}>
+                    {children}
+                  </span>
+                );
+              }
+              return <strong className="font-semibold text-gray-900" {...props}>{children}</strong>;
+            },
+            // Emphasis styling
+            em: ({ node, ...props }) => (
+              <em className="italic text-gray-700" {...props} />
+            ),
+            // Image styling
+            img: ({ node, ...props }) => (
+              <img className="rounded-lg shadow-md my-4 max-w-full h-auto" {...props} />
+            ),
+          }}
+        >
+          {content}
+        </ReactMarkdown>
+      </div>
+    );
+  } catch (error) {
+    console.error('Error rendering markdown:', error);
+    // Fallback to simple text if react-markdown fails
+    return <div className="markdown-content whitespace-pre-wrap">{content}</div>;
+  }
 };
 
 export interface Citation {
@@ -183,8 +186,8 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({
             // User messages: plain text
             <div className="whitespace-pre-wrap">{message.content}</div>
           ) : (
-            // AI messages: simple markdown rendering
-            <SimpleMarkdownRenderer content={message.content} />
+            // AI messages: markdown rendering
+            <MarkdownRenderer content={message.content} />
           )}
         </div>
         
