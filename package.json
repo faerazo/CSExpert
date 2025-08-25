@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "cd frontend && npm install --include=dev && npx vite build",
-    "heroku-postbuild": "cd frontend && npm install --include=dev && npx vite build",
+    "build": "cd frontend && npm install && npm run build",
+    "heroku-postbuild": "cd frontend && npm install && npm run build",
     "start": "echo 'This is handled by Python buildpack'"
   },
   "engines": {
@@ -13,4 +13,4 @@
   },
   "dependencies": {},
   "devDependencies": {}
-} 
+}
