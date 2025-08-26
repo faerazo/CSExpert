@@ -1,8 +1,26 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
+import { ChatHistory } from '@/components/chat/ChatHistory';
+import { ChatSession } from '@/lib/chat-storage';
 
-export const Sidebar: React.FC = () => {
+interface SidebarProps {
+  sessions?: ChatSession[];
+  currentSessionId?: string;
+  onSessionSelect?: (sessionId: string) => void;
+  onNewChat?: () => void;
+  onDeleteSession?: (sessionId: string) => void;
+  onRenameSession?: (sessionId: string, newTitle: string) => void;
+}
+
+export const Sidebar: React.FC<SidebarProps> = ({
+  sessions = [],
+  currentSessionId,
+  onSessionSelect,
+  onNewChat,
+  onDeleteSession,
+  onRenameSession,
+}) => {
   const navigate = useNavigate();
   const location = useLocation();
   
@@ -21,7 +39,7 @@ export const Sidebar: React.FC = () => {
 
   const isActive = (path: string) => {
     if (path === '/') {
-      return location.pathname === '/';
+      return location.pathname === '/' || location.pathname.startsWith('/chat/');
     }
     return location.pathname.startsWith(path);
   };
@@ -43,23 +61,40 @@ export const Sidebar: React.FC = () => {
         </div>
       </div>
       
-      {/* Navigation links */}
-      <nav className="flex-1 px-2 py-4 space-y-1 overflow-y-auto">
-        {navigation.map((item) => (
-          <a
-            key={item.name}
-            onClick={() => navigate(item.path)}
-            className={cn(
-              isActive(item.path)
-                ? 'bg-brand-light text-brand-primary font-medium'
-                : 'text-gray-600 hover:bg-brand-light hover:text-brand-primary',
-              'group flex items-center px-3 py-2 text-base rounded-md cursor-pointer transition-colors'
-            )}
-          >
-            {item.name}
-          </a>
-        ))}
-      </nav>
+      {/* Show chat history or navigation based on current page */}
+      {(location.pathname === '/' || location.pathname.startsWith('/chat/')) && onSessionSelect ? (
+        <div className="flex-1 overflow-hidden">
+          <div className="px-4 py-2 border-b border-brand-medium">
+            <h3 className="text-sm font-medium text-gray-700">Chat History</h3>
+          </div>
+          <ChatHistory
+            sessions={sessions}
+            currentSessionId={currentSessionId}
+            onSessionSelect={onSessionSelect}
+            onNewChat={onNewChat || (() => {})}
+            onDeleteSession={onDeleteSession || (() => {})}
+            onRenameSession={onRenameSession || (() => {})}
+          />
+        </div>
+      ) : (
+        /* Navigation links for non-chat pages */
+        <nav className="flex-1 px-2 py-4 space-y-1 overflow-y-auto">
+          {navigation.map((item) => (
+            <a
+              key={item.name}
+              onClick={() => navigate(item.path)}
+              className={cn(
+                isActive(item.path)
+                  ? 'bg-brand-light text-brand-primary font-medium'
+                  : 'text-gray-600 hover:bg-brand-light hover:text-brand-primary',
+                'group flex items-center px-3 py-2 text-base rounded-md cursor-pointer transition-colors'
+              )}
+            >
+              {item.name}
+            </a>
+          ))}
+        </nav>
+      )}
       
       {/* User section - removed since no user accounts are needed */}
       {isAdmin && (

@@ -20,6 +20,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/chat/:sessionId" element={<Index />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/admin/documents" element={<Documents />} />
           <Route path="/admin/settings" element={<Settings />} />

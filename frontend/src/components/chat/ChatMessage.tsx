@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { ChevronDown, ChevronUp, FileText } from 'lucide-react';
 
 interface MarkdownRendererProps {
   content: string;
@@ -159,6 +160,12 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({
   onCitationClick
 }) => {
   const isUser = message.sender === 'user';
+  const [showSources, setShowSources] = useState(false);
+  
+  // Build syllabus URL from course code (consistent pattern)
+  const getSyllabusUrl = (courseCode: string) => {
+    return `https://kursplaner.gu.se/pdf/kurs/en/${courseCode}`;
+  };
   
   return (
     <div className={cn(
@@ -191,32 +198,72 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({
           )}
         </div>
         
-        {/* Citations */}
+        {/* Sources section - collapsible and more subtle */}
         {!isUser && message.citations && message.citations.length > 0 && (
-          <div className="mt-3 space-y-2">
-            <div className="text-xs font-medium text-gray-500">Sources:</div>
-            <div className="flex flex-wrap gap-2">
-              {message.citations.map((citation) => (
-                <button
-                  key={citation.id}
-                  onClick={() => onCitationClick?.(citation)}
-                  className="inline-flex items-center px-3 py-1 rounded-full bg-brand-light text-xs hover:bg-brand-medium transition-colors border border-brand-medium/30"
-                  title={citation.metadata ? 
-                    `${citation.metadata.course_code} - ${citation.metadata.section}` : 
-                    citation.title
+          <div className="mt-4 border-t border-gray-200 pt-3">
+            {/* Sources header with toggle */}
+            <button
+              onClick={() => setShowSources(!showSources)}
+              className="flex items-center justify-between w-full text-left hover:bg-gray-50 rounded-lg p-2 -mx-2 transition-colors"
+            >
+              <div className="flex items-center gap-2">
+                <FileText className="h-3.5 w-3.5 text-gray-400" />
+                <span className="text-xs text-gray-600 font-medium">
+                  {message.citations.length} sources
+                  {message.metadata?.documentsRetrieved && 
+                    ` • ${message.metadata.documentsRetrieved} documents searched`
                   }
-                >
-                  {citation.title}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
-        
-        {/* Metadata info */}
-        {!isUser && message.metadata?.documentsRetrieved && (
-          <div className="text-xs text-gray-400 mt-2">
-            Retrieved {message.metadata.documentsRetrieved} documents
+                </span>
+              </div>
+              {showSources ? 
+                <ChevronUp className="h-3.5 w-3.5 text-gray-400" /> : 
+                <ChevronDown className="h-3.5 w-3.5 text-gray-400" />
+              }
+            </button>
+            
+            {/* Expandable sources content */}
+            {showSources && (
+              <div className="mt-3 space-y-2 pl-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {message.citations.map((citation) => {
+                    const courseCode = citation.metadata?.course_code;
+                    const hasCourseCode = courseCode && /^[A-Z]{2,4}\d{3}[A-Z]?$/.test(courseCode);
+                    
+                    return (
+                      <div
+                        key={citation.id}
+                        className="flex items-start gap-2 p-2 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors"
+                      >
+                        <div className="flex-1 min-w-0">
+                          <div className="text-xs font-medium text-gray-700 truncate">
+                            {citation.title}
+                          </div>
+                          {citation.metadata?.section_name && (
+                            <div className="text-xs text-gray-500 truncate">
+                              {citation.metadata.section_name}
+                            </div>
+                          )}
+                        </div>
+                        
+                        {/* Syllabus link - only if we have a valid course code */}
+                        {hasCourseCode && (
+                          <a
+                            href={getSyllabusUrl(courseCode)}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-1.5 hover:bg-gray-200 rounded transition-colors"
+                            title={`View ${courseCode} syllabus (PDF)`}
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <FileText className="h-3 w-3 text-gray-600" />
+                          </a>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
           </div>
         )}
         

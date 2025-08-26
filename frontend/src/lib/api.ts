@@ -32,6 +32,30 @@ export interface SystemStatus {
 export interface ChatRequest {
   message: string;
   session_id?: string;
+  chat_history?: Array<{
+    role?: string;
+    sender?: string;
+    content: string;
+    sources?: any[]; // Sources from AI responses for better context
+  }>;
+}
+
+export interface ChatHistoryData {
+  session_id: string;
+  title: string;
+  messages: any[];
+  created_at: string;
+  updated_at: string;
+}
+
+export interface ChatHistoryRequest {
+  title?: string;
+  messages: any[];
+}
+
+export interface ChatHistoryUpdate {
+  title?: string;
+  messages?: any[];
 }
 
 // API functions
@@ -168,6 +192,102 @@ export const api = {
       return await response.json();
     } catch (error) {
       console.error('Error getting programs:', error);
+      throw error;
+    }
+  },
+
+  // Chat History API (Optional backend persistence)
+  async saveChatHistory(sessionId: string, data: ChatHistoryRequest): Promise<ChatHistoryData> {
+    try {
+      const response = await fetch(`${API_BASE_URL}/chat/history/${sessionId}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      return await response.json();
+    } catch (error) {
+      console.error('Error saving chat history:', error);
+      throw error;
+    }
+  },
+
+  async getChatHistory(sessionId: string): Promise<ChatHistoryData> {
+    try {
+      const response = await fetch(`${API_BASE_URL}/chat/history/${sessionId}`);
+      
+      if (!response.ok) {
+        if (response.status === 404) {
+          throw new Error('Chat history not found');
+        }
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      return await response.json();
+    } catch (error) {
+      console.error('Error getting chat history:', error);
+      throw error;
+    }
+  },
+
+  async getAllChatHistories(limit: number = 50, offset: number = 0) {
+    try {
+      const params = new URLSearchParams({
+        limit: limit.toString(),
+        offset: offset.toString(),
+      });
+
+      const response = await fetch(`${API_BASE_URL}/chat/histories?${params}`);
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      return await response.json();
+    } catch (error) {
+      console.error('Error getting all chat histories:', error);
+      throw error;
+    }
+  },
+
+  async deleteChatHistory(sessionId: string): Promise<void> {
+    try {
+      const response = await fetch(`${API_BASE_URL}/chat/history/${sessionId}`, {
+        method: 'DELETE',
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+    } catch (error) {
+      console.error('Error deleting chat history:', error);
+      throw error;
+    }
+  },
+
+  async updateChatHistory(sessionId: string, update: ChatHistoryUpdate): Promise<ChatHistoryData> {
+    try {
+      const response = await fetch(`${API_BASE_URL}/chat/history/${sessionId}`, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(update),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      return await response.json();
+    } catch (error) {
+      console.error('Error updating chat history:', error);
       throw error;
     }
   }

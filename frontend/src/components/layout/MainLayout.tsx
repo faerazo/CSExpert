@@ -3,12 +3,27 @@ import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Sidebar } from './Sidebar';
+import { ChatSession } from '@/lib/chat-storage';
 
 interface MainLayoutProps {
   children: React.ReactNode;
+  sessions?: ChatSession[];
+  currentSessionId?: string;
+  onSessionSelect?: (sessionId: string) => void;
+  onNewChat?: () => void;
+  onDeleteSession?: (sessionId: string) => void;
+  onRenameSession?: (sessionId: string, newTitle: string) => void;
 }
 
-export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
+export const MainLayout: React.FC<MainLayoutProps> = ({ 
+  children,
+  sessions,
+  currentSessionId,
+  onSessionSelect,
+  onNewChat,
+  onDeleteSession,
+  onRenameSession,
+}) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -30,7 +45,14 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         )}
       >
-        <Sidebar />
+        <Sidebar 
+          sessions={sessions}
+          currentSessionId={currentSessionId}
+          onSessionSelect={onSessionSelect}
+          onNewChat={onNewChat}
+          onDeleteSession={onDeleteSession}
+          onRenameSession={onRenameSession}
+        />
       </div>
       
       {/* Backdrop for mobile sidebar */}

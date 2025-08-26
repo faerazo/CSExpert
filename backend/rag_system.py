@@ -35,6 +35,7 @@ load_dotenv()  # Automatically search for .env file
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
 class GothenburgUniversityRAG:
     """
     RAG system for Gothenburg University course and program information.
@@ -739,6 +740,16 @@ Section: {section_name}
         import re
         course_code_match = re.search(r'\b([A-Z]{2,4}\d{3})\b', question.upper())
         found_course_code = course_code_match.group(1) if course_code_match else None
+        
+        # Extract course codes from enhanced context (if present)
+        context_match = re.search(r'\(context: ([A-Z]{2,4}\d{3})\)', question)
+        context_course_code = context_match.group(1) if context_match else None
+        
+        # Prioritize context course code over found course code
+        if context_course_code:
+            found_course_code = context_course_code
+            logger.info(f"🎯 Using course code from context: {found_course_code}")
+        
         query_lower = question.lower()
         
         logger.info(f"🔍 Processing query: '{question}'")
@@ -1216,6 +1227,31 @@ Section: {section_name}
             "cache_keys": list(self.response_cache.keys())[:5]  # First 5 for debugging
         }
 
+    def extract_course_codes_from_history(self) -> List[str]:
+        """Extract course codes from sources in previous AI responses.
+        
+        Uses the actual courses that were found and returned by the RAG system,
+        which is more reliable than trying to parse user messages.
+        """
+        try:
+            # Only use sources from chat history sent by frontend
+            if not hasattr(self, 'chat_history_sources'):
+                return []
+            
+            course_codes = []
+            for source in self.chat_history_sources:
+                if isinstance(source, dict) and source.get('course_code'):
+                    course_code = source['course_code']
+                    if course_code and course_code not in course_codes:
+                        course_codes.append(course_code)
+            
+            # Return top 3 most relevant course codes (first = most recent/relevant)
+            return course_codes[:3]
+            
+        except Exception as e:
+            logger.warning(f"Error extracting course codes from history: {e}")
+            return []
+    
     def query(self, question: str) -> Dict:
         """Main query method with response caching and rate limiting."""
         if not self.is_initialized:
@@ -1274,12 +1310,62 @@ Section: {section_name}
             logger.info(f"🚀 === NEW QUERY START ===")
             logger.info(f"❓ Query: '{question}'")
             
+            # FIRST: Check if current question contains an explicit course code
+            current_course_pattern = r'\b(DIT\d{3}|TIA\d{3}|MSA\d{3}|LT\d{4})\b'
+            current_course_match = re.search(current_course_pattern, question, re.IGNORECASE)
+            
+            if current_course_match:
+                # User explicitly mentioned a course - DO NOT apply historical context
+                enhanced_question = question
+            else:
+                # No explicit course in current question - check if we should apply context
+                historical_course_codes = self.extract_course_codes_from_history()
+                
+                if historical_course_codes:
+                    logger.info(f"📚 Using course codes from history: {historical_course_codes}")
+                    # Check for referential patterns (more careful with 'it')
+                    referential_terms = ['the course', 'that course', 'this course', 'the same', 
+                                       'mentioned above', 'previous', 'above']
+                    
+                    # Also check for implicit references (questions without explicit course mention)
+                    implicit_patterns = ['what are the', 'what is the', 'how many', 'when is', 
+                                       'who teaches', 'learning outcomes', 'prerequisites', 
+                                       'grading', 'assessment', 'credits', 'exam', 'examination']
+                    
+                    question_lower = question.lower()
+                    found_terms = [term for term in referential_terms if term in question_lower]
+                    
+                    # Be more careful with 'it' and 'its' - check surrounding context
+                    careful_terms = ['it', 'its']
+                    for term in careful_terms:
+                        if f' {term} ' in f' {question_lower} ':  # Add spaces to avoid matching within words
+                            # Check if it's actually referential (not in phrases like 'submit it', 'related to it')
+                            term_index = question_lower.find(f' {term} ')
+                            if term_index > 0:
+                                preceding_words = question_lower[:term_index].split()[-3:]  # Last 3 words before 'it'
+                                # Only count as referential if NOT preceded by action verbs or prepositions
+                                non_referential_context = ['to', 'submit', 'with', 'for', 'from', 'about', 'related', 'regarding']
+                                if not any(word in non_referential_context for word in preceding_words):
+                                    found_terms.append(term)
+                    
+                    found_implicit = any(pattern in question_lower for pattern in implicit_patterns)
+                    
+                    # Use context if we have explicit references OR implicit patterns
+                    if found_terms or found_implicit:
+                        # Add the most recent course code to the query for better retrieval
+                        enhanced_question = f"{question} (context: {historical_course_codes[0]})"
+                    else:
+                        enhanced_question = question
+                else:
+                    enhanced_question = question
+    
+            
             # Route the query
             content_type = self.route_query(question)
             logger.info(f"🧭 Routed query to: {content_type}")
             
-            # Retrieve documents
-            documents = self.retrieve_documents(question, content_type)
+            # Retrieve documents using enhanced question
+            documents = self.retrieve_documents(enhanced_question, content_type)
             
             # Generate answer
             answer = self.generate_answer(question, documents)
@@ -1320,6 +1406,8 @@ Section: {section_name}
                     "programmes": programmes,
                     "cycle": cycle,
                     "credits": credits
+                    # Note: syllabus URL is generated on frontend from course_code
+                    # Course page URLs are not included due to inconsistent patterns
                 }
                 
                 # Avoid duplicate sources
