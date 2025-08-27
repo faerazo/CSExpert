@@ -41,12 +41,22 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {/* Logo */}
       <div className="p-4 border-b border-brand-medium">
         <div className="flex flex-col items-center">
-          <img
-            src="https://media.licdn.com/dms/image/v2/D4E0BAQEGltszpDpx3w/company-logo_200_200/company-logo_200_200/0/1665142883299/university_of_gothenburg_logo?e=2147483647&v=beta&t=NNyVbo6ITZdNXlFypJA6AVp3wtgY5dtO4hjNx3JM6oU"
-            alt="CSExpert Logo"
-            className="h-24 w-24 object-contain"
-          />
-          <span className="mt-3 text-xl font-bold text-brand-primary">CSExpert</span>
+          <div 
+            className="flex flex-col items-center group cursor-pointer"
+            onClick={() => {
+              navigate('/');
+              if (onNewChat) onNewChat();
+            }}
+          >
+            <img
+              src="https://media.licdn.com/dms/image/v2/D4E0BAQEGltszpDpx3w/company-logo_200_200/company-logo_200_200/0/1665142883299/university_of_gothenburg_logo?e=2147483647&v=beta&t=NNyVbo6ITZdNXlFypJA6AVp3wtgY5dtO4hjNx3JM6oU"
+              alt="CSExpert Logo"
+              className="h-24 w-24 object-contain transition-transform duration-300 group-hover:scale-105"
+            />
+            <span className="mt-3 text-xl font-bold text-brand-primary transition-colors duration-300 group-hover:text-brand-accent">
+              CSExpert
+            </span>
+          </div>
           <div className="text-xs text-brand-secondary mt-1 text-center">
             Course questions? I have answers!
           </div>

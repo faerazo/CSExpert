@@ -277,6 +277,70 @@ export const useChat = (options: UseChatOptions = {}) => {
     });
   }, [sessionId, messages, chatMutation, setSessions, setCurrentSession, setSessionId, setMessages]);
 
+  // Edit message and resend
+  const editMessage = useCallback(async (messageId: string, newContent: string) => {
+    if (!sessionId || !currentSession) return;
+    
+    // Find the message index
+    const messageIndex = messages.findIndex(m => m.id === messageId);
+    if (messageIndex === -1) return;
+    
+    // Get all messages up to and including the edited one
+    const messagesBeforeEdit = messages.slice(0, messageIndex);
+    
+    // Create the edited message
+    const editedMessage: Message = {
+      ...messages[messageIndex],
+      content: newContent,
+      timestamp: new Date(),
+    };
+    
+    // Update messages: keep everything before the edited message, add the edited message
+    const newMessages = [...messagesBeforeEdit, editedMessage];
+    
+    // Check if this is the first user message (excluding welcome message)
+    const firstUserMessageIndex = messages.findIndex(m => m.sender === 'user' && m.id !== 'welcome');
+    if (messageIndex === firstUserMessageIndex) {
+      // Update the session title with the new content
+      const newTitle = chatStorage.generateTitle(newContent);
+      chatStorage.updateSessionTitle(sessionId, newTitle);
+      
+      // Update current session state
+      setCurrentSession({ ...currentSession, title: newTitle });
+      
+      // Update sessions list
+      setSessions(chatStorage.getSessions());
+    }
+    
+    // Update UI and storage
+    setMessages(newMessages);
+    chatStorage.updateSessionMessages(sessionId, newMessages);
+    
+    // Prepare chat history for the API (exclude welcome message)
+    const chatHistory = messagesBeforeEdit
+      .filter(m => m.id !== 'welcome')
+      .map(m => {
+        const historyMsg: any = {
+          sender: m.sender,
+          content: m.content,
+        };
+        
+        // Include sources for AI messages
+        if (m.sender === 'ai' && m.citations && m.citations.length > 0) {
+          historyMsg.sources = m.citations.map(c => c.metadata).filter(Boolean);
+        }
+        
+        return historyMsg;
+      });
+    
+    // Send the edited message to the API
+    chatMutation.mutate({
+      message: newContent,
+      session_id: sessionId,
+      chat_history: chatHistory,
+    });
+  }, [sessionId, currentSession, messages, chatMutation, setMessages, setCurrentSession, setSessions]);
+
   // Clear conversation (resets to initial state, no session)
   const clearConversation = useCallback(() => {
     const welcomeMessage: Message = {
@@ -346,6 +410,7 @@ export const useChat = (options: UseChatOptions = {}) => {
     
     // Actions
     sendMessage,
+    editMessage,
     clearConversation,
     refetchSystemStatus,
     switchToSession,

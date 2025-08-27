@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { ChatSession } from '@/lib/chat-storage';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -113,7 +113,7 @@ export const ChatHistory: React.FC<ChatHistoryProps> = ({
     }
   };
 
-  const handleExportChats = () => {
+  const handleExportChats = useCallback(() => {
     try {
       const data = chatStorage.exportSessions();
       const blob = new Blob([data], { type: 'application/json' });
@@ -137,7 +137,7 @@ export const ChatHistory: React.FC<ChatHistoryProps> = ({
         description: "Failed to export chat history.",
       });
     }
-  };
+  }, [toast]);
 
   const handleImportChats = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -177,12 +177,26 @@ export const ChatHistory: React.FC<ChatHistoryProps> = ({
     }
   };
 
-  const handleClearAllChats = () => {
-    if (confirm('Are you sure you want to clear all chat history? This action cannot be undone.')) {
-      chatStorage.clearAllSessions();
-      window.location.reload();
-    }
-  };
+  // Keyboard shortcuts for hidden features (useful for debugging/user testing)
+  // Ctrl/Cmd + Shift + E = Export chats as JSON
+  // Ctrl/Cmd + Shift + I = Import chats from JSON
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Ctrl/Cmd + Shift + E = Export
+      if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'E') {
+        e.preventDefault();
+        handleExportChats();
+      }
+      // Ctrl/Cmd + Shift + I = Import
+      if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'I') {
+        e.preventDefault();
+        fileInputRef.current?.click();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [handleExportChats]);
 
   // Group sessions by date
   const groupedSessions = sessions.reduce((groups, session) => {
@@ -335,42 +349,14 @@ export const ChatHistory: React.FC<ChatHistoryProps> = ({
         )}
       </div>
 
-      {/* Footer with actions */}
-      <div className="p-3 border-t border-brand-medium">
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="outline" size="sm" className="w-full">
-              <MoreVertical className="h-4 w-4 mr-2" />
-              Manage Chats
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="center" className="w-48">
-            <DropdownMenuItem onClick={handleExportChats}>
-              <Download className="h-3 w-3 mr-2" />
-              Export All Chats
-            </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => fileInputRef.current?.click()}>
-              <Upload className="h-3 w-3 mr-2" />
-              Import Chats
-            </DropdownMenuItem>
-            <DropdownMenuItem
-              onClick={handleClearAllChats}
-              className="text-red-600"
-            >
-              <Trash2 className="h-3 w-3 mr-2" />
-              Clear All Chats
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
-        
-        <input
-          ref={fileInputRef}
-          type="file"
-          accept=".json"
-          onChange={handleImportChats}
-          className="hidden"
-        />
-      </div>
+      {/* Hidden features accessible via keyboard shortcut */}
+      <input
+        ref={fileInputRef}
+        type="file"
+        accept=".json"
+        onChange={handleImportChats}
+        className="hidden"
+      />
 
       {/* Delete confirmation dialog */}
       <AlertDialog open={!!deleteConfirmId} onOpenChange={() => setDeleteConfirmId(null)}>

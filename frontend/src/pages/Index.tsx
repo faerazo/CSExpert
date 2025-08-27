@@ -18,6 +18,7 @@ const Index = () => {
     systemDocumentCount,
     hasSystemError,
     sendMessage,
+    editMessage,
     clearConversation,
     refetchSystemStatus,
     switchToSession,
@@ -75,7 +76,8 @@ const Index = () => {
           systemDocumentCount={systemDocumentCount}
           hasSystemError={hasSystemError}
           sendMessage={sendMessage}
-                      onNewChat={handleNewChat}
+          editMessage={editMessage}
+          onNewChat={handleNewChat}
           refetchSystemStatus={refetchSystemStatus}
         />
       </div>

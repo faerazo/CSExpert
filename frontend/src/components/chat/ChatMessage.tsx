@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { ChevronDown, ChevronUp, FileText } from 'lucide-react';
+import { ChevronDown, ChevronUp, FileText, Copy, Edit2, Check, X, User } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Textarea } from '@/components/ui/textarea';
+import { useToast } from '@/hooks/use-toast';
 
 interface MarkdownRendererProps {
   content: string;
@@ -32,8 +35,9 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
               </a>
             ),
             // Custom code styling
-            code: ({ node, inline, className, children, ...props }) => {
+            code: ({ node, className, children, ...props }: any) => {
               const match = /language-(\w+)/.exec(className || '');
+              const inline = !match;
               return !inline ? (
                 <pre className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto my-4 shadow-lg border border-gray-800">
                   <code className={`${className} text-sm leading-relaxed`} {...props}>
@@ -153,26 +157,71 @@ export interface Message {
 interface ChatMessageProps {
   message: Message;
   onCitationClick?: (citation: Citation) => void;
+  onEditMessage?: (messageId: string, newContent: string) => void;
 }
 
 export const ChatMessage: React.FC<ChatMessageProps> = ({
   message,
-  onCitationClick
+  onCitationClick,
+  onEditMessage
 }) => {
   const isUser = message.sender === 'user';
   const [showSources, setShowSources] = useState(false);
+  const [isEditing, setIsEditing] = useState(false);
+  const [editContent, setEditContent] = useState(message.content);
+  const [showActions, setShowActions] = useState(false);
+  const { toast } = useToast();
   
   // Build syllabus URL from course code (consistent pattern)
   const getSyllabusUrl = (courseCode: string) => {
     return `https://kursplaner.gu.se/pdf/kurs/en/${courseCode}`;
   };
   
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(message.content);
+      toast({
+        description: "Message copied to clipboard",
+        duration: 2000,
+      });
+    } catch (error) {
+      toast({
+        variant: "destructive",
+        description: "Failed to copy message",
+        duration: 2000,
+      });
+    }
+  };
+  
+  const handleEdit = () => {
+    setIsEditing(true);
+    setEditContent(message.content);
+  };
+  
+  const handleSaveEdit = () => {
+    if (editContent.trim() && editContent !== message.content && onEditMessage) {
+      onEditMessage(message.id, editContent.trim());
+      setIsEditing(false);
+    } else {
+      setIsEditing(false);
+    }
+  };
+  
+  const handleCancelEdit = () => {
+    setIsEditing(false);
+    setEditContent(message.content);
+  };
+  
   return (
-    <div className={cn(
-      "p-4 rounded-lg max-w-4xl", // Increased max-width for better markdown display
-      isUser ? "ml-auto chat-message-user" : "mr-auto chat-message-ai",
-      message.isError && "border-red-200 bg-red-50"
-    )}>
+    <div 
+      className={cn(
+        "p-4 rounded-lg max-w-4xl group relative", // Added group and relative for hover effects
+        isUser ? "ml-auto chat-message-user" : "mr-auto chat-message-ai",
+        message.isError && "border-red-200 bg-red-50"
+      )}
+      onMouseEnter={() => setShowActions(true)}
+      onMouseLeave={() => setShowActions(false)}
+    >
       <div className="flex flex-col">
         <div className="flex items-center justify-between mb-2">
           <div className="text-sm font-medium">
@@ -190,40 +239,89 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({
           message.isError && "text-red-700"
         )}>
           {isUser ? (
-            // User messages: plain text
-            <div className="whitespace-pre-wrap">{message.content}</div>
+            // User messages
+            isEditing ? (
+              <div className="space-y-2">
+                <Textarea
+                  value={editContent}
+                  onChange={(e) => setEditContent(e.target.value)}
+                  className="min-h-[60px] resize-none"
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' && e.ctrlKey) {
+                      handleSaveEdit();
+                    }
+                  }}
+                />
+                <div className="flex items-center gap-2">
+                  <Button
+                    size="sm"
+                    onClick={handleSaveEdit}
+                    disabled={!editContent.trim() || editContent === message.content}
+                  >
+                    <Check className="h-3.5 w-3.5 mr-1" />
+                    Save
+                  </Button>
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    onClick={handleCancelEdit}
+                  >
+                    <X className="h-3.5 w-3.5 mr-1" />
+                    Cancel
+                  </Button>
+                  <span className="text-xs text-gray-500">
+                    Ctrl+Enter to save
+                  </span>
+                </div>
+              </div>
+            ) : (
+              <div className="whitespace-pre-wrap">{message.content}</div>
+            )
           ) : (
             // AI messages: markdown rendering
             <MarkdownRenderer content={message.content} />
           )}
         </div>
         
-        {/* Sources section - collapsible and more subtle */}
-        {!isUser && message.citations && message.citations.length > 0 && (
+        {/* Sources section with copy button */}
+        {!isUser && message.id !== 'welcome' && (
           <div className="mt-4 border-t border-gray-200 pt-3">
-            {/* Sources header with toggle */}
-            <button
-              onClick={() => setShowSources(!showSources)}
-              className="flex items-center justify-between w-full text-left hover:bg-gray-50 rounded-lg p-2 -mx-2 transition-colors"
-            >
-              <div className="flex items-center gap-2">
-                <FileText className="h-3.5 w-3.5 text-gray-400" />
-                <span className="text-xs text-gray-600 font-medium">
-                  {message.citations.length} sources
-                  {message.metadata?.documentsRetrieved && 
-                    ` • ${message.metadata.documentsRetrieved} documents searched`
+            <div className="flex items-center gap-2">
+              {/* Copy button - always show first */}
+              <Button
+                size="sm"
+                variant="ghost"
+                className="h-6 w-6 p-0"
+                onClick={handleCopy}
+                title="Copy message"
+              >
+                <Copy className="h-3 w-3" />
+              </Button>
+              
+              {/* Sources toggle button - only if citations exist */}
+              {message.citations && message.citations.length > 0 && (
+                <button
+                  onClick={() => setShowSources(!showSources)}
+                  className="flex items-center gap-2 hover:bg-gray-50 rounded-lg px-2 py-1 transition-all duration-200"
+                >
+                  <FileText className="h-3.5 w-3.5 text-gray-400" />
+                  <span className="text-xs text-gray-600 font-medium flex items-center gap-1">
+                    {message.citations.length} sources
+                    {message.metadata?.documentsRetrieved && 
+                      ` • ${message.metadata.documentsRetrieved} documents searched`
+                    }
+                  </span>
+                  {showSources ? 
+                    <ChevronUp className="h-3.5 w-3.5 text-gray-400" /> : 
+                    <ChevronDown className="h-3.5 w-3.5 text-gray-400" />
                   }
-                </span>
-              </div>
-              {showSources ? 
-                <ChevronUp className="h-3.5 w-3.5 text-gray-400" /> : 
-                <ChevronDown className="h-3.5 w-3.5 text-gray-400" />
-              }
-            </button>
+                </button>
+              )}
+            </div>
             
             {/* Expandable sources content */}
             {showSources && (
-              <div className="mt-3 space-y-2 pl-2">
+              <div className="mt-3 space-y-2 pl-2 animate-in slide-in-from-top-2 duration-200">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {message.citations.map((citation) => {
                     const courseCode = citation.metadata?.course_code;
@@ -232,7 +330,7 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({
                     return (
                       <div
                         key={citation.id}
-                        className="flex items-start gap-2 p-2 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors"
+                        className="flex items-start gap-2 p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-all duration-200 hover:shadow-sm border border-gray-100"
                       >
                         <div className="flex-1 min-w-0">
                           <div className="text-xs font-medium text-gray-700 truncate">
@@ -251,11 +349,11 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({
                             href={getSyllabusUrl(courseCode)}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-1.5 hover:bg-gray-200 rounded transition-colors"
+                            className="p-1.5 hover:bg-gray-200 rounded transition-all duration-200 hover:scale-110"
                             title={`View ${courseCode} syllabus (PDF)`}
                             onClick={(e) => e.stopPropagation()}
                           >
-                            <FileText className="h-3 w-3 text-gray-600" />
+                            <FileText className="h-3 w-3 text-brand-primary" />
                           </a>
                         )}
                       </div>
@@ -267,9 +365,40 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({
           </div>
         )}
         
-        {/* Timestamp */}
-        <div className="text-xs text-gray-400 mt-2">
-          {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+        {/* Bottom section with timestamp and user actions */}
+        <div className="flex items-center justify-between mt-2">
+          <div className="text-xs text-gray-400">
+            {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+          </div>
+          
+          {/* User message actions - bottom right */}
+          {isUser && (
+            <div className={cn(
+              "flex items-center gap-1 transition-opacity duration-200",
+              showActions || isEditing ? "opacity-100" : "opacity-0"
+            )}>
+              <Button
+                size="sm"
+                variant="ghost"
+                className="h-6 w-6 p-0"
+                onClick={handleCopy}
+                title="Copy message"
+              >
+                <Copy className="h-3 w-3" />
+              </Button>
+              {onEditMessage && !isEditing && (
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  className="h-6 w-6 p-0"
+                  onClick={handleEdit}
+                  title="Edit message"
+                >
+                  <Edit2 className="h-3 w-3" />
+                </Button>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>
