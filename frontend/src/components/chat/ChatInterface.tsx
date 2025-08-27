@@ -42,7 +42,6 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
   }, [messages]);
   
   const handleCitationClick = (citation: any) => {
-    console.log('Citation clicked:', citation);
     // TODO: Implement document viewer or more info modal
   };
 
@@ -55,8 +54,8 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
 
   const getStatusText = () => {
     if (isSystemLoading) return 'Checking system status...';
-    if (hasSystemError) return 'System error - some features may not work';
-    if (isSystemReady) return `Ready - ${systemDocumentCount.toLocaleString()} documents loaded`;
+    if (hasSystemError) return 'System error. Please contact support.';
+    if (isSystemReady) return 'Ready';
     return systemStatus?.status || 'Unknown status';
   };
   

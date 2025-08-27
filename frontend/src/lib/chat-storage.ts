@@ -100,7 +100,6 @@ export class ChatStorage {
       
       return parsed;
     } catch (error) {
-      console.error('Error reading chat storage:', error);
       return { sessions: [], currentSessionId: null };
     }
   }
@@ -119,7 +118,6 @@ export class ChatStorage {
       
       localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
     } catch (error) {
-      console.error('Error saving chat storage:', error);
       
       // If localStorage is full, try to clean up old sessions
       if (error instanceof DOMException && error.name === 'QuotaExceededError') {
@@ -129,7 +127,7 @@ export class ChatStorage {
         try {
           localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
         } catch (retryError) {
-          console.error('Failed to save after cleanup:', retryError);
+          // Failed to save after cleanup
         }
       }
     }
@@ -310,7 +308,6 @@ export class ChatStorage {
       this.saveData(currentData);
       return true;
     } catch (error) {
-      console.error('Error importing sessions:', error);
       return false;
     }
   }

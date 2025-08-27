@@ -128,7 +128,6 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
       </div>
     );
   } catch (error) {
-    console.error('Error rendering markdown:', error);
     // Fallback to simple text if react-markdown fails
     return <div className="markdown-content whitespace-pre-wrap">{content}</div>;
   }
@@ -219,8 +218,8 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({
         isUser ? "ml-auto chat-message-user" : "mr-auto chat-message-ai",
         message.isError && "border-red-200 bg-red-50"
       )}
-      onMouseEnter={() => setShowActions(true)}
-      onMouseLeave={() => setShowActions(false)}
+      onMouseEnter={() => !isUser && setShowActions(true)}
+      onMouseLeave={() => !isUser && setShowActions(false)}
     >
       <div className="flex flex-col">
         <div className="flex items-center justify-between mb-2">
@@ -373,10 +372,7 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({
           
           {/* User message actions - bottom right */}
           {isUser && (
-            <div className={cn(
-              "flex items-center gap-1 transition-opacity duration-200",
-              showActions || isEditing ? "opacity-100" : "opacity-0"
-            )}>
+            <div className="flex items-center gap-1">
               <Button
                 size="sm"
                 variant="ghost"
