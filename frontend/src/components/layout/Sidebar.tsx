@@ -24,17 +24,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const navigate = useNavigate();
   const location = useLocation();
   
-  // Check if the current path is an admin path
-  const isAdmin = location.pathname.includes('/admin');
-  
-  // Define navigation links, filtering admin links based on path
+  // Define navigation links
   const navigation = [
     { name: 'Chat', path: '/' },
-    ...(isAdmin ? [
-      { name: 'Admin', path: '/admin' },
-      { name: 'Documents', path: '/admin/documents' },
-      { name: 'Settings', path: '/admin/settings' },
-    ] : [])
   ];
 
   const isActive = (path: string) => {
@@ -56,7 +48,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           />
           <span className="mt-3 text-xl font-bold text-brand-primary">CSExpert</span>
           <div className="text-xs text-brand-secondary mt-1 text-center">
-            Course questions? I have answers
+            Course questions? I have answers!
           </div>
         </div>
       </div>
@@ -94,14 +86,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
             </a>
           ))}
         </nav>
-      )}
-      
-      {/* User section - removed since no user accounts are needed */}
-      {isAdmin && (
-        <div className="p-4 border-t border-brand-medium">
-          <div className="text-sm font-medium text-gray-900">Admin Panel</div>
-          <div className="text-xs text-gray-500">Restricted Access</div>
-        </div>
       )}
     </div>
   );
