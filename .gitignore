@@ -56,6 +56,8 @@ eggs/
 .eggs/
 lib/
 lib64/
+# Exception for frontend source files
+!frontend/src/lib/
 parts/
 sdist/
 var/
