@@ -63,7 +63,7 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
   return (
     <div className="flex flex-col h-full">
       {/* Header with system status */}
-      <div className="p-4 border-b border-brand-medium">
+      <div className="p-4 pl-16 md:pl-4 border-b border-brand-medium">
         <div className="flex items-start justify-between">
           {/* Left side: Title and Status */}
           <div className="flex flex-col">
