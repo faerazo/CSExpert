@@ -81,7 +81,7 @@ export const ChatInput: React.FC<ChatInputProps> = ({
         
         <div className="flex justify-between items-center">
           <div className="text-xs text-gray-500">
-            {!disabled && "Press Shift+Enter for new line"}
+            {!disabled && "Press Shift+Enter for a new line"}
           </div>
           <div className={`text-xs transition-colors ${
             message.length > 1800 ? 'text-red-500' : 
