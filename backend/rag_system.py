@@ -1228,13 +1228,19 @@ Section: {section_name}
         }
 
     def extract_course_codes_from_history(self) -> List[str]:
-        """Extract course codes from sources in previous AI responses.
+        """Extract course codes from chat history using top_courses list.
         
-        Uses the actual courses that were found and returned by the RAG system,
-        which is more reliable than trying to parse user messages.
+        Uses the top_courses list from previous AI responses which includes
+        all relevant course codes found, not just those in the limited sources.
+        Falls back to extracting from sources if top_courses not available.
         """
         try:
-            # Only use sources from chat history sent by frontend
+            # First try to use top_courses from chat history
+            if hasattr(self, 'chat_history_top_courses') and self.chat_history_top_courses:
+                logger.info(f"📚 Using top_courses from chat history: {self.chat_history_top_courses[:3]}")
+                return self.chat_history_top_courses[:3]
+            
+            # Fallback to extracting from sources
             if not hasattr(self, 'chat_history_sources'):
                 return []
             
@@ -1245,6 +1251,7 @@ Section: {section_name}
                     if course_code and course_code not in course_codes:
                         course_codes.append(course_code)
             
+            logger.info(f"📚 Using course codes from sources (fallback): {course_codes[:3]}")
             # Return top 3 most relevant course codes (first = most recent/relevant)
             return course_codes[:3]
             

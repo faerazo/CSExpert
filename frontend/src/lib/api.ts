@@ -9,6 +9,7 @@ export interface ChatResponse {
   sources: Source[];
   num_documents_retrieved: number;
   session_id?: string;
+  top_courses?: string[];  // Top course codes found in the response
 }
 
 export interface Source {

@@ -149,6 +149,7 @@ export interface Message {
   metadata?: {
     contentType?: string;
     documentsRetrieved?: number;
+    topCourses?: string[];
   };
   isError?: boolean;
 }
@@ -246,7 +247,8 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({
                   onChange={(e) => setEditContent(e.target.value)}
                   className="min-h-[60px] resize-none"
                   onKeyDown={(e) => {
-                    if (e.key === 'Enter' && e.ctrlKey) {
+                    if (e.key === 'Enter' && !e.shiftKey) {
+                      e.preventDefault();
                       handleSaveEdit();
                     }
                   }}
@@ -269,7 +271,7 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({
                     Cancel
                   </Button>
                   <span className="text-xs text-gray-500">
-                    Ctrl+Enter to save
+                    Press Shift+Enter for a new line
                   </span>
                 </div>
               </div>

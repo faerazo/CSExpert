@@ -43,6 +43,7 @@ class ChatResponse(BaseModel):
     sources: List[Dict]
     num_documents_retrieved: int
     session_id: Optional[str] = None
+    top_courses: Optional[List[str]] = None  # Top course codes found in the response
 
 class ChatHistory(BaseModel):
     session_id: str
@@ -241,8 +242,9 @@ async def chat(message: ChatMessage, request: Request):
             # Clear existing memory and add the conversation history
             client_rag.memory.clear()
             
-            # Also store sources for course code extraction
+            # Also store sources and top courses for course code extraction
             client_rag.chat_history_sources = []
+            client_rag.chat_history_top_courses = []
             
             for i, msg in enumerate(message.chat_history):
                 if msg.get('role') == 'user' or msg.get('sender') == 'user':
@@ -253,8 +255,16 @@ async def chat(message: ChatMessage, request: Request):
                     if msg.get('sources'):
                         sources = msg.get('sources', [])
                         client_rag.chat_history_sources.extend(sources)
+                    # Store top courses from AI messages
+                    if msg.get('top_courses'):
+                        top_courses = msg.get('top_courses', [])
+                        # Add unique course codes to the list
+                        for course in top_courses:
+                            if course and course not in client_rag.chat_history_top_courses:
+                                client_rag.chat_history_top_courses.append(course)
         else:
             client_rag.chat_history_sources = []
+            client_rag.chat_history_top_courses = []
         
         # Process the query with client-specific rate limiting
         result = client_rag.query(message.message.strip())
@@ -270,12 +280,19 @@ async def chat(message: ChatMessage, request: Request):
         if len(result['answer'].strip()) == 0:
             logger.warning("WARNING: Empty answer generated!")
         
+        # Extract top courses from response stats if available
+        top_courses = []
+        if "response_stats" in result and result["response_stats"].get("top_courses"):
+            top_courses = result["response_stats"]["top_courses"]
+            logger.info(f"Top courses found: {top_courses}")
+        
         response = ChatResponse(
             answer=result["answer"],
             content_type=result["content_type"],
             sources=result["sources"],
             num_documents_retrieved=result["num_documents_retrieved"],
-            session_id=message.session_id
+            session_id=message.session_id,
+            top_courses=top_courses
         )
         
         # Log final response being sent
@@ -297,7 +314,8 @@ async def chat(message: ChatMessage, request: Request):
             content_type="error",
             sources=[],
             num_documents_retrieved=0,
-            session_id=message.session_id
+            session_id=message.session_id,
+            top_courses=[]
         )
         
         logger.info(f"Returning fallback response")

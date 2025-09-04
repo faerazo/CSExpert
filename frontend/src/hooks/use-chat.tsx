@@ -85,6 +85,7 @@ export const useChat = (options: UseChatOptions = {}) => {
         metadata: {
           contentType: response.content_type,
           documentsRetrieved: response.num_documents_retrieved,
+          topCourses: response.top_courses || [],
         }
       };
 
@@ -264,6 +265,11 @@ export const useChat = (options: UseChatOptions = {}) => {
         // Include sources for AI messages to enable better context retrieval
         if (m.sender === 'ai' && m.citations && m.citations.length > 0) {
           historyMsg.sources = m.citations.map(c => c.metadata).filter(Boolean);
+        }
+        
+        // Include top courses for better context tracking
+        if (m.sender === 'ai' && m.metadata?.topCourses && m.metadata.topCourses.length > 0) {
+          historyMsg.top_courses = m.metadata.topCourses;
         }
         
         return historyMsg;
