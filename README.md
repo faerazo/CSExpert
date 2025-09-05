@@ -63,6 +63,17 @@ CSExpert covers all Computer Science and Engineering programs:
 - 📖 **Comprehensive Coverage** - Includes all CSE courses and programs
 - 🔗 **Direct Links** - Access official syllabi and course pages quickly
 
+## How It Works
+
+CSExpert combines several modern technologies to provide accurate, conversational responses:
+
+- **Google Gemini LLM** - Large language model for natural language understanding and response generation
+- **ChromaDB Vector Store** - Semantic search using embeddings to find relevant course information
+- **Web Scraping Pipeline** - Automated extraction from Gothenburg University's official website
+- **Response Caching** - In-memory cache reduces API calls and improves response times
+
+The system automatically updates with the latest course information from the university, ensuring you always get most up-to-date information.
+
 ## For Developers
 
 Interested in the technical details? Please check out the following documentation:
