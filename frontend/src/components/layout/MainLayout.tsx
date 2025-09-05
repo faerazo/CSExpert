@@ -27,7 +27,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div className="flex min-h-screen bg-white">
+    <div className="flex h-screen bg-white overflow-hidden">
       {/* Mobile sidebar toggle */}
       <div className="fixed top-4 left-4 z-40 md:hidden">
         <button
@@ -41,7 +41,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
       {/* Sidebar */}
       <div
         className={cn(
-          "fixed inset-y-0 left-0 z-30 w-64 transform transition-transform duration-300 ease-in-out bg-white border-r border-brand-medium md:relative md:translate-x-0",
+          "fixed inset-y-0 left-0 z-30 w-64 h-screen transform transition-transform duration-300 ease-in-out bg-white border-r border-brand-medium md:relative md:translate-x-0 overflow-hidden flex flex-col",
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         )}
       >

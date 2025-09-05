@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
-import { Send, Sparkles } from 'lucide-react';
+import { Send } from 'lucide-react';
 
 interface ChatInputProps {
   onSendMessage: (message: string) => void;
@@ -9,13 +9,22 @@ interface ChatInputProps {
   disabled?: boolean;
 }
 
+const PLACEHOLDER_EXAMPLES = [
+  "Ask about Computer Science and Engineering courses and programs...",
+  "What are the prerequisites for the advanced database course?",
+  "What are the learning outcomes for the introduction to data science and AI course?",
+  "Does DIT968 have an exam?",
+  "What programs does GU offer?"
+];
+
 export const ChatInput: React.FC<ChatInputProps> = ({
   onSendMessage,
-  placeholder = "Ask about Computer Science courses and programs...",
+  placeholder,
   disabled = false
 }) => {
   const [message, setMessage] = useState('');
   const [isExpanded, setIsExpanded] = useState(false);
+  const [currentPlaceholderIndex, setCurrentPlaceholderIndex] = useState(0);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   
   // Auto-resize textarea based on content
@@ -33,6 +42,46 @@ export const ChatInput: React.FC<ChatInputProps> = ({
       setIsExpanded(newHeight > 80);
     }
   }, [message]);
+  
+  // Cycle through placeholder examples
+  useEffect(() => {
+    let timeoutId: NodeJS.Timeout | null = null;
+    
+    if (!message) {
+      // Only cycle placeholders when there's no user input
+      const schedulePlaceholderChange = () => {
+        let delay: number;
+        if (currentPlaceholderIndex === 0) {
+          // Wait longer on the default placeholder before showing examples
+          delay = 15000;
+        } else if (currentPlaceholderIndex === PLACEHOLDER_EXAMPLES.length - 1) {
+          // Pause before cycling back to default
+          delay = 4500;
+        } else {
+          // Normal delay between examples
+          delay = 4000;
+        }
+        
+        timeoutId = setTimeout(() => {
+          setCurrentPlaceholderIndex((prevIndex) => {
+            const nextIndex = (prevIndex + 1) % PLACEHOLDER_EXAMPLES.length;
+            return nextIndex;
+          });
+        }, delay);
+      };
+      
+      schedulePlaceholderChange();
+      
+      return () => {
+        if (timeoutId) {
+          clearTimeout(timeoutId);
+        }
+      };
+    } else {
+      // Reset to default when user types
+      setCurrentPlaceholderIndex(0);
+    }
+  }, [message, currentPlaceholderIndex]);
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -52,6 +101,9 @@ export const ChatInput: React.FC<ChatInputProps> = ({
     // Shift+Enter will naturally add a new line (default textarea behavior)
   };
   
+  // Use the cycling placeholder examples
+  const actualPlaceholder = PLACEHOLDER_EXAMPLES[currentPlaceholderIndex];
+  
   return (
     <form onSubmit={handleSubmit} className="p-6 border-t border-brand-medium bg-white">
       <div className="space-y-3">
@@ -61,9 +113,9 @@ export const ChatInput: React.FC<ChatInputProps> = ({
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder={placeholder}
+            placeholder={actualPlaceholder}
             disabled={disabled}
-            className="flex-1 min-h-[80px] max-h-[200px] resize-none focus:outline-none focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0 transition-colors duration-150 overflow-y-auto text-base leading-relaxed border border-gray-200 hover:border-gray-300 focus:border-gray-400 rounded-lg px-4 py-3 shadow-sm placeholder:text-gray-400 bg-white"
+            className="flex-1 min-h-[80px] max-h-[200px] resize-none focus:outline-none focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0 transition-all duration-150 overflow-y-auto text-base leading-relaxed border border-gray-200 hover:border-gray-300 focus:border-gray-400 rounded-lg px-4 py-3 shadow-sm placeholder:text-gray-400 placeholder:transition-opacity placeholder:duration-500 bg-white"
             maxLength={2000}
             style={{ height: '80px' }}
           />

@@ -66,7 +66,7 @@ const Index = () => {
       onDeleteSession={deleteSession}
       onRenameSession={updateSessionTitle}
     >
-      <div className="flex flex-col h-full">
+      <div className="flex flex-col h-full overflow-hidden">
         <ChatInterface
           messages={messages}
           isLoading={isLoading}

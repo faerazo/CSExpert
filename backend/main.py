@@ -110,11 +110,17 @@ async def lifespan(app: FastAPI):
     logger.info("Shutting down...")
 
 # Create FastAPI app
+# Hide docs in production if ENVIRONMENT is set to "production"
+is_production = os.getenv("ENVIRONMENT", "development").lower() == "production"
+
 app = FastAPI(
     title="CSExpert - Gothenburg University Assistant API",
     description="RAG-powered chatbot for Gothenburg University Computer Science and Engineering course and program information",
     version="1.0.0",
-    lifespan=lifespan
+    lifespan=lifespan,
+    docs_url=None if is_production else "/docs",
+    redoc_url=None if is_production else "/redoc",
+    openapi_url=None if is_production else "/openapi.json"
 )
 
 # Configure CORS

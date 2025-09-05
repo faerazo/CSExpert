@@ -231,7 +231,13 @@ export const ChatHistory: React.FC<ChatHistoryProps> = ({
   return (
     <div className="flex flex-col h-full">
       {/* Sessions list */}
-      <div className="flex-1 overflow-y-auto px-2 py-2">
+      <div 
+        className="flex-1 overflow-y-auto px-2 py-2 chat-history-scroll" 
+        style={{
+          scrollbarWidth: 'thin',
+          scrollbarColor: '#D1D5DB transparent'
+        }}
+      >
         {sessions.length === 0 ? (
           <div className="text-center text-gray-500 text-sm mt-4">
             No chat history yet

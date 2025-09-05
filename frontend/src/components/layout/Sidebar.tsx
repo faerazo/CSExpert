@@ -37,7 +37,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   };
   
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full overflow-hidden">
       {/* Logo */}
       <div className="p-4 border-b border-brand-medium">
         <div className="flex flex-col items-center">
@@ -65,18 +65,20 @@ export const Sidebar: React.FC<SidebarProps> = ({
       
       {/* Show chat history or navigation based on current page */}
       {(location.pathname === '/' || location.pathname.startsWith('/chat/')) && onSessionSelect ? (
-        <div className="flex-1 overflow-hidden">
-          <div className="px-4 py-2 border-b border-brand-medium">
+        <div className="flex-1 flex flex-col min-h-0">
+          <div className="px-4 py-2 border-b border-brand-medium flex-shrink-0">
             <h3 className="text-sm font-medium text-gray-700">Chat History</h3>
           </div>
-          <ChatHistory
-            sessions={sessions}
-            currentSessionId={currentSessionId}
-            onSessionSelect={onSessionSelect}
-            onNewChat={onNewChat || (() => {})}
-            onDeleteSession={onDeleteSession || (() => {})}
-            onRenameSession={onRenameSession || (() => {})}
-          />
+          <div className="flex-1 min-h-0">
+            <ChatHistory
+              sessions={sessions}
+              currentSessionId={currentSessionId}
+              onSessionSelect={onSessionSelect}
+              onNewChat={onNewChat || (() => {})}
+              onDeleteSession={onDeleteSession || (() => {})}
+              onRenameSession={onRenameSession || (() => {})}
+            />
+          </div>
         </div>
       ) : (
         /* Navigation links for non-chat pages */
