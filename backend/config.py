@@ -12,7 +12,7 @@ class RAGConfig:
     
     # === LLM SETTINGS ===
     TEMPERATURE = float(os.getenv("TEMPERATURE", "0.1"))
-    MAX_TOKENS = int(os.getenv("MAX_TOKENS", "1000"))
+    MAX_TOKENS = int(os.getenv("MAX_TOKENS", "3000"))
     EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "models/text-embedding-004")
     LLM_MODEL = os.getenv("LLM_MODEL", "gemini-2.5-flash")
     

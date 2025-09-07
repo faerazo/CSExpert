@@ -11,6 +11,8 @@ from fastapi.responses import FileResponse
 from pydantic import BaseModel
 import uvicorn
 from dotenv import load_dotenv
+import uuid
+from datetime import datetime
 
 # Load environment variables from parent directory
 load_dotenv()
@@ -20,15 +22,20 @@ from config import RAGConfig
 from rate_limiter import RateLimitInfo
 
 # Configure logging
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 # Global RAG instance
 rag_system: Optional[GothenburgUniversityRAG] = None
 
+# In-memory chat history storage (for demo purposes)
+# In production, this should be stored in a database
+chat_histories: Dict[str, 'ChatHistory'] = {}
+
 class ChatMessage(BaseModel):
     message: str
     session_id: Optional[str] = None
+    chat_history: Optional[List[Dict]] = None  # Previous messages in the conversation
 
 class ChatResponse(BaseModel):
     answer: str
@@ -36,6 +43,22 @@ class ChatResponse(BaseModel):
     sources: List[Dict]
     num_documents_retrieved: int
     session_id: Optional[str] = None
+    top_courses: Optional[List[str]] = None  # Top course codes found in the response
+
+class ChatHistory(BaseModel):
+    session_id: str
+    title: str
+    messages: List[Dict]
+    created_at: datetime
+    updated_at: datetime
+    
+class ChatHistoryRequest(BaseModel):
+    title: Optional[str] = None
+    messages: List[Dict]
+    
+class ChatHistoryUpdate(BaseModel):
+    title: Optional[str] = None
+    messages: Optional[List[Dict]] = None
 
 class SystemStatus(BaseModel):
     status: str
@@ -87,11 +110,17 @@ async def lifespan(app: FastAPI):
     logger.info("Shutting down...")
 
 # Create FastAPI app
+# Hide docs in production if ENVIRONMENT is set to "production"
+is_production = os.getenv("ENVIRONMENT", "development").lower() == "production"
+
 app = FastAPI(
     title="CSExpert - Gothenburg University Assistant API",
     description="RAG-powered chatbot for Gothenburg University Computer Science and Engineering course and program information",
     version="1.0.0",
-    lifespan=lifespan
+    lifespan=lifespan,
+    docs_url=None if is_production else "/docs",
+    redoc_url=None if is_production else "/redoc",
+    openapi_url=None if is_production else "/openapi.json"
 )
 
 # Configure CORS
@@ -214,6 +243,35 @@ async def chat(message: ChatMessage, request: Request):
         client_rag.vector_store = rag_system.vector_store
         client_rag.is_initialized = rag_system.is_initialized
         
+        # Add chat history to the RAG system's memory if provided
+        if message.chat_history:
+            # Clear existing memory and add the conversation history
+            client_rag.memory.clear()
+            
+            # Also store sources and top courses for course code extraction
+            client_rag.chat_history_sources = []
+            client_rag.chat_history_top_courses = []
+            
+            for i, msg in enumerate(message.chat_history):
+                if msg.get('role') == 'user' or msg.get('sender') == 'user':
+                    client_rag.memory.chat_memory.add_user_message(msg.get('content', ''))
+                elif msg.get('role') == 'assistant' or msg.get('sender') == 'ai':
+                    client_rag.memory.chat_memory.add_ai_message(msg.get('content', ''))
+                    # Store sources from AI messages
+                    if msg.get('sources'):
+                        sources = msg.get('sources', [])
+                        client_rag.chat_history_sources.extend(sources)
+                    # Store top courses from AI messages
+                    if msg.get('top_courses'):
+                        top_courses = msg.get('top_courses', [])
+                        # Add unique course codes to the list
+                        for course in top_courses:
+                            if course and course not in client_rag.chat_history_top_courses:
+                                client_rag.chat_history_top_courses.append(course)
+        else:
+            client_rag.chat_history_sources = []
+            client_rag.chat_history_top_courses = []
+        
         # Process the query with client-specific rate limiting
         result = client_rag.query(message.message.strip())
         
@@ -228,12 +286,19 @@ async def chat(message: ChatMessage, request: Request):
         if len(result['answer'].strip()) == 0:
             logger.warning("WARNING: Empty answer generated!")
         
+        # Extract top courses from response stats if available
+        top_courses = []
+        if "response_stats" in result and result["response_stats"].get("top_courses"):
+            top_courses = result["response_stats"]["top_courses"]
+            logger.info(f"Top courses found: {top_courses}")
+        
         response = ChatResponse(
             answer=result["answer"],
             content_type=result["content_type"],
             sources=result["sources"],
             num_documents_retrieved=result["num_documents_retrieved"],
-            session_id=message.session_id
+            session_id=message.session_id,
+            top_courses=top_courses
         )
         
         # Log final response being sent
@@ -255,7 +320,8 @@ async def chat(message: ChatMessage, request: Request):
             content_type="error",
             sources=[],
             num_documents_retrieved=0,
-            session_id=message.session_id
+            session_id=message.session_id,
+            top_courses=[]
         )
         
         logger.info(f"Returning fallback response")
@@ -499,6 +565,95 @@ async def get_departments():
     except Exception as e:
         logger.error(f"Error getting departments: {e}")
         raise HTTPException(status_code=500, detail=f"Failed to get departments: {str(e)}")
+
+# Chat History Endpoints (Optional)
+@app.post("/chat/history/{session_id}", response_model=ChatHistory, tags=["Chat History"])
+async def save_chat_history(session_id: str, request: ChatHistoryRequest):
+    """
+    Save or update chat history for a session.
+    This is optional - chats are primarily stored in browser localStorage.
+    """
+    try:
+        if session_id in chat_histories:
+            # Update existing history
+            history = chat_histories[session_id]
+            if request.title:
+                history.title = request.title
+            history.messages = request.messages
+            history.updated_at = datetime.now()
+        else:
+            # Create new history
+            history = ChatHistory(
+                session_id=session_id,
+                title=request.title or "New Chat",
+                messages=request.messages,
+                created_at=datetime.now(),
+                updated_at=datetime.now()
+            )
+            chat_histories[session_id] = history
+        
+        return history
+    except Exception as e:
+        logger.error(f"Error saving chat history: {e}")
+        raise HTTPException(status_code=500, detail=f"Failed to save chat history: {str(e)}")
+
+@app.get("/chat/history/{session_id}", response_model=ChatHistory, tags=["Chat History"])
+async def get_chat_history(session_id: str):
+    """Get chat history for a specific session."""
+    if session_id not in chat_histories:
+        raise HTTPException(status_code=404, detail="Chat history not found")
+    
+    return chat_histories[session_id]
+
+@app.get("/chat/histories", tags=["Chat History"])
+async def get_all_chat_histories(limit: int = 50, offset: int = 0):
+    """Get all chat histories (paginated)."""
+    try:
+        # Sort by updated_at descending
+        sorted_histories = sorted(
+            chat_histories.values(),
+            key=lambda x: x.updated_at,
+            reverse=True
+        )
+        
+        # Apply pagination
+        paginated = sorted_histories[offset:offset + limit]
+        
+        return {
+            "histories": paginated,
+            "total": len(chat_histories),
+            "limit": limit,
+            "offset": offset
+        }
+    except Exception as e:
+        logger.error(f"Error getting chat histories: {e}")
+        raise HTTPException(status_code=500, detail=f"Failed to get chat histories: {str(e)}")
+
+@app.delete("/chat/history/{session_id}", tags=["Chat History"])
+async def delete_chat_history(session_id: str):
+    """Delete chat history for a specific session."""
+    if session_id not in chat_histories:
+        raise HTTPException(status_code=404, detail="Chat history not found")
+    
+    del chat_histories[session_id]
+    return {"message": "Chat history deleted successfully"}
+
+@app.patch("/chat/history/{session_id}", response_model=ChatHistory, tags=["Chat History"])
+async def update_chat_history(session_id: str, update: ChatHistoryUpdate):
+    """Update specific fields of a chat history."""
+    if session_id not in chat_histories:
+        raise HTTPException(status_code=404, detail="Chat history not found")
+    
+    history = chat_histories[session_id]
+    
+    if update.title is not None:
+        history.title = update.title
+    if update.messages is not None:
+        history.messages = update.messages
+    
+    history.updated_at = datetime.now()
+    
+    return history
 
 # Frontend serving (defined last to avoid conflicts)
 frontend_dist_path = Path("../frontend/dist")
